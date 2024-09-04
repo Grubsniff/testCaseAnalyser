@@ -2,6 +2,7 @@ import axios from "axios";
 import fs from "fs";
 import dotenv from "dotenv";
 import path from "path";
+import { extractAndSaveJson } from "./tools/extractJson";
 
 dotenv.config();
 
@@ -28,18 +29,6 @@ function parseArgs(args: string[]): {
 	const file = args.length > 2 ? args[2] : undefined;
 
 	return { message, instructionsFile, file };
-}
-
-function generateUniqueFilename(baseName: string, dir: string): string {
-	let filename = `${baseName}.json`;
-	let filePath = path.join(dir, filename);
-	let counter = 1;
-	while (fs.existsSync(filePath)) {
-		filename = `${baseName}-${counter}.json`;
-		filePath = path.join(dir, filename);
-		counter++;
-	}
-	return filename;
 }
 
 async function main() {
@@ -95,20 +84,21 @@ async function main() {
 		if (!fs.existsSync(outputDir)) {
 			fs.mkdirSync(outputDir, { recursive: true });
 		}
-		let baseFilename;
+		let fileName;
 		if (file) {
 			const parsedPath = path.parse(file);
-			baseFilename = `response-${parsedPath.name.replace(/cases-/, '')}`;
+			fileName = `response-${parsedPath.name.replace(/cases-/, "")}.json`;
 		} else {
 			const today = new Date().toISOString().split("T")[0];
-			baseFilename = `response-${today}`;
+			fileName = `response-${today}.json`;
 		}
 
-		const uniqueFilename = generateUniqueFilename(baseFilename, outputDir);
-
-		const outputFilePath = path.join(outputDir, uniqueFilename);
+		
+		const outputFilePath = path.join(outputDir, fileName);
 		fs.writeFileSync(outputFilePath, JSON.stringify(response.data, null, 2));
 		console.log(`Response saved to '${outputFilePath}'`);
+
+		await extractAndSaveJson(outputFilePath);
 	} catch (error: any) {
 		console.error("Error:", error.message);
 	}

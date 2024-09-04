@@ -6,8 +6,7 @@
   "scripts": {
     "parsexml": "npx ts-node tools/processXml.ts",
     "splitjson": "npx ts-node tools/jsonSplitter.ts",
-    "analyse": "npx ts-node cli.ts \"Hello! You are an experienced test engineer and tech lead with full experience in software development. Please analyse the attached file as per the provided instructions. Thank you!\" ./instructions.md",
-    "extract": "npx ts-node ./tools/extractJson.ts"
+    "analyse": "npx ts-node cli.ts \"Hello! You are an experienced test engineer and tech lead with full experience in software development. Please analyse the attached file as per the provided instructions. Thank you!\" ./instructions.md"
   },
   "keywords": [
     "openai",

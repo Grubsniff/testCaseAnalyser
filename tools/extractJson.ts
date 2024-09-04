@@ -11,7 +11,7 @@ interface ResponseData {
     choices: Choice[];
 }
 
-function extractAndSaveJson(filePath: string): void {
+export async function extractAndSaveJson(filePath: string): Promise<void> {
     // Read the input file
     const fileContent = fs.readFileSync(filePath, 'utf-8');
     const data: ResponseData = JSON.parse(fileContent);
@@ -42,12 +42,3 @@ function extractAndSaveJson(filePath: string): void {
 
     console.log(`Extracted JSON saved to ${outputPath}`);
 }
-
-// Check if a file path is provided as a command-line argument
-if (process.argv.length < 3) {
-    console.error('Please provide a file path as a command-line argument.');
-    process.exit(1);
-}
-
-const filePath = process.argv[2];
-extractAndSaveJson(filePath);
