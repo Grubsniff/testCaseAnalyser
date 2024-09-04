@@ -1,0 +1,327 @@
+[
+  {
+    "id": "154218168",
+    "key": "UNO-T253",
+    "name": "Verify Document Name field is a free type text box and all characters and numbers can be entered",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "154218169",
+    "key": "UNO-T254",
+    "name": "Verify if Document Name field auto complete’s if there is a similar or same name used before",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "154218170",
+    "key": "UNO-T255",
+    "name": "Verify if user add’s same or similar document name pop up appears to alert the user about saving duplicate document name",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "154218171",
+    "key": "UNO-T256",
+    "name": "Verify the wording in the pop-up is user friendly",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "154218172",
+    "key": "UNO-T257",
+    "name": "Verify the default tick box exist on the page and able to use the tick box",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "154218173",
+    "key": "UNO-T258",
+    "name": "Verify when default is ticked document appears in default document dropdown in document maintenance page",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "154218174",
+    "key": "UNO-T259",
+    "name": "Verify when default is not ticked document appears in the client specific document dropdown in document maintenance page",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "154218175",
+    "key": "UNO-T260",
+    "name": "Verify the add functionality",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "154218176",
+    "key": "UNO-T261",
+    "name": "Verify when document name is added it shows on the table below",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "154218177",
+    "key": "UNO-T262",
+    "name": "Verify the name of the columns in the document names table",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "154218178",
+    "key": "UNO-T263",
+    "name": "Verify when document added correct information is displayed on the table",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "154218179",
+    "key": "UNO-T264",
+    "name": "Verify the edit functionality on the document name table",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "154218180",
+    "key": "UNO-T265",
+    "name": "Verify the delete functionality on the document name table",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "154218181",
+    "key": "UNO-T266",
+    "name": "Verify the delete functionality on the document name table when document name is used elsewhere in the system",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "154218182",
+    "key": "UNO-T267",
+    "name": "Verify the search box above the document name table",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "154218183",
+    "key": "UNO-T268",
+    "name": "Verify the page size dropdown above the document name table",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "154218184",
+    "key": "UNO-T269",
+    "name": "Verify the pagination below the document name table",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "154218185",
+    "key": "UNO-T270",
+    "name": "Verify all the spellings and alignment on the Document name maintenance page",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "154218186",
+    "key": "UNO-T271",
+    "name": "Verify the user friendliness of the document name maintenance page",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "154218187",
+    "key": "UNO-T272",
+    "name": "Verify responsiveness of the page when there is large amount of data on the page",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "154248170",
+    "key": "UNO-T273",
+    "name": "Verify there is a expiry date applicable tick box on the default tab of the Worker document maintenance page",
+    "folder": "UNO-2149 Compliance documents",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2149"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "154248171",
+    "key": "UNO-T274",
+    "name": "Verify expiry date applicable column is added to the table on default tab worker document maintenance page",
+    "folder": "UNO-2149 Compliance documents",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2149"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "154248172",
+    "key": "UNO-T275",
+    "name": "Verify document name is a drop-down Default tab and is feeding correctly from the document name maintenance page",
+    "folder": "UNO-2149 Compliance documents",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2149"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "154248173",
+    "key": "UNO-T276",
+    "name": "Verify Document’s can be added to the default document table",
+    "folder": "UNO-2149 Compliance documents",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2149"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "154423017",
+    "key": "UNO-T277",
+    "name": "Verify ‘Click on more than one client to select multiple clients’ message is displayed above the Select client dropdown",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2151"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  }
+]

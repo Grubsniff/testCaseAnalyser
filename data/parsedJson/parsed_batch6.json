@@ -1,0 +1,964 @@
+[
+  {
+    "id": "166412185",
+    "key": "UNO-T503",
+    "name": "Edit a Location  with  Irish Phone Number as a NEUVEN user",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2447"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "166412246",
+    "key": "UNO-T504",
+    "name": "Create a Worker with  Irish Phone Number as a NEUVEN user",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2447"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "166412320",
+    "key": "UNO-T505",
+    "name": "Edit a Worker with  Irish Phone Number as a NEUVEN user",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2447"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "166450991",
+    "key": "UNO-T506",
+    "name": "Verify as a NEUVEN user when creating a new booking for a direct bank worker – renaming labels -AGENCY WORKERS ONLY",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2436"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged on as a Neuven User with&nbsp;With Manage/Approve/Authorise bookings permission</li></ul>When<br><ul><li>On the bookings screen &gt;&nbsp;Manage bookings&nbsp;&gt;&nbsp;Select Location&nbsp;&gt;&nbsp;New Booking</li></ul>Then<br><ul><li>If Client Set-Up page for the relevant Client Location has &ldquo;<strong>Agency Workers only</strong>&rdquo; selected</li><li>Leave headers and labels as they are now</li></ul>"
+  },
+  {
+    "id": "166451256",
+    "key": "UNO-T507",
+    "name": "Verify as a NEUVEN user when creating a new booking for a direct bank worker – renaming labels - Direct Bank Workers only  - CREATE",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2436"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged on as a Neuven User with&nbsp;With Manage/Approve/Authorise bookings permission</li></ul>When<br><ul><li>On the bookings screen &gt;&nbsp;Manage bookings&nbsp;&gt;&nbsp;Select Location&nbsp;&gt;&nbsp;New Booking</li></ul>Then<br><ul><li>If Client Set-Up page for the relevant Client Location has &ldquo;<strong>Direct Bank Workers only</strong>&rdquo;&nbsp;</li><li><strong>When Creating a Booking</strong><ul><li>Rename the following labels<ul><li>&ldquo;Agencies&rdquo; tab &ldquo;Booking Distribution&rdquo;</li><li>&ldquo;Agency Name&rdquo; column header &ldquo;Worker Source&rdquo;</li><li>&ldquo;Tier&rdquo; column header &quot;Agency Tier&rdquo;</li><li>Rename the label &ldquo;Please select a Job Type, Start Date and a Rate Type to see agency rates&rdquo; to &ldquo;Please select a Job Type, Start Date, and Rate Type to see Agency or Direct Bank Worker rates&rdquo;</li></ul></li></ul></li></ul>"
+  },
+  {
+    "id": "166451326",
+    "key": "UNO-T508",
+    "name": "Verify as a NEUVEN user when creating a new booking for a direct bank worker – renaming labels - Direct Bank Workers only - EDIT",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2436"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged on as a Neuven User with&nbsp;With Manage/Approve/Authorise bookings permission</li></ul>When<br><ul><li>On the bookings screen &gt;&nbsp;Manage bookings&nbsp;&gt;&nbsp;Select Location&nbsp;&gt;&nbsp;New Booking</li></ul>Then<br><ul><li>If Client Set-Up page for the relevant Client Location has &ldquo;<strong>Direct Bank Workers only</strong>&rdquo;&nbsp;</li><li><strong>When EDITING an existing &nbsp;Booking</strong><ul><li>Rename the following labels<ul><li>&ldquo;Agencies&rdquo; tab &ldquo;Booking Distribution&rdquo;</li><li>&ldquo;Agency Name&rdquo; column header &ldquo;Worker Source&rdquo;</li><li>&ldquo;Tier&rdquo; column header &quot;Agency Tier&rdquo;</li><li>Rename the label &ldquo;Please select a Job Type, Start Date and a Rate Type to see agency rates&rdquo; to &ldquo;Please select a Job Type, Start Date, and Rate Type to see Agency or Direct Bank Worker rates&rdquo;</li></ul></li></ul></li></ul>"
+  },
+  {
+    "id": "166451411",
+    "key": "UNO-T509",
+    "name": "Verify as a NEUVEN user when creating a new booking for a direct bank worker – renaming labels - Direct Bank Workers only - EDIT",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2436"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged on as a Neuven User with&nbsp;With Manage/Approve/Authorise bookings permission</li></ul>When<br><ul><li>On the bookings screen &gt;&nbsp;Manage bookings&nbsp;&gt;&nbsp;Select Location&nbsp;&gt;&nbsp;New Booking</li></ul>Then<br><ul><li>If Client Set-Up page for the relevant Client Location has &ldquo;<strong>Direct Bank Workers only</strong>&rdquo;&nbsp;</li><li><strong>When EDITING an existing Booking</strong><ul><li>Rename the following labels<ul><li>&ldquo;Agencies&rdquo; tab &ldquo;Booking Distribution&rdquo;</li><li>&ldquo;Agency Name&rdquo; column header &ldquo;Worker Source&rdquo;</li><li>&ldquo;Tier&rdquo; column header &quot;Agency Tier&rdquo;</li><li>Rename the label &ldquo;Please select a Job Type, Start Date and a Rate Type to see agency rates&rdquo; to &ldquo;Please select a Job Type, Start Date, and Rate Type to see Agency or Direct Bank Worker rates&rdquo;</li></ul></li></ul></li></ul>"
+  },
+  {
+    "id": "166451623",
+    "key": "UNO-T510",
+    "name": "Verify as a NEUVEN user When Approving / Rejecting Workers for a booking ",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2436"
+    ],
+    "objective": null,
+    "testScript": "Verify as a NEUVEN user when&nbsp;When Approving for a booking&nbsp;<br>Given<br><ul><li>Logged on as a Neuven User with&nbsp;With Manage/Approve/Authorise bookings permission</li></ul>When<br><ul><li>On the bookings screen &gt;&nbsp;Manage bookings&nbsp;&gt;&nbsp;Select Location&nbsp;&gt;&nbsp;Approve bookings List (Pending)</li></ul>Then<br> &nbsp;Rename the following Lables<br><ul><li>On the Workers Details tab, rename the &ldquo;Agency Branch&rdquo; column header &ldquo;Worker Source&rdquo;</li><li>The &ldquo;Agency Name&rdquo; column header has been renamed &ldquo;Worker Source&rdquo;&nbsp;</li></ul>"
+  },
+  {
+    "id": "166452330",
+    "key": "UNO-T511",
+    "name": "Verify as a NEUVEN user when creating a new booking for a direct bank worker – renaming labels - Both  - CREATE",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2436"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged on as a Neuven User with&nbsp;With Manage/Approve/Authorise bookings permission</li></ul>When<br><ul><li>On the bookings screen &gt;&nbsp;Manage bookings&nbsp;&gt;&nbsp;Select Location&nbsp;&gt;&nbsp;New Booking</li></ul>Then<br><ul><li>If Client Set-Up page for the relevant Client Location has &ldquo;<strong>Both</strong>&rdquo;&nbsp;</li><li><strong>When Creating a Booking</strong><ul><li>Rename the following labels<ul><li>&ldquo;Agencies&rdquo; tab &ldquo;Booking Distribution&rdquo;</li><li>&ldquo;Agency Name&rdquo; column header &ldquo;Worker Source&rdquo;</li><li>&ldquo;Tier&rdquo; column header &quot;Agency Tier&rdquo;</li><li>Rename the label &ldquo;Please select a Job Type, Start Date and a Rate Type to see agency rates&rdquo; to &ldquo;Please select a Job Type, Start Date, and Rate Type to see Agency or Direct Bank Worker rates&rdquo;</li></ul></li></ul></li></ul>"
+  },
+  {
+    "id": "166452387",
+    "key": "UNO-T512",
+    "name": "Verify as a NEUVEN user when creating a new booking for a direct bank worker – renaming labels - Both - EDIT",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2436"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged on as a Neuven User with&nbsp;With Manage/Approve/Authorise bookings permission</li></ul>When<br><ul><li>On the bookings screen &gt;&nbsp;Manage bookings&nbsp;&gt;&nbsp;Select Location&nbsp;&gt;&nbsp;New Booking</li></ul>Then<br><ul><li>If Client Set-Up page for the relevant Client Location has &ldquo;<strong>Both</strong>&rdquo;&nbsp;</li><li><strong>When EDITING an existing &nbsp;Booking</strong><ul><li>Rename the following labels<ul><li>&ldquo;Agencies&rdquo; tab &ldquo;Booking Distribution&rdquo;</li><li>&ldquo;Agency Name&rdquo; column header &ldquo;Worker Source&rdquo;</li><li>&ldquo;Tier&rdquo; column header &quot;Agency Tier&rdquo;</li><li>Rename the label &ldquo;Please select a Job Type, Start Date and a Rate Type to see agency rates&rdquo; to &ldquo;Please select a Job Type, Start Date, and Rate Type to see Agency or Direct Bank Worker rates&rdquo;</li></ul></li></ul></li></ul>"
+  },
+  {
+    "id": "166453113",
+    "key": "UNO-T513",
+    "name": "Verify as a NEUVEN user when creating a new booking for a direct bank worker – renaming labels - Both - EDIT",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2436"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged on as a Neuven User with&nbsp;With Manage/Approve/Authorise bookings permission</li></ul>When<br><ul><li>On the bookings screen &gt;&nbsp;Manage bookings&nbsp;&gt;&nbsp;Select Location&nbsp;&gt;&nbsp;New Booking</li></ul>Then<br><ul><li>If Client Set-Up page for the relevant Client Location has &ldquo;<strong>Both</strong>&rdquo;&nbsp;</li><li><strong>When EDITING an existing Booking</strong><ul><li>Rename the following labels<ul><li>&ldquo;Agencies&rdquo; tab &ldquo;Booking Distribution&rdquo;</li><li>&ldquo;Agency Name&rdquo; column header &ldquo;Worker Source&rdquo;</li><li>&ldquo;Tier&rdquo; column header &quot;Agency Tier&rdquo;</li><li>Rename the label &ldquo;Please select a Job Type, Start Date and a Rate Type to see agency rates&rdquo; to &ldquo;Please select a Job Type, Start Date, and Rate Type to see Agency or Direct Bank Worker rates&rdquo;</li></ul></li></ul></li></ul>"
+  },
+  {
+    "id": "166453408",
+    "key": "UNO-T514",
+    "name": "Verify as a CLIENT user when creating a new booking for a direct bank worker – renaming labels -AGENCY WORKERS ONLY",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2436"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged on as a CLIENT User with&nbsp;With Manage/Approve/Authorise bookings permission</li></ul>When<br><ul><li>On the bookings screen &gt;&nbsp;Manage bookings&nbsp;&gt;&nbsp;Select Location&nbsp;&gt;&nbsp;New Booking</li></ul>Then<br><ul><li>If Client Set-Up page for the relevant Client Location has &ldquo;<strong>Agency Workers only</strong>&rdquo; selected</li><li>Leave headers and labels as they are now</li></ul>"
+  },
+  {
+    "id": "166453598",
+    "key": "UNO-T515",
+    "name": "Verify as a CLIENT user when creating a new booking for a direct bank worker – renaming labels - Direct Bank Workers only  - CREATE",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2436"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged on as a CLIENT User with&nbsp;With Manage/Approve/Authorise bookings permission</li></ul>When<br><ul><li>On the bookings screen &gt;&nbsp;Manage bookings&nbsp;&gt;&nbsp;Select Location&nbsp;&gt;&nbsp;New Booking</li></ul>Then<br><ul><li>If Client Set-Up page for the relevant Client Location has &ldquo;<strong>Direct Bank Workers only</strong>&rdquo;&nbsp;</li><li><strong>When Creating a Booking</strong><ul><li>Rename the following labels<ul><li>&ldquo;Agencies&rdquo; tab &ldquo;Booking Distribution&rdquo;</li><li>&ldquo;Agency Name&rdquo; column header &ldquo;Worker Source&rdquo;</li><li>&ldquo;Tier&rdquo; column header &quot;Agency Tier&rdquo;</li><li>Rename the label &ldquo;Please select a Job Type, Start Date and a Rate Type to see agency rates&rdquo; to &ldquo;Please select a Job Type, Start Date, and Rate Type to see Agency or Direct Bank Worker rates&rdquo;</li></ul></li></ul></li></ul>"
+  },
+  {
+    "id": "166453670",
+    "key": "UNO-T516",
+    "name": "Verify as a CLIENT user when creating a new booking for a direct bank worker – renaming labels - Direct Bank Workers only - EDIT",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2436"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged on as a CLIENT User with&nbsp;With Manage/Approve/Authorise bookings permission</li></ul>When<br><ul><li>On the bookings screen &gt;&nbsp;Manage bookings&nbsp;&gt;&nbsp;Select Location&nbsp;&gt;&nbsp;New Booking</li></ul>Then<br><ul><li>If Client Set-Up page for the relevant Client Location has &ldquo;<strong>Direct Bank Workers only</strong>&rdquo;&nbsp;</li><li><strong>When EDITING an existing &nbsp;Booking</strong><ul><li>Rename the following labels<ul><li>&ldquo;Agencies&rdquo; tab &ldquo;Booking Distribution&rdquo;</li><li>&ldquo;Agency Name&rdquo; column header &ldquo;Worker Source&rdquo;</li><li>&ldquo;Tier&rdquo; column header &quot;Agency Tier&rdquo;</li><li>Rename the label &ldquo;Please select a Job Type, Start Date and a Rate Type to see agency rates&rdquo; to &ldquo;Please select a Job Type, Start Date, and Rate Type to see Agency or Direct Bank Worker rates&rdquo;</li></ul></li></ul></li></ul>"
+  },
+  {
+    "id": "166453724",
+    "key": "UNO-T517",
+    "name": "Verify as a CLIENT user when creating a new booking for a direct bank worker – renaming labels - Direct Bank Workers only - EDIT",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2436"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged on as a CLIENT User with&nbsp;With Manage/Approve/Authorise bookings permission</li></ul>When<br><ul><li>On the bookings screen &gt;&nbsp;Manage bookings&nbsp;&gt;&nbsp;Select Location&nbsp;&gt;&nbsp;New Booking</li></ul>Then<br><ul><li>If Client Set-Up page for the relevant Client Location has &ldquo;<strong>Direct Bank Workers only</strong>&rdquo;&nbsp;</li><li><strong>When EDITING an existing Booking</strong><ul><li>Rename the following labels<ul><li>&ldquo;Agencies&rdquo; tab &ldquo;Booking Distribution&rdquo;</li><li>&ldquo;Agency Name&rdquo; column header &ldquo;Worker Source&rdquo;</li><li>&ldquo;Tier&rdquo; column header &quot;Agency Tier&rdquo;</li><li>Rename the label &ldquo;Please select a Job Type, Start Date and a Rate Type to see agency rates&rdquo; to &ldquo;Please select a Job Type, Start Date, and Rate Type to see Agency or Direct Bank Worker rates&rdquo;</li></ul></li></ul></li></ul>"
+  },
+  {
+    "id": "166453794",
+    "key": "UNO-T518",
+    "name": "Verify as a CLIENT user when Approving / Rejecting Workers for a booking ",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2436"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged on as a CLIENT User with&nbsp;With Manage/Approve/Authorise bookings permission</li></ul>When<br><ul><li>On the bookings screen &gt;&nbsp;Manage bookings&nbsp;&gt;&nbsp;Select Location&nbsp;&gt;&nbsp;Approve bookings List (Pending)</li></ul>Then<br> &nbsp;Rename the following Lables<br><ul><li>On the Workers Details tab, rename the &ldquo;Agency Branch&rdquo; column header &ldquo;Worker Source&rdquo;</li><li>The &ldquo;Agency Name&rdquo; column header has been renamed &ldquo;Worker Source&rdquo;&nbsp;</li></ul>"
+  },
+  {
+    "id": "166453840",
+    "key": "UNO-T519",
+    "name": "Verify as a CLIENT user when creating a new booking for a direct bank worker – renaming labels - Both  - CREATE",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2436"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged on as a CLIENT User with&nbsp;With Manage/Approve/Authorise bookings permission</li></ul>When<br><ul><li>On the bookings screen &gt;&nbsp;Manage bookings&nbsp;&gt;&nbsp;Select Location&nbsp;&gt;&nbsp;New Booking</li></ul>Then<br><ul><li>If Client Set-Up page for the relevant Client Location has &ldquo;<strong>Both</strong>&rdquo;&nbsp;</li><li><strong>When Creating a Booking</strong><ul><li>Rename the following labels<ul><li>&ldquo;Agencies&rdquo; tab &ldquo;Booking Distribution&rdquo;</li><li>&ldquo;Agency Name&rdquo; column header &ldquo;Worker Source&rdquo;</li><li>&ldquo;Tier&rdquo; column header &quot;Agency Tier&rdquo;</li><li>Rename the label &ldquo;Please select a Job Type, Start Date and a Rate Type to see agency rates&rdquo; to &ldquo;Please select a Job Type, Start Date, and Rate Type to see Agency or Direct Bank Worker rates&rdquo;</li></ul></li></ul></li></ul>"
+  },
+  {
+    "id": "166453883",
+    "key": "UNO-T520",
+    "name": "Verify as a CLIENT user when creating a new booking for a direct bank worker – renaming labels - Both - EDIT",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2436"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged on as a CLIENT User with&nbsp;With Manage/Approve/Authorise bookings permission</li></ul>When<br><ul><li>On the bookings screen &gt;&nbsp;Manage bookings&nbsp;&gt;&nbsp;Select Location&nbsp;&gt;&nbsp;New Booking</li></ul>Then<br><ul><li>If Client Set-Up page for the relevant Client Location has &ldquo;<strong>Both</strong>&rdquo;&nbsp;</li><li><strong>When EDITING an existing &nbsp;Booking</strong><ul><li>Rename the following labels<ul><li>&ldquo;Agencies&rdquo; tab &ldquo;Booking Distribution&rdquo;</li><li>&ldquo;Agency Name&rdquo; column header &ldquo;Worker Source&rdquo;</li><li>&ldquo;Tier&rdquo; column header &quot;Agency Tier&rdquo;</li><li>Rename the label &ldquo;Please select a Job Type, Start Date and a Rate Type to see agency rates&rdquo; to &ldquo;Please select a Job Type, Start Date, and Rate Type to see Agency or Direct Bank Worker rates&rdquo;</li></ul></li></ul></li></ul>"
+  },
+  {
+    "id": "166454034",
+    "key": "UNO-T521",
+    "name": "Verify as a CLIENT user when creating a new booking for a direct bank worker – renaming labels - Both - EDIT",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2436"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged on as a CLIENT User with&nbsp;With Manage/Approve/Authorise bookings permission</li></ul>When<br><ul><li>On the bookings screen &gt;&nbsp;Manage bookings&nbsp;&gt;&nbsp;Select Location&nbsp;&gt;&nbsp;New Booking</li></ul>Then<br><ul><li>If Client Set-Up page for the relevant Client Location has &ldquo;<strong>Both</strong>&rdquo;&nbsp;</li><li><strong>When EDITING an existing Booking</strong><ul><li>Rename the following labels<ul><li>&ldquo;Agencies&rdquo; tab &ldquo;Booking Distribution&rdquo;</li><li>&ldquo;Agency Name&rdquo; column header &ldquo;Worker Source&rdquo;</li><li>&ldquo;Tier&rdquo; column header &quot;Agency Tier&rdquo;</li><li>Rename the label &ldquo;Please select a Job Type, Start Date and a Rate Type to see agency rates&rdquo; to &ldquo;Please select a Job Type, Start Date, and Rate Type to see Agency or Direct Bank Worker rates&rdquo;</li></ul></li></ul></li></ul>"
+  },
+  {
+    "id": "168104646",
+    "key": "UNO-T522",
+    "name": "Verify that as a NEUVEN user when CREATING a new booking – worker distribution tab – DIRECT BANK WORKERS ONLY ",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2437"
+    ],
+    "objective": null,
+    "testScript": "<p>Given&nbsp;</p><ul style=\"margin-bottom: 0.0cm;\"><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Logged in as a neuven with&nbsp;</span><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Manage/Approve/Authorise bookings permission</span></li></ul><p>When&nbsp;</p><ul style=\"margin-bottom: 0.0cm;\"><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Creating a new booking &gt; worker distribution tab</span></li></ul><p>Then</p><ul><li><span style=\"line-height: normal;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Worker source column to show &lsquo;'Direct Bank Worker&rsquo;' as an option to select</span></li><li><span style=\"line-height: normal;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Agency Tier column will only show agency tiers and for Direct bank workers it will show and &lsquo;'D&rsquo;' Hardcoded</span></li><li><span style=\"line-height: normal;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">&ldquo;D&rdquo; must sort above the Tiers - so always be the first option</span></li><li><span style=\"line-height: normal;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Location column will show &lsquo;'Local&rsquo;' hardcoded for the Direct Bank workers</span></li><li><span style=\"line-height: normal;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Rate column for Direct Bank workers will show rates that have &lsquo;' Direct Bank Worker&rsquo;'&nbsp;</span></li><li><span style=\"line-height: normal;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Select Tick Box&nbsp;</span><ol><li><span style=\"line-height: normal;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Ticked</span></li><li><span style=\"line-height: normal;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Save and Send</span></li></ol></li></ul>"
+  },
+  {
+    "id": "168104883",
+    "key": "UNO-T523",
+    "name": "Verify that as a NEUVEN user when CREATING a new booking – worker distribution tab – BOTH",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2437"
+    ],
+    "objective": null,
+    "testScript": "<p>Given&nbsp;</p><ul style=\"margin-bottom: 0.0cm;\"><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Logged in as a neuven with&nbsp;</span><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Manage/Approve/Authorise bookings permission</span></li></ul><p>When&nbsp;</p><ul style=\"margin-bottom: 0.0cm;\"><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Creating a new booking &gt; worker distribution tab</span></li></ul><p>Then</p><ul><li><span style=\"line-height: normal;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Worker source column to show &lsquo;'Direct Bank Worker&rsquo;' as an option to select</span></li><li><span style=\"line-height: normal;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Agency Tier column will only show agency tiers and for Direct bank workers it will show and &lsquo;'D&rsquo;' Hardcoded</span></li><li><span style=\"line-height: normal;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">&ldquo;D&rdquo; must sort above the Tiers - so always be the first option</span></li><li><span style=\"line-height: normal;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Location column will show &lsquo;'Local&rsquo;' hardcoded for the Direct Bank workers</span></li><li><span style=\"line-height: normal;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Rate column for Direct Bank workers will show rates that have &lsquo;' Direct Bank Worker&rsquo;'&nbsp;</span></li><li><span style=\"line-height: normal;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Select Tick Box&nbsp;</span><ol><li><span style=\"line-height: normal;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Ticked</span></li></ol></li></ul>"
+  },
+  {
+    "id": "168104941",
+    "key": "UNO-T524",
+    "name": "Verify that as a NEUVEN user when EDITING a new booking – worker distribution tab – DIRECT BANK WORKERS ONLY",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2437"
+    ],
+    "objective": null,
+    "testScript": "<p>Given&nbsp;</p><ul style=\"margin-bottom: 0.0cm;\"><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Logged in as a NEUVEN with&nbsp;</span><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Manage/Approve/Authorise bookings permission</span></li></ul><p>When&nbsp;</p><ul style=\"margin-bottom: 0.0cm;\"><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Editing an existing &nbsp; new booking &nbsp;worker distribution tab</span></li></ul><p>Then</p><ul><li><span style=\"line-height: normal;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Worker source column to show &lsquo;'Direct Bank Worker&rsquo;' as an option to select</span></li><li><span style=\"line-height: normal;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Agency Tier column will only show agency tiers and for Direct bank workers it will show and &lsquo;'D&rsquo;' Hardcoded</span></li><li><span style=\"line-height: normal;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">&ldquo;D&rdquo; must sort above the Tiers - so always be the first option</span></li><li><span style=\"line-height: normal;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Location column will show &lsquo;'Local&rsquo;' hardcoded for the Direct Bank workers</span></li><li><span style=\"line-height: normal;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Rate column for Direct Bank workers will show rates that have &lsquo;' Direct Bank Worker&rsquo;'&nbsp;</span></li><li><span style=\"line-height: normal;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Select Tick Box&nbsp;</span><ol><li><span style=\"line-height: normal;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Ticked</span></li></ol></li></ul>"
+  },
+  {
+    "id": "168104953",
+    "key": "UNO-T525",
+    "name": "Verify that as a NEUVEN user when EDITING a new booking – worker distribution tab – BOTH",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2437"
+    ],
+    "objective": null,
+    "testScript": "<p>Given&nbsp;</p><ul style=\"margin-bottom: 0.0cm;\"><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Logged in as a NEUVEN with&nbsp;</span><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Manage/Approve/Authorise bookings permission</span></li></ul><p>When&nbsp;</p><ul style=\"margin-bottom: 0.0cm;\"><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Editing an existing new booking &gt; worker distribution tab</span></li></ul><p>Then</p><ul><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Worker source column to show &lsquo;'Direct Bank Worker&rsquo;' as an option to select</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Agency Tier column will only show agency tiers and for Direct bank workers it will show and &lsquo;'D&rsquo;' Hardcoded</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">&ldquo;D&rdquo; must sort above the Tiers - so always be the first option</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Location column will show &lsquo;'Local&rsquo;' hardcoded for the Direct Bank workers</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Rate column for Direct Bank workers will show rates that have &lsquo;' Direct Bank Worker&rsquo;'&nbsp;</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Select Tick Box&nbsp;</span><ol><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Ticked</span></li></ol></li></ul>"
+  },
+  {
+    "id": "168105018",
+    "key": "UNO-T526",
+    "name": "Verify that as a CLIENT user when CREATING a new booking – worker distribution tab – DIRECT BANK WORKERS ONLY ",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2437"
+    ],
+    "objective": null,
+    "testScript": "<p>Given&nbsp;</p><ul style=\"margin-bottom: 0.0cm;\"><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Logged in as a CLIENT with&nbsp;</span><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Manage/Approve/Authorise bookings permission</span></li></ul><p>When&nbsp;</p><ul style=\"margin-bottom: 0.0cm;\"><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Creating a new booking &gt; worker distribution tab</span></li></ul><p>Then</p><ul><li><span style=\"line-height: normal;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Worker source column to show &lsquo;'Direct Bank Worker&rsquo;' as a option to select</span></li><li><span style=\"line-height: normal;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Agency Tier column will only show agency tiers and for Direct bank workers it will show and &lsquo;'D&rsquo;' Hardcoded</span></li><li><span style=\"line-height: normal;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">&ldquo;D&rdquo; must sort above the Tiers - so always be the first option</span></li><li><span style=\"line-height: normal;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Location column will show &lsquo;'Local&rsquo;' hardcoded for the Direct Bank workers</span></li><li><span style=\"line-height: normal;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Rate column for Direct Bank workers will show rates that have &lsquo;' Direct Bank Worker&rsquo;'&nbsp;</span></li><li><span style=\"line-height: normal;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Select Tick Box&nbsp;</span><ol><li><span style=\"line-height: normal;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Ticked</span></li><li><span style=\"line-height: normal;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Save and Send</span></li></ol></li></ul>"
+  },
+  {
+    "id": "168105059",
+    "key": "UNO-T527",
+    "name": "Verify that as a CLIENT user when CREATING a new booking – worker distribution tab – BOTH",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2437"
+    ],
+    "objective": null,
+    "testScript": "<p>Given&nbsp;</p><ul style=\"margin-bottom: 0.0cm;\"><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Logged in as a CLIENT with&nbsp;</span><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Manage/Approve/Authorise bookings permission</span></li></ul><p>When&nbsp;</p><ul style=\"margin-bottom: 0.0cm;\"><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Creating a new booking &gt; worker distribution tab</span></li></ul><p>Then</p><ul><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Worker source column to show &lsquo;'Direct Bank Worker&rsquo;' as an option to select</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Agency Tier column will only show agency tiers and for Direct bank workers it will show and &lsquo;'D&rsquo;' Hardcoded</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">&ldquo;D&rdquo; must sort above the Tiers - so always be the first option</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Location column will show &lsquo;'Local&rsquo;' hardcoded for the Direct Bank workers</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Rate column for Direct Bank workers will show rates that have &lsquo;' Direct Bank Worker&rsquo;'&nbsp;</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Select Tick Box&nbsp;</span><ol><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Ticked</span></li></ol></li></ul>"
+  },
+  {
+    "id": "168105108",
+    "key": "UNO-T528",
+    "name": "Verify that as a CLIENT user when EDITING a new booking – worker distribution tab – DIRECT BANK WORKERS ONLY",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2437"
+    ],
+    "objective": null,
+    "testScript": "<p>Given&nbsp;</p><ul style=\"margin-bottom: 0.0cm;\"><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Logged in as a CLIENT with&nbsp;</span><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Manage/Approve/Authorise bookings permission</span></li></ul><p>When&nbsp;</p><ul style=\"margin-bottom: 0.0cm;\"><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Editing an existing new booking worker distribution tab</span></li></ul><p>Then</p><ul><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Worker source column to show &lsquo;'Direct Bank Worker&rsquo;' as an option to select</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Agency Tier column will only show agency tiers and for Direct bank workers it will show and &lsquo;'D&rsquo;' Hardcoded</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">&ldquo;D&rdquo; must sort above the Tiers - so always be the first option</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Location column will show &lsquo;'Local&rsquo;' hardcoded for the Direct Bank workers</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Rate column for Direct Bank workers will show rates that have &lsquo;' Direct Bank Worker&rsquo;'&nbsp;</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Select Tick Box&nbsp;</span><ol><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Ticked</span></li></ol></li></ul>"
+  },
+  {
+    "id": "168105217",
+    "key": "UNO-T529",
+    "name": "Verify that as a CLIENT user when EDITING a new booking – worker distribution tab – BOTH",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2437"
+    ],
+    "objective": null,
+    "testScript": "<p>Given&nbsp;</p><ul style=\"margin-bottom: 0.0cm;\"><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Logged in as a CLIENT with&nbsp;</span><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Manage/Approve/Authorise bookings permission</span></li></ul><p>When&nbsp;</p><ul style=\"margin-bottom: 0.0cm;\"><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Editing an existing new booking &gt; worker distribution tab</span></li></ul><p>Then</p><ul><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Worker source column to show &lsquo;'Direct Bank Worker&rsquo;' as an option to select</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Agency Tier column will only show agency tiers and for Direct bank workers it will show and &lsquo;'D&rsquo;' Hardcoded</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">&ldquo;D&rdquo; must sort above the Tiers - so always be the first option</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Location column will show &lsquo;'Local&rsquo;' hardcoded for the Direct Bank workers</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Rate column for Direct Bank workers will show rates that have &lsquo;' Direct Bank Worker&rsquo;'&nbsp;</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Select Tick Box&nbsp;</span><ol><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Ticked</span></li></ol></li></ul>"
+  },
+  {
+    "id": "168109846",
+    "key": "UNO-T530",
+    "name": "Verify the NEUVEN user the Approving Bank Workers page layout ",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2440"
+    ],
+    "objective": null,
+    "testScript": "Given&nbsp;<ul style=\"margin-bottom: 0.0cm;\"><li>Given booking has been created and sent to Direct Bank workers</li><li>Given worker has responded via APP</li><li>Given Booking status is &lsquo;'Approve Workers&rsquo;'</li></ul><p>When</p><p>&nbsp;Logged in as Neuven user with Manage, approve or authorise bookings permission</p><p>Then</p><ul><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">On the Worker Details Tab</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">All Direct Bank workers who have requested the shift via app will now show along with the agency workers</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Worker Column will show the Direct Bank worker name</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Worker Profile column</span><ol><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">There will be a &lsquo;'view&rsquo;' hyperlink which takes the user to the Direct Bank worker profile where they will see all the details of the &lsquo;Direct Bank worker&rsquo;' - This will be a separate tab, with the original tab still open.&nbsp;</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Once the user has read the DBW profile, they close the tab and return to the original tab where the booking is still open</span></li></ol></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Worker Source will show &lsquo;'Direct Bank Worker&rsquo;' Hard coded</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Approve and Reject Tick boxes as usual</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Approve or Reject buttons&nbsp;</span></li></ul>"
+  },
+  {
+    "id": "168112307",
+    "key": "UNO-T531",
+    "name": "Verify the NEUVEN user the Approving Bank Workers, Direct Bank worker approved for the Booking",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2440"
+    ],
+    "objective": null,
+    "testScript": "<p>Given&nbsp;</p><ul style=\"margin-bottom: 0.0cm;\"><li>Given booking has been created and sent to Direct Bank workers</li><li>Given worker has responded via APP</li><li>Given Booking status is &lsquo;'Approve Workers&rsquo;'</li></ul><p>When</p><ul><li><p>&nbsp;Logged in as Neuven user with Manage, approve or authorise bookings permission</p></li></ul><p>Then</p><ul><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">On the Worker Details Tab</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Direct Bank worker approved for the Booking</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Notification sent to app and shift moved to confirmed shifts in the app.</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Notification sent via email to Direct Bank worker&nbsp;</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">If required number of workers is equal to number of workers accepted booking status will be &lsquo;completed&rsquo; otherwise will be &lsquo;pending&rsquo;</span></li></ul>"
+  },
+  {
+    "id": "168113525",
+    "key": "UNO-T532",
+    "name": "Verify the NEUVEN user the Approving Bank Workers, Direct Bank worker Rejected for the Booking",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2440"
+    ],
+    "objective": null,
+    "testScript": "<p>Given&nbsp;</p><ul style=\"margin-bottom: 0.0cm;\"><li>Given booking has been created and sent to Direct Bank workers</li><li>Given worker has responded via APP</li><li>Given Booking status is &lsquo;'Approve Workers&rsquo;'</li></ul><p>When</p><p>&nbsp;Logged in as Neuven user with Manage, approve or authorise bookings permission</p><p>Then</p><ul><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">On the Worker Details Tab</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Direct Bank worker Rejected for the booking</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Sends Notification to the App</span></li></ul>"
+  },
+  {
+    "id": "168113553",
+    "key": "UNO-T533",
+    "name": "Verify the CLIENT user the Approving Bank Workers page layout ",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2440"
+    ],
+    "objective": null,
+    "testScript": "<p>Given&nbsp;</p><ul style=\"margin-bottom: 0.0cm;\"><li>Given booking has been created and sent to Direct Bank workers</li><li>Given worker has responded via APP</li><li>Given Booking status is &lsquo;'Approve Workers&rsquo;'</li></ul><p>When</p><p>&nbsp;Logged in as CLIENT user with Manage, approve or authorise bookings permission</p><p>Then</p><ul><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">On the Worker Details Tab</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">All Direct Bank workers who have requested the shift via app will now show along with the agency workers</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Worker Column will show the Direct Bank worker name</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Worker Profile column</span><ol><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">There will be a &lsquo;'view&rsquo;' hyperlink which takes the user to the Direct Bank worker profile where they will see all the details of the &lsquo;Direct Bank worker&rsquo;' - This will be a separate tab, with the original tab still open.&nbsp;</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Once the user has read the DBW profile, they close the tab and return to the original tab where the booking is still open</span></li></ol></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Worker Source will show &lsquo;'Direct Bank Worker&rsquo;' Hard coded</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Approve and Reject Tick boxes as usual</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Approve or Reject buttons&nbsp;</span></li></ul>"
+  },
+  {
+    "id": "168113777",
+    "key": "UNO-T534",
+    "name": "Verify the CLIENT user the Approving Bank Workers, Direct Bank worker approved for the Booking",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2440"
+    ],
+    "objective": null,
+    "testScript": "<p>Given&nbsp;</p><ul><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Given booking has been created and sent to Direct Bank workers</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Given worker has responded via APP</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Given Booking status is &lsquo;'Approve Workers&rsquo;'</span></li></ul><p>When</p><ul style=\"margin-bottom: 0.0cm;\"><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Logged in as CLIENT user with Manage, approve or authorise bookings permission</span></li></ul><p>Then</p><ul><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">On the Worker Details Tab</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Direct Bank worker approved for the Booking</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Notification sent to app and shift moved to confirmed shifts in the app.</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Notification sent via email to Direct Bank worker&nbsp;</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">If required number of workers is equal to number of workers accepted booking status will be &lsquo;completed&rsquo; otherwise will be &lsquo;pending&rsquo;</span></li></ul>"
+  },
+  {
+    "id": "168113825",
+    "key": "UNO-T535",
+    "name": "Verify the CLIENT user the Approving Bank Workers, Direct Bank worker Rejected for the Booking",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2440"
+    ],
+    "objective": null,
+    "testScript": "<p>Given&nbsp;</p><ul><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Given booking has been created and sent to Direct Bank workers</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Given worker has responded via APP</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Given Booking status is &lsquo;'Approve Workers&rsquo;'</span></li></ul><p>When</p><ul style=\"margin-bottom: 0.0cm;\"><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Logged in as CLIENT user with Manage, approve or authorize bookings permission</span></li></ul><p>Then</p><ul><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">On the Worker Details Tab</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Direct Bank worker Rejected for the booking</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Sends Notification to the App</span></li></ul>"
+  },
+  {
+    "id": "168116211",
+    "key": "UNO-T536",
+    "name": "Verify the Direct Bank Worker - Booking Upload Template changes as NEUVEN User",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2441"
+    ],
+    "objective": null,
+    "testScript": "<p>Verify the Direct Bank Worker - Booking Upload Template changes as NEUVEN User</p><p>Given&nbsp;</p><ul style=\"margin-bottom: 0.0cm;margin-top: 0.0cm;\"><li>Logged in as Neuven User with Upload Bookings Permission</li></ul><p>When&nbsp;</p><ul style=\"margin-bottom: 0.0cm;margin-top: 0.0cm;\"><li><span style=\"color: windowtext;\">On the&nbsp;</span>Booking Fulfilment &gt; Bookings Upload page</li></ul><p>Then</p><p>On the Template Download</p><ul style=\"margin-bottom: 0.0cm;\"><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\"><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Template should say on the last column &lsquo;Worker Source by Tier (D/1/2/3/4)'</span></span></li></ul><p>Bookings Upload Functionality and Validation</p><ul><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\"><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">The last column should now accept 'D' as a value along with previously accepted values</span></span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\"><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">the last column should read &lsquo;D/1/2/3&rsquo;, the uploaded booking will be sent to all tier 1,2 and 3 agencies linked to the client location and Direct Bank workers, who are&nbsp;</span></span><ol><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\"><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Linked to the Client location</span></span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\"><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Are approved</span></span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\"><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Has skills for the Job type of the Booking.</span></span></li></ol></li></ul>"
+  },
+  {
+    "id": "168116219",
+    "key": "UNO-T537",
+    "name": "Client Verify the Direct Bank Worker - Booking Upload Template changes as CLIENT User",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2441"
+    ],
+    "objective": null,
+    "testScript": "<p>Given&nbsp;</p><ul style=\"margin-bottom: 0.0cm;\"><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Logged in as CLIENT User with Upload Bookings Permission</span></li></ul><p>When&nbsp;</p><ul style=\"margin-bottom: 0.0cm;\"><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">On the Booking Fulfilment &gt; Bookings Upload page</span></li></ul><p>Then</p><p>On the Template Download</p><ul style=\"margin-bottom: 0.0cm;\"><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Template should say on the last column &lsquo;Worker Source by Tier (D/1/2/3/4)'</span></li></ul><p>Bookings Upload Functionality and Validation</p><ul><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">The last column should now accept 'D' as a value along with previously accepted values</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">The last column should read &lsquo;D/1/2/3&rsquo;, the uploaded booking will be sent to all tier 1,2 and 3 agencies linked to the client location and Direct Bank workers, who are&nbsp;</span><ol><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Linked to the Client location</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Are approved</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Has skills for the Job type of the Booking.</span></li></ol></li></ul>"
+  },
+  {
+    "id": "168116490",
+    "key": "UNO-T538",
+    "name": "Verify as a CLIENT user Direct Bank workers – Booking report change ",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2442"
+    ],
+    "objective": null,
+    "testScript": "<p>Given&nbsp;</p><ul style=\"margin-bottom: 0.0cm;\"><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Logged in as a Client User (Of &nbsp;a Client that uses Direct Bank Workers) based on client settings with View Reports Permission</span></li></ul><p>When&nbsp;</p><ul style=\"margin-bottom: 0.0cm;\"><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Reports &gt; Venneu Reports &gt; All Bookings report</span></li></ul><p>Then</p><ul><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">There should be a column called &nbsp;Responder Source and should show Agency Name if agency responded and should show as &lsquo;'Direct Bank Worker&rsquo;' if DBW responded.</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Columns : Worker , worker ID , Digital Tachograph Card Number , Digital Tacho Expiry Date and payroll ref; should show relevant information from the Direct Bank Worker profile.</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Filter At the bottom should now be named as &lsquo;Worker Source&rsquo; instead of Agency and show Direct Bank worker as an option to filter.</span></li></ul>"
+  },
+  {
+    "id": "168116499",
+    "key": "UNO-T539",
+    "name": "Verify as a NEUVEN  user Direct Bank workers – Booking report change",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2442"
+    ],
+    "objective": null,
+    "testScript": "<p>Given&nbsp;</p><ul style=\"margin-bottom: 0.0cm;\"><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Logged in as a Neuven User with View or Manage Neuven Reports Permission</span></li></ul><p>When&nbsp;</p><ul style=\"margin-bottom: 0.0cm;\"><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Reports &gt; Venneu Reports &gt; Bookings Export Report &gt; Select Client</span></li></ul><p>Then&nbsp;</p><ul><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">All Bookings Report Columns</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">'Agency Branch 'should be renamed as ' Worker Source' &nbsp;and &nbsp;show as &lsquo;Direct Bank Worker&rsquo; if Direct Bank worker responded to the booking</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">&lsquo;Worker&rsquo; column will show name of DBW</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">&lsquo;Worker proposed by&rsquo; column will show name of the &lsquo;DBW&rsquo;</span></li></ul><p>&nbsp;</p>"
+  },
+  {
+    "id": "170253161",
+    "key": "UNO-T540",
+    "name": "Verify changes to the agency worker template as a Neuven User.",
+    "folder": "Multi Currency/Neuven User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2400"
+    ],
+    "objective": null,
+    "testScript": "<p>Given</p><ul style=\"margin-bottom: 0.0cm;\"><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Logged in as a neuven user with <span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Manage Agencies permission</span></span></li></ul><p>When</p><ul><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Agency &gt; Agency Worker</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Click Upload Worker</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Click template download.&nbsp;</span></li></ul><p>Then</p><ul><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">The template for agency worker is downloaded&nbsp;</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">The columns UK/Ireland and both will be added to the template.</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Add a PPS Number column next to the NI number column.</span></li></ul>"
+  },
+  {
+    "id": "170253502",
+    "key": "UNO-T541",
+    "name": "Verify uploading a worker who can just work in the UK ",
+    "folder": "Multi Currency/Neuven User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2400"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged in as a neuven user with Manage Agencies permission</li></ul>When<br><ul><li>User has downloaded and completed the template&nbsp;</li><li>They fill it in will all the information compulsory for a worker to work in the UK</li></ul>Then<br><ul><li>Agency &gt; Agency Worker</li><li>Click Upload Worker</li><li>They upload it and it uploads successfully&nbsp;</li></ul>"
+  },
+  {
+    "id": "170253557",
+    "key": "UNO-T542",
+    "name": "Verify uploading a worker who can work in Ireland only ",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2400"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged in as a neuven user with Manage Agencies permission</li></ul>When<br><ul><li>User has downloaded and completed the template&nbsp;</li><li>They fill it in will all the information compulsory for a worker to work in the Ireland</li></ul>Then<br><ul><li>Agency &gt; Agency Worker</li><li>Click Upload Worker</li><li>They upload it and it uploads successfully&nbsp;</li></ul>"
+  },
+  {
+    "id": "170253576",
+    "key": "UNO-T543",
+    "name": "Verify uploading a worker who can work in both the UK and Ireland",
+    "folder": "Multi Currency/Neuven User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2400"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged in as a neuven user with Manage Agencies permission</li></ul>When<br><ul><li>User has downloaded and completed the template&nbsp;</li><li>They fill it in will all the information compulsory for a worker to work in the Ireland and the uk.&nbsp;</li></ul>Then<br><ul><li>Agency &gt; Agency Worker</li><li>Click Upload Worker</li><li>They upload it and it uploads successfully&nbsp;</li></ul>"
+  },
+  {
+    "id": "170253738",
+    "key": "UNO-T544",
+    "name": "Verify that a neuven user cant upload a worker who works in the uk without and NI number ",
+    "folder": "Multi Currency/Neuven User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2400"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged in as a neuven user with Manage Agencies permission</li></ul>When<br><ul><li>User has downloaded and completed the template&nbsp;</li><li>They fill it in will all the information compulsory for a worker to work in the UK &ndash; apart form the NI number&nbsp;</li></ul>Then<br><ul><li>Agency &gt; Agency Worker</li><li>Click Upload Worker</li><li>They upload it, and they are given and error message relating to the lack of NI number .&nbsp;</li></ul>"
+  },
+  {
+    "id": "170255227",
+    "key": "UNO-T545",
+    "name": "Verify the changes to the worker upload screen DBW for NEUVEN USERS ",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2452"
+    ],
+    "objective": null,
+    "testScript": "<p>Given</p><ul style=\"margin-bottom: 0.0cm;\"><li><span style=\"line-height: normal;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Logged in as a Neuven user with Manage Direct Bank Worker Permission&nbsp;</span></li></ul><p>When&nbsp;</p><ul style=\"margin-bottom: 0.0cm;\"><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">On the Direct Worker Page &gt; Click Upload Worker&nbsp;</span></li></ul><p>Then</p><ul><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">A popup will appear</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">The popup will have 2 tabs</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">The worker upload tab and the worker roll back tab.&nbsp;</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">On the WORKER UPLOAD TAB</span><ol><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Enable users to upload file from their PC.&nbsp;</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Template download button&nbsp;</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">&lsquo;upload&rsquo; button.&nbsp;</span></li></ol></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">On the WORKER ROLL BACK TAB.&nbsp;</span><ol><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Enter batch Id text box&nbsp;</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">If batch id is valid, it will remove all uploaded direct bank worker details&nbsp;</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">If the batch ID in not valid error message will appear stating: &lsquo;Enter Valid Batch ID&rsquo;&nbsp;</span></li></ol></li></ul>"
+  },
+  {
+    "id": "170255252",
+    "key": "UNO-T546",
+    "name": "Verify the changes to the worker upload screen DBW for CLIENT USERS ",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2452"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged in as a Client User with Edit Direct Bank Worker Permission</li></ul>When&nbsp;<br><ul><li>On the Direct Worker Page &gt; Click Upload Worker&nbsp;</li></ul>Then<br><ul><li>A popup will appear</li><li>The popup will have 2 tabs</li><li>The worker upload tab and the worker roll back tab.&nbsp;</li><li>On the WORKER UPLOAD TAB<ul><li>Enable users to upload file from their PC.&nbsp;</li><li>Template download button&nbsp;</li><li>&lsquo;upload&rsquo; button.&nbsp;</li></ul></li><li>On the WORKER ROLL BACK TAB.&nbsp;<ul><li>Enter batch Id text box&nbsp;</li><li>If batch id is valid, it will remove all uploaded direct bank worker details&nbsp;</li><li>If the batch ID in not valid error message will appear stating: &lsquo;Enter Valid Batch ID&rsquo;&nbsp;</li></ul></li></ul>"
+  },
+  {
+    "id": "170255538",
+    "key": "UNO-T547",
+    "name": "Verify the changes to T&A manual entry when selecting a client who is set up for both DBW Only ",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2475"
+    ],
+    "objective": null,
+    "testScript": "Given&nbsp;<br><ul><li>Logged in as client user with T&amp;A user permission&nbsp;</li></ul>When&nbsp;<br><ul><li>On the T&amp;A board</li><li>Selecting &lsquo;New Time Attendance&rsquo;</li><li>The select client location pop up box will appear on screen&nbsp;</li></ul>Then<br><ul><li>Worker&nbsp;dropdown will show both agency workers and DBW&rsquo;s in below format<ol><li>Direct Bank worker name - Direct Bank worker - approved - linked to the client location&nbsp;</li><li>When logged in from Tab using T&amp;A QR code scanning function, when manual entry is chosen, the worker dropdown should function the same way</li></ol></li></ul>"
+  },
+  {
+    "id": "170255608",
+    "key": "UNO-T548",
+    "name": "Verify the changes to T&A manual entry when selecting a client who is set up for agency workers only ",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2475"
+    ],
+    "objective": null,
+    "testScript": "Given&nbsp;<br><ul><li>Logged in as client user with T&amp;A user permission&nbsp;</li></ul>When&nbsp;<br><ul><li>On the T&amp;A board</li><li>Selecting &lsquo;New Time Attendance&rsquo;</li><li>The select client location pop up box will appear on screen&nbsp;</li></ul>Then<br><ul><li>Worker dropdown will show both agency workers and DBW&rsquo;s in below format<ul><li>Agency worker name - Agency branch name (Existing functionality)</li><li>When logged in from Tab using T&amp;A QR code scanning function, when manual entry is chosen, the worker dropdown should function the same way</li></ul></li></ul>"
+  },
+  {
+    "id": "170258075",
+    "key": "UNO-T549",
+    "name": "Verify the changes to T&A manual entry when selecting a client who is et up for both DBW and agency workers. ",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2475"
+    ],
+    "objective": null,
+    "testScript": "Given&nbsp;<br><ul><li>Logged in as client user with T&amp;A user permission&nbsp;</li></ul>When&nbsp;<br><ul><li>On the T&amp;A board</li><li>Selecting &lsquo;New Time Attendance&rsquo;</li><li>The select client location pop up box will appear on screen&nbsp;</li></ul>Then<br><ul><li>Worker&nbsp;dropdown will show both agency workers and DBW&rsquo;s in below format<ol><li>Agency worker name - Agency branch name (Existing functionality)</li><li>Direct Bank worker name - Direct Bank worker - approved - linked to the client location&nbsp;</li><li>When logged in from Tab using T&amp;A QR code scanning function, when manual entry is chosen, the worker dropdown should function the same way</li></ol></li></ul>"
+  },
+  {
+    "id": "170259629",
+    "key": "UNO-T550",
+    "name": "Verify a NEUVEN USER can view the QR code Button on a direct workers profile. ",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2474"
+    ],
+    "objective": null,
+    "testScript": "Given&nbsp;<br><ul><li>Logged in as a Neuven user with &lsquo;Manage Direct Bank Worker&rsquo; permission</li></ul>When <br><ul><li>Direct Bank worker page</li><li>View a Direct Bank worker details</li><li>In the user details tab</li></ul>Then <br><ul><li>There is a &lsquo;View QR Code&rsquo; button on the top right of the screen&nbsp;</li><li>When clicked it displays a QR Code for that worker.&nbsp;</li></ul>"
+  },
+  {
+    "id": "170259849",
+    "key": "UNO-T551",
+    "name": "Verify a CLEINT  USER can view the QR code Button on a direct workers profile. ",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2474"
+    ],
+    "objective": null,
+    "testScript": "Given&nbsp;<br><ul><li>Logged in as a Client user with &lsquo;'View Direct Bank Worker&rsquo;' or '&lsquo;Edit Direct Bank Worker&rsquo; permission</li></ul>When&nbsp;<br><ul><li>Direct Bank worker page</li><li>View a Direct Bank worker details</li><li>In the user details tab</li></ul><br>Then <br><ul><li>There is a &lsquo;View QR Code&rsquo; button on the top right of the screen&nbsp;</li><li>When clicked it displays a QR Code for that worker.&nbsp;</li></ul>&nbsp;<br>UNO-2473"
+  },
+  {
+    "id": "170260272",
+    "key": "UNO-T552",
+    "name": "Verify that if the client location has ‘Direct Bank Workers Only’ or ‘Both’ toggle on the client setting , no change is made to the T&A board page  ",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2472"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged in as a Client User (With T&amp;A permission)</li><li>T&amp;A</li><li>T&amp;A Board</li><li>Select Client Location</li></ul>When&nbsp;<br><ul><li>Client location has &lsquo;'Direct Bank Workers Only&rsquo;' of &lsquo;'Both&rsquo;' Toggle on in client settings</li></ul>Then&nbsp;<br>Then below labels should be changed<br><ul><li>The &ldquo;Agency&rdquo; column header &ldquo;Worker Source&rdquo;</li><li>The text in the Search box &ldquo;Search Worker Source&rdquo;</li></ul>"
+  },
+  {
+    "id": "170260321",
+    "key": "UNO-T553",
+    "name": "Verify the recognition of a scanned QR Code. ",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2472"
+    ],
+    "objective": null,
+    "testScript": "Given&nbsp;<br><ul><li>Client User&nbsp;</li></ul>When&nbsp;<br><ul><li>The QR code is scanned &nbsp; by a worker to &nbsp;either clock in or clock out.&nbsp;</li></ul>Then<br>The worker source column should:<br><ul><li>Show source as Direct Bank worker if it is DBW and name of the DBW in Worker column</li><li>show source as &lsquo;'Agency Branch Name&rsquo;' if it is a Agency worker</li></ul>"
+  },
+  {
+    "id": "170260366",
+    "key": "UNO-T554",
+    "name": "Verify that if the client location has ‘Agency Worker Only’ toggle on the client setting, no change is made to the T&A board page  ",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2472"
+    ],
+    "objective": null,
+    "testScript": "Given&nbsp;<br><ul><li>Logged in as a Client User (With T&amp;A permission)</li><li>T&amp;A</li><li>T&amp;A Board</li><li>Select Client Location</li></ul>When&nbsp;<br><ul><li>Client location has &lsquo;'Agency Worker Only&rsquo;' Toggle on in the client settings</li></ul>Then<br><ul><li>There will be no changes to the existing page</li></ul>"
+  },
+  {
+    "id": "170260958",
+    "key": "UNO-T555",
+    "name": "Verify that as a Direct Bank Worker the same QR code is displayed int the app as on the website ",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2473"
+    ],
+    "objective": null,
+    "testScript": "Given&nbsp;<br><ul><li>A Direct Bank Worker is set up in Venneu.com</li><li>There is a QR code for that Direct Bank Worker&nbsp;</li><li>The Direct Bank Worker has registered in Venneu APP</li></ul>When&nbsp;<br><ul><li>In the worker profile section</li><li>And the upcoming shift details section&nbsp;</li></ul>Then<br><ul><li>Show the same QR code of that worker&nbsp;</li></ul>"
+  },
+  {
+    "id": "170261025",
+    "key": "UNO-T556",
+    "name": "Verify that when a QR code has been scanned in it updates to the T&A board for a client user.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2473"
+    ],
+    "objective": null,
+    "testScript": "Given&nbsp;<br><ul><li>A Direct Bank Worker is set up in Venneu.com</li><li>There is a QR code for that Direct Bank Worker&nbsp;</li><li>The Direct Bank Worker has registered in Venneu APP</li></ul>When<br><ul><li>The QR code is scanned to clock in and out for a shift via tablet</li></ul>Then<br><ul><li>Should work the same way it Workers for a Agency worker - except the worker source will be Direct Bank worker</li><li>These details will show in the T&amp;A board for Client user or Neuven user (With T&amp;A permission) for the locations they are linked to in the T&amp;A Page along side of agency workers if the location question users &lsquo;'both&rsquo;' types of workers.</li></ul>"
+  },
+  {
+    "id": "170436535",
+    "key": "UNO-T557",
+    "name": "Verify that a neuven user can’t upload a worker who works in the uk without and NI number and without stating UK in the document ",
+    "folder": "Multi Currency/Neuven User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2400"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged in as a neuven user with Manage Agencies permission</li></ul>When<br><ul><li>User has downloaded and completed the template&nbsp;</li><li>They fill it in will all the information compulsory for a worker to work in the UK &ndash; apart form the NI number&nbsp;</li></ul>Then<br><ul><li>Agency &gt; Agency Worker</li><li>Click Upload Worker</li><li>They upload it, and they are given and error message relating to the lack of NI number and UK.&nbsp;</li></ul>"
+  },
+  {
+    "id": "170437140",
+    "key": "UNO-T558",
+    "name": "Verify that a neuven user can’t upload a worker who works in IRELAND without and PPS number",
+    "folder": "Multi Currency/Neuven User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2400"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged in as a neuven user with Manage Agencies permission</li></ul>When<br><ul><li>User has downloaded and completed the template&nbsp;</li><li>They fill it in will all the information compulsory for a worker to work in the IRELAND&ndash; apart from the PPS number&nbsp;</li></ul>Then<br><ul><li>Agency &gt; Agency Worker</li><li>Click Upload Worker</li><li>They upload it, and they are given and error message relating to the lack of PPS number and IRELAND&nbsp;</li></ul>"
+  },
+  {
+    "id": "170437329",
+    "key": "UNO-T559",
+    "name": "Verify that a neuven user can’t upload a worker who works in BOTH the UK and IRELAND without and NI / PPS number",
+    "folder": "Multi Currency/Neuven User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2400"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged in as a neuven user with Manage Agencies permission</li></ul>When<br><ul><li>User has downloaded and completed the template&nbsp;</li><li>They fill it in will all the information compulsory for a worker to work in the Both &ndash; apart from the NI / PPS number&nbsp;</li></ul>Then<br><ul><li>Agency &gt; Agency Worker</li><li>Click Upload Worker</li><li>They upload it, and they are given and error message relating to the lack of NI/ PPS number</li></ul>"
+  },
+  {
+    "id": "170438117",
+    "key": "UNO-T560",
+    "name": "Verify that a neuven user can’t upload a worker who works in BOTH the UK and IRELAND without and NI/ PPS number and states ‘…’in the document ",
+    "folder": "Multi Currency/Neuven User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2400"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged in as a neuven user with Manage Agencies permission</li></ul>When<br><ul><li>User has downloaded and completed the template&nbsp;</li><li>They fill it in will all the information compulsory for a worker to work in the Both &ndash; apart from the NI / PPS number and clarifying both.&nbsp;</li></ul>Then<br><ul><li>Agency &gt; Agency Worker</li><li>Click Upload Worker</li><li>They upload it, and they are given and error message relating to the lack of NI/ PPS number and Both/ UK/ Ireland&nbsp;</li></ul>"
+  },
+  {
+    "id": "170438146",
+    "key": "UNO-T561",
+    "name": "Verify that the correct uploaded documents for Ireland or both and contains the PPS number that the PPS number saves correctly in the DB. ",
+    "folder": "Multi Currency/Neuven User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2400"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged in as a neuven user with Manage Agencies permission</li></ul>When<br><ul><li>User has downloaded and completed the template&nbsp;</li><li>They fill it in will all the information compulsory for a worker to work in the Ireland / both</li></ul>Then&nbsp;<br>The PPS number should show on the workers profile in from the following pages<br><ul><li>Neuven User&rsquo;s Agency worker page</li><li>Agency User&rsquo;s Agency Worker Page</li><li>Client User&rsquo;s Agency Worker Page</li></ul>"
+  },
+  {
+    "id": "171367799",
+    "key": "UNO-T562",
+    "name": "Verify the new email temple for direct bank workers ",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2439"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>A new booking has been created and is in pending status.</li></ul>When<br><ul><li>A Direct Bank Worker is selected for the booking</li></ul>Then<br><ul><li>Email notification is sent to all approved Direct Bank workers, linked to that location.</li></ul>"
+  },
+  {
+    "id": "171367831",
+    "key": "UNO-T563",
+    "name": "NEUVEN user – verify the new email temple for direct bank works ",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2439"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>A Direct Bank Worker is selected for the booking</li></ul>When<br><ul><li>Email notification is sent to all approved Direct Bank workers, linked to that location</li></ul>Then<br><ul><li>Email should be sent to all Client Users linked to the location who have Manage Booking permission</li></ul>"
+  },
+  {
+    "id": "171368020",
+    "key": "UNO-T564",
+    "name": "Verify what happens when an agency responds with workers for a booking ",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2439"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>A new booking is sent out</li></ul>When<br><ul><li>An agency responds with workers for a booking</li></ul>Then<br><ul><li>The existing email notification should be sent to client</li></ul>"
+  },
+  {
+    "id": "171368444",
+    "key": "UNO-T565",
+    "name": "Verify what happens when a DB Worker requests a shift ",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2439"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>A new booking is sent out</li></ul>When:<br><ul><li>Direct Bank Worker request the booking via App</li></ul>Then:<br><ul><li>Email should be sent to all Client Users linked to the location who have Manage Booking permission</li></ul>"
+  },
+  {
+    "id": "171368704",
+    "key": "UNO-T566",
+    "name": "Verify what happens when an agency worker accepts a shift",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2439"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>A new booking is sent out</li></ul>When<br><ul><li>Client user approves the agency worker</li></ul>Then<br><ul><li>the existing email notification should go the agency</li></ul>"
+  },
+  {
+    "id": "171368726",
+    "key": "UNO-T567",
+    "name": "Verify what happens when an DB worker accepts a shift",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2439"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>A DB worker accepts a shift</li></ul>When<br><ul><li>Client user approves a Direct Bank Worker</li></ul>Then &nbsp;<br><ul><li>below email should be sent to the bank worker confirming the acceptance for the shift</li><li>(copy image from ticket)</li></ul>"
+  },
+  {
+    "id": "171368744",
+    "key": "UNO-T568",
+    "name": "Verify what happens when an agency worker rejects a shift",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2439"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>An agency worker rejects a shift</li></ul>When<br><ul><li>Agency worker is rejected for the shift,</li></ul>Then<br><ul><li>existing email notification should go to the agency</li><li>(copy image from ticket)</li></ul>"
+  },
+  {
+    "id": "171368856",
+    "key": "UNO-T569",
+    "name": "Verify what happens when an DB worker rejects a shift",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2439"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>DB worker rejects a shift</li></ul>&nbsp;<br>When<br><ul><li>Direct Bank Worker is rejected by the client,</li></ul>Then<br><ul><li>The below email is sent to the Worker</li><li>(copy image from ticket)</li></ul>"
+  },
+  {
+    "id": "171369267",
+    "key": "UNO-T570",
+    "name": "Verify the Auto-Cascade functionality on the shift fulfilment page - 2 week view. ",
+    "folder": "Shifts functionality",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2114"
+    ],
+    "objective": null,
+    "testScript": "Given&nbsp;<br><ul><li>Logged in as a client user with the shift fulfilment permissions&nbsp;</li></ul>When&nbsp;<br><ul><li>In the shift fulfilment page&nbsp;</li><li>When creating or adding a shift&nbsp;</li><li>And the auto cascade agency in tiers is shown.&nbsp;</li></ul>Then<br><ul><li>Notifications will go out to the agencies based on the hours specified on client set up table.&nbsp;</li></ul>"
+  },
+  {
+    "id": "171630750",
+    "key": "UNO-T571",
+    "name": "Verify A Worker cannot be allocated to a shift if their Employment Status is LTD and LTD is blocked by that Client",
+    "folder": "Booking Requests",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2157"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged in as an agency user with booking request permission</li><li>The employment status of LTD is blocked by the client.</li></ul>When<br><ul><li>Allocating a worker to a booking request</li></ul>Then<br><ul><li>A Worker cannot be allocated to a shift if their Employment Status is LTD</li></ul>"
+  },
+  {
+    "id": "171630796",
+    "key": "UNO-T572",
+    "name": "Verify A Worker cannot be allocated to a shift if their Employment Status is Sole Trader and Sole Trader is blocked by that Client",
+    "folder": "Booking Requests",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2157"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged in as an agency user with booking request permission</li><li>The employment status of Sole Trader is blocked by the client.</li></ul>When<br><ul><li>Allocating a worker to a booking request</li></ul>Then<br><ul><li>A Worker cannot be allocated to a shift if their Employment Status is Sole Trader</li></ul>"
+  },
+  {
+    "id": "171630816",
+    "key": "UNO-T573",
+    "name": "Verify A Worker cannot be allocated to a shift if their Employment Status is Other and Other is blocked by that Client",
+    "folder": "Booking Requests",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2157"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged in as an agency user with booking request permission</li><li>The employment status of Other is blocked by the client.</li></ul>When<br><ul><li>Allocating a worker to a booking request</li></ul>Then<br><ul><li>A Worker cannot be allocated to a shift if their Employment Status is Other</li></ul>"
+  },
+  {
+    "id": "171639773",
+    "key": "UNO-T574",
+    "name": "Verify the shift fulfilment page change of layout  ",
+    "folder": "Shift Fulfilment Page",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2156"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged in as a client user ('Approve workers for shifts') and ('Manage shifts') permission</li></ul>When<br><ul><li>&nbsp;Shift fulfilment page</li><li>2-week view</li><li>With the number displayed in Column 'B' there are two actions</li></ul>Then<br><ul><li>Click on the &ldquo;B&rdquo; Booked number to see the table that only shows the Approved workers</li><li>Click on the &ldquo;Bubble&rdquo; that shows the unapproved but compliant workers - at the top - and the approved compliant workers at the bottom</li></ul>"
+  },
+  {
+    "id": "171639833",
+    "key": "UNO-T575",
+    "name": " Verify the shift fulfilment page pop up. ",
+    "folder": "Shift Fulfilment Page",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2156"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged in as a client user ('Approve workers for shifts') and ('Manage shifts') permission</li></ul>When<br><ul><li>&nbsp;Shift fulfilment page</li><li>2-week view</li><li>With the number displayed in Column 'B' there are two actions</li></ul>Then<br><ul><li>Click on the &ldquo;Bubble&rdquo;</li><li>The pop up displays the following:<ul><li>Agency branch</li><li>First name</li><li>Last name</li><li>Compliant</li><li>View docs</li><li>Date of induction</li><li>Approve</li></ul></li></ul>"
+  },
+  {
+    "id": "171640020",
+    "key": "UNO-T576",
+    "name": "Verify the editable fields in the pop up for clients with ‘Approve workers for shift’ permission ",
+    "folder": "Shift Fulfilment Page",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2156"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged in as a client user ('Approve workers for shifts') and ('Manage shifts') permission</li></ul>When<br><ul><li>&nbsp;Shift fulfilment page</li><li>2-week view</li><li>With the number displayed in Column 'B' there are two actions</li></ul>Then<br><ul><li>Click on the &ldquo;Bubble&rdquo;</li><li>The following fields are editable for user who are viewing the page with &lsquo;Approve workers for shift&rsquo; permissions&nbsp;<ul><li>Date of induction&nbsp;<ul><li>Allow user to enter induction date if it is empty</li><li>DD/MM/YYYY</li></ul></li><li>Approve&nbsp;<ul><li>When the tick box is ticked, the worker was approved</li><li>Any compliant worker previously approved for the client will be auto ticked in this view</li><li>If the tick box is empty, this means that the worker has not been approved before</li><li>The client can tick to approve a worker from this page</li><li>If the Complaint field is not ticked, then the approve box cannot be ticked</li></ul></li></ul></li></ul>"
+  }
+]

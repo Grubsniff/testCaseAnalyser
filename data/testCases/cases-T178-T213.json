@@ -1,0 +1,323 @@
+[
+  {
+    "id": "152513286",
+    "key": "UNO-T178",
+    "name": "Verify that currency icons are displayed to reflect the currency for the client selected",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "152513287",
+    "key": "UNO-T179",
+    "name": "Currency Column to be displayed when the table is exported",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "152513503",
+    "key": "UNO-T180",
+    "name": "Invoice - Currency Column to be added to Client Invoices page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2213"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "152513504",
+    "key": "UNO-T181",
+    "name": "Invoice - Verify that currency icons are displayed to reflect the currency for the client selected – Client Invoices Page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2213"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "152513505",
+    "key": "UNO-T182",
+    "name": "Invoice - Currency Column to be displayed when the table is exported – Client Invoices Page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2213"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "152513506",
+    "key": "UNO-T183",
+    "name": "Invoice - Verify that currency icons are displayed to reflect the currency for the client selected when the report is viewed, exported, exported as CSV and Exported as PDF – Client Invoice Page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2213"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "152513507",
+    "key": "UNO-T184",
+    "name": "Invoice - Currency Column to be added to Invoice Calculation Checks page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2213"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "152513508",
+    "key": "UNO-T185",
+    "name": "Invoice - Verify that currency icons are displayed to reflect the currency for the client selected - Invoice Calculation Checks page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2213"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "152513509",
+    "key": "UNO-T186",
+    "name": "Invoice - Currency Column to be displayed when the table is exported - Invoice Calculation Checks page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2213"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "152513510",
+    "key": "UNO-T187",
+    "name": "Invoice - Currency Column to be added to Agency Sales Order page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2213"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "152513511",
+    "key": "UNO-T188",
+    "name": "Invoice - Verify that currency icons are displayed to reflect the currency for the client selected - Agency Sales Order page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2213"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "152513512",
+    "key": "UNO-T189",
+    "name": "Invoice - Currency Column to be displayed when the table is exported - Agency Sales Order page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2213"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "152513513",
+    "key": "UNO-T190",
+    "name": "Invoice - Verify that currency icons are displayed to reflect the currency for the client selected when the report is viewed, exported, exported as CSV and Exported as PDF - Agency Sales Order page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2213"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "152513514",
+    "key": "UNO-T191",
+    "name": "Invoice - Currency Column to be added to Agency BACS Export page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2213"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "152513515",
+    "key": "UNO-T192",
+    "name": "Invoice - Verify that currency icons are displayed to reflect the currency for the client selected - Agency BACS Export page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2213"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "152513516",
+    "key": "UNO-T193",
+    "name": "Invoice - Currency Column to be added to Agency Early Settlement page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2213"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "152513517",
+    "key": "UNO-T194",
+    "name": "Invoice - Verify that currency icons are displayed to reflect the currency for the client selected - Agency Early Settlement page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2213"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "152513518",
+    "key": "UNO-T195",
+    "name": "Invoice - Currency Column to be displayed when the table is exported - Agency Early Settlement page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2213"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "153005246",
+    "key": "UNO-T205",
+    "name": "Verify if Both is selected, PPS and NI fields are to be displayed",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2184"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "153005247",
+    "key": "UNO-T206",
+    "name": "Verify that the page cannot be saved without these fields being filled out, mandatory field",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2184"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "153005248",
+    "key": "UNO-T207",
+    "name": "Verify that when logged in as an Agency User PPS column is populated if the information was inputted when the worker was created",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2184"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "153005249",
+    "key": "UNO-T208",
+    "name": "Verify that when logged in as an Agency User NI column is populated if the information was inputted when the worker was created",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2184"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "153005250",
+    "key": "UNO-T209",
+    "name": "Verify that when logged in as an Agency User, the Worker likely to work in UK/Ireland question is to appear when editing/adding a worker",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2184"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "153005253",
+    "key": "UNO-T212",
+    "name": "Verify if UK is selected, NI field is to remain to be filled out",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2184"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "153005254",
+    "key": "UNO-T213",
+    "name": "Verify if Both is selected, PPS and NI fields are to be displayed",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2184"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  }
+]

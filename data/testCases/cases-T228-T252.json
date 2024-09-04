@@ -1,0 +1,328 @@
+[
+  {
+    "id": "153432715",
+    "key": "UNO-T228",
+    "name": "Verify if a new agency branch is created, on the additional details tab if the Agency is outside of the UK, IBAN field is to be displayed and BIC field to be displayed",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2183"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "153432716",
+    "key": "UNO-T229",
+    "name": "Verify when the Bank History Button is selected, if the Agency is outside of the UK, IBAN field is to be displayed and BIC field to be displayed and Sort code and account number are not to be displayed",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2183"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "153456672",
+    "key": "UNO-T230",
+    "name": "Verify that when logged in as an Agency User on the Rates Export Page the ERNI field has been renamed to ERNI/PRSI.",
+    "folder": "Multi Currency/Agency User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2227"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:</p><ul><li><p>Logged in as a Agency User.</p></li></ul><p>When:&nbsp;</p><ul><li><p>On the Rates Export Page.</p></li></ul><p>Then:</p><div><ul><li><p>The ERNI field has been renamed to ERNI/PRSI.</p></li></ul></div>"
+  },
+  {
+    "id": "153456746",
+    "key": "UNO-T231",
+    "name": "Verify that when logged in as an Agency User on the Export Reports Page the ERNI field has been renamed to ERNI/PRSI.",
+    "folder": "Multi Currency/Agency User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2227"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:</p><ul><li><p>Logged in as an Agency User.&nbsp;</p></li></ul><p>When:&nbsp;</p><ul><li><p>On the Export Reports Page</p></li></ul><p>Then:</p><div><ul><li><p>The ERNI field has been renamed to ERNI/PRSI.</p></li></ul></div>"
+  },
+  {
+    "id": "153456965",
+    "key": "UNO-T232",
+    "name": "Verify that when logged in as a Client User on the Export Reports Page the ERNI field has been renamed to ERNI/PRSI.",
+    "folder": "Multi Currency/Client User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2227"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:</p><ul><li><p>Logged in as a Client User.</p></li></ul><p>When:&nbsp;</p><ul><li><p>On the Export Reports Page</p></li></ul><p>Then:</p><div><ul><li><p>The ERNI field has been renamed to ERNI/PRSI.</p></li></ul></div>"
+  },
+  {
+    "id": "153457082",
+    "key": "UNO-T233",
+    "name": "Verify that when logged in as a Client User on the Rates Export Page the ERNI field has been renamed to ERNI/PRSI.",
+    "folder": "Multi Currency/Client User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2227"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:</p><ul><li><p>Logged in as a Client User.</p></li></ul><p>When:&nbsp;</p><ul><li><p>On the Rates Export Page.</p></li></ul><p>Then:</p><div><ul><li><p>The ERNI field has been renamed to ERNI/PRSI.</p></li></ul></div>"
+  },
+  {
+    "id": "153466956",
+    "key": "UNO-T234",
+    "name": "Verify that when logged in as a Neuven user on the User Rate Export Permission tick boxes the ERNI field has been renamed to ERNI/PRSI.",
+    "folder": "Multi Currency/Neuven User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2227"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:&nbsp;</p><ul><li><p>Logged on as a Neuven User.&nbsp;</p></li></ul><p>When:</p><ul><li><p>On the User Rate Export Permission tick boxes page.</p></li></ul><p>Then:</p><div><ul><li><p>The ERNI field has been renamed to ERNI/PRSI.</p></li></ul></div>"
+  },
+  {
+    "id": "153467170",
+    "key": "UNO-T235",
+    "name": "Verify that when logged in as a Neuven user on the Rate Export the ERNI field has been renamed to ERNI/PRSI.",
+    "folder": "Multi Currency/Neuven User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2227"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:&nbsp;</p><ul><li><p>Logged on as a Neuven User.&nbsp;</p></li></ul><p>When:</p><ul><li><p>On the Rate Export page.</p></li></ul><p>Then:</p><div><ul><li><p>The ERNI field has been renamed to ERNI/PRSI.</p></li></ul></div>"
+  },
+  {
+    "id": "153467352",
+    "key": "UNO-T236",
+    "name": "Verify that when logged in as a Neuven user on the Authorize Rate Adjustments the ERNI field has been renamed to ERNI/PRSI.",
+    "folder": "Multi Currency/Neuven User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2227"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:&nbsp;</p><ul><li><p>Logged on as a Neuven User.&nbsp;</p></li></ul><p>When:</p><ul><li><p>On the Authorize Rate Adjustments page.</p></li></ul><p>Then:</p><div><ul><li><p>The ERNI field has been renamed to ERNI/PRSI.</p></li></ul></div>"
+  },
+  {
+    "id": "153467454",
+    "key": "UNO-T237",
+    "name": "Verify that when logged in as a Neuven user on the Authorize New Rates the ERNI field has been renamed to ERNI/PRSI.",
+    "folder": "Multi Currency/Neuven User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2227"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:&nbsp;</p><ul><li><p>Logged on as a Neuven User.&nbsp;</p></li></ul><p>When:</p><ul><li><p>On the Authorize New Rates page.</p></li></ul><p>Then:</p><div><ul><li><p>The ERNI field has been renamed to ERNI/PRSI.</p></li></ul></div>"
+  },
+  {
+    "id": "153467635",
+    "key": "UNO-T238",
+    "name": "Verify that when logged in as a Neuven user on the Rate Adjustments the ERNI field has been renamed to ERNI/PRSI.",
+    "folder": "Multi Currency/Neuven User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2227"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:&nbsp;</p><ul><li><p>Logged on as a Neuven User.&nbsp;</p></li></ul><p>When:</p><ul><li><p>On the Rate Adjustments page.</p></li></ul><p>Then:</p><div><ul><li><p>The ERNI field has been renamed to ERNI/PRSI.</p></li></ul></div>"
+  },
+  {
+    "id": "153467766",
+    "key": "UNO-T239",
+    "name": "Verify that when logged in as a Neuven user on the Rate Management the ERNI field has been renamed to ERNI/PRSI.",
+    "folder": "Multi Currency/Neuven User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2227"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:&nbsp;</p><ul><li><p>Logged on as a Neuven User.&nbsp;</p></li></ul><p>When:</p><ul><li><p>On the Rate Management page.</p></li></ul><p>Then:</p><div><ul><li><p>The ERNI field has been renamed to ERNI/PRSI.</p></li></ul></div>"
+  },
+  {
+    "id": "153467997",
+    "key": "UNO-T240",
+    "name": "Verify that when logged in as a Neuven user on the Rates Creation the ERNI field has been renamed to ERNI/PRSI.",
+    "folder": "Multi Currency/Neuven User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2227"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:&nbsp;</p><ul><li><p>Logged on as a Neuven User.&nbsp;</p></li></ul><p>When:</p><ul><li><p>On the rates Creation page.</p></li></ul><p>Then:</p><div><ul><li><p>The ERNI field has been renamed to ERNI/PRSI.</p></li></ul></div>"
+  },
+  {
+    "id": "153468266",
+    "key": "UNO-T241",
+    "name": "Verify that when logged in as a Neuven user on the Administration Page the ERNI field has been renamed to ERNI/PRSI.",
+    "folder": "Multi Currency/Neuven User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2227"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:</p><ul><li><p>When logged on as a Neuven User.&nbsp;</p></li></ul><p>When:</p><ul><li><p>On the Administration Page. (WTR,ERNI, VAT, NMW, Neuven fee)</p></li></ul><p>Then:</p><div><ul><li><p>The ERNI field has been renamed to ERNI/PRSI.</p></li></ul></div>"
+  },
+  {
+    "id": "153472380",
+    "key": "UNO-T242",
+    "name": "Verify the as a Client User the multi-currency on the VIEW time sheets page changes.",
+    "folder": "Multi Currency/Client User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2207"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:</p><ul><li><p>Logged in as a Client User with Enter Timesheet Permissions.</p></li></ul><p>When:&nbsp;</p><ul><li><p>On the time sheet adjustment page &gt; time sheet table displayed&nbsp;</p></li></ul><p>Then:</p><ul><li><p>The Currency Column is displayed next to the location column.</p></li><li><p>The Currency Column displays the relevant Currency that the client is linked to.</p></li><li><p>The Currency Column displays the relevant Symbol for that Currency.</p></li></ul><div><ul><li><p>The changes to the currency are found in the following columns: Bonus, Exp and total cost. </p></li></ul></div>"
+  },
+  {
+    "id": "153472493",
+    "key": "UNO-T243",
+    "name": "Verify the as a Client User the multi-currency on the EDIT time sheets page changes.",
+    "folder": "Multi Currency/Client User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2207"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:</p><ul><li><p>Logged in as a Client User with Enter Timesheet Permissions.</p></li></ul><p>When:&nbsp;</p><ul><li><p>On the time sheet adjustment page &gt; time sheet table displayed&nbsp;</p></li></ul><p>Then:</p><ul><li><p>The Currency Column is displayed next to the location column.</p></li><li><p>The Currency Column displays the relevant Currency that the client is linked to.</p></li><li><p>The Currency Column displays the relevant Symbol for that Currency.</p></li><li><p>The changes to the currency are found in the following columns: Bonus, Exp and total cost.&nbsp;</p></li></ul><div><ul><li><p>When changes are made to this table the information is saved correctly.&nbsp;</p></li></ul></div>"
+  },
+  {
+    "id": "153472687",
+    "key": "UNO-T244",
+    "name": "Verify when exporting times sheets as a Client User the currency column is displayed.",
+    "folder": "Multi Currency/Client User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2207"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:</p><ul><li><p>Logged in as a Client User with Enter Timesheet Permissions.</p></li></ul><p>When:&nbsp;</p><ul><li><p>On the time sheet adjustment page &gt; time sheet table displayed&nbsp;</p></li></ul><p>Then:</p><ul><li><p>Export the report.</p></li><li><p>The column for currency should be included in the report.</p></li><li><p>There should be the correct currency symbols used in the export. </p></li></ul>"
+  },
+  {
+    "id": "153472819",
+    "key": "UNO-T245",
+    "name": "Verify the as an Agency User the multi-currency on the VIEW time sheets page changes.",
+    "folder": "Multi Currency/Agency User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2207",
+      "UNO-2303"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:</p><ul><li><p>Logged in as a Agency User with Enter Timesheet Permissions.</p></li></ul><p>When:&nbsp;</p><ul><li><p>On the time sheet adjustment page &gt; time sheet table displayed&nbsp;</p></li></ul><p>Then:</p><ul><li><p>The Currency Column is displayed next to the location column.</p></li><li><p>The Currency Column displays the relevant Currency that the Agency is linked to.</p></li><li><p>The Currency Column displays the relevant Symbol for that Currency.</p></li></ul><div><ul><li><p>The changes to the currency are found in the following columns: Bonus, Exp and total cost. </p></li></ul></div>"
+  },
+  {
+    "id": "153472972",
+    "key": "UNO-T246",
+    "name": "Verify the as an Agency User the multi-currency on the EDIT time sheets page changes.",
+    "folder": "Multi Currency/Agency User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2207"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:</p><ul><li><p>Logged in as an Agency User with Enter Timesheet Permissions.</p></li></ul><p>When:&nbsp;</p><ul><li><p>On the time sheet adjustment page &gt; time sheet table displayed&nbsp;</p></li></ul><p>Then:</p><ul><li><p>The Currency Column is displayed next to the location column.</p></li><li><p>The Currency Column displays the relevant Currency that the Agency is linked to.</p></li><li><p>The Currency Column displays the relevant Symbol for that Currency.</p></li><li><p>The changes to the currency are found in the following columns: Bonus, Exp and total cost.&nbsp;</p></li></ul><div><ul><li><p>When changes are made to this table the information is saved correctly. </p></li></ul></div>"
+  },
+  {
+    "id": "153473040",
+    "key": "UNO-T247",
+    "name": "Verify when exporting times sheets as a Agency User the currency column is displayed.",
+    "folder": "Multi Currency/Agency User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2207"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:</p><ul><li><p>Logged in as an Agency User with Enter Timesheet Permissions.</p></li></ul><p>When:&nbsp;</p><ul><li><p>On the time sheet adjustment page &gt; time sheet table displayed&nbsp;</p></li></ul><p>Then:</p><ul><li><p>Export the report.</p></li><li><p>The column for currency should be included in the report.</p></li><li><p>There should be the correct currency symbols used in the export.&nbsp;</p></li></ul>"
+  },
+  {
+    "id": "153518632",
+    "key": "UNO-T248",
+    "name": "Verify the ERNI Tab changes to the administration page when logged in as a Neuven User.",
+    "folder": "Multi Currency/Neuven User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2195"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:</p><ul><li><p>Logged on as a Neuven User.</p></li></ul><p>When:</p><ul><li><p>In the administration tab &gt; WTR, ERNI, VAT, NMV, Neuven Fee page &gt; the ERNI tab</p></li></ul><p>Then:</p><ul><li>The ERNI field has been renamed to ERNI/PRSI.</li><li>Country dropdown is available on the page.</li><li>The currency field should reflect the default currency for the country selected.</li><li>THE ERNI exempt amount field should say ERNI/PRSI and the correct currency symbol is shown.&nbsp;</li><li>The ERNI History Table is called ERNI/PRSI Table,&nbsp;</li><li>The exempt amount column should display the correct currency symbol.</li></ul>"
+  },
+  {
+    "id": "153518864",
+    "key": "UNO-T249",
+    "name": "Verify the National Minimum Wage Tab changes to the administration page when logged in as a Neuven User.",
+    "folder": "Multi Currency/Neuven User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2195"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:</p><ul><li><p>Logged on as a Neuven User.</p></li></ul><p>When:</p><ul><li><p>In the administration tab &gt; WTR, ERNI, VAT, NMV, Neuven Fee page &gt; the National Minimum Wage tab</p></li></ul><p>Then:</p><ul><li><p>There is a country drop down menu on this tab.&nbsp;</p></li></ul><div><ul><li><p>Currency symbols displayed are related to that country. </p></li></ul></div>"
+  },
+  {
+    "id": "153518914",
+    "key": "UNO-T250",
+    "name": "Verify the Neuven Fee Tab changes to the administration page when logged in as a Neuven User.",
+    "folder": "Multi Currency/Neuven User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2195"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:</p><ul><li><p>Logged on as a Neuven User.</p></li></ul><p>When:</p><ul><li><p>In the administration tab &gt; WTR, ERNI, VAT, NMV, Neuven Fee page &gt; the Neuven Fee tab.</p></li></ul><p>Then:</p><ul><li><p>Based on the client that is selected.&nbsp;</p></li><li><p>The currency shown is the correct currency for that client and uses the correct symbols.</p></li></ul>"
+  },
+  {
+    "id": "154218166",
+    "key": "UNO-T251",
+    "name": "Verify if Neuven user with relevant permission can see the New page (Document type name) maintenance page in Nav menu",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "154218167",
+    "key": "UNO-T252",
+    "name": "Verify there is Document Name Field",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  }
+]

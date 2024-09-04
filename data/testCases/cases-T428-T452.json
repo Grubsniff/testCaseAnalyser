@@ -1,0 +1,325 @@
+[
+  {
+    "id": "159410997",
+    "key": "UNO-T428",
+    "name": "Verify as a CLIENT User that the DBS details on the Compliance tab appear below the RTW details.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2347"
+    ],
+    "objective": null,
+    "testScript": "<div><div><div><div><p>Given:&nbsp;</p><ul><li>Client user with ' Edit Direct Bank Worker Permission'</li></ul>When :</div><ul><li><div>One direct Bank Workers Page</div></li><li><div>When adding a &nbsp;New Direct Bank worker</div></li></ul><div>Then:</div><ul><li><p>One the Compliance Tab</p><ul><li><p>DBS Details&nbsp;</p><ul><li><p>DBS Certificate Verified Toggle</p></li><li><p>DBS Certificate Verified By (Free Type Text field)</p></li><li><p>DBS Certificate Verified On (Helper text with Date format DD/MM/YYYY)</p><ul><li><p>Date picker</p></li></ul></li><li><p>DBS Certificate Number (Free Type Text field)</p></li><li><p>DBS Issue Date (Helper text with Date format DD/MM/YYYY)</p><ul><li><p>Date picker</p></li></ul></li></ul></li></ul></li><li><p>These fields are editable by users with above permission only</p></li></ul></div></div></div>"
+  },
+  {
+    "id": "159411090",
+    "key": "UNO-T429",
+    "name": "Verify as a NEUVEN User that the DBS details on the Compliance tab Save and Update when being created / edited.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2347"
+    ],
+    "objective": null,
+    "testScript": "<div><div><div><div><p>Given:&nbsp;</p><ul><li><p>Logged in as a Neuven user with &lsquo;Manage Direct Bank worker Permission'</p></li></ul>When :</div><ul><li><div>On direct Bank Workers Page</div></li><li>When adding a &nbsp;New Direct Bank worker / editing Bank Worker&nbsp;</li></ul>Then:<ul><li>One the Compliance Tab<ul><li>DBS Details&nbsp;<ul><li>DBS Certificate Verified Toggle</li><li>DBS Certificate Verified By (Free Type Text field)</li><li>DBS Certificate Verified On (Helper text with Date format DD/MM/YYYY)<ul><li>Date picker</li></ul></li><li>DBS Certificate Number (Free Type Text field)</li><li>DBS Issue Date (Helper text with Date format DD/MM/YYYY)<ul><li>Date picker</li></ul></li></ul></li></ul></li><li>When a new bank worker is created all of the above fields save correctly&nbsp;</li><li>And when these fields are edited the new details are remembered.&nbsp;</li><li>These fields are editable by users with above permission only</li></ul></div></div></div>"
+  },
+  {
+    "id": "159411091",
+    "key": "UNO-T430",
+    "name": "Verify as a CLIENT User that the DBS details on the Compliance tab Save and Update when being created / edited.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2347"
+    ],
+    "objective": null,
+    "testScript": "<div><div><div><div><p>Given:&nbsp;</p><ul><li>Client user with ' Edit Direct Bank Worker Permission'</li></ul>When :</div><ul><li><div>One direct Bank Workers Page</div></li><li><div>When adding a &nbsp;New Direct Bank worker / editing Bank Worker&nbsp;</div></li></ul><div>Then:</div><ul><li><p>One the Compliance Tab</p><ul><li><p>DBS Details&nbsp;</p><ul><li><p>DBS Certificate Verified Toggle</p></li><li><p>DBS Certificate Verified By (Free Type Text field)</p></li><li><p>DBS Certificate Verified On (Helper text with Date format DD/MM/YYYY)</p><ul><li><p>Date picker</p></li></ul></li><li><p>DBS Certificate Number (Free Type Text field)</p></li><li><p>DBS Issue Date (Helper text with Date format DD/MM/YYYY)</p><ul><li><p>Date picker</p></li></ul></li></ul></li></ul></li><li><p>When a new bank worker is created all of the above fields save correctly&nbsp;</p></li><li><p>And when these fields are edited the new details are remembered.&nbsp;</p></li><li><p>These fields are editable by users with above permission only</p></li></ul></div></div></div>"
+  },
+  {
+    "id": "159411127",
+    "key": "UNO-T431",
+    "name": "Verify that as a NEUVEN User that date picker for DBS And Issue date  can not be in the future .",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2347"
+    ],
+    "objective": null,
+    "testScript": "Given:<br><ul><li>Logged in as a Neuven user with &lsquo;Manage Direct Bank worker Permission'</li></ul>When :<br><ul><li>One direct Bank Workers Page</li><li>When adding a &nbsp;New Direct Bank worker / editing Bank Worker&nbsp;</li></ul>Then:<ul><li>One the Compliance Tab<ul><li>DBS Details&nbsp;<ul><li>DBS Certificate Verified On (Helper text with Date format DD/MM/YYYY)<ul><li>Date picker</li></ul></li><li>DBS Issue Date (Helper text with Date format DD/MM/YYYY)<ul><li>Date picker</li></ul></li></ul></li></ul></li><li>When a new bank worker is created it should not allow future dates.&nbsp;</li><li>And when these fields are edited the it should not allow future dates.&nbsp;</li><li>These fields are editable by users with above permission only</li></ul>"
+  },
+  {
+    "id": "159411190",
+    "key": "UNO-T432",
+    "name": "Verify that as a CLIENT User that date picker for DBS And Issue date  can not be in the future .",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2347"
+    ],
+    "objective": null,
+    "testScript": "Given:<br><ul><li><p>Client user with ' Edit Direct Bank Worker Permission'</p></li></ul>When :<br><ul><li>On direct Bank Workers Page</li><li>When adding a &nbsp;New Direct Bank worker / editing Bank Worker&nbsp;</li></ul>Then:<ul><li>One the Compliance Tab<ul><li>DBS Details&nbsp;<ul><li>DBS Certificate Verified On (Helper text with Date format DD/MM/YYYY)<ul><li>Date picker</li></ul></li><li>DBS Issue Date (Helper text with Date format DD/MM/YYYY)<ul><li>Date picker</li></ul></li></ul></li></ul></li><li>When a new bank worker is created it should not allow future dates.&nbsp;</li><li>And when these fields are edited the it should not allow future dates.&nbsp;</li><li>These fields are editable by users with above permission only</li></ul>"
+  },
+  {
+    "id": "159411492",
+    "key": "UNO-T433",
+    "name": "Verify as a NEUVEN User the Work Eligibility Details Section in the Compliance tab in a Direct Bank Workers Profile",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2345"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:</p><ul><li><p>Logged in as a Neuven user with &lsquo;Manage Direct Bank worker Permission'</p></li></ul><p>When&nbsp;</p><ul><li><p>On Direct Bank Workers page&nbsp;</p></li><li><p>Click Add New Direct Bank worker</p></li></ul><p>&nbsp;Then :<br>On the <strong>Compliance Tab:</strong></p><ul><li>Check that there is a section for Work Eligibility Details&nbsp;</li><li>Confirm that this is under the Passport Details section.&nbsp;</li><li>Confirm that this section includes the following.<ul><li><p>Work Eligibility Verified (Toggle)</p></li><li><p>Nationality (Text Field)</p></li><li><p>Date of 1st Shift (Helper text with format displayed DD/MM/YYYY)</p><ul><li><p>Date Picker</p></li></ul></li></ul></li></ul><p>These fields can be filled by users with above permissions.</p>"
+  },
+  {
+    "id": "159545197",
+    "key": "UNO-T434",
+    "name": "Verify as a CLIENT User the Work Eligibility Details Section in the Compliance tab in a Direct Bank Workers Profile.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2345"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:</p><ul><li>Client user with ' Edit Direct Bank Worker Permission'</li></ul><p>When&nbsp;</p><ul><li><p>On Direct Bank Workers page&nbsp;</p></li><li><p>Click Add New Direct Bank worker</p></li></ul><p>&nbsp;Then :<br>On the <strong>Compliance Tab:</strong></p><ul><li>Check that there is a section for Work Eligibility Details&nbsp;</li><li>Confirm that this is under the Passport Details section.&nbsp;</li><li>Confirm that this section includes the following.<ul><li><p>Work Eligibility Verified (Toggle)</p></li><li><p>Nationality (Text Field)</p></li><li><p>Date of 1st Shift (Helper text with format displayed DD/MM/YYYY)</p><ul><li><p>Date Picker</p></li></ul></li></ul></li></ul><p>These fields can be filled by users with above permissions.</p>"
+  },
+  {
+    "id": "159545214",
+    "key": "UNO-T435",
+    "name": "Verify as a NEUVEN User the Work Eligibility Details Section in the Compliance tab in a Direct Bank Workers Profile saves / edits correctly",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2345"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:</p><ul><li><p>Logged in as a Neuven user with &lsquo;Manage Direct Bank worker Permission'</p></li></ul><p>When&nbsp;</p><ul><li><p>On Direct Bank Workers page&nbsp;</p></li><li><p>Click Add New Direct Bank worker / or editing an existing Direct&nbsp; Bank Worker profile</p></li></ul><p>&nbsp;Then :<br>On the <strong>Compliance Tab:</strong></p><ul><li>Check that there is a section for Work Eligibility Details&nbsp;</li><li>Confirm that this is under the Passport Details section.&nbsp;</li><li>Confirm that this section includes the following.<ul><li><p>Work Eligibility Verified (Toggle)</p></li><li><p>Nationality (Text Field)</p></li><li><p>Date of 1st Shift (Helper text with format displayed DD/MM/YYYY)</p><ul><li><p>Date Picker</p></li></ul></li></ul></li><li><p>When creating a new bank worker the details entered in this section are saved and can be seen when editing the worker provided the user has relevant permissions to do so.&nbsp;</p></li><li><p>When these details have been updated they save correctly they are remembered in the profile&nbsp;</p></li><li><p>If the details are altered when editing and the changes are not saved the original details are remembered in the workers profile.&nbsp;</p></li></ul><p>These fields can be filled by users with above permissions.</p>"
+  },
+  {
+    "id": "159545238",
+    "key": "UNO-T436",
+    "name": "Verify as a CLIENT User the Work Eligibility Details Section in the Compliance tab in a Direct Bank Workers Profile saves / edits correctly.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2345"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:</p><ul><li><p>Client user with ' Edit Direct Bank Worker Permission'</p></li></ul><p>When&nbsp;</p><ul><li><p>On Direct Bank Workers page&nbsp;</p></li><li><p>Click Add New Direct Bank worker / or editing an existing Direct &nbsp;Bank Worker profile</p></li></ul><p>&nbsp;Then :<br>On the <strong>Compliance Tab:</strong></p><ul><li>Check that there is a section for Work Eligibility Details&nbsp;</li><li>Confirm that this is under the Passport Details section.&nbsp;</li><li>Confirm that this section includes the following.<ul><li><p>Work Eligibility Verified (Toggle)</p></li><li><p>Nationality (Text Field)</p></li><li><p>Date of 1st Shift (Helper text with format displayed DD/MM/YYYY)</p><ul><li><p>Date Picker</p></li></ul></li></ul></li><li><p>When creating a new bank worker the details entered in this section are saved and can be seen when editing the worker provided the user has relevant permissions to do so.&nbsp;</p></li><li><p>When these details have been updated they save correctly they are remembered in the profile&nbsp;</p></li><li><p>If the details are altered when editing and the changes are not saved the original details are remembered in the workers profile.&nbsp;</p></li></ul><p>These fields can be filled by users with above permissions.</p>"
+  },
+  {
+    "id": "159545299",
+    "key": "UNO-T437",
+    "name": "Verify as a NEUVEN user that there is a  View Document Agreement History Button on the Direct Bank profile.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2352"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li><p>Logged in as a Neuven user with &lsquo;Manage Direct Bank worker Permission'</p></li></ul><p>When:</p><ul><li><p>Click Add New Direct Bank worker / edit a Direct Worker Profile</p></li></ul><p>Then:&nbsp;</p><ul><li><p>On the Compliance Tab</p></li><li><p>There is a &lsquo;View Document Agreement History&rsquo; Button</p></li><li><p>This Links to the T&amp;C agreed via the APP</p></li><li><p>when this is clicked a Pop up appears &nbsp;showing &nbsp;details of the document agreed</p></li><li><p>The heading on the pop up will display : &nbsp;- User Document Agreement History - &lsquo;'Worker Name&rsquo;'</p></li><li><p>On the Terms and Conditions popup the is a table at the bottom of the table that shows</p><ul><li><p>Version (Show Version Number)</p></li><li><p>Agreement Date (Show date and time of Agreement)</p></li></ul></li><li><p>Close Button </p></li></ul>"
+  },
+  {
+    "id": "159545438",
+    "key": "UNO-T438",
+    "name": "Verify as a CLIENT user that there is a  View Document Agreement History Button on the Direct Bank profile.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2352"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li>Client user with ' Edit Direct Bank Worker Permission'</li></ul><p>When:</p><ul><li><p>Click Add New Direct Bank worker / edit a Direct Worker Profile</p></li></ul><p>Then:&nbsp;</p><ul><li><p>On the Compliance Tab</p></li><li><p>There is a &lsquo;View Document Agreement History&rsquo; Button</p></li><li><p>This Links to the T&amp;C agreed via the APP</p></li><li><p>when this is clicked a Pop up appears &nbsp;showing &nbsp;details of the document agreed</p></li><li><p>The heading on the pop up will display : &nbsp;- User Document Agreement History - &lsquo;'Worker Name&rsquo;'</p></li><li><p>On the Terms and Conditions popup the is a table at the bottom of the table that shows</p><ul><li><p>Version (Show Version Number)</p></li><li><p>Agreement Date (Show date and time of Agreement)</p></li></ul></li><li><p>Close Button</p></li></ul>"
+  },
+  {
+    "id": "159874653",
+    "key": "UNO-T439",
+    "name": "Verify as a NEUVEN User the driving license details save when creating a new direct bank worker. ",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2350"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li>Logged in as a Neuven user (With Manage Direct Bank Workers Permission)</li></ul>When:<ul><li>Direct Bank Worker page</li></ul>Then:<br>On the <strong>Compliance Tab</strong><p>The page will contain Driving Licence Details ( below PVG)</p><ul><li><p>This will consist of the following :</p></li><li><p>Driving Licence Number (Free Type Text Box)</p></li></ul><ul><li><p>Driving Licence Expiry Date (Helper text with format displayed DD/MM/YYYY)</p><ul><li><p>Date Picker</p></li></ul></li><li><p>Country of Driving Licence</p><ul><li><p>Dropdown to show all countries to pick from</p></li></ul></li><li><p>Digital Tachograph Card Number (Free type Text Box)</p></li><li><p>Digital Tachograph Card Expiry Date (Helper text with format displayed DD/MM/YYYY)</p><ul><li><p>Date Picker</p></li></ul></li></ul><ul><li><p>These details will save when creating a New Direct Bank Worker and a are visible when editing a Direct Bank worker. &nbsp;</p></li></ul><br><br>"
+  },
+  {
+    "id": "159874715",
+    "key": "UNO-T440",
+    "name": "Verify as a CLIENT User the driving license details save when creating a new direct bank worker.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2350"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li><p>Client user with ' Edit Direct Bank Worker Permission'</p></li></ul>When:<ul><li>Direct Bank Worker page</li></ul>Then:<br>On the <strong>Compliance Tab</strong><p>The page will contain Driving Licence Details ( below PVG)</p><ul><li><p>This will consist of the following :</p></li><li><p>Driving Licence Number (Free Type Text Box)</p></li><li><p>Driving Licence Expiry Date (Helper text with format displayed DD/MM/YYYY)</p><ul><li><p>Date Picker</p></li></ul></li><li><p>Country of Driving Licence</p><ul><li><p>Dropdown to show all countries to pick from</p></li></ul></li><li><p>Digital Tachograph Card Number (Free type Text Box)</p></li><li><p>Digital Tachograph Card Expiry Date (Helper text with format displayed DD/MM/YYYY)</p><ul><li><p>Date Picker</p></li></ul></li><li><p>These details will save when creating a New Direct Bank Worker and a are visible when editing a Direct Bank worker. &nbsp;</p></li></ul><br><br>"
+  },
+  {
+    "id": "159874730",
+    "key": "UNO-T441",
+    "name": "Verify as a NEUVEN User the driving license details save when EDITING Adirect bank worker.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2350"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li>Logged in as a Neuven user (With Manage Direct Bank Workers Permission)</li></ul>When:<ul><li>Direct Bank Worker page</li></ul>Then:<br>On the <strong>Compliance Tab</strong><p>The page will contain Driving Licence Details ( below PVG)</p><ul><li><p>This will consist of the following :</p></li><li><p>Driving Licence Number (Free Type Text Box)</p></li><li><p>Driving Licence Expiry Date (Helper text with format displayed DD/MM/YYYY)</p><ul><li><p>Date Picker</p></li></ul></li><li><p>Country of Driving Licence</p><ul><li><p>Dropdown to show all countries to pick from</p></li></ul></li><li><p>Digital Tachograph Card Number (Free type Text Box)</p></li><li><p>Digital Tachograph Card Expiry Date (Helper text with format displayed DD/MM/YYYY)</p><ul><li><p>Date Picker</p></li></ul></li><li><p>These details will save when edited &nbsp;when a New Direct Bank Worker profile is being edited.&nbsp; &nbsp;</p></li></ul><br><br>"
+  },
+  {
+    "id": "159874731",
+    "key": "UNO-T442",
+    "name": "Verify as a CLIENT User the driving license details save when EDITING a new direct bank worker.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2350"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li><p>Client user with ' Edit Direct Bank Worker Permission'</p></li></ul>When:<ul><li>Direct Bank Worker page</li></ul>Then:<br>On the <strong>Compliance Tab</strong><p>The page will contain Driving Licence Details ( below PVG)</p><ul><li><p>This will consist of the following :</p></li><li><p>Driving Licence Number (Free Type Text Box)</p></li><li><p>Driving Licence Expiry Date (Helper text with format displayed DD/MM/YYYY)</p><ul><li><p>Date Picker</p></li></ul></li><li><p>Country of Driving Licence</p><ul><li><p>Dropdown to show all countries to pick from</p></li></ul></li><li><p>Digital Tachograph Card Number (Free type Text Box)</p></li><li><p>Digital Tachograph Card Expiry Date (Helper text with format displayed DD/MM/YYYY)</p><ul><li><p>Date Picker</p></li></ul></li><li><p>These details will save when edited &nbsp;when a New Direct Bank Worker profile is being edited. &nbsp; </p></li></ul><br><br>"
+  },
+  {
+    "id": "159875127",
+    "key": "UNO-T443",
+    "name": "Verify changes to Worker Document Maintenance Page when logged in as a NEUVEN user.",
+    "folder": "Worker Document Maintenance Page",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2379"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li>Logged in as a Neuven user&nbsp;</li></ul>When:<ul><li><p>Administration</p></li><li><p>Worker Document Maintenance page</p></li></ul><p>Then:&nbsp;</p><ul><li><p>The following tabs appear on the top of the page.</p><ul><li><p>&lsquo;Agency Worker Default Document type&rsquo;</p></li><li><p>Agency Worker Client/Job Specific Documents type</p></li></ul></li><li><p>These replace:</p><ul><li><p>&nbsp;Default Document Type</p></li><li><p>&nbsp;Client / Job Specific Document type tab</p></li></ul></li></ul>"
+  },
+  {
+    "id": "159875184",
+    "key": "UNO-T444",
+    "name": "Verify adding Add Direct Bank worker Document tab to  Worker Document Maintenance Page when logged in as a NEUVEN user.",
+    "folder": "Worker Document Maintenance Page",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2368"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li>Logged in as a Neuven user&nbsp;</li></ul>When:<ul><li><p>Administration</p></li><li><p>Worker Document Maintenance page</p></li></ul><p>Then:&nbsp;</p><ul><li><p>Verify that there is a new tab called : Direct Bank Worker Documents Types</p></li></ul>"
+  },
+  {
+    "id": "159909457",
+    "key": "UNO-T445",
+    "name": "As a NEUVEN user the creation and layout of the Direct Bank worker Document Tab - Table in the Worker Document Maintenance Page",
+    "folder": "Worker Document Maintenance Page",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2381"
+    ],
+    "objective": null,
+    "testScript": "Given:<br><ul><li><p>Logged in as a Neuven User</p></li></ul>When on the:&nbsp;<ul><li><p>Document Upload Maintenance Page</p></li><li><p>Direct Bank Worker Document Types Tab</p></li></ul>Then:<br><ul><li><p>The table displayed show the following columns&nbsp;</p></li><li><p>Document Type List (Name of the table)</p><ul><li><p>Document Name</p></li><li><p>Client</p></li><li><p>Group Job Typed</p></li><li><p>Added on (Date format DD/MM/YYYY)</p></li><li><p>Mandatory</p></li><li><p>Expiry Applicable</p></li><li><p>Edit Button</p></li><li><p>Save and Cancel Buttons</p></li><li><p>Delete Button</p></li><li><p>Search function</p></li><li><p>Pagination</p></li><li><p>Drop down to display number of entries</p></li><li><p>Each column sortable</p></li></ul></li></ul><br>"
+  },
+  {
+    "id": "159911094",
+    "key": "UNO-T446",
+    "name": "As a NEUVEN user the client drop down function works on the Direct Bank worker Document Tab - Table in the Worker Document Maintenance Page",
+    "folder": "Worker Document Maintenance Page",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2381"
+    ],
+    "objective": null,
+    "testScript": "Given:<br><ul><li><p>Logged in as a Neuven User</p></li></ul>When on the:&nbsp;<ul><li><p>Document Upload Maintenance Page</p></li><li><p>Direct Bank Worker Document Types Tab</p></li></ul>Then:<br><ul><li><p>The table displayed show the following columns&nbsp;</p></li><li><p>The Initial load of the page will show documents for all clients.</p></li><li><p>There will be a filter on the to select a specific client using a dropdown function.&nbsp;</p></li><li><p>When a specific client is selected only the information relevant to that client will show. </p></li></ul>"
+  },
+  {
+    "id": "159911774",
+    "key": "UNO-T447",
+    "name": "As a NEUVEN user that details can be EDITED on the Direct Bank worker Document Tab - Table in the Worker Document Maintenance Page",
+    "folder": "Worker Document Maintenance Page",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2381"
+    ],
+    "objective": null,
+    "testScript": "Given:<br><ul><li><p>Logged in as a Neuven User</p></li></ul>When on the:&nbsp;<ul><li><p>Document Upload Maintenance Page</p></li><li><p>Direct Bank Worker Document Types Tab</p></li></ul>Then:<br><ul><li>On the table there is an Edit Button</li><li>When clicked, a pop up box to display&nbsp;</li><li>Only Fields Mandatory or Expiry Applicable can be edited</li><li>There are Save and Cancel Buttons<ul><li><p>Once Save clicked, the details are to<br>be updated in the Document List</p></li><li><p>Once Cancel clicked, no changes are<br>to be saved</p></li></ul></li></ul>"
+  },
+  {
+    "id": "159912018",
+    "key": "UNO-T448",
+    "name": "As a NEUVEN user that details can be DELETED on the Direct Bank worker Document Tab - Table in the Worker Document Maintenance Page.",
+    "folder": "Worker Document Maintenance Page",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2381"
+    ],
+    "objective": null,
+    "testScript": "Given:<br><ul><li><p>Logged in as a Neuven User</p></li></ul>When on the:&nbsp;<ul><li><p>Document Upload Maintenance Page</p></li><li><p>Direct Bank Worker Document Types Tab</p></li></ul>Then:<br><ul><li>On the table there is a Delete Button</li><li>When clicked popup window to say 'are you<br>sure you want to delete the document from<br>the list?' with Yes and No Buttons<ul><li><p>Yes selected -row deleted</p></li><li><p>No &ndash; No changes made</p></li></ul></li></ul>"
+  },
+  {
+    "id": "159912137",
+    "key": "UNO-T449",
+    "name": "As a NEUVEN user that the mandatory and expiry applicable fields display correct information on the Direct Bank worker Document Tab",
+    "folder": "Worker Document Maintenance Page",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2381"
+    ],
+    "objective": null,
+    "testScript": "Given:<br><ul><li><p>Logged in as a Neuven User</p></li></ul>When on the:&nbsp;<ul><li><p>Document Upload Maintenance Page</p></li><li><p>Direct Bank Worker Document Types Tab</p></li></ul>Then:<br><ul><li><p>Mandatory</p><ul><li><p>Yes or no displayed based on whether tick<br>box was ticked or not while adding the<br>document name</p></li></ul></li><li><p>Expiry Applicable</p><ul><li><p>Yes or no displayed based on the tick box when adding</p></li></ul></li></ul>"
+  },
+  {
+    "id": "159915762",
+    "key": "UNO-T450",
+    "name": "Verify changes to Direct Bank Worker Documents Types tab as a NEUVEN user",
+    "folder": "Worker Document Maintenance Page",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2380"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li><p>Logged in as a Neuven user</p></li></ul>When :<ul><li><p>Administration</p></li><li><p>Worker Document Maintenance page</p></li><li><p>Direct Bank Worker Documents Types tab</p></li></ul>Then:<br><ul><li><p>There is a Client Dropdown</p><ul><li><p>Show all Venneu Clients</p></li><li><p>No Multi-select option</p></li></ul></li><li><p>There is &nbsp;Group drop down to be included on the page</p><ul><li><p>Drop down to be populated with the job type group name from group column in client Job types page</p></li><li><p>No multi select option for the group drop down</p></li><li><p>All group as an option</p></li></ul></li><li><p>There is a Document Type Dropdown</p><ul><li><p>This drop down is fed from the Document Type Name Maintenance page, here the document names will be added and then the Document Name drop down in this page, will be populated with these names</p></li><li><p>The Document Name&rsquo;s will be all document names irrespective that have had the default box ticked or not on the Document Type Name Maintenance Page</p></li></ul></li><li><p>There is an Add Mandatory Upload Tick box</p></li><li><p>There is an Expiry Applicable Tick box</p></li><li><p>Add Document type Button</p></li></ul><br><br>"
+  },
+  {
+    "id": "159917538",
+    "key": "UNO-T451",
+    "name": "Verify the creation of  Direct Bank Worker Documents Types tab as a NEUVEN user.",
+    "folder": "Worker Document Maintenance Page",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2380"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li><p>Logged in as a Neuven user</p></li></ul>When :<ul><li><p>Administration</p></li><li><p>Worker Document Maintenance page</p></li><li><p>Direct Bank Worker Documents Types tab</p></li></ul>Then:<br><ul><li><p>There is a Client Dropdown</p><ul><li><p>Show all Venneu Clients</p></li><li><p>No Multi-select option</p></li></ul></li><li><p>There is &nbsp;Group drop down to be included on the page</p><ul><li><p>Drop down to be populated with the job type group name from group column in client Job types page</p></li><li><p>No multi select option for the group drop down</p></li><li><p>All group as an option</p></li></ul></li><li><p>There is a Document Type Dropdown</p><ul><li><p>This drop down is fed from the Document Type Name Maintenance page, here the document names will be added and then the Document Name drop down in this page, will be populated with these names</p></li><li><p>The Document Name&rsquo;s will be all document names irrespective that have had the default box ticked or not on the Document Type Name Maintenance Page</p></li></ul></li><li><p>There is an Add Mandatory Upload Tick box</p></li><li><p>There is an Expiry Applicable Tick box</p></li><li><p>Add Document type Button</p><ul><li><p>When the Add Document type Button if clicked the &nbsp;documents are added to the table . </p><ul><li><p>Entries cannot be duplicated</p></li><li><p>Cannot have duplicates, e.g can&rsquo;t have the same client, group and document type combination</p></li><li><p>Error message to be displayed if the Client, group and document combination already exist in the document table</p></li></ul></li></ul></li></ul>"
+  },
+  {
+    "id": "159918413",
+    "key": "UNO-T452",
+    "name": "As a NUEVENUSER  User ...",
+    "folder": "Worker Document Maintenance Page",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [],
+    "objective": null,
+    "testScript": "Given:<ul><li><p>Logged in as a Neuven user</p></li></ul>When :<ul><li><p>Administration</p></li><li><p>Worker Document Maintenance page</p></li><li><p>Direct Bank Worker Documents Types tab</p></li></ul>Then:<br><ul><li><p>There is a Client Dropdown</p><ul><li><p>Show all Venneu Clients</p></li><li><p>No Multi-select option</p></li></ul></li><li><p>There is &nbsp;Group drop down to be included on the page</p><ul><li><p>Drop down to be populated with the job type group name from group column in client Job types page</p></li><li><p>No multi select option for the group drop down</p></li><li><p>All group as an option</p></li></ul></li><li><p>There is a Document Type Dropdown</p><ul><li><p>This drop down is fed from the Document Type Name Maintenance page, here the document names will be added and then the Document Name drop down in this page, will be populated with these names</p></li><li><p>The Document Name&rsquo;s will be all document names irrespective that have had the default box ticked or not on the Document Type Name Maintenance Page</p></li></ul></li><li><p>There is an Add Mandatory Upload Tick box</p></li><li><p>There is an Expiry Applicable Tick box</p></li><li><p>Add Document type Button</p><ul><li><p>When the Add Document type Button if clicked the &nbsp;documents are added to the table . </p><ul><li><p>Entries cannot be duplicated</p></li><li><p>Cannot have duplicates, e.g can&rsquo;t have the same client, group and document type combination</p></li><li><p>Error message to be displayed if the Client, group and document combination already exist in the document table</p></li></ul></li></ul></li></ul>"
+  }
+]

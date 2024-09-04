@@ -1,0 +1,329 @@
+[
+  {
+    "id": "157327352",
+    "key": "UNO-T353",
+    "name": "Verify there is an error message when no auto cascade details are filled",
+    "folder": "Shifts functionality/Auto cascade functionality/UNO-2113",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2113"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "157327354",
+    "key": "UNO-T354",
+    "name": "Verify able to save client details and the auto cascade details are saved against the client",
+    "folder": "Shifts functionality/Auto cascade functionality/UNO-2113",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2113"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "157332067",
+    "key": "UNO-T355",
+    "name": "Verify top-level client settings on auto cascade table is copied to child locations",
+    "folder": "Shifts functionality/Auto cascade functionality/UNO-2136",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2136"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "157332068",
+    "key": "UNO-T356",
+    "name": "Verify when a sub-region is edited autocascade table details are copied to locations under that region",
+    "folder": "Shifts functionality/Auto cascade functionality/UNO-2136",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2136"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "157332069",
+    "key": "UNO-T357",
+    "name": "Verify there is a toggle in the auto cascade tab to determine whether details are copied or overridden",
+    "folder": "Shifts functionality/Auto cascade functionality/UNO-2136",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2136"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "157332070",
+    "key": "UNO-T358",
+    "name": "Verify toggle is set to copied when creating a new child location",
+    "folder": "Shifts functionality/Auto cascade functionality/UNO-2136",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2136"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "157332071",
+    "key": "UNO-T359",
+    "name": "Verify when toggle is set to override the default value text boxes will show",
+    "folder": "Shifts functionality/Auto cascade functionality/UNO-2136",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2136"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "157332072",
+    "key": "UNO-T360",
+    "name": "Verify we can save the overridden values to the location",
+    "folder": "Shifts functionality/Auto cascade functionality/UNO-2136",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2136"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "157332073",
+    "key": "UNO-T361",
+    "name": "Verify the overridden value in child location is applied to only that location or any location that is child of that location",
+    "folder": "Shifts functionality/Auto cascade functionality/UNO-2136",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2136"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "157332075",
+    "key": "UNO-T362",
+    "name": "Verify any changes made to top parent does not affect locations which has override toggle on",
+    "folder": "Shifts functionality/Auto cascade functionality/UNO-2136",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2136"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "157904187",
+    "key": "UNO-T363",
+    "name": "Verify the renaming of the 'documents' to 'Agency worker Documents' when logged in as a client user.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2247",
+      "UNO-2251"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li>Logged on as a client user</li></ul>When:<ul><li>On the side navigation menu.&nbsp;</li></ul>Then:<ul><li>Verify that there is a menu option called 'Agency Worker Documents'.</li><li>This option will appear after the timesheet option on the side menu.&nbsp;</li><li>Verify that there is no option called 'Documents'.</li></ul>"
+  },
+  {
+    "id": "157914605",
+    "key": "UNO-T364",
+    "name": "Verify that the permission ‘Manage Direct Bank Workers' exits when creating / editing a new Neuven user.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2245"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged on as a Neuven user</li></ul>When :<ul><li>Creating or editing another Neuven user&nbsp;</li></ul>Then :<br>On the user list details screen search for neuven users<ul><li>Select to edit a neuven user &gt; go to the permissions tab and clarify that there is a permission called &lsquo;Manage Direct Bank Workers'.&nbsp;</li><li>Select to create a new neuven user and verify that the permission &lsquo;Manage Direct Bank Workers ' appears as an option.</li></ul><br><br>"
+  },
+  {
+    "id": "157919987",
+    "key": "UNO-T365",
+    "name": "Verify that as a neuven user with the permission ; ‘Manage Direct Bank Workers' selected the menu options have changed.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2245",
+      "UNO-2247"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li>Logged on as a neuven user with &lsquo;Manage Direct Bank Workers' permission selected.&nbsp;</li></ul>When :<ul><li>On the side menu option&nbsp;</li></ul>Then :<ul><li>Under the client menu option they should be able to see an option for Direct Bank Workers.</li><li>This should redirect the user to as page where they can edit / add and view direct bank workers details.</li></ul>"
+  },
+  {
+    "id": "157922281",
+    "key": "UNO-T366",
+    "name": "Verify that the permission for  “Manage Direct Bank Workers” does not appear when creating /editing Agency Users.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2245"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li>Logged in as a neuven user.&nbsp;</li></ul>When:<ul><li>On the user lists page.&nbsp;</li></ul>Then :<ul><li>Search for an agency user and edit them &gt; in the permissions tab there should be no option for : &ldquo;Manage Direct Bank Workers&rdquo; .</li><li>Create a new agency user&nbsp; and &nbsp;in the permissions tab there should be no option for : &ldquo;Manage Direct Bank Workers&rdquo; .</li></ul>"
+  },
+  {
+    "id": "157922318",
+    "key": "UNO-T367",
+    "name": "Verify that the permission for  “Manage Direct Bank Workers” does not appear when creating /editing Client Users.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2245"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li>Logged in as a neuven user.&nbsp;</li></ul>When:<ul><li>On the user lists page.&nbsp;</li></ul>Then :<ul><li>Search for an Client user and edit them &gt; in the permissions tab there should be no option for : &ldquo;Manage Direct Bank Workers&rdquo; .</li><li>Create a new Client&nbsp; user &nbsp;and &nbsp;in the permissions tab there should be no option for : &ldquo;Manage Direct Bank Workers&rdquo; .</li></ul>"
+  },
+  {
+    "id": "157929038",
+    "key": "UNO-T368",
+    "name": "Verify the addition of two new permissions when creating a Client User",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2246"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged on as a neuven user.</li></ul>When :<ul><li>On user lists page&nbsp;</li></ul>Then :<ul><li>Verify that when creating a new client user &gt; the following new permissions appears on the permissions tab: 'View Direct Bank Workers' and 'Edit Direct Bank Workers.</li><li>Verify that when editing &nbsp;client user &gt; the following new permissions appears on the permissions tab: 'View Direct Bank Workers' and 'Edit Direct Bank Workers.</li></ul>"
+  },
+  {
+    "id": "157933316",
+    "key": "UNO-T369",
+    "name": "Verify the access rights of the client user who has the : 'View Direct Bank Workers permission'",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2246"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li>Logged on as a client user with 'view direct banker'</li></ul>When :<ul><li>On the side menu they should be able to see the 'Direct Bank Workers' option .&nbsp;</li></ul>Then :<ul><li>User can view this page but is unable to create / edit any records.&nbsp;</li></ul>"
+  },
+  {
+    "id": "157934622",
+    "key": "UNO-T370",
+    "name": "Verify the access rights of the client user who has the : 'Edit Direct Bank Workers' permission.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2246"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li>Logged on as a client user with 'view direct banker'</li></ul>When :<ul><li>On the side menu they should be able to see the 'Direct Bank Workers' option .&nbsp;</li></ul>Then :<ul><li>User can view this page and can to create / edit records.&nbsp;</li></ul>"
+  },
+  {
+    "id": "157936952",
+    "key": "UNO-T371",
+    "name": "Verify the additional to permissions set up as a client user (mutually exclusive)",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2246"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li>Logged as a Neuven User.</li></ul>When:<ul><li>On the user lists page</li></ul>Then:<ul><li>Verify that the edit and view bank worker permissions are mutually exclusive and user shouldn't be able to select both of them &nbsp;when creating / editing a client user. &nbsp;</li></ul>"
+  },
+  {
+    "id": "157948016",
+    "key": "UNO-T372",
+    "name": "Verify that as a Neuven user (with relevant permissions) can view the ‘Add New Direct Bank Worker' on the Direct bank worker page.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2249"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged on as a Neuven user with &nbsp;Venneu access and &lsquo;Manage Direct Bank Workers&rsquo; permission</li></ul>When :<ul><li>On the direct Bank Workers page.&nbsp;</li></ul>Then :<ul><li>User can view a button to add a 'Add New Direct Bank Worker'</li><li>When clicked on this redirects the user to an input page.&nbsp;</li></ul>"
+  },
+  {
+    "id": "157950315",
+    "key": "UNO-T373",
+    "name": "Verify that as a client user with 'Edit Direct Bank Worker' permission they can see the button to add the worker on the direct back workers page",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2249"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged on as a client with the 'Edit direct &nbsp;bank worker' permission.</li></ul>When :<ul><li>On the direct bank worker page.&nbsp;</li></ul>Then :<ul><li>User should be able to see a button called 'Add New Direct Bank Worker&rsquo; on the top right hand side of the screen.&nbsp;</li></ul>"
+  },
+  {
+    "id": "157951517",
+    "key": "UNO-T374",
+    "name": "Verify that as a client user with 'VIEW Direct Bank Worker' permission they can NOT see the button to add the worker on the direct back workers page",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2249"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged on as a client with the 'View direct &nbsp;bank worker' permission.</li></ul>When :<ul><li>On the direct bank worker page.&nbsp;</li></ul>Then :<ul><li>User should&nbsp; NOT be able to see a button called 'Add New Direct Bank Worker&rsquo; on the top right hand side of the screen</li></ul>"
+  },
+  {
+    "id": "157961345",
+    "key": "UNO-T375",
+    "name": "Verify that as a Neuven user (with relevant permissions) can view the ‘Upload New Direct Bank Worker' on the Direct bank worker page.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2250"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged on as a Neuven user with &nbsp;Venneu access and &lsquo;Manage Direct Bank Workers&rsquo; permission</li></ul>When :<ul><li>On the direct Bank Workers page.&nbsp;</li></ul>Then :<ul><li>User can view a button to add a 'Upload New Direct Bank Worker'</li></ul>"
+  },
+  {
+    "id": "157961413",
+    "key": "UNO-T376",
+    "name": "Verify that as a client user with 'Edit Direct Bank Worker' permission they can see the button to Upload the worker on the direct back workers page",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2250"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged on as a client with the 'Edit direct &nbsp;bank worker' permission.</li></ul>When :<ul><li>On the direct bank worker page.&nbsp;</li></ul>Then :<ul><li>User should be able to see a button called 'Upload New Direct Bank Worker&rsquo; on the top right hand side of the screen.&nbsp;</li></ul>"
+  },
+  {
+    "id": "157961433",
+    "key": "UNO-T377",
+    "name": "Verify that as a client user with 'VIEW Direct Bank Worker' permission they can NOT see the button to Upload the worker on the direct back workers page",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2250"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged on as a client with the 'View direct &nbsp;bank worker' permission.</li></ul>When :<ul><li>On the direct bank worker page.&nbsp;</li></ul>Then :<ul><li>User should &nbsp;NOT be able to see a button called 'Upload New Direct Bank Worker&rsquo; on the top right hand side of the screen</li></ul>"
+  }
+]

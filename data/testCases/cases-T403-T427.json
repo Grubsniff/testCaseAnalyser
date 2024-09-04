@@ -1,0 +1,327 @@
+[
+  {
+    "id": "158180543",
+    "key": "UNO-T403",
+    "name": "Verify that as a CLIENT user only the data relevant to that client is displayed in the table.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2311"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li><p>Logged in as Client user with ' View Direct Bank Worker' or &lsquo;Edit Direct Bank Worker&rsquo; Permission</p></li></ul>When :<ul><li>In Direct Bank Workers page</li></ul>Then:<ul><li><p>When viewing this page as a client user, user should not see the client column and also should be able to see the worker profile related to client logged as only. In this case multiple rows for the same worker will not show.</p></li></ul><br>"
+  },
+  {
+    "id": "158180557",
+    "key": "UNO-T404",
+    "name": "Verify basic functionality when logged in as a CLIENT and as a NEUVEN user on the Direct Bank Work page. (Filter/advanced search)",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2311"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li><p>Logged in as a Neuven user with &lsquo;Manage Direct Bank Workers&rsquo; Permission</p></li><li><p>OR</p></li><li><p>Logged in as Client user with ' View Direct Bank Worker' or &lsquo;Edit Direct Bank Worker&rsquo; Permission</p></li></ul>When:<ul><li>In Direct Bank Workers page</li></ul>Then:<br><ul><li><p>Table to have a universal search option</p><ul><li><p>Filters table based on Key word entered</p></li></ul></li></ul><br>"
+  },
+  {
+    "id": "158180567",
+    "key": "UNO-T405",
+    "name": "Verify basic functionality when logged in as a CLIENT and as a NEUVEN user on the Direct Bank Work page. (Export)",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2311"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li>Logged in as a Neuven user with &lsquo;Manage Direct Bank Workers&rsquo; Permission</li><li>OR</li><li>Logged in as Client user with ' View Direct Bank Worker' or &lsquo;Edit Direct Bank Worker&rsquo; Permission</li></ul>When:<ul><li>In Direct Bank Workers page</li></ul>Then:<ul><li>The export button will export off of the data displaying on the screen to an excel document.&nbsp;</li></ul>"
+  },
+  {
+    "id": "158180586",
+    "key": "UNO-T406",
+    "name": "Verify Table rule when logged in as a NEUVEN user for a a direct bank worker registered with multiple clients.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2311"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li><p>Logged in as a Neuven user with &lsquo;Manage Direct Bank Workers&rsquo; Permission</p></li></ul>When:<ul><li><p>In Direct Bank Workers page</p></li></ul><br>Then:<ul><li><p>Table can have same worker &nbsp;shown in multiple rows, showing a row for each client they are registered with</p></li></ul>"
+  },
+  {
+    "id": "158182432",
+    "key": "UNO-T407",
+    "name": "Verify changes to Worker documents page when logged in as a CLIENT  user ( general )",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2153"
+    ],
+    "objective": null,
+    "testScript": "Given :&nbsp;<ul><li><p>Logged in as a client user with View Documents permission</p></li></ul>When :<ul><li><p>Click Documents - View Worker documents</p></li></ul>Then<ul><li>Select &nbsp;and agency from the drop down.&nbsp;</li><li>Verify that the following columns have been added to the page. Compliant , Induction Date Column &nbsp;and ACTION .&nbsp;</li></ul>"
+  },
+  {
+    "id": "158182458",
+    "key": "UNO-T408",
+    "name": "Verify changes to Worker documents page when logged in as a CLIENT user ( Compliant )",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2153"
+    ],
+    "objective": null,
+    "testScript": "Given :&nbsp;<ul><li>Logged in as a client user with View Documents permission</li></ul>When :<ul><li>Click Documents - View Worker documents</li></ul>Then<ul><li><p>A green tick is shown if all the mandatory documents based on the job type group for the client and default documents set for Venneu are uploaded by the agency</p></li></ul><ul><li><p>&nbsp;A red 'x' is shown if one or more mandatory documents are not uploaded or if any of the uploaded mandatory documents have expired</p></li></ul><br>"
+  },
+  {
+    "id": "158182492",
+    "key": "UNO-T409",
+    "name": "Verify changes to Worker documents page when logged in as a CLIENT user ( Induction Date Column )",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2153"
+    ],
+    "objective": null,
+    "testScript": "Given :&nbsp;<ul><li>Logged in as a client user with View Documents permission</li></ul>When :<ul><li>Click Documents - View Worker documents</li></ul>Then<br>The induction date column<br><ul><li><p>Any induction date entered in the shift fulfilment page or in this page is shown in this column</p></li><li><p>This column is visible for users with &lsquo;Approve workers for shift&rsquo; permission and only users with this permission can edit the data in this column</p></li><li><p>Date format DD/MM/YYYY</p></li></ul><br>"
+  },
+  {
+    "id": "158182610",
+    "key": "UNO-T410",
+    "name": "Verify changes to Worker documents page when logged in as a CLIENT user ( Action Column )",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2153"
+    ],
+    "objective": null,
+    "testScript": "Given :&nbsp;<ul><li>Logged in as a client user with View Documents permission</li></ul>When :<ul><li>Click Documents - View Worker documents</li></ul>Then :<br><ul><li><p>Action column to include an Approval tick box</p><ul><li><p>A tick box with blue-tick shows if the worker was previously approved to work for the client in this page or in shift fulfilment page.</p></li><li><p>Empty tick box shown if the worker was not approved previously</p></li><li><p>This tick box is visible only for users with &lsquo;Approve workers for shift&rsquo; permission and is also editable only by users with that permission</p></li></ul></li></ul><br><br>"
+  },
+  {
+    "id": "159262260",
+    "key": "UNO-T411",
+    "name": "Verify as a NEUVEN user the tabs available when creating a new direct bank worker. -User Details Tab",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2371"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li>Logged in as a Neuven user (With Manage Direct Bank Workers Permission)</li></ul>When:<ul><li>Direct Bank Worker page</li></ul>Then:<ul><li>Click &nbsp;&lsquo;Add New Direct Bank Worker&rsquo;</li><li>Blank profile opens with the following tabs<ul><li>User details</li><li>Permissions</li><li>Client locations</li><li>Financials</li><li>Compliance</li><li>Document Upload.</li><li>Notes</li></ul></li><li>On the <strong>User Details Tab</strong><ul><li>Add client drop down in the first field</li><li>This will drop down to show all venue clients</li><li>User cannot multi-select from this drop down</li></ul></li><li>When profile has been saved verify that the client selected appear in the direct bank worker table.&nbsp;</li></ul>"
+  },
+  {
+    "id": "159262288",
+    "key": "UNO-T412",
+    "name": "Verify as a NEUVEN user the tabs available when Editing a new direct bank worker. - User Details Tab",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2371"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li>Logged in as a Neuven user (With Manage Direct Bank Workers Permission)</li></ul>When:<ul><li>Direct Bank Worker page</li></ul>Then:<ul><li>Click &nbsp;Edit to change any bank worker details</li><li>User details tab</li><li><p>Client dropdown should be static and client name cannot be changed</p></li><li><p>Confirm that the changes save by saving changes and then going back into the record.&nbsp;</p></li></ul>"
+  },
+  {
+    "id": "159266272",
+    "key": "UNO-T413",
+    "name": "Verify as a CLIENT user the tabs available when CREATING / EDITING a new direct bank worker.- User Details Tab",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2371"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:</p><ul><li><p>Logged in as a Client User (Edit Direct Bank worker Permission)</p></li></ul>When:<ul><li><p>Direct Bank Worker page</p></li></ul>Then:<ul><li><p>Click &lsquo;Add New Direct Bank Worker&rsquo; -&nbsp;</p><ul><li><p>Blank profile opens with different tabs</p></li><li><p>User details tab</p></li><li><p>There is no client dropdown - Instead this client field is automatically defaulted to the Top level parent client of that client user</p></li></ul></li><li><p>When editing a Direct Bank Worker</p><ul><li><p>User details tab</p></li><li><p>any changes made save successfully.&nbsp;</p></li><li><p>this is tested by making changes and then going back it the record to check the changes. </p></li></ul></li></ul>"
+  },
+  {
+    "id": "159299021",
+    "key": "UNO-T414",
+    "name": "Verify as a NEUVEN user the options  for EDITING a direct bank workers - compliance tab passport details section",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2344"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li>Logged in as a Neuven user (With Manage Direct Bank Workers Permission)</li></ul>When:<ul><li>Direct Bank Worker page</li><li>When editing a Direct Bank Worker&nbsp;</li></ul>Then:<ul><li>On the <strong>Compliance Tab</strong></li><li>Passport details<ul><li>Toggle &ndash; can only be seen if the user has the Manage Direct Bank Workers Permission</li></ul></li><li>Passport expiry date field &ndash; helper text to show correct DD/MM/YYYY format, and also include a calendar function (date picker)</li><li>Date of birth field &ndash; helper text to show correct DD/MM/YYYY format, and also include a calendar function (date picker)</li><li>Verify that the changes to these field save correctly.</li></ul>"
+  },
+  {
+    "id": "159299082",
+    "key": "UNO-T415",
+    "name": "Verify as a CLIENT user the options for EDITING bank workers - compliance tab passport details section",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2344"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li>Logged in as a CLIENT user (With EDIT Direct Bank Workers Permission)</li></ul>When:<ul><li>Direct Bank Worker page</li><li>When editing a Direct Bank Worker&nbsp;</li></ul>Then:<ul><li>On the <strong>Compliance Tab</strong></li><li>Passport details<ul><li>Toggle &ndash; can only be seen if the user has the Manage Direct Bank Workers Permission</li></ul></li><li>Passport expiry date field &ndash; helper text to show correct DD/MM/YYYY format, and also include a calendar function (date picker)</li><li>Date of birth field &ndash; helper text to show correct DD/MM/YYYY format, and also include a calendar function (date picker)</li><li>Verify that the changes to these field save correctly.</li></ul>"
+  },
+  {
+    "id": "159306859",
+    "key": "UNO-T416",
+    "name": "Verify as a NEUVEN user when creating a new direct bank worker the default permission on the permissions tab for login via app or website.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2342"
+    ],
+    "objective": null,
+    "testScript": "Given:<br><ul><li>Logged in as a Neuven user (With Manage Direct Bank Workers Permission)</li></ul>When:<br><ul><li>Direct Bank Worker page</li></ul>Then:<br><ul><li><p>Permissions Tab</p><ul><li><p>There will be options for the following logins.&nbsp;</p><ul><li><p>Log in Via Venneu App (Default)</p></li><li><p>Log in Via Venneu Desktop Site<span><span><a href=\"https://neuven.atlassian.net/browse/UNO-2343\"></a></span></span><br></p></li></ul></li></ul></li><li><p>When setting up a Direct bank worker &lsquo;Log in Via Venneu App&rsquo; permission is ticked by default.&nbsp;</p></li><li><p>The &ldquo;Log in via Venneu Desktop Site&rdquo; is not ticked</p></li></ul><br>"
+  },
+  {
+    "id": "159306876",
+    "key": "UNO-T417",
+    "name": "Verify as a Client User when creating a new direct bank worker the default permission on the permissions tab for login via app or website.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2342"
+    ],
+    "objective": null,
+    "testScript": "Given:<br><ul><li><p>Logged in as a Client user with &lsquo;Edit Direct Bank Worker&rsquo; permission</p></li></ul>When:<br><ul><li>Direct Bank Worker page</li></ul>Then:<br><ul><li><p>Permissions Tab</p><ul><li><p>There will be options for the following logins.&nbsp;</p><ul><li><p>Log in Via Venneu App (Default)</p></li><li><p>Log in Via Venneu Desktop Site<span><span><a href=\"https://neuven.atlassian.net/browse/UNO-2343\"></a></span></span><br></p></li></ul></li></ul></li><li><p>When setting up a Direct bank worker &lsquo;Log in Via Venneu App&rsquo; permission is ticked by default.&nbsp;</p></li><li>The &ldquo;Log in via Venneu Desktop Site&rdquo; is not ticked</li></ul>"
+  },
+  {
+    "id": "159409972",
+    "key": "UNO-T418",
+    "name": "Verify as a NEUVEN user the PSNI  and access NI fields in the compliance tab are available",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2348"
+    ],
+    "objective": null,
+    "testScript": "Given:<br><ul><li>Logged in as a Neuven user (With Manage Direct Bank Workers Permission)</li></ul>When:<br><ul><li>Direct Bank Worker page</li></ul>Then:<br>On the <strong>Compliance Tab</strong><br><p>There are input fields for PSNI Details and Access NI Details</p><p>These are shown below DBS details</p><ul><li><p>PSNI Number (Free Type text box)</p></li><li><p>PSNI Expiry date&nbsp;</p><ul><li><p>Helper text with date format DD/MM/YYYY</p></li><li><p>Date Picker</p></li></ul></li><li><p>Access NI Certificate Number (Free Type text box)</p></li><li><p>Access NI Expiry Date</p><ul><li><p>Helper text with date format DD/MM/YYYY</p></li><li><p>Date Picker</p></li></ul></li></ul><p>Rules:</p><ol><li><p>These fields will be enabled if the worker is linked to a client location in Ireland otherwise greyed out.</p></li></ol>"
+  },
+  {
+    "id": "159409977",
+    "key": "UNO-T419",
+    "name": "Verify as a CLIENT User the PSNI and access NI fields in the compliance tab are available doesn't save with past expiry dates.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2348"
+    ],
+    "objective": null,
+    "testScript": "Given:<br><ul><li><p>Client user with ' Edit Direct Bank Worker Permission'</p></li></ul>When:<br><ul><li>Direct Bank Worker page</li></ul>Then:<br>On the <strong>Compliance Tab</strong><br>There are input fields for PSNI Details and Access NI Details<br>These are shown below DBS details<br><ul><li>PSNI Number (Free Type text box)</li><li>PSNI Expiry date&nbsp;<ul><li>Helper text with date format DD/MM/YYYY</li><li>Date Picker</li></ul></li><li>Access NI Certificate Number (Free Type text box)</li><li>Access NI Expiry Date<ul><li>Helper text with date format DD/MM/YYYY</li><li>Date Picker</li></ul></li><li>If there is a expiry date that is in the past then the user should be given an error and it should possibly not allow them to save.&nbsp;</li></ul>Rules:<br><ol><li>These fields will be enabled if the worker is linked to a client location in Ireland otherwise greyed out.</li></ol>"
+  },
+  {
+    "id": "159410018",
+    "key": "UNO-T420",
+    "name": "Verify as a NEUVEN user the PSNI  and access NI fields in the compliance tab are available doesn't  save with past expiry dates.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2348"
+    ],
+    "objective": null,
+    "testScript": "Given:<br><ul><li>Logged in as a Neuven user (With Manage Direct Bank Workers Permission)</li></ul>When:<br><ul><li>Direct Bank Worker page</li></ul>Then:<br>On the <strong>Compliance Tab</strong><br>There are input fields for PSNI Details and Access NI Details<br>These are shown below DBS details<br><ul><li>PSNI Number (Free Type text box)</li><li>PSNI Expiry date&nbsp;<ul><li>Helper text with date format DD/MM/YYYY</li><li>Date Picker</li></ul></li><li>Access NI Certificate Number (Free Type text box)</li><li>Access NI Expiry Date<ul><li>Helper text with date format DD/MM/YYYY</li><li>Date Picker</li></ul></li><li>If there is a expiry date that is in the past then the user should be given an error and it should possibly not allow them to save.&nbsp;</li></ul>Rules:<br><ol><li>These fields will be enabled if the worker is linked to a client location in Ireland otherwise greyed out.</li></ol>"
+  },
+  {
+    "id": "159410037",
+    "key": "UNO-T421",
+    "name": "Verify as a CLIENT User the PSNI and access NI fields in the compliance tab",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2348"
+    ],
+    "objective": null,
+    "testScript": "Given:<br><ul><li><p>Client user with ' Edit Direct Bank Worker Permission'</p></li></ul>When:<br><ul><li>Direct Bank Worker page</li></ul>Then:<br>On the <strong>Compliance Tab</strong><br>There are input fields for PSNI Details and Access NI Details<br>These are shown below DBS details<br><ul><li>PSNI Number (Free Type text box)</li><li>PSNI Expiry date&nbsp;<ul><li>Helper text with date format DD/MM/YYYY</li><li>Date Picker</li></ul></li><li>Access NI Certificate Number (Free Type text box)</li><li>Access NI Expiry Date<ul><li>Helper text with date format DD/MM/YYYY</li><li>Date Picker</li></ul></li></ul>Rules:<br><ol><li>These fields will be enabled if the worker is linked to a client location in Ireland otherwise greyed out.</li></ol>"
+  },
+  {
+    "id": "159410042",
+    "key": "UNO-T422",
+    "name": "Verify as a NEUVEN  user The PSNI and Access NI fields can be edited. ",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2348"
+    ],
+    "objective": null,
+    "testScript": "Given:<br><ul><li>Logged in as a Neuven user (With Manage Direct Bank Workers Permission)</li></ul>When:<br><ul><li>Direct Bank Worker page</li></ul>Then:<br>On the <strong>Compliance Tab </strong>when editing an existing worker the following fields can be edited .<br><ul><li>PSNI Number&nbsp;</li><li>PSNI Expiry date </li><li>Access NI Certificate Number (Free Type text box)</li><li>Access NI Expiry Date</li></ul>Rules:<br><ol><li>These fields will be enabled if the worker is linked to a client location in Ireland otherwise greyed out.</li></ol>"
+  },
+  {
+    "id": "159410046",
+    "key": "UNO-T423",
+    "name": "Verify as a CLIENT user The PSNI and Access NI fields can be edited. ",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2348"
+    ],
+    "objective": null,
+    "testScript": "Given:<br><ul><li><p>Client user with ' Edit Direct Bank Worker Permission'</p></li></ul>When:<br><ul><li>Direct Bank Worker page</li></ul>Then:<br>On the <strong>Compliance Tab&nbsp;</strong>when editing an existing worker the following fields can be edited .<br><ul><li>PSNI Number&nbsp;</li><li>PSNI Expiry date</li><li>Access NI Certificate Number (Free Type text box)</li><li>Access NI Expiry Date</li></ul>Rules:<br><ol><li>These fields will be enabled if the worker is linked to a client location in Ireland otherwise greyed out.</li></ol>"
+  },
+  {
+    "id": "159410365",
+    "key": "UNO-T424",
+    "name": "Verify the spelling on country of license has been corrected on the page RTW section on the compliance tab for direct bank workers",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2351"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li><p>Logged in as a Neuven user with &lsquo;Manage Direct Bank worker Permission'</p></li><li><p>OR</p></li><li><p>Client user</p></li></ul>When:<ul><li>On direct workers page when adding a new direct worker profile/ editing a direct worker.</li></ul>Then:<ul><li>The country of license label has had its spelling corrected</li><li>from country of licence.</li><li>to county of license.</li></ul>"
+  },
+  {
+    "id": "159410475",
+    "key": "UNO-T425",
+    "name": "Verify as a NEUVEN User that they can see / use the update compliance button on the Compliance Tab",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2351"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li>Logged in as a Neuven user (With Manage Direct Bank Workers Permission)</li></ul>When:<ul><li>Direct Bank Worker page</li></ul>Then:<br>On the <strong>Compliance Tab</strong><ul><li><p>There is a &nbsp;Compliance Button at &nbsp;the bottom of page in Compliance tab </p></li><li><p>Saves Details entered or changed within the compliance tab to the worker profile</p></li><li><p>Is to be seen or clickable only by users with above permission</p></li></ul>"
+  },
+  {
+    "id": "159410821",
+    "key": "UNO-T426",
+    "name": "Verify as a CLIENT User that they can see / use the update compliance button on the Compliance Tab",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2351"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li><p>Client user with ' Edit Direct Bank Worker Permission'</p></li></ul>When:<ul><li>Direct Bank Worker page</li></ul>Then:<br>On the <strong>Compliance Tab</strong><ul><li>There is a &nbsp;Compliance Button at &nbsp;the bottom of page in Compliance tab</li><li>Saves Details entered or changed within the compliance tab to the worker profile</li><li>Is to be seen or clickable only by users with above permission</li></ul>"
+  },
+  {
+    "id": "159410907",
+    "key": "UNO-T427",
+    "name": "Verify as a NEUVEN User that the DBS details on the Compliance tab appear below the RTW details.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2347"
+    ],
+    "objective": null,
+    "testScript": "<div><div><div><div><p>Given:&nbsp;</p><ul><li><p>Logged in as a Neuven user with &lsquo;Manage Direct Bank worker Permission'</p></li></ul>When :</div><ul><li><div>One direct Bank Workers Page</div></li><li><div>When adding a &nbsp;New Direct Bank worker</div></li></ul><div>Then:</div><ul><li><p>One the Compliance Tab</p><ul><li><p>DBS Details&nbsp;</p><ul><li><p>DBS Certificate Verified Toggle</p></li><li><p>DBS Certificate Verified By (Free Type Text field)</p></li><li><p>DBS Certificate Verified On (Helper text with Date format DD/MM/YYYY)</p><ul><li><p>Date picker</p></li></ul></li><li><p>DBS Certificate Number (Free Type Text field)</p></li><li><p>DBS Issue Date (Helper text with Date format DD/MM/YYYY)</p><ul><li><p>Date picker</p></li></ul></li></ul></li></ul></li></ul><ul><li><p>These fields are editable by users with above permission only</p></li></ul></div></div></div>"
+  }
+]

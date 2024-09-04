@@ -1,0 +1,327 @@
+[
+  {
+    "id": "153005244",
+    "key": "UNO-T203",
+    "name": "Verify if Ireland Is selected, PPS field to be displayed and NI field to be hidden",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2184"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "153005245",
+    "key": "UNO-T204",
+    "name": "Verify if UK is selected, NI field is to remain to be filled out",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2184"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "153005246",
+    "key": "UNO-T205",
+    "name": "Verify if Both is selected, PPS and NI fields are to be displayed",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2184"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "153005247",
+    "key": "UNO-T206",
+    "name": "Verify that the page cannot be saved without these fields being filled out, mandatory field",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2184"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "153005248",
+    "key": "UNO-T207",
+    "name": "Verify that when logged in as an Agency User PPS column is populated if the information was inputted when the worker was created",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2184"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "153005249",
+    "key": "UNO-T208",
+    "name": "Verify that when logged in as an Agency User NI column is populated if the information was inputted when the worker was created",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2184"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "153005250",
+    "key": "UNO-T209",
+    "name": "Verify that when logged in as an Agency User, the Worker likely to work in UK/Ireland question is to appear when editing/adding a worker",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2184"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "153005251",
+    "key": "UNO-T210",
+    "name": "Verify that the page cannot be saved without these fields being filled out, mandatory field",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2184"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "153005252",
+    "key": "UNO-T211",
+    "name": "Verify if Ireland Is selected, PPS field to be displayed and NI field to be hidden",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2184"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "153005253",
+    "key": "UNO-T212",
+    "name": "Verify if UK is selected, NI field is to remain to be filled out",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2184"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "153005254",
+    "key": "UNO-T213",
+    "name": "Verify if Both is selected, PPS and NI fields are to be displayed",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2184"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "153010886",
+    "key": "UNO-T214",
+    "name": "Verify that there is a currency dropdown on the Agency BACS Export.",
+    "folder": "Multi Currency",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2188"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged on as a Neuven, &nbsp;with View invoices or Manage invoices permission.</li></ul>When:<ul><li>On the invoices , Agency BACS export page</li></ul>Then:<ul><li>The advanced filters should have an option for currency.</li><li>The currency field should be a dropdown.</li><li>The default value of the field when the page loads should be GBP.</li></ul>"
+  },
+  {
+    "id": "153010900",
+    "key": "UNO-T215",
+    "name": "Verify that there is a currency Column on the Agency BACS Export",
+    "folder": "Multi Currency",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2188"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged on as a Neuven, &nbsp;with View invoices or Manage invoices permission.</li></ul>When:<ul><li>On the invoices , Agency BACS export page</li></ul>Then:<ul><li>The table has a column for the currency.&nbsp;</li><li>The column should be after the branch column.&nbsp;</li><li>The currency should be displayed as either GBP or EURO.</li><li>The table will default to all currencies unless the filter is used.&nbsp;</li></ul>"
+  },
+  {
+    "id": "153011821",
+    "key": "UNO-T216",
+    "name": "Verify that the changes to column names on the Agency BAC export.",
+    "folder": "Multi Currency",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2188"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged on as a Neuven, &nbsp;with View invoices or Manage invoices permission.</li></ul>When:<ul><li>On the invoices , Agency BACS export page</li></ul>Then:<ul><li>The column name for Account Number has been changed to : Account Number/IBAN .</li><li>The column name for Sort Code has been changed to : Sort Code/BIC Code .</li></ul>"
+  },
+  {
+    "id": "153014909",
+    "key": "UNO-T217",
+    "name": "Verify Changes to client setup for Multi Currency when setting up an New Client.",
+    "folder": "Multi Currency",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2182"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li>Logged on as a Neuven User.&nbsp;</li></ul>When:<ul><li>On the client set up page.&nbsp;</li></ul>Then:<ul><li>There will be a currency field on the Client details tab</li><li>The currency will be linked to the country that has been selected, and will auto populate to that field.&nbsp;</li><li>Invoices for the client will be display the currency select on this page.&nbsp;</li></ul><br>"
+  },
+  {
+    "id": "153014917",
+    "key": "UNO-T218",
+    "name": "Verify Changes to client setup for Multi Currency when editing an existing client",
+    "folder": "Multi Currency",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2182"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li>Logged on as a Neuven User.&nbsp;</li></ul>When:<ul><li>On the client set up page.&nbsp;</li></ul>Then:<ul><li>There will be a currency field on the Client details tab</li><li>The currency will be linked to the country that has been selected, and will auto populate to that field.&nbsp;</li><li>When changing the currency, the new invoices generated should display in the new currency and the old one should link back to the old currency.&nbsp;</li></ul><br>"
+  },
+  {
+    "id": "153432706",
+    "key": "UNO-T219",
+    "name": "Verify if the Agency is outside of the UK Account number and sort code are not to be displayed",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2183"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "153432707",
+    "key": "UNO-T220",
+    "name": "Verify if the Agency is outside of the UK, IBAN field is to be displayed and BIC field to be displayed",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2183"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "153432708",
+    "key": "UNO-T221",
+    "name": "Verify if edit Is selected, on the additional details tab if the Agency is outside of the UK if the Agency is outside of the UK Account number and sort code are not to be displayed",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2183"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "153432709",
+    "key": "UNO-T222",
+    "name": "Verify if edit Is selected, on the additional details tab if the Agency is outside of the UK, IBAN field is to be displayed and BIC field to be displayed",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2183"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "153432710",
+    "key": "UNO-T223",
+    "name": "Verify IBAN Field is alphanumeric",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2183"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "153432711",
+    "key": "UNO-T224",
+    "name": "Verify GB code is to be based on the country that the Agency is set to",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2183"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "153432712",
+    "key": "UNO-T225",
+    "name": "Verify that the IBAN field character limit is 34",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2183"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "153432713",
+    "key": "UNO-T226",
+    "name": "Verify that the BIC field is alphanumeric with a character limit of 12",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2183"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  },
+  {
+    "id": "153432714",
+    "key": "UNO-T227",
+    "name": "Verify if a new agency branch is created, on the additional details tab if the Agency is outside of the UK, IBAN field is to be displayed and BIC field to be displayed",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2183"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}"
+  }
+]

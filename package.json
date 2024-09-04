@@ -1,0 +1,30 @@
+{
+  "name": "openai-cli-tool",
+  "version": "1.0.0",
+  "description": "A CLI tool for interacting with OpenAI's GPT-4 API",
+  "main": "cli.ts",
+  "scripts": {
+    "parsexml": "npx ts-node tools/processXml.ts",
+    "splitjson": "npx ts-node tools/jsonSplitter.ts",
+    "analyse": "npx ts-node cli.ts \"Hello! You are an experienced test engineer and tech lead with full experience in software development. Please analyse the attached file as per the provided instructions. Thank you!\" ./instructions.md",
+    "extract": "npx ts-node ./tools/extractJson.ts"
+  },
+  "keywords": [
+    "openai",
+    "gpt-4o",
+    "cli"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^22.5.3",
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4",
+    "xml2js": "^0.6.2"
+  },
+  "devDependencies": {
+    "@types/xml2js": "^0.4.14"
+  }
+}
