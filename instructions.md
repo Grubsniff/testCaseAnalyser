@@ -70,6 +70,7 @@ For each test case:
 
 - Look for keywords in test names and steps that indicate critical processes, such as "verify," "validate," "critical," "security," etc.
 - Consider the potential business impact if the functionality being tested were to fail
+- When dealing with user permissions, testing users with single permissions is considered a higher priority than those with grouped permissions, to ascertain restrictions are working
 - Pay attention to test cases that involve multiple steps or interactions between different system components
 - Prioritize test cases that cover fundamental features used across the system
 

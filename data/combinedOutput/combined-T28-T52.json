@@ -1,0 +1,386 @@
+[
+  {
+    "id": "23057663",
+    "key": "UNO-T28",
+    "name": "Verify rate validation of agency when making new booking - Client User",
+    "folder": "UNO196, UNO1472 Bookings- Create new Booking- Agencies- Validate date and show only new Rate based on date of the Booking",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-1472"
+    ],
+    "objective": "When making a new booking when client choose agency, rate showed against agency should be valid date based on the date of booking.",
+    "testScript": "{\"step\":[{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"Log in as Client User\",\"expectedResult\":\"Successful log in and user in homepage\"},{\"$\":{\"index\":\"1\"},\"customFields\":\"\",\"description\":\"Navigate to booking request and manage bookings\",\"expectedResult\":\"User in bookings page\"},{\"$\":{\"index\":\"2\"},\"customFields\":\"\",\"description\":\"Select Client Location and click new booking\",\"expectedResult\":\"User taken to new booking window\"},{\"$\":{\"index\":\"3\"},\"customFields\":\"\",\"description\":\"Make a dummy booking and select agency from the agency tab\",\"expectedResult\":\"Based on start and end date of the booking in agency tab, user should see only rates that are effective for that date.\"},{\"$\":{\"index\":\"4\"},\"customFields\":\"\",\"description\":\"Click save and send\",\"expectedResult\":\"User able to make successful booking\"},{\"$\":{\"index\":\"5\"},\"customFields\":\"\",\"description\":\"Verify details of the booking as agency\",\"expectedResult\":\"All details should match with booking made by client\"},{\"$\":{\"index\":\"6\"},\"customFields\":\"\",\"description\":\"Repeat step 1 to 6 in ME and Firefox Browser\",\"expectedResult\":\"All expected results should be achieved\"}]}",
+    "score": 4,
+    "justification": "This test verifies critical booking functionality, involves data manipulation (rate validation based on date), and includes integration with agency rates. It also covers multiple user flows (booking creation and validation across browsers)."
+  },
+  {
+    "id": "23341470",
+    "key": "UNO-T29",
+    "name": "Verify Dashboard functionality as Neuven User",
+    "folder": "UNO205, UNO1172 Neuven User- Dashboard options",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-1172"
+    ],
+    "objective": "User should be able to see dashboard and when clicked on each graph, User should be able to see the data that sits behind the graph",
+    "testScript": "{\"step\":[{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"Log in as Neuven User\",\"expectedResult\":\"Login successful and User is in homepage\",\"testData\":\"adhi.bommanapally@neuven.co.uk<br>Welcome.1\"},{\"$\":{\"index\":\"1\"},\"customFields\":\"\",\"description\":\"From homepage Navigate to Home and select dashboard from dropdown\",\"expectedResult\":\"User should be able to see the dashboard setup page\"},{\"$\":{\"index\":\"2\"},\"customFields\":\"\",\"description\":\"From Dropdown choose client\",\"expectedResult\":\"User should be able to see all dashboard charts for that client\"},{\"$\":{\"index\":\"3\"},\"customFields\":\"\",\"description\":\"Click on each chart\",\"expectedResult\":\"User should be able to see the data table for that chart\"},{\"$\":{\"index\":\"4\"},\"customFields\":\"\",\"description\":\"Repeat step 1 to 4 in ME and firefox browser\",\"expectedResult\":\"All expected results should be achieved\"}]}",
+    "score": 3,
+    "justification": "This test covers high business impact by verifying dashboard functionality. It interacts with multiple components (graphs/data behind graphs) and includes testing across browsers. This ensures that visualizations and data retrieval are consistent."
+  },
+  {
+    "id": "23652391",
+    "key": "UNO-T30",
+    "name": "Verify Rate export as Neuven User",
+    "folder": "UNO293, UNO1485 Rate export- filtered results",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-1075",
+      "UNO-1485"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":[{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"Login to Venneu-dev.com as a neuven user\",\"expectedResult\":\"Log in successful and user in homepage\"},{\"$\":{\"index\":\"1\"},\"customFields\":\"\",\"description\":\"Navigate to Rates and Rates export\",\"expectedResult\":\"User taken to rate export page\"},{\"$\":{\"index\":\"2\"},\"customFields\":\"\",\"description\":\"Choose client form the drop down or select all\",\"expectedResult\":\"User should be able to see list of different rates according to selection made\"},{\"$\":{\"index\":\"3\"},\"customFields\":\"\",\"description\":\"Click export icon in the right corner\",\"expectedResult\":\"Rates xlsx file should be downloaded\"},{\"$\":{\"index\":\"4\"},\"customFields\":\"\",\"description\":\"Filter data using the search icon on the screen\",\"expectedResult\":\"Data shown on the screen should be filtered down based on the key words used\"},{\"$\":{\"index\":\"5\"},\"customFields\":\"\",\"description\":\"Click export to excel after filtering data\",\"expectedResult\":\"Data on exported excel file should correspond and match with the data on the page\"},{\"$\":{\"index\":\"6\"},\"customFields\":\"\",\"description\":\"Repeat step 1 to 6 firefox browser\",\"expectedResult\":\"All expected results should match\"},{\"$\":{\"index\":\"7\"},\"customFields\":\"\",\"description\":\"Repeat step 1 to 6 edge browser\",\"expectedResult\":\"All expected results should match\"}]}",
+    "score": 3,
+    "justification": "This test involves data export and manipulation, which is prone to errors, and covers multiple components (rate export across different clients and filtering data). It also includes complex scenarios with filtering and exporting across browsers."
+  },
+  {
+    "id": "23652392",
+    "key": "UNO-T31",
+    "name": "Verify Rate export as Client User",
+    "folder": "UNO293, UNO1485 Rate export- filtered results",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-1075",
+      "UNO-1485"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":[{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"Login to Venneu-dev.com as a Client User\",\"expectedResult\":\"Log in successful and user in homepage\"},{\"$\":{\"index\":\"1\"},\"customFields\":\"\",\"description\":\"Navigate to Rates export\",\"expectedResult\":\"User taken to rate export page and should be able to see list of all rates\"},{\"$\":{\"index\":\"2\"},\"customFields\":\"\",\"description\":\"Click export icon in the right corner\",\"expectedResult\":\"Rates xlsx file should be downloaded\"},{\"$\":{\"index\":\"3\"},\"customFields\":\"\",\"description\":\"Check the data on the xlsx file\",\"expectedResult\":\"Data should correspond and match with the data on the page\"},{\"$\":{\"index\":\"4\"},\"customFields\":\"\",\"description\":\"Filter data on the screen using the search icon\",\"expectedResult\":\"Data should be filtered according to the key words used\"},{\"$\":{\"index\":\"5\"},\"customFields\":\"\",\"description\":\"Click export to excel after filtering Data\",\"expectedResult\":\"Data on the exported excel file should match with the filtered data on the screen\"},{\"$\":{\"index\":\"6\"},\"customFields\":\"\",\"description\":\"Repeat step 1 to 6 firefox browser\",\"expectedResult\":\"All expected results should match\"},{\"$\":{\"index\":\"7\"},\"customFields\":\"\",\"description\":\"Repeat step 1 to 6 edge browser\",\"expectedResult\":\"All expected results should match\"}]}",
+    "score": 3,
+    "justification": "Similar to UNO-T30, this test verifies the export functionality for a different user role (Client User). It covers core functionality (rate export), data manipulation, and integration between UI and backend data."
+  },
+  {
+    "id": "23747974",
+    "key": "UNO-T32",
+    "name": "Verify filters in the Authorize Rate Adjustments page",
+    "folder": "UNO293 UNO1491, 1495,1492,1493,1494,1473 Advance filters",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-1491"
+    ],
+    "objective": "User should be able to filter the data on the Authorize rate adjustment page using advance filter options and the system should not throw an AJAX error while using the filters.",
+    "testScript": "{\"step\":[{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"Log in as neuven user in www.venneu-dev.com\",\"expectedResult\":\"Successful log in and User should see the Home page\",\"testData\":\"Adhi.bommanapally@neuven.co.uk<br>Welcome.1\"},{\"$\":{\"index\":\"1\"},\"customFields\":\"\",\"description\":\"From home page navigate to rates on the left panel and choose Authorise Rate adjustments from the drop down\",\"expectedResult\":\"User should be taken to Authorize rate adjustment page and also should be able to see the list of all the adjusted rates that are waiting to be authorised\"},{\"$\":{\"index\":\"2\"},\"customFields\":\"\",\"description\":\"Click on the search Icon on the right corner\",\"expectedResult\":\"User should be able to see the individual search boxes above each column\"},{\"$\":{\"index\":\"3\"},\"customFields\":\"\",\"description\":\"Filter data by entering values in the search boxes individually\",\"expectedResult\":\"Data shown should be filtered and shown to the user based on the key words in the search box\"},{\"$\":{\"index\":\"4\"},\"customFields\":\"\",\"description\":\"Verify by filtering data by entering values in multiple search boxes.\",\"expectedResult\":\"Data should be filtered according to multiple filters that are used\"},{\"$\":{\"index\":\"5\"},\"customFields\":\"\",\"description\":\"Verify by adding values to all the search boxes\",\"expectedResult\":\"Data should still correspond based on the data entered.\"},{\"$\":{\"index\":\"6\"},\"customFields\":\"\",\"description\":\"Export the filtered data by clicking on the export icon on the right corner\",\"expectedResult\":\"Data on the exported file should match and correspond to the data shown on the screen after filtering\"},{\"$\":{\"index\":\"7\"},\"customFields\":\"\",\"description\":\"Repeat Steps 1 to 7 in IE and firefox browser\",\"expectedResult\":\"All expected results should be achieved\"}]}",
+    "score": 2,
+    "justification": "This test verifies filters' functionality, which affects data display but does not have a critical business impact. It involves data manipulation and UI consistency, but less critical compared to core booking or rate export functionalities."
+  },
+  {
+    "id": "23748240",
+    "key": "UNO-T33",
+    "name": "Verify filters in the Authorize New Rate page",
+    "folder": "UNO293 UNO1491, 1495,1492,1493,1494,1473 Advance filters",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-1495"
+    ],
+    "objective": "User should be able to filter the data on the Authorize rate page using advance filter options and the system should not throw an AJAX error while using the filters.",
+    "testScript": "{\"step\":[{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"Log in as neuven user in www.venneu-dev.com\",\"expectedResult\":\"Successful log in and User should see the Home page\",\"testData\":\"Adhi.bommanapally@neuven.co.uk<br>Welcome.1\"},{\"$\":{\"index\":\"1\"},\"customFields\":\"\",\"description\":\"From home page navigate to rates on the left panel and choose Authorise New Rates from the drop down\",\"expectedResult\":\"User should be taken to Authorize New rate page and also should be able to see the list of all the new rates that are waiting to be authorised\"},{\"$\":{\"index\":\"2\"},\"customFields\":\"\",\"description\":\"Click on the search Icon on the right corner\",\"expectedResult\":\"User should be able to see the individual search boxes above each column\"},{\"$\":{\"index\":\"3\"},\"customFields\":\"\",\"description\":\"Filter data by entering values in the search boxes individually\",\"expectedResult\":\"Data shown should be filtered and shown to the user based on the key words in the search box\"},{\"$\":{\"index\":\"4\"},\"customFields\":\"\",\"description\":\"Verify by filtering data by entering values in multiple search boxes.\",\"expectedResult\":\"Data should be filtered according to multiple filters that are used\"},{\"$\":{\"index\":\"5\"},\"customFields\":\"\",\"description\":\"Verify by adding values to all the search boxes\",\"expectedResult\":\"Data should still correspond based on the data entered.\"},{\"$\":{\"index\":\"6\"},\"customFields\":\"\",\"description\":\"Export the filtered data by clicking on the export icon on the right corner\",\"expectedResult\":\"Data on the exported file should match and correspond to the data shown on the screen after filtering\"},{\"$\":{\"index\":\"7\"},\"customFields\":\"\",\"description\":\"Repeat Steps 1 to 7 in IE and firefox browser\",\"expectedResult\":\"All expected results should be achieved\"}]}",
+    "score": 2,
+    "justification": "Similar to UNO-T32, this test focuses on filtering data in the authorize new rate page, which involves data manipulation and UI consistency. However, it doesn't have a high business impact."
+  },
+  {
+    "id": "23748313",
+    "key": "UNO-T34",
+    "name": "Verify filters in the Rate Adjustment Page",
+    "folder": "UNO293 UNO1491, 1495,1492,1493,1494,1473 Advance filters",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-1492"
+    ],
+    "objective": "User should be able to filter the data on the Rate adjustment page using advance filter options and the system should not throw an AJAX error while using the filters.",
+    "testScript": "{\"step\":[{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"Log in as neuven user in www.venneu-dev.com\",\"expectedResult\":\"Successful log in and User should see the Home page\",\"testData\":\"Adhi.bommanapally@neuven.co.uk<br>Welcome.1\"},{\"$\":{\"index\":\"1\"},\"customFields\":\"\",\"description\":\"From home page navigate to rates on the left panel and choose Rate Adjustments from the drop down\",\"expectedResult\":\"User should be taken to Rate adjustment page and also should be able to see the list of rates that can be adjusted\"},{\"$\":{\"index\":\"2\"},\"customFields\":\"\",\"description\":\"Click on the search Icon on the right corner\",\"expectedResult\":\"User should be able to see the individual search boxes above each column\"},{\"$\":{\"index\":\"3\"},\"customFields\":\"\",\"description\":\"Filter data by entering values in the search boxes individually\",\"expectedResult\":\"Data shown should be filtered and shown to the user based on the key words in the search box\"},{\"$\":{\"index\":\"4\"},\"customFields\":\"\",\"description\":\"Verify by filtering data by entering values in multiple search boxes.\",\"expectedResult\":\"Data should be filtered according to multiple filters that are used\"},{\"$\":{\"index\":\"5\"},\"customFields\":\"\",\"description\":\"Verify by adding values to all the search boxes\",\"expectedResult\":\"Data should still correspond based on the data entered.\"},{\"$\":{\"index\":\"6\"},\"customFields\":\"\",\"description\":\"Export the filtered data by clicking on the export icon on the right corner\",\"expectedResult\":\"Data on the exported file should match and correspond to the data shown on the screen after filtering\"},{\"$\":{\"index\":\"7\"},\"customFields\":\"\",\"description\":\"Repeat Steps 1 to 7 in IE and firefox browser\",\"expectedResult\":\"All expected results should be achieved\"}]}",
+    "score": 2,
+    "justification": "This test verifies the functionality of filters in the rate adjustment page. It covers data manipulation but lacks high business impact and criticality compared to other functionalities like booking and rate export."
+  },
+  {
+    "id": "23748474",
+    "key": "UNO-T35",
+    "name": "Verify filters in the Rate Creation Page",
+    "folder": "UNO293 UNO1491, 1495,1492,1493,1494,1473 Advance filters",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-1493"
+    ],
+    "objective": "User should be able to filter the data on the Rate Creation page using advance filter options and the system should not throw an AJAX error while using the filters.",
+    "testScript": "{\"step\":[{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"Log in as neuven user in www.venneu-dev.com\",\"expectedResult\":\"Successful log in and User should see the Home page\",\"testData\":\"Adhi.bommanapally@neuven.co.uk<br>Welcome.1\"},{\"$\":{\"index\":\"1\"},\"customFields\":\"\",\"description\":\"From home page navigate to rates on the left panel and choose Rate Creation from the drop down\",\"expectedResult\":\"User should be taken to Rate Creation page and also should be able to see rate creation tab and &nbsp;list of rates at the bottom\"},{\"$\":{\"index\":\"2\"},\"customFields\":\"\",\"description\":\"Click on the search Icon on the right corner&nbsp;\",\"expectedResult\":\"User should be able to see the individual search boxes above each column\"},{\"$\":{\"index\":\"3\"},\"customFields\":\"\",\"description\":\"Filter data by entering values in the search boxes individually\",\"expectedResult\":\"Data shown should be filtered and shown to the user based on the key words in the search box\"},{\"$\":{\"index\":\"4\"},\"customFields\":\"\",\"description\":\"Verify by filtering data by entering values in multiple search boxes.\",\"expectedResult\":\"Data should be filtered according to multiple filters that are used\"},{\"$\":{\"index\":\"5\"},\"customFields\":\"\",\"description\":\"Verify by adding values to all the search boxes\",\"expectedResult\":\"Data should still correspond based on the data entered.\"},{\"$\":{\"index\":\"6\"},\"customFields\":\"\",\"description\":\"Export the filtered data by clicking on the export icon on the right corner\",\"expectedResult\":\"Data on the exported file should match and correspond to the data shown on the screen after filtering\"},{\"$\":{\"index\":\"7\"},\"customFields\":\"\",\"description\":\"Repeat Steps 1 to 7 in IE and firefox browser\",\"expectedResult\":\"All expected results should be achieved\"}]}",
+    "score": 2,
+    "justification": "This test focuses on filtering data during rate creation. It covers data manipulation but doesn't meet the critical business process criteria. It involves multiple steps but is less critical compared to rate validation or export functionalities."
+  },
+  {
+    "id": "23748502",
+    "key": "UNO-T36",
+    "name": "Verify filters in the Rate Management Page",
+    "folder": "UNO293 UNO1491, 1495,1492,1493,1494,1473 Advance filters",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-1494"
+    ],
+    "objective": "User should be able to filter the data on the RateManagement page using advance filter options and the system should not throw an AJAX error while using the filters.",
+    "testScript": "{\"step\":[{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"Log in as neuven user in www.venneu-dev.com\",\"expectedResult\":\"Successful log in and User should see the Home page\",\"testData\":\"Adhi.bommanapally@neuven.co.uk<br>Welcome.1\"},{\"$\":{\"index\":\"1\"},\"customFields\":\"\",\"description\":\"From home page navigate to rates on the left panel and choose Rate Management from the drop down\",\"expectedResult\":\"User should be taken to Rate Management page and should be able to see list of all rates\"},{\"$\":{\"index\":\"2\"},\"customFields\":\"\",\"description\":\"Click on the search Icon on the right corner&nbsp;\",\"expectedResult\":\"User should be able to see the individual search boxes above each column\"},{\"$\":{\"index\":\"3\"},\"customFields\":\"\",\"description\":\"Filter data by entering values in the search boxes individually\",\"expectedResult\":\"Data shown should be filtered and shown to the user based on the key words in the search box\"},{\"$\":{\"index\":\"4\"},\"customFields\":\"\",\"description\":\"Verify by filtering data by entering values in multiple search boxes.\",\"expectedResult\":\"Data should be filtered according to multiple filters that are used\"},{\"$\":{\"index\":\"5\"},\"customFields\":\"\",\"description\":\"Verify by adding values to all the search boxes\",\"expectedResult\":\"Data should still correspond based on the data entered.\"},{\"$\":{\"index\":\"6\"},\"customFields\":\"\",\"description\":\"Export the filtered data by clicking on the export icon on the right corner\",\"expectedResult\":\"Data on the exported file should match and correspond to the data shown on the screen after filtering\"},{\"$\":{\"index\":\"7\"},\"customFields\":\"\",\"description\":\"Repeat Steps 1 to 7 in IE and firefox browser\",\"expectedResult\":\"All expected results should be achieved\"}]}",
+    "score": 2,
+    "justification": "This test covers filtering data in the rate management page. It involves data manipulation and UI consistency but lacks high business impact compared to core functionalities like booking or rate validation."
+  },
+  {
+    "id": "23748521",
+    "key": "UNO-T37",
+    "name": "Verify filters in the Rate Export Page",
+    "folder": "UNO293 UNO1491, 1495,1492,1493,1494,1473 Advance filters",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-1473"
+    ],
+    "objective": "User should be able to filter the data on the Rate Export page using advance filter options and the system should not throw an AJAX error while using the filters.",
+    "testScript": "{\"step\":[{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"Log in as neuven user in www.venneu-dev.com\",\"expectedResult\":\"Successful log in and User should see the Home page\",\"testData\":\"Adhi.bommanapally@neuven.co.uk<br>Welcome.1\"},{\"$\":{\"index\":\"1\"},\"customFields\":\"\",\"description\":\"From home page navigate to rates on the left panel and choose Rate Export from the drop down\",\"expectedResult\":\"User should be taken to Rate Export page and should be able to see list of all rates\"},{\"$\":{\"index\":\"2\"},\"customFields\":\"\",\"description\":\"Click on the search Icon on the right corner&nbsp;\",\"expectedResult\":\"User should be able to see the individual search boxes above each column\"},{\"$\":{\"index\":\"3\"},\"customFields\":\"\",\"description\":\"Filter data by entering values in the search boxes individually\",\"expectedResult\":\"Data shown should be filtered and shown to the user based on the key words in the search box\"},{\"$\":{\"index\":\"4\"},\"customFields\":\"\",\"description\":\"Verify by filtering data by entering values in multiple search boxes.\",\"expectedResult\":\"Data should be filtered according to multiple filters that are used\"},{\"$\":{\"index\":\"5\"},\"customFields\":\"\",\"description\":\"Verify by adding values to all the search boxes\",\"expectedResult\":\"Data should still correspond based on the data entered.\"},{\"$\":{\"index\":\"6\"},\"customFields\":\"\",\"description\":\"Export the filtered data by clicking on the export icon on the right corner\",\"expectedResult\":\"Data on the exported file should match and correspond to the data shown on the screen after filtering\"},{\"$\":{\"index\":\"7\"},\"customFields\":\"\",\"description\":\"Login to Venneu-dev.com as a neuven user\",\"expectedResult\":\"Log in successful and user in homepage\"},{\"$\":{\"index\":\"8\"},\"customFields\":\"\",\"description\":\"Navigate to Rates and Rates export\",\"expectedResult\":\"User taken to rate export page\"},{\"$\":{\"index\":\"9\"},\"customFields\":\"\",\"description\":\"Choose client form the drop down or select all\",\"expectedResult\":\"User should be able to see list of different rates according to selection made\"},{\"$\":{\"index\":\"10\"},\"customFields\":\"\",\"description\":\"Click export icon in the right corner\",\"expectedResult\":\"Rates xlsx file should be downloaded\"},{\"$\":{\"index\":\"11\"},\"customFields\":\"\",\"description\":\"Filter data using the search icon on the screen\",\"expectedResult\":\"Data shown on the screen should be filtered down based on the key words used\"},{\"$\":{\"index\":\"12\"},\"customFields\":\"\",\"description\":\"Click export to excel after filtering data\",\"expectedResult\":\"Data on exported excel file should correspond and match with the data on the page\"},{\"$\":{\"index\":\"13\"},\"customFields\":\"\",\"description\":\"Repeat step 1 to 6 firefox browser\",\"expectedResult\":\"All expected results should match\"},{\"$\":{\"index\":\"14\"},\"customFields\":\"\",\"description\":\"Repeat step 1 to 6 edge browser\",\"expectedResult\":\"All expected results should match\"},{\"$\":{\"index\":\"15\"},\"customFields\":\"\",\"description\":\"Login to Venneu-dev.com as a Client User\",\"expectedResult\":\"Log in successful and user in homepage\"},{\"$\":{\"index\":\"16\"},\"customFields\":\"\",\"description\":\"Navigate to Rates export\",\"expectedResult\":\"User taken to rate export page and should be able to see list of all rates\"},{\"$\":{\"index\":\"17\"},\"customFields\":\"\",\"description\":\"Click export icon in the right corner\",\"expectedResult\":\"Rates xlsx file should be downloaded\"},{\"$\":{\"index\":\"18\"},\"customFields\":\"\",\"description\":\"Check the data on the xlsx file\",\"expectedResult\":\"Data should correspond and match with the data on the page\"},{\"$\":{\"index\":\"19\"},\"customFields\":\"\",\"description\":\"Filter data on the screen using the search icon\",\"expectedResult\":\"Data should be filtered according to the key words used\"},{\"$\":{\"index\":\"20\"},\"customFields\":\"\",\"description\":\"Click export to excel after filtering Data\",\"expectedResult\":\"Data on the exported excel file should match with the filtered data on the screen\"},{\"$\":{\"index\":\"21\"},\"customFields\":\"\",\"description\":\"Repeat step 1 to 6 firefox browser\",\"expectedResult\":\"All expected results should match\"},{\"$\":{\"index\":\"22\"},\"customFields\":\"\",\"description\":\"Repeat step 1 to 6 edge browser\",\"expectedResult\":\"All expected results should match\"},{\"$\":{\"index\":\"23\"},\"customFields\":\"\",\"description\":\"Repeat Steps 1 to 7 in IE and firefox browser\",\"expectedResult\":\"All expected results should be achieved\"}]}",
+    "score": 2,
+    "justification": "This test verifies the filter functionality on the rate export page for multiple user roles. It includes data manipulation and UI interactions but does not cover critical business processes or high-impact functionalities."
+  },
+  {
+    "id": "23756752",
+    "key": "UNO-T38",
+    "name": "Verify the Cancel functionality in Rate Creation Page",
+    "folder": "UNO293 UNO1459 Cancel Button on Rate Creation Window",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-1459"
+    ],
+    "objective": "While creating a New Rate the user should be able to use the Cancel button to cancel the rate creation using the cancel button. By hitting the cancel button User should be able to reset the rate creation page and erase any fields that were previously filled",
+    "testScript": "{\"step\":[{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"Log in a neuven User in www.venneu-dev.com\",\"expectedResult\":\"User logged in successfully and landed in Home Page\",\"testData\":\"adhi.bommanapally@neuven.co.uk<br>Welcome.1\"},{\"$\":{\"index\":\"1\"},\"customFields\":\"\",\"description\":\"From Home page Navigate to Rates and choose rate creation from the dropdown\",\"expectedResult\":\"User see rate creation window and a table of all existing rates at the bottom of that window\"},{\"$\":{\"index\":\"2\"},\"customFields\":\"\",\"description\":\"Create a rate filling in all the fields\",\"expectedResult\":\"User should be able to enter all the details successfully\"},{\"$\":{\"index\":\"3\"},\"customFields\":\"\",\"description\":\"Click on cancel at the bottom of the window\",\"expectedResult\":\"User should see all the fields been reset and there is no previously filled details on the rate creation window.\"},{\"$\":{\"index\":\"4\"},\"customFields\":\"\",\"description\":\"Fill only few fields and then click cancel\",\"expectedResult\":\"User should see a fresh rate creation window with all the fields reset\"},{\"$\":{\"index\":\"5\"},\"customFields\":\"\",\"description\":\"<br>Verify by clicking the cancel before entering any details\",\"expectedResult\":\"User should still stay on the rate creation page with empty fields to create a new rate\"},{\"$\":{\"index\":\"6\"},\"customFields\":\"\",\"description\":\"verify by clicking cancel multiple times\",\"expectedResult\":\"User should still stay on the rate creation page with empty fields to create a new rate\"},{\"$\":{\"index\":\"7\"},\"customFields\":\"\",\"description\":\"Repeat step 1 to 7 in ME and Firefox browser\",\"expectedResult\":\"All expected results should be achieved\"}]}",
+    "score": 3,
+    "justification": "This test covers the critical cancel functionality during rate creation, ensuring that user input can be reset. It involves data manipulation and form validation, ensuring a robust user experience."
+  },
+  {
+    "id": "23833986",
+    "key": "UNO-T39",
+    "name": "Verify if deleting booking feature is inactive for Completed bookings as Neuven User",
+    "folder": "UNO196 UNO1436 Delete booking option removed for completed bookings",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-1436"
+    ],
+    "objective": "User should not be able to delete a booking which has status as completed.",
+    "testScript": "{\"step\":[{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"Log in as Neuven User in www.venneu-dev.com\",\"expectedResult\":\"Login successful and user in homepage\",\"testData\":\"adhi.bommanapally@neuven.co.uk<br>Welcome.1\"},{\"$\":{\"index\":\"1\"},\"customFields\":\"\",\"description\":\"Navigate to bookings and choose Manage Bookings from dropdown\",\"expectedResult\":\"User should navigate to bookings page\"},{\"$\":{\"index\":\"2\"},\"customFields\":\"\",\"description\":\"Find a booking that is completed &nbsp; &nbsp;\",\"expectedResult\":\"User should be able to see the list view of that day with the filtered booking reference\",\"testData\":\"Date 11/06/2022 Booking Ref: 692\"},{\"$\":{\"index\":\"3\"},\"customFields\":\"\",\"description\":\"Navigate to the delete icon at the right corner of the booking\",\"expectedResult\":\"The delete Icon should be inactive when the &nbsp;status is completed\"},{\"$\":{\"index\":\"4\"},\"customFields\":\"\",\"description\":\"Click on edit booking icon\",\"expectedResult\":\"Edit booking window opens\"},{\"$\":{\"index\":\"5\"},\"customFields\":\"\",\"description\":\"Check for the delete button at the bottom.&nbsp;\",\"expectedResult\":\"The delete button at the bottom should not appear or should be inactive and the user should not be able to delete the booking.\"},{\"$\":{\"index\":\"6\"},\"customFields\":\"\",\"description\":\"Click on the edit booking icon of the completed booking and make changes to the booking. Eg Increase number of workers requested and then click on update booking\",\"expectedResult\":\"Booking should be edited and status changed back to Pending\"},{\"$\":{\"index\":\"7\"},\"customFields\":\"\",\"description\":\"Navigate to delete Icon on the right corner of the booking\",\"expectedResult\":\"Delete icon should be active as the status is changed back to pending.\"},{\"$\":{\"index\":\"8\"},\"customFields\":\"\",\"description\":\"Repeat steps 1 to 6 in ME and Firefox Browser\",\"expectedResult\":\"All expected results should be achieved\"}]}",
+    "score": 4,
+    "justification": "This test covers a critical business rule (deleting completed bookings), involves security (access control), and multiple steps such as editing and updating the booking status. It ensures compliance with the business rules."
+  },
+  {
+    "id": "23833988",
+    "key": "UNO-T40",
+    "name": "Verify if deleting booking feature is inactive for Completed bookings as Client User",
+    "folder": "UNO196 UNO1436 Delete booking option removed for completed bookings",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-1436"
+    ],
+    "objective": "User should not be able to delete a booking which has status as completed.",
+    "testScript": "{\"step\":[{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"Log in as Client User in www.venneu-dev.com\",\"expectedResult\":\"Login successful and user in homepage\",\"testData\":\"\"},{\"$\":{\"index\":\"1\"},\"customFields\":\"\",\"description\":\"Navigate to bookings and choose Manage Bookings from dropdown\",\"expectedResult\":\"User should navigate to bookings page\"},{\"$\":{\"index\":\"2\"},\"customFields\":\"\",\"description\":\"Find a booking that is completed &nbsp; &nbsp;\",\"expectedResult\":\"User should be able to see the list view of that day with the filtered booking reference\",\"testData\":\"Date 11/06/2022 Booking Ref: 692\"},{\"$\":{\"index\":\"3\"},\"customFields\":\"\",\"description\":\"Navigate to the delete icon at the right corner of the booking\",\"expectedResult\":\"The delete Icon should be inactive when the &nbsp;status is completed\"},{\"$\":{\"index\":\"4\"},\"customFields\":\"\",\"description\":\"Click on edit booking icon\",\"expectedResult\":\"Edit booking window opens\"},{\"$\":{\"index\":\"5\"},\"customFields\":\"\",\"description\":\"Check for the delete button at the bottom.&nbsp;\",\"expectedResult\":\"The delete button at the bottom should not appear or should be inactive and the user should not be able to delete the booking.\"},{\"$\":{\"index\":\"6\"},\"customFields\":\"\",\"description\":\"Click on the edit booking icon of the completed booking and make changes to the booking. Eg Increase number of workers requested and then click on update booking\",\"expectedResult\":\"Booking should be updated and the status should change back to pending\"},{\"$\":{\"index\":\"7\"},\"customFields\":\"\",\"description\":\"Navigate to the delete icon on the right corner of the booking\",\"expectedResult\":\"Delete Icon should be activated again because of the status change of the booking\"},{\"$\":{\"index\":\"8\"},\"customFields\":\"\",\"description\":\"Repeat steps 1 to 8 in ME and Firefox Browser\",\"expectedResult\":\"All expected results should be achieved\"}]}",
+    "score": 4,
+    "justification": "Similar to UNO-T39, this test covers a critical business rule and security aspect for a different user role (Client User). It ensures that completed bookings cannot be deleted, fulfilling an essential business requirement."
+  },
+  {
+    "id": "23880809",
+    "key": "UNO-T41",
+    "name": "Verify Client Invoice CSV Date format and Worker EMP Data as Neuven User",
+    "folder": "UNO201 UNO1430 Date format and Worker EMP details Client invoice CSV",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-1430"
+    ],
+    "objective": "To verify the client Invoice CSV and make sure Invoice date is not in US format and Worker EMP column has relevant data present in it.",
+    "testScript": "{\"step\":[{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"Log in as Neuven User in www.Venneu-dev.com\",\"expectedResult\":\"Log in Successful and User in Home page\",\"testData\":\"adhi.bommanapally@neuven.co.uk Welcome.1\"},{\"$\":{\"index\":\"1\"},\"customFields\":\"\",\"description\":\"From Home page Navigate to Client and then choose Client invoices from dropdown\",\"expectedResult\":\"User navigates to Client invoices Page and should be able to see list of invoices for all clients\"},{\"$\":{\"index\":\"2\"},\"customFields\":\"\",\"description\":\"Choose and view any invoice from the list&nbsp;\",\"expectedResult\":\"User should be able to see the invoice details in a separate page\"},{\"$\":{\"index\":\"3\"},\"customFields\":\"\",\"description\":\"At the bottom of the page click on Export to CSV\",\"expectedResult\":\"All the details behind the invoice calculation will be downloaded as a CSV file\"},{\"$\":{\"index\":\"4\"},\"customFields\":\"\",\"description\":\"Open the Excel file from downloads\",\"expectedResult\":\"User should be able to see all the details related to the invoice in the Excel Sheet\"},{\"$\":{\"index\":\"5\"},\"customFields\":\"\",\"description\":\"Verify Date format in the Invoice date column\",\"expectedResult\":\"Date format in the invoice date column should be UK format.\"},{\"$\":{\"index\":\"6\"},\"customFields\":\"\",\"description\":\"Verify the Worker EMP status column\",\"expectedResult\":\"This column should contain relevant data and should not be empty.\"},{\"$\":{\"index\":\"7\"},\"customFields\":\"\",\"description\":\"Repeat steps 1 to 7 in ME and firefox Browser\",\"expectedResult\":\"All expected results should be achieved\"}]}",
+    "score": 3,
+    "justification": "This test ensures data accuracy and format in client invoices, which is critical for business operations. It involves data export and manipulation, including multiple validation steps to ensure the correctness of the CSV data."
+  },
+  {
+    "id": "23880810",
+    "key": "UNO-T42",
+    "name": "Verify Client Invoice CSV Date format and Worker EMP Data as Client User",
+    "folder": "UNO201 UNO1430 Date format and Worker EMP details Client invoice CSV",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-1430"
+    ],
+    "objective": "To verify the client Invoice CSV and make sure Invoice date is not in US format and Worker EMP column has relevant data present in it.",
+    "testScript": "{\"step\":[{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"Log in as Client User in www.Venneu-dev.com\",\"expectedResult\":\"Log in Successful and User in Home page\",\"testData\":\"\"},{\"$\":{\"index\":\"1\"},\"customFields\":\"\",\"description\":\"From Home page Navigate to Invoices\",\"expectedResult\":\"User navigates to invoices Page and should be able to see list of all invoices&nbsp;\"},{\"$\":{\"index\":\"2\"},\"customFields\":\"\",\"description\":\"Choose and view any invoice from the list&nbsp;\",\"expectedResult\":\"User should be able to see the invoice details in a separate page\"},{\"$\":{\"index\":\"3\"},\"customFields\":\"\",\"description\":\"At the bottom of the page click on Export to CSV\",\"expectedResult\":\"All the details behind the invoice calculation will be downloaded as a CSV file\"},{\"$\":{\"index\":\"4\"},\"customFields\":\"\",\"description\":\"Open the Excel file from downloads\",\"expectedResult\":\"User should be able to see all the details related to the invoice in the Excel Sheet\"},{\"$\":{\"index\":\"5\"},\"customFields\":\"\",\"description\":\"Verify Date format in the Invoice date column\",\"expectedResult\":\"Date format in the invoice date column should be UK format.\"},{\"$\":{\"index\":\"6\"},\"customFields\":\"\",\"description\":\"Verify the Worker EMP status column\",\"expectedResult\":\"This column should contain relevant data and should not be empty.\"},{\"$\":{\"index\":\"7\"},\"customFields\":\"\",\"description\":\"Repeat steps 1 to 7 in ME and firefox Browser\",\"expectedResult\":\"All expected results should be achieved\"}]}",
+    "score": 3,
+    "justification": "Similar to UNO-T41, this test ensures data accuracy and format in client invoices for a different user role. It involves exporting and verifying critical data points, ensuring consistency and correctness."
+  },
+  {
+    "id": "140850097",
+    "key": "UNO-T43",
+    "name": "Verify that the generic search function works with special characters.",
+    "folder": "Bug Tickets/UNO-2045 Generic search function",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2045"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged on as an agency user with relevant permissions.</li></ul>When :<ul><li>One the booking request &gt; manager requests page.&nbsp;</li></ul>Then :<ul><li>User should be able to search in the generic search field using special characters.</li><li>Search can include date format :'xx/xx/xxxx'.</li></ul>",
+    "score": 3,
+    "justification": "This test verifies the robustness and correctness of the search function, which is a common and critical functionality across many systems. It ensures that the search functionality can handle special characters correctly."
+  },
+  {
+    "id": "140852232",
+    "key": "UNO-T44",
+    "name": "Verify that the total and generic search function work when searching for values in the total column of the table.",
+    "folder": "Bug Tickets/UNO-2003 Search Function on the create view adjustments page ",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2003"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged on as a client user with create / view adjustments permissions&nbsp;</li></ul>Then :<ul><li>On the create view adjustments page.&nbsp;</li></ul>When :<ul><li>The user should be able to search the total column values in the above specific search function.</li><li>and also in the advance generic search function.</li></ul>",
+    "score": 3,
+    "justification": "This test ensures that both specific and generic search functionalities work correctly, covering critical data retrieval operations. It verifies that searching for numerical values in different contexts provides consistent results."
+  },
+  {
+    "id": "140854631",
+    "key": "UNO-T45",
+    "name": "Verify that an agency worker (Vennue) cant view the reports submenu on the side navigation.",
+    "folder": "Bug Tickets/UNO-2059 Reports Side Menu",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2059"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>&nbsp;Logged in as and agency user</li></ul>When :<ul><li>Viewing the side navigation bar on the website.&nbsp;</li></ul>Then :<ul><li>The user should not see an option for the reports page.&nbsp;</li></ul>",
+    "score": 4,
+    "justification": "This test ensures security and access control by verifying that specific user roles cannot view restricted menu items. It is critical for maintaining role-based access restrictions, reducing security risks."
+  },
+  {
+    "id": "140924493",
+    "key": "UNO-T46",
+    "name": "UNO2072  , UNO 2074 Verify the Authorization Step Addition",
+    "folder": "UNO-2072",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2072",
+      "UNO-2074"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged in as user with 'approve booking' permissions,&nbsp;</li></ul>When :<ul><li>The user has approved the booking.&nbsp;</li></ul>Then :<ul><li>The booking need to be authorized before it can be sent to the client .&nbsp;</li></ul>",
+    "score": 4,
+    "justification": "This test covers the critical flow of authorization steps in booking approval. It ensures that bookings go through proper authorization before client release, involving permissions and multiple user roles."
+  },
+  {
+    "id": "140925668",
+    "key": "UNO-T47",
+    "name": "UNO2072, UNO 2075 Verify The  User Permissions for Authorization -  user has permissions",
+    "folder": "UNO-2072",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2072",
+      "UNO-2075"
+    ],
+    "objective": null,
+    "testScript": "Given : <ul><li>Logged on as a user with &nbsp;the authorize bookings permission.</li></ul>When :<ul><li>Authorizing bookings&nbsp;</li></ul>Then :<ul><li>User is allowed to authorize the approved bookings.&nbsp;</li></ul>",
+    "score": 4,
+    "justification": "This test ensures that only users with the correct permissions can authorize bookings, covering security-sensitive operations and role-based access control."
+  },
+  {
+    "id": "140925695",
+    "key": "UNO-T48",
+    "name": "UNO2072, UNO 2075 Verify The  User Permissions for Authorization -  user Does NOT have permissions.",
+    "folder": "UNO-2072",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2072",
+      "UNO-2075"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged on as a user without&nbsp; the 'authorize bookings' permission.</li></ul>When :<ul><li>Authorizing bookings&nbsp;</li></ul>Then :<ul><li>User is NOT allowed to authorize the approved bookings.&nbsp;</li></ul>",
+    "score": 4,
+    "justification": "This test covers the security aspect by ensuring that unauthorized users cannot perform critical actions like authorization of bookings. It verifies that user permissions are enforced correctly in the system."
+  },
+  {
+    "id": "140925772",
+    "key": "UNO-T49",
+    "name": "UNO2072  , UNO 2074 Verify the Authorization Step Addition - User does Not have permission",
+    "folder": "UNO-2072",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2072",
+      "UNO-2074"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged in as user without 'approve booking' permissions,&nbsp;</li></ul>When :<ul><li>On the booking page&nbsp;</li></ul>Then :<ul><li>The user is not able to authorize the booking or action it. &nbsp;</li></ul>",
+    "score": 4,
+    "justification": "Similar to UNO-T48, this test ensures that hierarchy and permissions are respected within the system, preventing unauthorized actions and maintaining data integrity and security."
+  },
+  {
+    "id": "140927452",
+    "key": "UNO-T50",
+    "name": "UNO2072,  UNO 2076 - Verify the booking process following authorization.",
+    "folder": "UNO-2072",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2072",
+      "UNO-2076"
+    ],
+    "objective": null,
+    "testScript": "Given : <ul><li>Logged on a a user with Approve bookings permission&nbsp;</li></ul>When :<ul><li>The booking has been approved&nbsp;</li></ul>Then :<ul><li>The booking should be sent to the client for action as normal&nbsp;</li><li>The rest of the steps are unchanged.&nbsp;</li></ul>",
+    "score": 3,
+    "justification": "This test verifies the end-to-end booking process after authorization, ensuring that all steps are correctly followed and the system behaves as expected. It covers multiple stages in the booking lifecycle."
+  },
+  {
+    "id": "140936653",
+    "key": "UNO-T51",
+    "name": "UNO2072, UNO2077 Verify that the status of the booking updates / reflexes its current status.",
+    "folder": "UNO-2072",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2072",
+      "UNO-2077"
+    ],
+    "objective": null,
+    "testScript": "Given : <ul><li>Logged on as a user with authorize bookings permissions&nbsp;</li></ul>When :<ul><li>Creating a booking and and approving, authorizing and completing the life cycle of the booking&nbsp;</li></ul>Then :<ul><li>The status of the booking on the booking management page reflects the current status of the booking throughout the process.&nbsp;</li></ul><br>",
+    "score": 3,
+    "justification": "This test ensures that the booking status is correctly updated at each stage of the process. It ensures visibility and accurate representation of the booking lifecycle, which impacts multiple business processes."
+  },
+  {
+    "id": "140937646",
+    "key": "UNO-T52",
+    "name": "UNO2072, Uno2078 Verify edit restriction on completed bookings.",
+    "folder": "UNO-2072",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2072",
+      "UNO-2077"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>When logged on as a user with authorize bookings permissions.</li></ul>When :<ul><li>On the booking request &gt; manage bookings &gt; complete page.</li><li>Select a completed booking.</li></ul>Then :<ul><li>Only the number of workers can be increased or decreased,</li><li>This sets the booking back to pending status.&nbsp;</li></ul>",
+    "score": 3,
+    "justification": "This test verifies the restrictions on editing completed bookings, ensuring that only specific actions (like adjusting worker numbers) are allowed. It covers business rules and permissions, ensuring data integrity."
+  }
+]

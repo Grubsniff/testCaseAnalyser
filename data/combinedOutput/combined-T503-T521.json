@@ -1,0 +1,287 @@
+[
+  {
+    "id": "166412185",
+    "key": "UNO-T503",
+    "name": "Edit a Location with Irish Phone Number as a NEUVEN user",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2447"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Tests a functionality related to user roles (Neuven user) and data manipulation (editing location info), but does not cover multiple components or security aspects."
+  },
+  {
+    "id": "166412246",
+    "key": "UNO-T504",
+    "name": "Create a Worker with Irish Phone Number as a NEUVEN user",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2447"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 3,
+    "justification": "Involves creating a new entity (worker), tests a critical business process, and involves data manipulation. However, it doesn't cover security aspects or multiple components."
+  },
+  {
+    "id": "166412320",
+    "key": "UNO-T505",
+    "name": "Edit a Worker with Irish Phone Number as a NEUVEN user",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2447"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Tests data manipulation and user roles, but lacks coverage of integration points and security-sensitive operations."
+  },
+  {
+    "id": "166450991",
+    "key": "UNO-T506",
+    "name": "Verify as a NEUVEN user when creating a new booking for a direct bank worker – renaming labels -AGENCY WORKERS ONLY",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2436"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged on as a Neuven User with&nbsp;With Manage/Approve/Authorise bookings permission</li></ul>When<br><ul><li>On the bookings screen &gt;&nbsp;Manage bookings&nbsp;&gt;&nbsp;Select Location&nbsp;&gt;&nbsp;New Booking</li></ul>Then<br><ul><li>If Client Set-Up page for the relevant Client Location has &ldquo;<strong>Agency Workers only</strong>&rdquo; selected</li><li>Leave headers and labels as they are now</li></ul>",
+    "score": 4,
+    "justification": "Verifies the integration of user roles/permissions, test steps involving multiple integrated components, and impacts a critical business process (booking)."
+  },
+  {
+    "id": "166451256",
+    "key": "UNO-T507",
+    "name": "Verify as a NEUVEN user when creating a new booking for a direct bank worker – renaming labels - Direct Bank Workers only - CREATE",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2436"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged on as a Neuven User with&nbsp;With Manage/Approve/Authorise bookings permission</li></ul>When<br><ul><li>On the bookings screen &gt;&nbsp;Manage bookings&nbsp;&gt;&nbsp;Select Location&nbsp;&gt;&nbsp;New Booking</li></ul>Then<br><ul><li>If Client Set-Up page for the relevant Client Location has &ldquo;<strong>Direct Bank Workers only</strong>&rdquo;&nbsp;</li><li><strong>When Creating a Booking</strong><ul><li>Rename the following labels<ul><li>&ldquo;Agencies&rdquo; tab &ldquo;Booking Distribution&rdquo;</li><li>&ldquo;Agency Name&rdquo; column header &ldquo;Worker Source&rdquo;</li><li>&ldquo;Tier&rdquo; column header &quot;Agency Tier&rdquo;</li><li>Rename the label &ldquo;Please select a Job Type, Start Date and a Rate Type to see agency rates&rdquo; to &ldquo;Please select a Job Type, Start Date, and Rate Type to see Agency or Direct Bank Worker rates&rdquo;</li></ul></li></ul></li></ul>",
+    "score": 4,
+    "justification": "Covers critical business process (booking creation), multiple components, user role permissions, and data manipulation."
+  },
+  {
+    "id": "166451326",
+    "key": "UNO-T508",
+    "name": "Verify as a NEUVEN user when creating a new booking for a direct bank worker – renaming labels - Direct Bank Workers only - EDIT",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2436"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged on as a Neuven User with&nbsp;With Manage/Approve/Authorise bookings permission</li></ul>When<br><ul><li>On the bookings screen &gt;&nbsp;Manage bookings&nbsp;&gt;&nbsp;Select Location&nbsp;&gt;&nbsp;New Booking</li></ul>Then<br><ul><li>If Client Set-Up page for the relevant Client Location has &ldquo;<strong>Direct Bank Workers only</strong>&rdquo;&nbsp;</li><li><strong>When EDITING an existing &nbsp;Booking</strong><ul><li>Rename the following labels<ul><li>&ldquo;Agencies&rdquo; tab &ldquo;Booking Distribution&rdquo;</li><li>&ldquo;Agency Name&rdquo; column header &ldquo;Worker Source&rdquo;</li><li>&ldquo;Tier&rdquo; column header &quot;Agency Tier&rdquo;</li><li>Rename the label &ldquo;Please select a Job Type, Start Date and a Rate Type to see agency rates&rdquo; to &ldquo;Please select a Job Type, Start Date, and Rate Type to see Agency or Direct Bank Worker rates&rdquo;</li></ul></li></ul></li></ul>",
+    "score": 4,
+    "justification": "Similar to UNO-T507, covers editing bookings, critical process, and involves multiple integrations and data manipulation."
+  },
+  {
+    "id": "166451411",
+    "key": "UNO-T509",
+    "name": "Verify as a NEUVEN user when creating a new booking for a direct bank worker – renaming labels - Direct Bank Workers only - EDIT",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2436"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged on as a Neuven User with&nbsp;With Manage/Approve/Authorise bookings permission</li></ul>When<br><ul><li>On the bookings screen &gt;&nbsp;Manage bookings&nbsp;&gt;&nbsp;Select Location&nbsp;&gt;&nbsp;New Booking</li></ul>Then<br><ul><li>If Client Set-Up page for the relevant Client Location has &ldquo;<strong>Direct Bank Workers only</strong>&rdquo;&nbsp;</li><li><strong>When EDITING an existing Booking</strong><ul><li>Rename the following labels<ul><li>&ldquo;Agencies&rdquo; tab &ldquo;Booking Distribution&rdquo;</li><li>&ldquo;Agency Name&rdquo; column header &ldquo;Worker Source&rdquo;</li><li>&ldquo;Tier&rdquo; column header &quot;Agency Tier&rdquo;</li><li>Rename the label &ldquo;Please select a Job Type, Start Date and a Rate Type to see agency rates&rdquo; to &ldquo;Please select a Job Type, Start Date, and Rate Type to see Agency or Direct Bank Worker rates&rdquo;</li></ul></li></ul></li></ul>",
+    "score": 3,
+    "justification": "Covers editing bookings and data manipulation but slightly redundant with UNO-T508. Focuses on user role permissions and integrated components."
+  },
+  {
+    "id": "166451623",
+    "key": "UNO-T510",
+    "name": "Verify as a NEUVEN user When Approving / Rejecting Workers for a booking",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2436"
+    ],
+    "objective": null,
+    "testScript": "Verify as a NEUVEN user when&nbsp;When Approving for a booking&nbsp;<br>Given<br><ul><li>Logged on as a Neuven User with&nbsp;With Manage/Approve/Authorise bookings permission</li></ul>When<br><ul><li>On the bookings screen &gt;&nbsp;Manage bookings&nbsp;&gt;&nbsp;Select Location&nbsp;&gt;&nbsp;Approve bookings List (Pending)</li></ul>Then<br> &nbsp;Rename the following Lables<br><ul><li>On the Workers Details tab, rename the &ldquo;Agency Branch&rdquo; column header &ldquo;Worker Source&rdquo;</li><li>The &ldquo;Agency Name&rdquo; column header has been renamed &ldquo;Worker Source&rdquo;&nbsp;</li></ul>",
+    "score": 5,
+    "justification": "Involves critical business process (approval/rejection), high business impact, user permissions, and multiple integrated components."
+  },
+  {
+    "id": "166452330",
+    "key": "UNO-T511",
+    "name": "Verify as a NEUVEN user when creating a new booking for a direct bank worker – renaming labels - Both - CREATE",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2436"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged on as a Neuven User with&nbsp;With Manage/Approve/Authorise bookings permission</li></ul>When<br><ul><li>On the bookings screen &gt;&nbsp;Manage bookings&nbsp;&gt;&nbsp;Select Location&nbsp;&gt;&nbsp;New Booking</li></ul>Then<br><ul><li>If Client Set-Up page for the relevant Client Location has &ldquo;<strong>Both</strong>&rdquo;&nbsp;</li><li><strong>When Creating a Booking</strong><ul><li>Rename the following labels<ul><li>&ldquo;Agencies&rdquo; tab &ldquo;Booking Distribution&rdquo;</li><li>&ldquo;Agency Name&rdquo; column header &ldquo;Worker Source&rdquo;</li><li>&ldquo;Tier&rdquo; column header &quot;Agency Tier&rdquo;</li><li>Rename the label &ldquo;Please select a Job Type, Start Date and a Rate Type to see agency rates&rdquo; to &ldquo;Please select a Job Type, Start Date, and Rate Type to see Agency or Direct Bank Worker rates&rdquo;</li></ul></li></ul></li></ul>",
+    "score": 4,
+    "justification": "Validates critical business process (booking creation), integration points, and user role permissions."
+  },
+  {
+    "id": "166452387",
+    "key": "UNO-T512",
+    "name": "Verify as a NEUVEN user when creating a new booking for a direct bank worker – renaming labels - Both - EDIT",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2436"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged on as a Neuven User with&nbsp;With Manage/Approve/Authorise bookings permission</li></ul>When<br><ul><li>On the bookings screen &gt;&nbsp;Manage bookings&nbsp;&gt;&nbsp;Select Location&nbsp;&gt;&nbsp;New Booking</li></ul>Then<br><ul><li>If Client Set-Up page for the relevant Client Location has &ldquo;<strong>Both</strong>&rdquo;&nbsp;</li><li><strong>When EDITING an existing &nbsp;Booking</strong><ul><li>Rename the following labels<ul><li>&ldquo;Agencies&rdquo; tab &ldquo;Booking Distribution&rdquo;</li><li>&ldquo;Agency Name&rdquo; column header &ldquo;Worker Source&rdquo;</li><li>&ldquo;Tier&rdquo; column header &quot;Agency Tier&rdquo;</li><li>Rename the label &ldquo;Please select a Job Type, Start Date and a Rate Type to see agency rates&rdquo; to &ldquo;Please select a Job Type, Start Date, and Rate Type to see Agency or Direct Bank Worker rates&rdquo;</li></ul></li></ul></li></ul>",
+    "score": 4,
+    "justification": "Similar to UNO-T511 but focused on editing. Covers critical process, multiple components, and user permissions."
+  },
+  {
+    "id": "166453113",
+    "key": "UNO-T513",
+    "name": "Verify as a NEUVEN user when creating a new booking for a direct bank worker – renaming labels - Both - EDIT",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2436"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged on as a Neuven User with&nbsp;With Manage/Approve/Authorise bookings permission</li></ul>When<br><ul><li>On the bookings screen &gt;&nbsp;Manage bookings&nbsp;&gt;&nbsp;Select Location&nbsp;&gt;&nbsp;New Booking</li></ul>Then<br><ul><li>If Client Set-Up page for the relevant Client Location has &ldquo;<strong>Both</strong>&rdquo;&nbsp;</li><li><strong>When EDITING an existing Booking</strong><ul><li>Rename the following labels<ul><li>&ldquo;Agencies&rdquo; tab &ldquo;Booking Distribution&rdquo;</li><li>&ldquo;Agency Name&rdquo; column header &ldquo;Worker Source&rdquo;</li><li>&ldquo;Tier&rdquo; column header &quot;Agency Tier&rdquo;</li><li>Rename the label &ldquo;Please select a Job Type, Start Date and a Rate Type to see agency rates&rdquo; to &ldquo;Please select a Job Type, Start Date, and Rate Type to see Agency or Direct Bank Worker rates&rdquo;</li></ul></li></ul></li></ul>",
+    "score": 3,
+    "justification": "Redundant with UNO-T512, focuses on editing with less unique coverage. Still covers crucial elements involving user permissions and integrated components."
+  },
+  {
+    "id": "166453408",
+    "key": "UNO-T514",
+    "name": "Verify as a CLIENT user when creating a new booking for a direct bank worker – renaming labels -AGENCY WORKERS ONLY",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2436"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged on as a CLIENT User with&nbsp;With Manage/Approve/Authorise bookings permission</li></ul>When<br><ul><li>On the bookings screen &gt;&nbsp;Manage bookings&nbsp;&gt;&nbsp;Select Location&nbsp;&gt;&nbsp;New Booking</li></ul>Then<br><ul><li>If Client Set-Up page for the relevant Client Location has &ldquo;<strong>Agency Workers only</strong>&rdquo; selected</li><li>Leave headers and labels as they are now</li></ul>",
+    "score": 4,
+    "justification": "Involves user permissions and integrated components. Important for maintaining critical business process integrity."
+  },
+  {
+    "id": "166453598",
+    "key": "UNO-T515",
+    "name": "Verify as a CLIENT user when creating a new booking for a direct bank worker – renaming labels - Direct Bank Workers only - CREATE",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2436"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged on as a CLIENT User with&nbsp;With Manage/Approve/Authorise bookings permission</li></ul>When<br><ul><li>On the bookings screen &gt;&nbsp;Manage bookings&nbsp;&gt;&nbsp;Select Location&nbsp;&gt;&nbsp;New Booking</li></ul>Then<br><ul><li>If Client Set-Up page for the relevant Client Location has &ldquo;<strong>Direct Bank Workers only</strong>&rdquo;&nbsp;</li><li><strong>When Creating a Booking</strong><ul><li>Rename the following labels<ul><li>&ldquo;Agencies&rdquo; tab &ldquo;Booking Distribution&rdquo;</li><li>&ldquo;Agency Name&rdquo; column header &ldquo;Worker Source&rdquo;</li><li>&ldquo;Tier&rdquo; column header &quot;Agency Tier&rdquo;</li><li>Rename the label &ldquo;Please select a Job Type, Start Date and a Rate Type to see agency rates&rdquo; to &ldquo;Please select a Job Type, Start Date, and Rate Type to see Agency or Direct Bank Worker rates&rdquo;</li></ul></li></ul></li></ul>",
+    "score": 4,
+    "justification": "Critical process (booking creation), validation of user permissions, covers multiple components."
+  },
+  {
+    "id": "166453670",
+    "key": "UNO-T516",
+    "name": "Verify as a CLIENT user when creating a new booking for a direct bank worker – renaming labels - Direct Bank Workers only - EDIT",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2436"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged on as a CLIENT User with&nbsp;With Manage/Approve/Authorise bookings permission</li></ul>When<br><ul><li>On the bookings screen &gt;&nbsp;Manage bookings&nbsp;&gt;&nbsp;Select Location&nbsp;&gt;&nbsp;New Booking</li></ul>Then<br><ul><li>If Client Set-Up page for the relevant Client Location has &ldquo;<strong>Direct Bank Workers only</strong>&rdquo;&nbsp;</li><li><strong>When EDITING an existing &nbsp;Booking</strong><ul><li>Rename the following labels<ul><li>&ldquo;Agencies&rdquo; tab &ldquo;Booking Distribution&rdquo;</li><li>&ldquo;Agency Name&rdquo; column header &ldquo;Worker Source&rdquo;</li><li>&ldquo;Tier&rdquo; column header &quot;Agency Tier&rdquo;</li><li>Rename the label &ldquo;Please select a Job Type, Start Date and a Rate Type to see agency rates&rdquo; to &ldquo;Please select a Job Type, Start Date, and Rate Type to see Agency or Direct Bank Worker rates&rdquo;</li></ul></li></ul></li></ul>",
+    "score": 4,
+    "justification": "Similar to UNO-T515 but focused on editing. Covers critical business process, integration points, and user permissions."
+  },
+  {
+    "id": "166453724",
+    "key": "UNO-T517",
+    "name": "Verify as a CLIENT user when creating a new booking for a direct bank worker – renaming labels - Direct Bank Workers only - EDIT",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2436"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged on as a CLIENT User with&nbsp;With Manage/Approve/Authorise bookings permission</li></ul>When<br><ul><li>On the bookings screen &gt;&nbsp;Manage bookings&nbsp;&gt;&nbsp;Select Location&nbsp;&gt;&nbsp;New Booking</li></ul>Then<br><ul><li>If Client Set-Up page for the relevant Client Location has &ldquo;<strong>Direct Bank Workers only</strong>&rdquo;&nbsp;</li><li><strong>When EDITING an existing Booking</strong><ul><li>Rename the following labels<ul><li>&ldquo;Agencies&rdquo; tab &ldquo;Booking Distribution&rdquo;</li><li>&ldquo;Agency Name&rdquo; column header &ldquo;Worker Source&rdquo;</li><li>&ldquo;Tier&rdquo; column header &quot;Agency Tier&rdquo;</li><li>Rename the label &ldquo;Please select a Job Type, Start Date and a Rate Type to see agency rates&rdquo; to &ldquo;Please select a Job Type, Start Date, and Rate Type to see Agency or Direct Bank Worker rates&rdquo;</li></ul></li></ul></li></ul>",
+    "score": 3,
+    "justification": "Redundant with UNO-T516, still focuses on editing bookings. Covers integration points and user role permissions."
+  },
+  {
+    "id": "166453794",
+    "key": "UNO-T518",
+    "name": "Verify as a CLIENT user when Approving / Rejecting Workers for a booking",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2436"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged on as a CLIENT User with&nbsp;With Manage/Approve/Authorise bookings permission</li></ul>When<br><ul><li>On the bookings screen &gt;&nbsp;Manage bookings&nbsp;&gt;&nbsp;Select Location&nbsp;&gt;&nbsp;Approve bookings List (Pending)</li></ul>Then<br> &nbsp;Rename the following Lables<br><ul><li>On the Workers Details tab, rename the &ldquo;Agency Branch&rdquo; column header &ldquo;Worker Source&rdquo;</li><li>The &ldquo;Agency Name&rdquo; column header has been renamed &ldquo;Worker Source&rdquo;&nbsp;</li></ul>",
+    "score": 5,
+    "justification": "Critical business process (approval/rejection), high impact on business, multiple integration points, user permissions."
+  },
+  {
+    "id": "166453840",
+    "key": "UNO-T519",
+    "name": "Verify as a CLIENT user when creating a new booking for a direct bank worker – renaming labels - Both - CREATE",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2436"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged on as a CLIENT User with&nbsp;With Manage/Approve/Authorise bookings permission</li></ul>When<br><ul><li>On the bookings screen &gt;&nbsp;Manage bookings&nbsp;&gt;&nbsp;Select Location&nbsp;&gt;&nbsp;New Booking</li></ul>Then<br><ul><li>If Client Set-Up page for the relevant Client Location has &ldquo;<strong>Both</strong>&rdquo;&nbsp;</li><li><strong>When Creating a Booking</strong><ul><li>Rename the following labels<ul><li>&ldquo;Agencies&rdquo; tab &ldquo;Booking Distribution&rdquo;</li><li>&ldquo;Agency Name&rdquo; column header &ldquo;Worker Source&rdquo;</li><li>&ldquo;Tier&rdquo; column header &quot;Agency Tier&rdquo;</li><li>Rename the label &ldquo;Please select a Job Type, Start Date and a Rate Type to see agency rates&rdquo; to &ldquo;Please select a Job Type, Start Date, and Rate Type to see Agency or Direct Bank Worker rates&rdquo;</li></ul></li></ul></li></ul>",
+    "score": 4,
+    "justification": "Critical business process (booking creation), validates user permissions and covers multiple integrated components."
+  },
+  {
+    "id": "166453883",
+    "key": "UNO-T520",
+    "name": "Verify as a CLIENT user when creating a new booking for a direct bank worker – renaming labels - Both - EDIT",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2436"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged on as a CLIENT User with&nbsp;With Manage/Approve/Authorise bookings permission</li></ul>When<br><ul><li>On the bookings screen &gt;&nbsp;Manage bookings&nbsp;&gt;&nbsp;Select Location&nbsp;&gt;&nbsp;New Booking</li></ul>Then<br><ul><li>If Client Set-Up page for the relevant Client Location has &ldquo;<strong>Both</strong>&rdquo;&nbsp;</li><li><strong>When EDITING an existing &nbsp;Booking</strong><ul><li>Rename the following labels<ul><li>&ldquo;Agencies&rdquo; tab &ldquo;Booking Distribution&rdquo;</li><li>&ldquo;Agency Name&rdquo; column header &ldquo;Worker Source&rdquo;</li><li>&ldquo;Tier&rdquo; column header &quot;Agency Tier&rdquo;</li><li>Rename the label &ldquo;Please select a Job Type, Start Date and a Rate Type to see agency rates&rdquo; to &ldquo;Please select a Job Type, Start Date, and Rate Type to see Agency or Direct Bank Worker rates&rdquo;</li></ul></li></ul></li></ul>",
+    "score": 4,
+    "justification": "Similar to UNO-T519 but focused on editing. Covers critical process, multiple components, and user permissions."
+  },
+  {
+    "id": "166454034",
+    "key": "UNO-T521",
+    "name": "Verify as a CLIENT user when creating a new booking for a direct bank worker – renaming labels - Both - EDIT",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2436"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged on as a CLIENT User with&nbsp;With Manage/Approve/Authorise bookings permission</li></ul>When<br><ul><li>On the bookings screen &gt;&nbsp;Manage bookings&nbsp;&gt;&nbsp;Select Location&nbsp;&gt;&nbsp;New Booking</li></ul>Then<br><ul><li>If Client Set-Up page for the relevant Client Location has &ldquo;<strong>Both</strong>&rdquo;&nbsp;</li><li><strong>When EDITING an existing Booking</strong><ul><li>Rename the following labels<ul><li>&ldquo;Agencies&rdquo; tab &ldquo;Booking Distribution&rdquo;</li><li>&ldquo;Agency Name&rdquo; column header &ldquo;Worker Source&rdquo;</li><li>&ldquo;Tier&rdquo; column header &quot;Agency Tier&rdquo;</li><li>Rename the label &ldquo;Please select a Job Type, Start Date and a Rate Type to see agency rates&rdquo; to &ldquo;Please select a Job Type, Start Date, and Rate Type to see Agency or Direct Bank Worker rates&rdquo;</li></ul></li></ul></li></ul>",
+    "score": 3,
+    "justification": "Redundant with UNO-T520, still covers editing with multiple components and user permissions."
+  }
+]

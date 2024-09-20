@@ -1,0 +1,123 @@
+[
+  {
+    "id": "144716421",
+    "key": "UNO-T128",
+    "name": "Verify that as a client user I can create a T&A timesheet with a different start and end date and the hours calculate correctly.",
+    "folder": "UNO-2038, Uno-2050 - T and A",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2038",
+      "UNO-2050"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li>Logged in as a Client User.&nbsp;</li></ul>When :<ul><li>On the T&amp;A screen</li></ul>Then:<ul><li>Create a new time and attendance that starts late and carries over to the next day, - to carry it over click the is night button on the line.</li><li>Add a break for this time and attendance of 1 hour .</li><li>Verify all lines.</li><li>Check that the Paid and unpaid time has been calculated correctly.&nbsp;</li><li>Check a time sheet has been created.&nbsp;</li></ul><br><br>",
+    "score": 5,
+    "justification": "This test covers a critical business process (timesheet creation), involves calculations (hour calculation), checks integration points (time and attendance system), and involves multiple user roles (client user). Lastly, it's complex due to the different start and end dates and the inclusion of breaks."
+  },
+  {
+    "id": "154218181",
+    "key": "UNO-T266",
+    "name": "Verify the delete functionality on the document name table when document name is used elsewhere in the system",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 5,
+    "justification": "Ensures referential integrity and system stability when deleting documents used in other parts of the system. High priority and business impact."
+  },
+  {
+    "id": "159411090",
+    "key": "UNO-T429",
+    "name": "Verify as a NEUVEN User that the DBS details on the Compliance tab Save and Update when being created / edited.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2347"
+    ],
+    "objective": null,
+    "testScript": "<div><div><div><div><p>Given:&nbsp;</p><ul><li><p>Logged in as a Neuven user with &lsquo;Manage Direct Bank worker Permission'</p></li></ul>When :</div><ul><li><div>On direct Bank Workers Page</div></li><li>When adding a &nbsp;New Direct Bank worker / editing Bank Worker&nbsp;</li></ul>Then:<ul><li>One the Compliance Tab<ul><li>DBS Details&nbsp;<ul><li>DBS Certificate Verified Toggle</li><li>DBS Certificate Verified By (Free Type Text field)</li><li>DBS Certificate Verified On (Helper text with Date format DD/MM/YYYY)<ul><li>Date picker</li></ul></li><li>DBS Certificate Number (Free Type Text field)</li><li>DBS Issue Date (Helper text with Date format DD/MM/YYYY)<ul><li>Date picker</li></ul></li></ul></li></ul></li><li>When a new bank worker is created all of the above fields save correctly&nbsp;</li><li>And when these fields are edited the new details are remembered.&nbsp;</li><li>These fields are editable by users with above permission only</li></ul></div></div></div>",
+    "score": 5,
+    "justification": "This test case is comprehensive, covering data manipulation, security (permissions) and core functionality, ensuring correct save/edit operations which are critical to data integrity and usability."
+  },
+  {
+    "id": "159411091",
+    "key": "UNO-T430",
+    "name": "Verify as a CLIENT User that the DBS details on the Compliance tab Save and Update when being created / edited.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2347"
+    ],
+    "objective": null,
+    "testScript": "<div><div><div><div><p>Given:&nbsp;</p><ul><li>Client user with ' Edit Direct Bank Worker Permission'</li></ul>When :</div><ul><li><div>One direct Bank Workers Page</div></li><li><div>When adding a &nbsp;New Direct Bank worker / editing Bank Worker&nbsp;</div></li></ul><div>Then:</div><ul><li><p>One the Compliance Tab</p><ul><li><p>DBS Details&nbsp;</p><ul><li><p>DBS Certificate Verified Toggle</p></li><li><p>DBS Certificate Verified By (Free Type Text field)</p></li><li><p>DBS Certificate Verified On (Helper text with Date format DD/MM/YYYY)</p><ul><li><p>Date picker</p></li></ul></li><li><p>DBS Certificate Number (Free Type Text field)</p></li><li><p>DBS Issue Date (Helper text with Date format DD/MM/YYYY)</p><ul><li><p>Date picker</p></li></ul></li></ul></li></ul></li><li><p>When a new bank worker is created all of the above fields save correctly&nbsp;</p></li><li><p>And when these fields are edited the new details are remembered.&nbsp;</p></li><li><p>These fields are editable by users with above permission only</p></li></ul></div></div></div>",
+    "score": 5,
+    "justification": "Similar to UNO-T429, this test case ensures data integrity and usability with a focus on client-side permissions, making it highly critical for regression testing."
+  },
+  {
+    "id": "159545214",
+    "key": "UNO-T435",
+    "name": "Verify as a NEUVEN User the Work Eligibility Details Section in the Compliance tab in a Direct Bank Workers Profile saves / edits correctly",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2345"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:</p><ul><li><p>Logged in as a Neuven user with &lsquo;Manage Direct Bank worker Permission'</p></li></ul><p>When&nbsp;</p><ul><li><p>On Direct Bank Workers page&nbsp;</p></li><li><p>Click Add New Direct Bank worker / or editing an existing Direct&nbsp; Bank Worker profile</p></li></ul><p>&nbsp;Then :<br>On the <strong>Compliance Tab:</strong></p><ul><li>Check that there is a section for Work Eligibility Details&nbsp;</li><li>Confirm that this is under the Passport Details section.&nbsp;</li><li>Confirm that this section includes the following.<ul><li><p>Work Eligibility Verified (Toggle)</p></li><li><p>Nationality (Text Field)</p></li><li><p>Date of 1st Shift (Helper text with format displayed DD/MM/YYYY)</p><ul><li><p>Date Picker</p></li></ul></li></ul></li><li><p>When creating a new bank worker the details entered in this section are saved and can be seen when editing the worker provided the user has relevant permissions to do so.&nbsp;</p></li><li><p>When these details have been updated they save correctly they are remembered in the profile&nbsp;</p></li><li><p>If the details are altered when editing and the changes are not saved the original details are remembered in the workers profile.&nbsp;</p></li></ul><p>These fields can be filled by users with above permissions.</p>",
+    "score": 5,
+    "justification": "This test case is comprehensive, covering multiple criteria such as data saving/editing, security, and integration, which is critical for maintaining data integrity and correctness."
+  },
+  {
+    "id": "159545238",
+    "key": "UNO-T436",
+    "name": "Verify as a CLIENT User the Work Eligibility Details Section in the Compliance tab in a Direct Bank Workers Profile saves / edits correctly.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2345"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:</p><ul><li><p>Client user with ' Edit Direct Bank Worker Permission'</p></li></ul><p>When&nbsp;</p><ul><li><p>On Direct Bank Workers page&nbsp;</p></li><li><p>Click Add New Direct Bank worker / or editing an existing Direct &nbsp;Bank Worker profile</p></li></ul><p>&nbsp;Then :<br>On the <strong>Compliance Tab:</strong></p><ul><li>Check that there is a section for Work Eligibility Details&nbsp;</li><li>Confirm that this is under the Passport Details section.&nbsp;</li><li>Confirm that this section includes the following.<ul><li><p>Work Eligibility Verified (Toggle)</p></li><li><p>Nationality (Text Field)</p></li><li><p>Date of 1st Shift (Helper text with format displayed DD/MM/YYYY)</p><ul><li><p>Date Picker</p></li></ul></li></ul></li><li><p>When creating a new bank worker the details entered in this section are saved and can be seen when editing the worker provided the user has relevant permissions to do so.&nbsp;</p></li><li><p>When these details have been updated they save correctly they are remembered in the profile&nbsp;</p></li><li><p>If the details are altered when editing and the changes are not saved the original details are remembered in the workers profile.&nbsp;</p></li></ul><p>These fields can be filled by users with above permissions.</p>",
+    "score": 5,
+    "justification": "Similar to UNO-T435, ensures extensive integration testing for saving/editing operations under client permissions, essential for data integrity and reliability."
+  },
+  {
+    "id": "166451623",
+    "key": "UNO-T510",
+    "name": "Verify as a NEUVEN user When Approving / Rejecting Workers for a booking",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2436"
+    ],
+    "objective": null,
+    "testScript": "Verify as a NEUVEN user when&nbsp;When Approving for a booking&nbsp;<br>Given<br><ul><li>Logged on as a Neuven User with&nbsp;With Manage/Approve/Authorise bookings permission</li></ul>When<br><ul><li>On the bookings screen &gt;&nbsp;Manage bookings&nbsp;&gt;&nbsp;Select Location&nbsp;&gt;&nbsp;Approve bookings List (Pending)</li></ul>Then<br> &nbsp;Rename the following Lables<br><ul><li>On the Workers Details tab, rename the &ldquo;Agency Branch&rdquo; column header &ldquo;Worker Source&rdquo;</li><li>The &ldquo;Agency Name&rdquo; column header has been renamed &ldquo;Worker Source&rdquo;&nbsp;</li></ul>",
+    "score": 5,
+    "justification": "Involves critical business process (approval/rejection), high business impact, user permissions, and multiple integrated components."
+  },
+  {
+    "id": "166453794",
+    "key": "UNO-T518",
+    "name": "Verify as a CLIENT user when Approving / Rejecting Workers for a booking",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2436"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged on as a CLIENT User with&nbsp;With Manage/Approve/Authorise bookings permission</li></ul>When<br><ul><li>On the bookings screen &gt;&nbsp;Manage bookings&nbsp;&gt;&nbsp;Select Location&nbsp;&gt;&nbsp;Approve bookings List (Pending)</li></ul>Then<br> &nbsp;Rename the following Lables<br><ul><li>On the Workers Details tab, rename the &ldquo;Agency Branch&rdquo; column header &ldquo;Worker Source&rdquo;</li><li>The &ldquo;Agency Name&rdquo; column header has been renamed &ldquo;Worker Source&rdquo;&nbsp;</li></ul>",
+    "score": 5,
+    "justification": "Critical business process (approval/rejection), high impact on business, multiple integration points, user permissions."
+  }
+]

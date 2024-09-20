@@ -1,0 +1,287 @@
+[
+  {
+    "id": "170253502",
+    "key": "UNO-T541",
+    "name": "Verify uploading a worker who can just work in the UK",
+    "folder": "Multi Currency/Neuven User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2400"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged in as a neuven user with Manage Agencies permission</li></ul>When<br><ul><li>User has downloaded and completed the template&nbsp;</li><li>They fill it in will all the information compulsory for a worker to work in the UK</li></ul>Then<br><ul><li>Agency &gt; Agency Worker</li><li>Click Upload Worker</li><li>They upload it and it uploads successfully&nbsp;</li></ul>",
+    "score": 3,
+    "justification": "Tests a critical business process (worker upload), involves data manipulation, and covers integration points."
+  },
+  {
+    "id": "170253557",
+    "key": "UNO-T542",
+    "name": "Verify uploading a worker who can work in Ireland only",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2400"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged in as a neuven user with Manage Agencies permission</li></ul>When<br><ul><li>User has downloaded and completed the template&nbsp;</li><li>They fill it in will all the information compulsory for a worker to work in the Ireland</li></ul>Then<br><ul><li>Agency &gt; Agency Worker</li><li>Click Upload Worker</li><li>They upload it and it uploads successfully&nbsp;</li></ul>",
+    "score": 3,
+    "justification": "Tests a critical business process (worker upload), involves data manipulation, and covers integration points."
+  },
+  {
+    "id": "170253576",
+    "key": "UNO-T543",
+    "name": "Verify uploading a worker who can work in both the UK and Ireland",
+    "folder": "Multi Currency/Neuven User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2400"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged in as a neuven user with Manage Agencies permission</li></ul>When<br><ul><li>User has downloaded and completed the template&nbsp;</li><li>They fill it in will all the information compulsory for a worker to work in the Ireland and the uk.&nbsp;</li></ul>Then<br><ul><li>Agency &gt; Agency Worker</li><li>Click Upload Worker</li><li>They upload it and it uploads successfully&nbsp;</li></ul>",
+    "score": 3,
+    "justification": "Tests a critical business process (worker upload), covers multiple integrated components, and involves data manipulation."
+  },
+  {
+    "id": "170253738",
+    "key": "UNO-T544",
+    "name": "Verify that a neuven user cant upload a worker who works in the UK without an NI number",
+    "folder": "Multi Currency/Neuven User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2400"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged in as a neuven user with Manage Agencies permission</li></ul>When<br><ul><li>User has downloaded and completed the template&nbsp;</li><li>They fill it in will all the information compulsory for a worker to work in the UK &ndash; apart form the NI number&nbsp;</li></ul>Then<br><ul><li>Agency &gt; Agency Worker</li><li>Click Upload Worker</li><li>They upload it, and they are given and error message relating to the lack of NI number .&nbsp;</li></ul>",
+    "score": 4,
+    "justification": "Tests a critical business process with validation, involves data manipulation, has security implications, and covers integration points."
+  },
+  {
+    "id": "170255227",
+    "key": "UNO-T545",
+    "name": "Verify the changes to the worker upload screen DBW for NEUVEN USERS",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2452"
+    ],
+    "objective": null,
+    "testScript": "<p>Given</p><ul style=\"margin-bottom: 0.0cm;\"><li><span style=\"line-height: normal;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Logged in as a Neuven user with Manage Direct Bank Worker Permission&nbsp;</span></li></ul><p>When&nbsp;</p><ul style=\"margin-bottom: 0.0cm;\"><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">On the Direct Worker Page &gt; Click Upload Worker&nbsp;</span></li></ul><p>Then</p><ul><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">A popup will appear</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">The popup will have 2 tabs</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">The worker upload tab and the worker roll back tab.&nbsp;</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">On the WORKER UPLOAD TAB</span><ol><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Enable users to upload file from their PC.&nbsp;</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Template download button&nbsp;</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">&lsquo;upload&rsquo; button.&nbsp;</span></li></ol></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">On the WORKER ROLL BACK TAB.&nbsp;</span><ol><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Enter batch Id text box&nbsp;</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">If batch id is valid, it will remove all uploaded direct bank worker details&nbsp;</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">If the batch ID in not valid error message will appear stating: &lsquo;Enter Valid Batch ID&rsquo;&nbsp;</span></li></ol></li></ul>",
+    "score": 3,
+    "justification": "Tests a critical business process (upload screen changes), involves multiple steps and integration points, covers user permissions."
+  },
+  {
+    "id": "170255252",
+    "key": "UNO-T546",
+    "name": "Verify the changes to the worker upload screen DBW for CLIENT USERS",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2452"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged in as a Client User with Edit Direct Bank Worker Permission</li></ul>When&nbsp;<br><ul><li>On the Direct Worker Page &gt; Click Upload Worker&nbsp;</li></ul>Then<br><ul><li>A popup will appear</li><li>The popup will have 2 tabs</li><li>The worker upload tab and the worker roll back tab.&nbsp;</li><li>On the WORKER UPLOAD TAB<ul><li>Enable users to upload file from their PC.&nbsp;</li><li>Template download button&nbsp;</li><li>&lsquo;upload&rsquo; button.&nbsp;</li></ul></li><li>On the WORKER ROLL BACK TAB.&nbsp;<ul><li>Enter batch Id text box&nbsp;</li><li>If batch id is valid, it will remove all uploaded direct bank worker details&nbsp;</li><li>If the batch ID in not valid error message will appear stating: &lsquo;Enter Valid Batch ID&rsquo;&nbsp;</li></ul></li></ul>",
+    "score": 3,
+    "justification": "Tests a critical business process (upload screen changes), involves multiple steps and integration points, covers user permissions."
+  },
+  {
+    "id": "170255538",
+    "key": "UNO-T547",
+    "name": "Verify the changes to T&A manual entry when selecting a client who is set up for both DBW Only",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2475"
+    ],
+    "objective": null,
+    "testScript": "Given&nbsp;<br><ul><li>Logged in as client user with T&amp;A user permission&nbsp;</li></ul>When&nbsp;<br><ul><li>On the T&amp;A board</li><li>Selecting &lsquo;New Time Attendance&rsquo;</li><li>The select client location pop up box will appear on screen&nbsp;</li></ul>Then<br><ul><li>Worker&nbsp;dropdown will show both agency workers and DBW&rsquo;s in below format<ol><li>Direct Bank worker name - Direct Bank worker - approved - linked to the client location&nbsp;</li><li>When logged in from Tab using T&amp;A QR code scanning function, when manual entry is chosen, the worker dropdown should function the same way</li></ol></li></ul>",
+    "score": 3,
+    "justification": "Tests a critical business process, covers multiple integrated components, involves data manipulation."
+  },
+  {
+    "id": "170255608",
+    "key": "UNO-T548",
+    "name": "Verify the changes to T&A manual entry when selecting a client who is set up for agency workers only",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2475"
+    ],
+    "objective": null,
+    "testScript": "Given&nbsp;<br><ul><li>Logged in as client user with T&amp;A user permission&nbsp;</li></ul>When&nbsp;<br><ul><li>On the T&amp;A board</li><li>Selecting &lsquo;New Time Attendance&rsquo;</li><li>The select client location pop up box will appear on screen&nbsp;</li></ul>Then<br><ul><li>Worker dropdown will show both agency workers and DBW&rsquo;s in below format<ul><li>Agency worker name - Agency branch name (Existing functionality)</li><li>When logged in from Tab using T&amp;A QR code scanning function, when manual entry is chosen, the worker dropdown should function the same way</li></ul></li></ul>",
+    "score": 3,
+    "justification": "Tests a critical business process, covers multiple integrated components, involves data manipulation."
+  },
+  {
+    "id": "170258075",
+    "key": "UNO-T549",
+    "name": "Verify the changes to T&A manual entry when selecting a client who is set up for both DBW and agency workers.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2475"
+    ],
+    "objective": null,
+    "testScript": "Given&nbsp;<br><ul><li>Logged in as client user with T&amp;A user permission&nbsp;</li></ul>When&nbsp;<br><ul><li>On the T&amp;A board</li><li>Selecting &lsquo;New Time Attendance&rsquo;</li><li>The select client location pop up box will appear on screen&nbsp;</li></ul>Then<br><ul><li>Worker&nbsp;dropdown will show both agency workers and DBW&rsquo;s in below format<ol><li>Agency worker name - Agency branch name (Existing functionality)</li><li>Direct Bank worker name - Direct Bank worker - approved - linked to the client location&nbsp;</li><li>When logged in from Tab using T&amp;A QR code scanning function, when manual entry is chosen, the worker dropdown should function the same way</li></ol></li></ul>",
+    "score": 4,
+    "justification": "Tests a critical business process, covers multiple integrated components, involves data manipulation, includes validation of worker type."
+  },
+  {
+    "id": "170259629",
+    "key": "UNO-T550",
+    "name": "Verify a NEUVEN USER can view the QR code Button on a direct workers profile.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2474"
+    ],
+    "objective": null,
+    "testScript": "Given&nbsp;<br><ul><li>Logged in as a Neuven user with &lsquo;Manage Direct Bank Worker&rsquo; permission</li></ul>When <br><ul><li>Direct Bank worker page</li><li>View a Direct Bank worker details</li><li>In the user details tab</li></ul>Then <br><ul><li>There is a &lsquo;View QR Code&rsquo; button on the top right of the screen&nbsp;</li><li>When clicked it displays a QR Code for that worker.&nbsp;</li></ul>",
+    "score": 2,
+    "justification": "Tests a UI element (QR code button), involves user permissions, but has lower business impact."
+  },
+  {
+    "id": "170259849",
+    "key": "UNO-T551",
+    "name": "Verify a CLIENT USER can view the QR code Button on a direct worker's profile.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2474"
+    ],
+    "objective": null,
+    "testScript": "Given&nbsp;<br><ul><li>Logged in as a Client user with &lsquo;'View Direct Bank Worker&rsquo;' or '&lsquo;Edit Direct Bank Worker&rsquo; permission</li></ul>When&nbsp;<br><ul><li>Direct Bank worker page</li><li>View a Direct Bank worker details</li><li>In the user details tab</li></ul><br>Then <br><ul><li>There is a &lsquo;View QR Code&rsquo; button on the top right of the screen&nbsp;</li><li>When clicked it displays a QR Code for that worker.&nbsp;</li></ul>&nbsp;<br>UNO-2473",
+    "score": 2,
+    "justification": "Tests a UI element (QR code button), involves user permissions, but has lower business impact."
+  },
+  {
+    "id": "170260272",
+    "key": "UNO-T552",
+    "name": "Verify that if the client location has ‘Direct Bank Workers Only’ or ‘Both’ toggle on the client setting, no change is made to the T&A board page",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2472"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged in as a Client User (With T&amp;A permission)</li><li>T&amp;A</li><li>T&amp;A Board</li><li>Select Client Location</li></ul>When&nbsp;<br><ul><li>Client location has &lsquo;'Direct Bank Workers Only&rsquo;' of &lsquo;'Both&rsquo;' Toggle on in client settings</li></ul>Then&nbsp;<br>Then below labels should be changed<br><ul><li>The &ldquo;Agency&rdquo; column header &ldquo;Worker Source&rdquo;</li><li>The text in the Search box &ldquo;Search Worker Source&rdquo;</li></ul>",
+    "score": 2,
+    "justification": "Tests configuration toggle, involves data manipulation, but has lower business impact."
+  },
+  {
+    "id": "170260321",
+    "key": "UNO-T553",
+    "name": "Verify the recognition of a scanned QR Code",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2472"
+    ],
+    "objective": null,
+    "testScript": "Given&nbsp;<br><ul><li>Client User&nbsp;</li></ul>When&nbsp;<br><ul><li>The QR code is scanned &nbsp; by a worker to &nbsp;either clock in or clock out.&nbsp;</li></ul>Then<br>The worker source column should:<br><ul><li>Show source as Direct Bank worker if it is DBW and name of the DBW in Worker column</li><li>show source as &lsquo;'Agency Branch Name&rsquo;' if it is a Agency worker</li></ul>",
+    "score": 4,
+    "justification": "Tests critical functionality (QR code scanning), covers security-related functions, involves data manipulation, covers integration points."
+  },
+  {
+    "id": "170260366",
+    "key": "UNO-T554",
+    "name": "Verify that if the client location has ‘Agency Worker Only’ toggle on the client setting, no change is made to the T&A board page",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2472"
+    ],
+    "objective": null,
+    "testScript": "Given&nbsp;<br><ul><li>Logged in as a Client User (With T&amp;A permission)</li><li>T&amp;A</li><li>T&amp;A Board</li><li>Select Client Location</li></ul>When&nbsp;<br><ul><li>Client location has &lsquo;'Agency Worker Only&rsquo;' Toggle on in the client settings</li></ul>Then<br><ul><li>There will be no changes to the existing page</li></ul>",
+    "score": 2,
+    "justification": "Tests configuration toggle, involves data manipulation, but has lower business impact."
+  },
+  {
+    "id": "170260958",
+    "key": "UNO-T555",
+    "name": "Verify that as a Direct Bank Worker the same QR code is displayed in the app as on the website",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2473"
+    ],
+    "objective": null,
+    "testScript": "Given&nbsp;<br><ul><li>A Direct Bank Worker is set up in Venneu.com</li><li>There is a QR code for that Direct Bank Worker&nbsp;</li><li>The Direct Bank Worker has registered in Venneu APP</li></ul>When&nbsp;<br><ul><li>In the worker profile section</li><li>And the upcoming shift details section&nbsp;</li></ul>Then<br><ul><li>Show the same QR code of that worker&nbsp;</li></ul>",
+    "score": 2,
+    "justification": "Tests UI consistency, involves data display, but has lower business impact."
+  },
+  {
+    "id": "170261025",
+    "key": "UNO-T556",
+    "name": "Verify that when a QR code has been scanned in it updates to the T&A board for a client user.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2473"
+    ],
+    "objective": null,
+    "testScript": "Given&nbsp;<br><ul><li>A Direct Bank Worker is set up in Venneu.com</li><li>There is a QR code for that Direct Bank Worker&nbsp;</li><li>The Direct Bank Worker has registered in Venneu APP</li></ul>When<br><ul><li>The QR code is scanned to clock in and out for a shift via tablet</li></ul>Then<br><ul><li>Should work the same way it Workers for a Agency worker - except the worker source will be Direct Bank worker</li><li>These details will show in the T&amp;A board for Client user or Neuven user (With T&amp;A permission) for the locations they are linked to in the T&amp;A Page along side of agency workers if the location question users &lsquo;'both&rsquo;' types of workers.</li></ul>",
+    "score": 4,
+    "justification": "Tests critical functionality (QR code scanning with T&A update), involves multiple components, covers security-related functions, involves data manipulation."
+  },
+  {
+    "id": "170436535",
+    "key": "UNO-T557",
+    "name": "Verify that a neuven user can’t upload a worker who works in the UK without an NI number and without stating UK in the document",
+    "folder": "Multi Currency/Neuven User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2400"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged in as a neuven user with Manage Agencies permission</li></ul>When<br><ul><li>User has downloaded and completed the template&nbsp;</li><li>They fill it in will all the information compulsory for a worker to work in the UK &ndash; apart form the NI number&nbsp;</li></ul>Then<br><ul><li>Agency &gt; Agency Worker</li><li>Click Upload Worker</li><li>They upload it, and they are given and error message relating to the lack of NI number and UK.&nbsp;</li></ul>",
+    "score": 4,
+    "justification": "Tests critical validation (worker upload with missing data), involves security implications, covers multiple components, involves data manipulation."
+  },
+  {
+    "id": "170437140",
+    "key": "UNO-T558",
+    "name": "Verify that a neuven user can’t upload a worker who works in IRELAND without a PPS number",
+    "folder": "Multi Currency/Neuven User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2400"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged in as a neuven user with Manage Agencies permission</li></ul>When<br><ul><li>User has downloaded and completed the template&nbsp;</li><li>They fill it in will all the information compulsory for a worker to work in the IRELAND&ndash; apart from the PPS number&nbsp;</li></ul>Then<br><ul><li>Agency &gt; Agency Worker</li><li>Click Upload Worker</li><li>They upload it, and they are given and error message relating to the lack of PPS number and IRELAND&nbsp;</li></ul>",
+    "score": 4,
+    "justification": "Tests critical validation (worker upload with missing data), involves security implications, covers multiple components, involves data manipulation."
+  },
+  {
+    "id": "170437329",
+    "key": "UNO-T559",
+    "name": "Verify that a neuven user can’t upload a worker who works in BOTH the UK and IRELAND without an NI/PPS number",
+    "folder": "Multi Currency/Neuven User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2400"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged in as a neuven user with Manage Agencies permission</li></ul>When<br><ul><li>User has downloaded and completed the template&nbsp;</li><li>They fill it in will all the information compulsory for a worker to work in the Both &ndash; apart from the NI / PPS number&nbsp;</li></ul>Then<br><ul><li>Agency &gt; Agency Worker</li><li>Click Upload Worker</li><li>They upload it, and they are given and error message relating to the lack of NI/ PPS number</li></ul>",
+    "score": 4,
+    "justification": "Tests critical validation (worker upload with missing data), involves security implications, covers multiple components, involves data manipulation."
+  }
+]

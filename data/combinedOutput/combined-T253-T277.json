@@ -1,0 +1,377 @@
+[
+  {
+    "id": "154218168",
+    "key": "UNO-T253",
+    "name": "Verify Document Name field is a free type text box and all characters and numbers can be entered",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Tests basic input functionality and data manipulation but does not cover critical process, security aspects, or multiple components."
+  },
+  {
+    "id": "154218169",
+    "key": "UNO-T254",
+    "name": "Verify if Document Name field auto completes if there is a similar or same name used before",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 3,
+    "justification": "Covers core functionality (document name auto-completion) and involves data manipulation. It's prone to errors, making it a candidate for regression."
+  },
+  {
+    "id": "154218170",
+    "key": "UNO-T255",
+    "name": "Verify if user adds same or similar document name pop-up appears to alert the user about saving duplicate document name",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 4,
+    "justification": "Verifies a critical process (preventing duplicate entries), has security implications, and involves user interaction with alerts. Prone to errors."
+  },
+  {
+    "id": "154218171",
+    "key": "UNO-T256",
+    "name": "Verify the wording in the pop-up is user friendly",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Tests user interface language which impacts user experience but not core functionality or business-critical processes."
+  },
+  {
+    "id": "154218172",
+    "key": "UNO-T257",
+    "name": "Verify the default tick box exists on the page and is usable",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Ensures basic UI functionality, doesn't involve critical processes or data manipulation, but ensures the correctness of UI components which is fundamental."
+  },
+  {
+    "id": "154218173",
+    "key": "UNO-T258",
+    "name": "Verify when default is ticked, document appears in default document dropdown on maintenance page",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 3,
+    "justification": "Tests a specific functionality that impacts the user experience and involves data manipulation with drop down menus."
+  },
+  {
+    "id": "154218174",
+    "key": "UNO-T259",
+    "name": "Verify when default is not ticked, document appears in the client-specific document dropdown on the maintenance page",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 3,
+    "justification": "Validates important dropdown functionality related to document management and client-specific data handling."
+  },
+  {
+    "id": "154218175",
+    "key": "UNO-T260",
+    "name": "Verify the add functionality",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 4,
+    "justification": "Covers the critical process of adding new documents, involves data manipulation, and ensures user input functionality works as expected."
+  },
+  {
+    "id": "154218176",
+    "key": "UNO-T261",
+    "name": "Verify when document name is added, it shows on the table below",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 3,
+    "justification": "Ensures that added data is correctly displayed, which is a fundamental functionality. Involves data manipulation and visual verification."
+  },
+  {
+    "id": "154218177",
+    "key": "UNO-T262",
+    "name": "Verify the name of the columns in the document names table",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 1,
+    "justification": "Tests basic UI consistency but does not cover critical or complex functionality."
+  },
+  {
+    "id": "154218178",
+    "key": "UNO-T263",
+    "name": "Verify when document added, correct information is displayed on the table",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 3,
+    "justification": "Validates that data integrity is maintained when displayed, a core aspect of data handling and management."
+  },
+  {
+    "id": "154218179",
+    "key": "UNO-T264",
+    "name": "Verify the edit functionality on the document name table",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 4,
+    "justification": "Ensures core CRUD functionality for documents, involves data manipulation, and has high business impact."
+  },
+  {
+    "id": "154218180",
+    "key": "UNO-T265",
+    "name": "Verify the delete functionality on the document name table",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 4,
+    "justification": "Critical for data management, involves data deletion which can affect system functionality. Ensures that delete operations work correctly."
+  },
+  {
+    "id": "154218181",
+    "key": "UNO-T266",
+    "name": "Verify the delete functionality on the document name table when document name is used elsewhere in the system",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 5,
+    "justification": "Ensures referential integrity and system stability when deleting documents used in other parts of the system. High priority and business impact."
+  },
+  {
+    "id": "154218182",
+    "key": "UNO-T267",
+    "name": "Verify the search box above the document name table",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Tests a basic search functionality. Important for user experience, but not critical to core business processes."
+  },
+  {
+    "id": "154218183",
+    "key": "UNO-T268",
+    "name": "Verify the page size dropdown above the document name table",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 1,
+    "justification": "Tests basic pagination functionality, which is non-critical."
+  },
+  {
+    "id": "154218184",
+    "key": "UNO-T269",
+    "name": "Verify the pagination below the document name table",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 1,
+    "justification": "Similar to above, pagination is important but not critical for regression."
+  },
+  {
+    "id": "154218185",
+    "key": "UNO-T270",
+    "name": "Verify all the spellings and alignment on the Document name maintenance page",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 1,
+    "justification": "UI consistency check. Important for user experience but not critical for functionality."
+  },
+  {
+    "id": "154218186",
+    "key": "UNO-T271",
+    "name": "Verify the user friendliness of the document name maintenance page",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Tests user interface and experience which is important but not a core functionality."
+  },
+  {
+    "id": "154218187",
+    "key": "UNO-T272",
+    "name": "Verify responsiveness of the page when there is a large amount of data on the page",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 3,
+    "justification": "Tests performance under load, which is important to ensure the system can handle large data."
+  },
+  {
+    "id": "154248170",
+    "key": "UNO-T273",
+    "name": "Verify there is an expiry date applicable tick box on the default tab of the Worker document maintenance page",
+    "folder": "UNO-2149 Compliance documents",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2149"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Ensures the presence of a specific UI component. Important but not critical."
+  },
+  {
+    "id": "154248171",
+    "key": "UNO-T274",
+    "name": "Verify expiry date applicable column is added to the table on the default tab worker document maintenance page",
+    "folder": "UNO-2149 Compliance documents",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2149"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Tests for UI consistency and data handling for expiry dates. Important for data integrity."
+  },
+  {
+    "id": "154248172",
+    "key": "UNO-T275",
+    "name": "Verify document name is a drop-down on the Default tab and is feeding correctly from the document name maintenance page",
+    "folder": "UNO-2149 Compliance documents",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2149"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 3,
+    "justification": "Validates core functionality of dropdown data integrity and linkage between different parts of the system."
+  },
+  {
+    "id": "154248173",
+    "key": "UNO-T276",
+    "name": "Verify Documents can be added to the default document table",
+    "folder": "UNO-2149 Compliance documents",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2149"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 4,
+    "justification": "Ensures critical data addition functionality works correctly which is essential for business processes."
+  },
+  {
+    "id": "154423017",
+    "key": "UNO-T277",
+    "name": "Verify 'Click on more than one client to select multiple clients' message is displayed above the Select client dropdown",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2151"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Ensures the correctness of instructional messages. Important for usability but not critical for core functionality."
+  }
+]

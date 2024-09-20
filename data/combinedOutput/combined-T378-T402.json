@@ -1,0 +1,377 @@
+[
+  {
+    "id": "158174219",
+    "key": "UNO-T378",
+    "name": "Verify as a NEUVEN user the input fields in the add direct worker -user details tab",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2306"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:</p><ul><li><p><span style=\"font-family: Calibri , sans-serif;\">Logged in as a Neuven user with &lsquo;Manage Direct Bank Worker&rsquo; permission.</span></p></li></ul><p>When:&nbsp;</p><ul><li><p><span style=\"font-family: Calibri , sans-serif;\">On the direct bank workers page &gt; Click &lsquo;Add New Direct Bank Worker&rsquo; button</span></p></li></ul><p>Then:</p><ul><li><p>User is redirected to a page to crate a new direct bank worker.</p></li><li><p>One the page there is the following fields.&nbsp;</p><ul><li><p>A drop or click to upload a worker image.&nbsp;</p></li><li><p>An input filed for first name&nbsp;</p></li><li><p>An input field for last name&nbsp;</p></li><li><p>An input field for email&nbsp;</p></li><li><p>Address line one&nbsp;</p></li><li><p>Address line two&nbsp;</p></li><li><p>Town&nbsp;</p></li><li><p>Postcode</p></li><li><p>Country</p></li><li><p>Date of birth&nbsp;</p></li><li><p>Gender</p></li><li><p>Toggles for approved and locked out.&nbsp;</p></li></ul></li><li><p>The place holder on all the input field will indicate what is expected in each field. </p></li></ul>",
+    "score": 2,
+    "justification": "The test case ensures the UI elements are present and correctly labeled for critical user management functionality but does not verify data integrity or security aspects."
+  },
+  {
+    "id": "158174223",
+    "key": "UNO-T379",
+    "name": "Verify as a CLIENT user the input fields in the add direct worker -user details tab",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2306"
+    ],
+    "objective": null,
+    "testScript": "Given:<br><ul><li><p>Logged in as a Client user with &lsquo;Edit Direct Bank Worker&rsquo; permission.</p></li></ul>When:<br><ul><li>On the direct bank workers page &gt; Click &lsquo;Add New Direct Bank Worker&rsquo; button</li></ul>Then:<br><ul><li>User is redirected to a page to crate a new direct bank worker.</li><li>One the page there is the following fields.&nbsp;<ul><li>A drop or click to upload a worker image.&nbsp;</li><li>An input filed for first name&nbsp;</li><li>An input field for last name&nbsp;</li><li>An input field for email&nbsp;</li><li>Address line one&nbsp;</li><li>Address line two&nbsp;</li><li>Town&nbsp;</li><li>Postcode</li><li>Country</li><li>Date of birth&nbsp;</li><li>Gender</li><li>Toggles for approved and locked out.&nbsp;</li></ul></li><li>The place holder on all the input field will indicate what is expected in each field.</li></ul>",
+    "score": 2,
+    "justification": "Similar to UNO-T378, this checks for the presence and correctness of UI fields for a client user but doesn't delve into deeper functional or security checks."
+  },
+  {
+    "id": "158174448",
+    "key": "UNO-T380",
+    "name": "Verify as a NEUVEN user that all fields save correctly when creating a direct bank worker profile.  - User details tab",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2306"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:</p><p><span style=\"font-family: Calibri , sans-serif;\">Logged in as a Neuven user with &lsquo;Manage Direct Bank Worker&rsquo; permission.</span></p><p>When:&nbsp;</p><p><span style=\"font-family: Calibri , sans-serif;\">On the direct bank workers page &gt; Click &lsquo;Add New Direct Bank Worker&rsquo; button</span></p><p>Then:</p><p>User is redirected to a page to crate a new direct bank worker.</p><ul><li><p>A drop or click to upload a worker image. - search google for an image to upload.&nbsp;</p></li><li><p>An input filed for first name - enter text (this should allow special characters and be alphanumerical )</p></li><li><p>An input field for last name - enter text (this should allow special characters and be alphanumerical )</p></li><li><p>An input field for email - enter text (this should allow special characters and be alphanumerical )</p></li><li><p>Address line one - this should &nbsp;allow special characters and &nbsp;be alphanumerical</p></li><li><p>Address line two - &nbsp;this should &nbsp;allow special characters and &nbsp;be alphanumerical</p></li><li><p>Town - this should &nbsp;allow special characters and &nbsp;be alphanumerical&nbsp;</p></li><li><p>Postcode - &nbsp;this should &nbsp;allow special characters and &nbsp;be alphanumerical</p></li><li><p>Country- this should show a dropdown of different countries.&nbsp;</p></li><li><p>Date of birth &nbsp;- this should allow the user to select a date in the past form a load calendar.&nbsp;</p></li><li><p>Gender - this should be a dropdown with options to preselect.</p></li><li>Click save details, the detailed should save without any error .t test this by searching for the file that you have just saved and opening the record an viewing this page again.&nbsp;</li></ul>",
+    "score": 3,
+    "justification": "This test is more comprehensive as it checks data saving functionality for a critical user management process and validates input handling."
+  },
+  {
+    "id": "158174449",
+    "key": "UNO-T381",
+    "name": "Verify as a CLIENT user that all fields save correctly when creating a direct bank worker profile.- User details tab",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2306"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li><p>Logged in as a Client user with &lsquo;Edit Direct Bank Worker&rsquo; permission</p></li></ul>When:<ul><li>On the direct bank workers page &gt; Click &lsquo;Add New Direct Bank Worker&rsquo; button</li></ul>Then:<br>User is redirected to a page to crate a new direct bank worker.<ul><li>A drop or click to upload a worker image. - search google for an image to upload.&nbsp;</li><li>An input filed for first name - enter text (this should allow special characters and be alphanumerical )</li><li>An input field for last name - enter text (this should allow special characters and be alphanumerical )</li><li>An input field for email - enter text (this should allow special characters and be alphanumerical )</li><li>Address line one - this should &nbsp;allow special characters and &nbsp;be alphanumerical</li><li>Address line two - &nbsp;this should &nbsp;allow special characters and &nbsp;be alphanumerical</li><li>Town - this should &nbsp;allow special characters and &nbsp;be alphanumerical&nbsp;</li><li>Postcode - &nbsp;this should &nbsp;allow special characters and &nbsp;be alphanumerical</li><li>Country- this should show a dropdown of different countries.&nbsp;</li><li>Date of birth &nbsp;- this should allow the user to select a date in the past form a load calendar.&nbsp;</li><li>Gender - this should be a dropdown with options to preselect.</li><li>Click save details, the detailed should save without any error .t test this by searching for the file that you have just saved and opening the record an viewing this page again.&nbsp;</li></ul>",
+    "score": 3,
+    "justification": "Similar to UNO-T380, this verifies data persistence and input handling for important user management functionality from the client's perspective."
+  },
+  {
+    "id": "158174642",
+    "key": "UNO-T382",
+    "name": "Verify that as a NEUVEN user the when editing the user details tab of a direct bank workers profile the changes save correctly .",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2306"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li>Logged in as a Neuven user with &lsquo;Manage Direct Bank Worker&rsquo; permission.</li></ul>When: <ul><li>On the direct bank workers page &gt; search for an existing direct bank worker &gt; and select edit.</li></ul>Then:<ul><li>User is redirected to the user details tab that displays all the relevant information .&nbsp;</li><li>Add an addition alphanumerical character to each of the input fields that allow it. </li><li>Press save </li><li>Search for the record again and click edit. </li><li>Each of the changes should be remembered and show in the record.</li></ul>",
+    "score": 3,
+    "justification": "Validates that modifications are stored correctly, which is vital for ensuring data integrity during edits in a critical business area."
+  },
+  {
+    "id": "158174645",
+    "key": "UNO-T383",
+    "name": "Verify that as a CLIENT user the when editing the user details tab of a direct bank workers profile the changes save correctly .",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2306"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li><p>Logged in as a Client user with &lsquo;Edit Direct Bank Worker&rsquo; permission</p></li></ul>When:<ul><li>On the direct bank workers page &gt; search for an existing direct bank worker &gt; and select edit.</li></ul>Then:<ul><li>User is redirected to the user details tab that displays all the relevant information .&nbsp;</li><li>Add an addition alphanumerical character to each of the input fields that allow it.</li><li>Press save</li><li>Search for the record again and click edit.</li><li>Each of the changes should be remembered and show in the record.</li></ul>",
+    "score": 3,
+    "justification": "Ensures data integrity on edit operations for the client's workflow, a necessary check for business-critical operations."
+  },
+  {
+    "id": "158174884",
+    "key": "UNO-T384",
+    "name": "Verify that a NEUVEN can see the Locations tab when creating a new direct worker profile.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2307"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li><p>Logged in as a Neuven user with &lsquo;Manage Direct Bank Worker&rsquo; permission</p></li></ul>When :<ul><li>On the direct bank works page &gt; click add new bank worker &gt; On the client locations tab</li></ul>Then :<ul><li>Page will show a table for the list of client locations for the worker profile&nbsp;</li><li>The available columns will include:<ul><li>Client location&nbsp;</li><li>Address</li><li>Post code</li><li>Miles (distance between worker postcode and location postcode)</li><li>linked (tick box)</li><li>tier one 1 and tier 2</li></ul></li></ul><br>",
+    "score": 2,
+    "justification": "Checks visibility of the Locations tab, an important part of the UI but does not test deeper functional integrity or data interactions."
+  },
+  {
+    "id": "158174934",
+    "key": "UNO-T385",
+    "name": "Verify that a NEUVEN can edit and search within the Locations tab when creating a new direct worker profile.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2307"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged in as a Neuven user with &lsquo;Manage Direct Bank Worker&rsquo; permission</li></ul>When :<ul><li>On the direct bank works page &gt; click add new bank worker &gt; On the client locations tab</li></ul>Then :<ul><li>Page will show a table for the list of client locations for the worker profile&nbsp;</li><li>user should be able to click the linked tick box on each line and this information saves once selected.&nbsp;</li><li>user should also be able to see a toggle button on the top of the table allowing the table to be filtered to display only linked store or all stores.&nbsp;</li><li>There should also be an advanced search option on the top right hand side of the page that filters the table.&nbsp;</li></ul>",
+    "score": 3,
+    "justification": "Tests interactive elements (search, edit, filter) which are integral to effective location management within a user's profile."
+  },
+  {
+    "id": "158174937",
+    "key": "UNO-T386",
+    "name": "Verify that a Client can see the Locations tab when creating a new direct worker profile.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2307"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li><p>Logged in as a Client user with &lsquo;Edit Direct Bank Worker&rsquo; Permission</p></li></ul>When :<ul><li>On the direct bank works page &gt; click add new bank worker &gt; On the client locations tab</li></ul>Then :<ul><li>Page will show a table for the list of client locations for the worker profile&nbsp;</li><li>The available columns will include:<ul><li>Client location&nbsp;</li><li>Address</li><li>Post code</li><li>Miles (distance between worker postcode and location postcode)</li><li>linked (tick box)</li><li>tier one 1 and tier 2</li></ul></li></ul>",
+    "score": 2,
+    "justification": "Ensures visibility of the Locations tab for client users, a key UI check but not substantial in data handling or security."
+  },
+  {
+    "id": "158174947",
+    "key": "UNO-T387",
+    "name": "Verify that a CLIENT can edit and search within the Locations tab when creating a new direct worker profile.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2307"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li><p>Logged in as a Client user with &lsquo;Edit Direct Bank Worker&rsquo; Permission</p></li></ul>When :<ul><li>On the direct bank works page &gt; click add new bank worker &gt; On the client locations tab</li></ul>Then :<ul><li>Page will show a table for the list of client locations for the worker profile&nbsp;</li><li>user should be able to click the linked tick box on each line and this information saves once selected.&nbsp;</li><li>user should also be able to see a toggle button on the top of the table allowing the table to be filtered to display only linked store or all stores.&nbsp;</li><li>There should also be an advanced search option on the top right hand side of the page that filters the table.&nbsp;</li></ul>",
+    "score": 3,
+    "justification": "Validates functional elements that are essential for managing and searching locations, important for client-side user management."
+  },
+  {
+    "id": "158179960",
+    "key": "UNO-T388",
+    "name": "Verify as a NEUVEN user when creating an new bank worker details save in the notes tab.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2313"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li><p>Logged in as a Neuven user with &lsquo;Manage Direct Bank Worker&rsquo; permission</p></li></ul>When :<ul><li>On the direct bank workers page &gt; click add a new bank worker option &gt; when creating a new bank worker.&nbsp;</li></ul>Then :<ul><li>There is a notes tab on the screen to create a new bank worker.</li><li>The tab contains a notes log table which has the following columns : Note (summary of the notes) , Date Added (show date notes was added), Created by (show user who created the notes) and Actions.</li><li>There is also a free text box to add additional &nbsp;notes to the table.&nbsp;</li></ul>",
+    "score": 3,
+    "justification": "Ensures data storage and retrieval in the notes tab, a vital component for user notes and auditing."
+  },
+  {
+    "id": "158179966",
+    "key": "UNO-T389",
+    "name": "Verify as a NEUVEN user when on the notes tab data saves as expected.  when creating a new record.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2313"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged in as a Neuven user with &lsquo;Manage Direct Bank Worker&rsquo; permission</li></ul>When :<ul><li>On the direct bank workers page &gt; click add a new bank worker option &gt; when creating a new bank worker.&nbsp;</li></ul>Then:<ul><li>When creating a new note on an new record and clicking the add note button the note is saved and appears in the note table on the screen.&nbsp;</li></ul>",
+    "score": 3,
+    "justification": "Validates that notes data is saved correctly, important for maintaining detailed records and auditing purposes."
+  },
+  {
+    "id": "158179982",
+    "key": "UNO-T390",
+    "name": "Verify that a NEUVEN can edit notes for an existing Direct Bank Worker.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2313"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged in as a Neuven user with &lsquo;Manage Direct Bank Worker&rsquo; permission</li></ul>When :<ul><li>On the direct bank workers page &gt; edit an existing works notes.&nbsp;</li></ul>Then :<ul><li>Add additional notes.&nbsp; - The notes should update and save successfully.&nbsp;</li></ul>",
+    "score": 3,
+    "justification": "Checks that edits to notes are saved accurately, ensuring data consistency and reliability for historical notes."
+  },
+  {
+    "id": "158180023",
+    "key": "UNO-T391",
+    "name": "As a NEUVEN user verify the edit button on the notes tab functions as expected for direct bank worker.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2313"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged in as a Neuven user with &lsquo;Manage Direct Bank Worker&rsquo; permission</li></ul>When :<ul><li>On the direct bank workers page &gt; edit an existing workers notes.&nbsp;</li></ul>Then :<ul><li>Create multiple notes for the Direct bank worker.</li><li>In the actions column of the notes table selected the edit icon</li><li>A pop up appears allowing the user to edit the note and save.</li><li>If cancel is selected from the popup - nothing is changed</li><li>If change is selected the note is changed.&nbsp;</li></ul>",
+    "score": 3,
+    "justification": "Tests interactive editing of notes, fundamental for accurate and up-to-date record-keeping."
+  },
+  {
+    "id": "158180041",
+    "key": "UNO-T392",
+    "name": "As a NEUVEN user verify the DELETE button on the notes tab functions as expected for direct bank worker.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2313"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged in as a Neuven user with &lsquo;Manage Direct Bank Worker&rsquo; permission</li></ul>When :<ul><li>On the direct bank workers page &gt; edit an existing workers notes.&nbsp;</li></ul>Then :<ul><li>Create multiple notes for the Direct bank worker.</li><li>In the actions column of the notes table selected the DELETE &nbsp;icon</li><li>There is a pop up to confirm the deletion&nbsp;</li><li>If no is selected - note is not deleted.&nbsp;</li><li>If yes, delete is selected - note is deleted.&nbsp;</li></ul>",
+    "score": 3,
+    "justification": "Validates delete functionality for notes, crucial for maintaining accurate and clean data records."
+  },
+  {
+    "id": "158180062",
+    "key": "UNO-T393",
+    "name": "Verify the advanced search function works on the notes log table on the Direct Bank Workers profile.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2313"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged in as a Neuven user with &lsquo;Manage Direct Bank Worker&rsquo; permission</li></ul>( Or )<ul><li><p>Logged in as a Client user with &lsquo;Edit Direct Bank Worker&rsquo; permission</p></li></ul>When :<ul><li>On the direct bank workers page &gt; edit an existing workers notes. &gt; On the notes tab</li></ul>Then :<ul><li>Verify that the advanced search works as expected and the there is navigation at the bottom of the page.</li></ul>",
+    "score": 3,
+    "justification": "Ensures search functionality operates correctly, a key feature for efficiently managing and accessing notes data."
+  },
+  {
+    "id": "158180070",
+    "key": "UNO-T394",
+    "name": "Verify as a CLIENT user when creating a new bank worker details save in the notes tab.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2313"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li><p>Logged in as a Client user with &lsquo;Edit Direct Bank Worker&rsquo; permission</p></li></ul>When :<ul><li>On the direct bank workers page &gt; click add a new bank worker option &gt; when creating a new bank worker.&nbsp;</li></ul>Then :<ul><li>There is a notes tab on the screen to create a new bank worker.</li><li>The tab contains a notes log table which has the following columns : Note (summary of the notes) , Date Added (show date notes was added), Created by (show user who created the notes) and Actions.</li><li>There is also a free text box to add additional &nbsp;notes to the table.&nbsp;</li></ul>",
+    "score": 3,
+    "justification": "Checks client-side note creation and saving, important for accurate recording of client interactions and notes."
+  },
+  {
+    "id": "158180075",
+    "key": "UNO-T395",
+    "name": "Verify as a CLIENT user when on the notes tab data saves as expected. when creating a new record.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2313"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li><p>Logged in as a Client user with &lsquo;Edit Direct Bank Worker&rsquo; permission</p></li></ul>When :<ul><li>On the direct bank workers page &gt; click add a new bank worker option &gt; when creating a new bank worker.&nbsp;</li></ul>Then:<ul><li>When creating a new note on an new record and clicking the add note button the note is saved and appears in the note table on the screen.&nbsp;</li></ul>",
+    "score": 3,
+    "justification": "Ensures that notes data save correctly on the client side, crucial for maintaining reliable records."
+  },
+  {
+    "id": "158180078",
+    "key": "UNO-T396",
+    "name": "Verify that a CLIENT can edit notes for an existing Direct Bank Worker.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2313"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li><p>Logged in as a Client user with &lsquo;Edit Direct Bank Worker&rsquo; permission</p></li></ul>When :<ul><li>On the direct bank workers page &gt; edit an existing works notes.&nbsp;</li></ul>Then :<ul><li>Add additional notes. &nbsp;- The notes should update and save successfully.&nbsp;</li></ul>",
+    "score": 3,
+    "justification": "Ensures that notes can be correctly edited and saved for client users, foundational for accurate and current records."
+  },
+  {
+    "id": "158180085",
+    "key": "UNO-T397",
+    "name": "Verify that a CLIENT can edit notes for an existing Direct Bank Worker.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2313"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li><p>Logged in as a Client user with &lsquo;Edit Direct Bank Worker&rsquo; permission</p></li></ul>When :<ul><li>On the direct bank workers page &gt; edit an existing workers notes.&nbsp;</li></ul>Then :<ul><li>Create multiple notes for the Direct bank worker.</li><li>In the actions column of the notes table selected the edit icon</li><li>A pop up appears allowing the user to edit the note and save.</li><li>If cancel is selected from the popup - nothing is changed</li><li>If change is selected the note is changed.&nbsp;</li></ul>",
+    "score": 3,
+    "justification": "Redundantly named test but covers essential edit functionality for notes by client users, vital for data integrity and currency."
+  },
+  {
+    "id": "158180091",
+    "key": "UNO-T398",
+    "name": "As a CLIENT user verify the DELETE button on the notes tab functions as expected for direct bank worker.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2313"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li><p>Logged in as a Client user with &lsquo;Edit Direct Bank Worker&rsquo; permission</p></li></ul>When :<ul><li>On the direct bank workers page &gt; edit an existing workers notes.&nbsp;</li></ul>Then :<ul><li>Create multiple notes for the Direct bank worker.</li><li>In the actions column of the notes table selected the DELETE &nbsp;icon</li><li>There is a pop up to confirm the deletion&nbsp;</li><li>If no is selected - note is not deleted.&nbsp;</li><li>If yes, delete is selected - note is deleted.&nbsp;</li></ul>",
+    "score": 3,
+    "justification": "Tests the deletion of notes from the client's side, necessary for maintaining clean and accurate data records."
+  },
+  {
+    "id": "158180441",
+    "key": "UNO-T399",
+    "name": "As a NEUVEN user verify the data shown in the direct bank workers table.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2311"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li><p>Logged in as a Neuven user with &lsquo;Manage Direct Bank Workers&rsquo; Permission</p></li></ul>When:<ul><li><p>In Direct Bank Workers page</p></li></ul>Then:<ul><li>There is a table showing a list of all direct bank workers</li><li>Table to have the following columns</li><li><em>Client (Show Client worker is linked to - top level parent)</em></li><li><p><em>Name (Show full name of worker)</em></p></li><li><p><em>DOB (Show Date of Birth of the worker)</em></p></li><li><p><em>NI Number (Show NI Number of the Worker)</em></p></li><li><p><em>Email (show email of the worker)</em></p></li><li><p><em>Active&nbsp;</em></p><ul><li><p><em>show tick if the worker is active</em></p></li><li><p><em>Show 'x' if worker is not active</em></p></li></ul></li></ul><ul><li><p>Table to have pagination at the bottom</p></li><li><p>Table to have option to select entries you want to view</p><ul><li><p>Filters number of rows shown on the page based on selection</p></li></ul></li></ul><br>",
+    "score": 3,
+    "justification": "Verifies the data integrity and correctness displayed in a central data table, key for accurate data representation."
+  },
+  {
+    "id": "158180446",
+    "key": "UNO-T400",
+    "name": "As a CLIENT user verify the data shown in the direct bank workers table.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2311"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li><p>Logged in as Client user with ' View Direct Bank Worker' or &lsquo;Edit Direct Bank Worker&rsquo; Permission</p></li></ul>When:<ul><li>In Direct Bank Workers page</li></ul>Then:<ul><li>There is a table showing a list of all direct bank workers</li><li>Table to have the following columns</li><li><em>Name (Show full name of worker)</em></li><li><em>DOB (Show Date of Birth of the worker)</em></li><li><em>NI Number (Show NI Number of the Worker)</em></li><li><em>Email (show email of the worker)</em></li><li><em>Active&nbsp;</em></li><li>Table to have pagination at the bottom</li><li>Table to have option to select entries you want to view<ul><li>Filters number of rows shown on the page based on selection</li></ul></li></ul>",
+    "score": 3,
+    "justification": "Ensures client-side data in a critical table is displayed correctly, vital for user management and data accuracy."
+  },
+  {
+    "id": "158180511",
+    "key": "UNO-T401",
+    "name": "Verify changes to data for client user dependent on permissions. - Active Column - Direct bank workers table.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2311"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li><p>Logged in as Client user with ' View Direct Bank Worker' or &lsquo;Edit Direct Bank Worker&rsquo; Permission</p></li></ul>When:<ul><li>In Direct Bank Workers page</li></ul>Then:<ul><li>If client user has <span>Edit Direct Bank Worker&rsquo; permission&nbsp;</span></li><li><em>Active&nbsp;</em><ul><li><em>show tick if the worker is active</em></li><li><em>Show 'x' if worker is not active</em></li></ul></li><li>if the client user has <strong><span>View Direct Bank worker permissions&nbsp;</span></strong>in the active column the will only see an eye icon to view the record.</li></ul>",
+    "score": 3,
+    "justification": "Checks data visibility and functionality based on permissions, critical for security and proper user role management."
+  },
+  {
+    "id": "158180533",
+    "key": "UNO-T402",
+    "name": "As a NEUVEN User verify the function on for action column in the direct bank workers table.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2311"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li><p>Logged in as a Neuven user with &lsquo;Manage Direct Bank Workers&rsquo; Permission</p></li></ul><br>When :<ul><li><p>In Direct Bank Workers page</p></li></ul><br>Then :<ul><li>IF edit is selected , workers profile is shown.</li><li>IF delete is selected</li><li><p>pop up displayed asking &lsquo;are you sure you want to delete worker&rsquo;</p></li><li>click cancel - nothing is deleted</li><li>select yes, delete - record is deleted.</li></ul><br>Rule:<p><strong>When Delete is clicked, Delete the worker profile for the specific client and leave the other rows for different clients.</strong></p><br><br><br><br>",
+    "score": 3,
+    "justification": "Tests action column functionality in user management, essential for accurate and secure data modifications."
+  }
+]

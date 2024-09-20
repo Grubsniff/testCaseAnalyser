@@ -1,44 +1,38 @@
-import * as fs from 'fs';
-import * as path from 'path';
+import fs from 'fs/promises';
+import path from 'path';
 
-interface Choice {
-    message: {
-        content: string;
-    };
-}
+export async function extractAndSaveJson(
+  responseFilePath: string,
+  resultsDir: string,
+  uid: string
+): Promise<string> {
+  const responseContent = await fs.readFile(responseFilePath, 'utf-8');
+  const responseData = JSON.parse(responseContent);
 
-interface ResponseData {
-    choices: Choice[];
-}
+  const responseMessage = responseData.choices[0].message.content;
 
-export async function extractAndSaveJson(filePath: string): Promise<void> {
-    // Read the input file
-    const fileContent = fs.readFileSync(filePath, 'utf-8');
-    const data: ResponseData = JSON.parse(fileContent);
+  // Assume that the assistant's response contains JSON data enclosed in triple backticks
+  const jsonMatch = responseMessage.match(/```json([\s\S]*?)```/);
 
-    // Extract the JSON content from the assistant's message
-    const content = data.choices[0].message.content;
+  if (!jsonMatch || !jsonMatch[1]) {
+    throw new Error('No JSON data found in the response.');
+  }
 
-    // Find the start and end of the JSON in the content
-    const jsonStart = content.indexOf('```json') + 7;
-    const jsonEnd = content.lastIndexOf('```');
-    const jsonContent = content.slice(jsonStart, jsonEnd).trim();
+  const jsonString = jsonMatch[1].trim();
+  let analysisData;
 
-    // Parse the extracted JSON
-    const extractedJson = JSON.parse(jsonContent);
+  try {
+    analysisData = JSON.parse(jsonString);
+  } catch (error) {
+    throw new Error('Failed to parse JSON data from the response.');
+  }
 
-    // Create the results directory if it doesn't exist
-    const resultsDir = './results';
-    if (!fs.existsSync(resultsDir)) {
-        fs.mkdirSync(resultsDir);
-    }
+  const analysisFileName = `analysis-${uid}.json`;
+  const analysisFilePath = path.join(resultsDir, analysisFileName);
 
-    // Generate the output file name
-    const fileName = 'analysis-' + path.basename(filePath, path.extname(filePath)).replace(/response-/, '') + '.json';
-    const outputPath = path.join(resultsDir, fileName);
+  await fs.writeFile(analysisFilePath, JSON.stringify(analysisData, null, 2));
 
-    // Write the extracted JSON to the output file
-    fs.writeFileSync(outputPath, JSON.stringify(extractedJson, null, 2));
+  console.log(`Analysis data saved to '${analysisFilePath}'`);
 
-    console.log(`Extracted JSON saved to ${outputPath}`);
+  return analysisFilePath;
 }

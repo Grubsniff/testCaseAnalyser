@@ -1,0 +1,2108 @@
+[
+  {
+    "id": "144424970",
+    "key": "UNO-T104",
+    "name": "Default Documents - Document Upload Maintenance Page",
+    "folder": "UNO-1984 - Worker Document Upload Maintenance Page",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [],
+    "objective": null,
+    "testScript": "<ul><li>Default Document &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</li><li>Document Name<ul><li>Free type text box</li></ul></li></ul>",
+    "score": 2,
+    "justification": "Validates basic CRUD functionality but lacks complexity and business-critical functionality."
+  },
+  {
+    "id": "144425086",
+    "key": "UNO-T106",
+    "name": "Default Documents - Add Document Button",
+    "folder": "UNO-1984 - Worker Document Upload Maintenance Page",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [],
+    "objective": null,
+    "testScript": "<ul><li>Add Document<ul><li>Once clicked; document is added to the default<br>document list table shown at the bottom and will<br>also show in the select document dropdown in the<br>document upload page </li></ul></li></ul>",
+    "score": 2,
+    "justification": "Basic functionality test; does not involve multiple components or critical business processes."
+  },
+  {
+    "id": "144425317",
+    "key": "UNO-T108",
+    "name": "Default Document List Table Settings",
+    "folder": "UNO-1984 - Worker Document Upload Maintenance Page",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [],
+    "objective": null,
+    "testScript": "<ul><li>Search function and Columns sortable</li><li>Pagination</li><li>Drop down to display number of entries</li></ul>",
+    "score": 2,
+    "justification": "Validates list settings but does not cover core business functionality or security operations."
+  },
+  {
+    "id": "144517951",
+    "key": "UNO-T119",
+    "name": "Client Specific Documents - Add Document Button",
+    "folder": "UNO-1984 - Worker Document Upload Maintenance Page",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [],
+    "objective": null,
+    "testScript": "<ul><li>Add Document Button<ul><li>Verify once the button is clicked clicked; document will be added to<br>the client specific document list and will<br>show in the select document dropdown in<br>the document upload page for all agencies<br>that are linked to the client specified</li></ul></li></ul>",
+    "score": 2,
+    "justification": "Basic functionality test; does not involve multiple components or critical business processes."
+  },
+  {
+    "id": "144517982",
+    "key": "UNO-T120",
+    "name": "Client Specific Document List Table Settings",
+    "folder": "UNO-1984 - Worker Document Upload Maintenance Page",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [],
+    "objective": null,
+    "testScript": "<ul><li>Verify search function pulls correct results</li><li>Pagination</li><li>Drop down to display number of entries</li><li>Verify that each column is sortable</li></ul>",
+    "score": 2,
+    "justification": "Validates list settings but does not cover core business functionality or security operations."
+  },
+  {
+    "id": "145956962",
+    "key": "UNO-T131",
+    "name": "Verify Approver creating booking",
+    "folder": "UNO-2072",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2072",
+      "UNO-2074"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This test verifies a core process (booking creation) but lacks detailed test steps and objectives. It covers multiple user permissions but doesn’t involve complex calculations or significant security implications."
+  },
+  {
+    "id": "145956963",
+    "key": "UNO-T132",
+    "name": "Verify Approver Edit booking",
+    "folder": "UNO-2072",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2072",
+      "UNO-2074"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Similar to UNO-T131, this test verifies a core process (booking edit) and involves user permissions but lacks complexity and security-related checks. It ensures basic functionality without deeper integration testing."
+  },
+  {
+    "id": "145956964",
+    "key": "UNO-T133",
+    "name": "Verify Authorizer create booking",
+    "folder": "UNO-2072",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2072",
+      "UNO-2074"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This test ensures the core functionality (booking creation by an authorizer), involves user permissions, but lacks high complexity and security-related checks. It covers critical process steps but not broader integration points."
+  },
+  {
+    "id": "145956965",
+    "key": "UNO-T134",
+    "name": "Verify Authorizer edit booking",
+    "folder": "UNO-2072",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2072",
+      "UNO-2074"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This test checks basic editing permissions for the Authorizer role, involves the booking system, but is less complex and lacks significant integration or security aspects. It ensures correct permission-based functionality."
+  },
+  {
+    "id": "152511289",
+    "key": "UNO-T144",
+    "name": "Verify Currency Column is present on the Rates Creation – Rate Upload page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2212"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This test checks UI elements (currency column presence) and is crucial for accurate data presentation but lacks complex functionality, integrations, or security aspects. It ensures essential UI correctness."
+  },
+  {
+    "id": "152511290",
+    "key": "UNO-T145",
+    "name": "Verify Currency Column is present on the Rates Creation – Active and Scheduled Rates",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2212"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Similar to UNO-T144, this test checks for UI consistency (currency column presence on scheduled rates). It ensures correct data display but is not complex or security-focused, involving core UI elements."
+  },
+  {
+    "id": "152511293",
+    "key": "UNO-T148",
+    "name": "Verify that the correct currency icon is displayed on all relevant fields",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2212"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This test ensures UI correctness (currency icon presence), crucial for data display but involves less complex functionality or security. It’s important for user experience but lacks broader integration points."
+  },
+  {
+    "id": "152511294",
+    "key": "UNO-T149",
+    "name": "Verify Currency Column is present on the Rate Management page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2212"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This verifies UI components (currency column presence on rate management) ensuring critical data presentation. It’s essential but not highly complex or focused on security, ensuring UI element correctness."
+  },
+  {
+    "id": "152511295",
+    "key": "UNO-T150",
+    "name": "Verify that Currency Column is present on the Rate History Page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2212"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Similar to UNO-T149, this ensures UI consistency (currency on rate history page), essential for data presentation but less complex. It ensures correct display without deep integration or security checks."
+  },
+  {
+    "id": "152511297",
+    "key": "UNO-T152",
+    "name": "Verify that the correct currency icon is displayed on all relevant fields",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2212"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This test ensures correct UI elements (currency icon presence), crucial for correct data display but involves less complex functionality or security. It’s important for user interface standards but lacks broader integration points."
+  },
+  {
+    "id": "152511298",
+    "key": "UNO-T153",
+    "name": "Verify Currency Column is present on the Rate Adjustment page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2212"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Test case verifies the presence of the currency column, which is directly related to data manipulation/validation but doesn't involve multiple integrated components or security-related functions."
+  },
+  {
+    "id": "152511300",
+    "key": "UNO-T155",
+    "name": "Verify that the correct currency icon is displayed on all relevant fields",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2212"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Validation of UI elements is critical but this case lacks depth in terms of integration complexity or security aspects."
+  },
+  {
+    "id": "152511301",
+    "key": "UNO-T156",
+    "name": "Verify Currency Column is present on the Authorise New Rates page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2212"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Similar to UNO-T153, it checks for the presence of the column but doesn't involve complex operations or multiple components."
+  },
+  {
+    "id": "152511303",
+    "key": "UNO-T158",
+    "name": "Verify that the correct currency icon is displayed on all relevant fields",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2212"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "UI validation test but without a broader scope involving integrations or complex operations."
+  },
+  {
+    "id": "152511305",
+    "key": "UNO-T160",
+    "name": "Verify Currency Column is present on the Rate Export Page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2212"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Presence check, important but not complex or integrated."
+  },
+  {
+    "id": "152511307",
+    "key": "UNO-T162",
+    "name": "Verify that the correct currency icon is displayed on all relevant fields",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2212"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "UI validation is important but lacks complexity and integration."
+  },
+  {
+    "id": "152513271",
+    "key": "UNO-T164",
+    "name": "Currency Column to be added to Client Invoices page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Presence check for UI, important for data validation but not complex or integrated."
+  },
+  {
+    "id": "152513272",
+    "key": "UNO-T165",
+    "name": "Verify that currency icons are displayed to reflect the currency for the client selected",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "UI validation that doesn’t involve multiple components or security aspects."
+  },
+  {
+    "id": "152513276",
+    "key": "UNO-T169",
+    "name": "Verify that currency icons are displayed to reflect the currency for the client selected - Client Invoice",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "UI validation, critical but no complex operations or integrations."
+  },
+  {
+    "id": "152513278",
+    "key": "UNO-T171",
+    "name": "Currency Column to be added to Agency Sales Order page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Presence check, important for data validation but not complex."
+  },
+  {
+    "id": "152513279",
+    "key": "UNO-T172",
+    "name": "Verify that currency icons are displayed to reflect the currency for the client selected",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "UI validation, important but doesn’t cover integration or complex functionality."
+  },
+  {
+    "id": "152513284",
+    "key": "UNO-T176",
+    "name": "Verify that currency icons are displayed to reflect the currency for the client selected",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "UI validation with limited scope in terms of integration and complexity."
+  },
+  {
+    "id": "152513286",
+    "key": "UNO-T178",
+    "name": "Verify that currency icons are displayed to reflect the currency for the client selected",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This test verifies visual elements related to currency display, which is important but not critical; it involves multiple components but does not impact core functionality or security."
+  },
+  {
+    "id": "152513504",
+    "key": "UNO-T181",
+    "name": "Invoice - Verify that currency icons are displayed to reflect the currency for the client selected – Client Invoices Page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2213"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Similar to UNO-T178 but specific to a page. critical for user interface integrity but has less impact compared to core process tests."
+  },
+  {
+    "id": "152513511",
+    "key": "UNO-T188",
+    "name": "Invoice - Verify that currency icons are displayed to reflect the currency for the client selected - Agency Sales Order page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2213"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Ensures only the visual aspect of financial display, which is important but not as critical compared to calculation/processing functionalities."
+  },
+  {
+    "id": "152513515",
+    "key": "UNO-T192",
+    "name": "Invoice - Verify that currency icons are displayed to reflect the currency for the client selected - Agency BACS Export page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2213"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Essential for visual verification but low impact in terms of security and business-critical functionality compared to computational aspects."
+  },
+  {
+    "id": "152513517",
+    "key": "UNO-T194",
+    "name": "Invoice - Verify that currency icons are displayed to reflect the currency for the client selected - Agency Early Settlement page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2213"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Ensures visual consistency, impacting data representation more than core functionality or security."
+  },
+  {
+    "id": "153005246",
+    "key": "UNO-T205",
+    "name": "Verify if Both is selected, PPS and NI fields are to be displayed",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2184"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Involves display verification that is necessary for data completeness; however, it has moderate business impact."
+  },
+  {
+    "id": "153005253",
+    "key": "UNO-T212",
+    "name": "Verify if UK is selected, NI field is to remain to be filled out",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2184"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Ensures validation consistent with geo-specific data requirements, having low to moderate impact on business necessity."
+  },
+  {
+    "id": "153005254",
+    "key": "UNO-T213",
+    "name": "Verify if Both is selected, PPS and NI fields are to be displayed",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2184"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Similar check to UNO-T205. Ensures data completeness with moderate business process impacts."
+  },
+  {
+    "id": "22614867",
+    "key": "UNO-T9",
+    "name": "Verify if User Guide is available on Home Page as Agency User",
+    "folder": "UNO-200, UNO-1394 User Guide on Home Page",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-1394"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":[{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"Login to WWW.Venneu-dev.com as Agency User\",\"expectedResult\":\"Successful log in and should land on Home page\"},{\"$\":{\"index\":\"1\"},\"customFields\":\"\",\"description\":\"In Homepage Click the Help Icon at top of the page\",\"expectedResult\":\"Page should navigate to Help Section on the Home Page\"},{\"$\":{\"index\":\"2\"},\"customFields\":\"\",\"description\":\"Click on User Guides on the Help Section\",\"expectedResult\":\"Agency User Guide Should open as a PDF.\"},{\"$\":{\"index\":\"3\"},\"customFields\":\"\",\"description\":\"Repeat step 1,2,3 on Firefox\",\"expectedResult\":\"All expected outcome should be achieved\"},{\"$\":{\"index\":\"4\"},\"customFields\":\"\",\"description\":\"Repeat step 1,2,3 on IE\",\"expectedResult\":\"All expected outcome should be achieved\"}]}",
+    "score": 2,
+    "justification": "Checks non-critical functionality (User Guide availability), involves simple navigation and verification, minimal business impact, less integration complexity as it is focused on documentation access."
+  },
+  {
+    "id": "22614876",
+    "key": "UNO-T10",
+    "name": "Verify if User Guide is available on Home Page as Client User",
+    "folder": "UNO-200, UNO-1394 User Guide on Home Page",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-1394"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":[{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"Login to WWW.Venneu-dev.com as Client User\",\"expectedResult\":\"Successful log in and should land on Home page\"},{\"$\":{\"index\":\"1\"},\"customFields\":\"\",\"description\":\"In Homepage Click the Help Icon at top of the page\",\"expectedResult\":\"Page should navigate to Help Section on the Home Page\"},{\"$\":{\"index\":\"2\"},\"customFields\":\"\",\"description\":\"Click on User Guides on the Help Section\",\"expectedResult\":\"Client User Guide Should open as a PDF.\"},{\"$\":{\"index\":\"3\"},\"customFields\":\"\",\"description\":\"Repeat step 1,2,3 on Firefox\",\"expectedResult\":\"All expected outcome should be achieved\"},{\"$\":{\"index\":\"4\"},\"customFields\":\"\",\"description\":\"Repeat step 1,2,3 on IE\",\"expectedResult\":\"All expected outcome should be achieved\"}]}",
+    "score": 2,
+    "justification": "Similar to UNO-T9, checks non-critical functionality (User Guide availability), involves simple verification steps, has lesser business impact and integration complexity."
+  },
+  {
+    "id": "22615099",
+    "key": "UNO-T11",
+    "name": "Verify if User Guide is available on Home Page as Neuven User",
+    "folder": "UNO-200, UNO-1394 User Guide on Home Page",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-1394"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":[{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"Login to WWW.Venneu-dev.com as Neuven User\",\"expectedResult\":\"Successful log in and should land on Home page\"},{\"$\":{\"index\":\"1\"},\"customFields\":\"\",\"description\":\"In Homepage Click the Help Icon at top of the page\",\"expectedResult\":\"Page should navigate to Help Section on the Home Page\"},{\"$\":{\"index\":\"2\"},\"customFields\":\"\",\"description\":\"Click on User Guides on the Help Section\",\"expectedResult\":\"Neuven User Guide Should open as a PDF.\"},{\"$\":{\"index\":\"3\"},\"customFields\":\"\",\"description\":\"Repeat step 1,2,3 on Firefox\",\"expectedResult\":\"All expected outcome should be achieved\"},{\"$\":{\"index\":\"4\"},\"customFields\":\"\",\"description\":\"Repeat step 1,2,3 on IE\",\"expectedResult\":\"All expected outcome should be achieved\"}]}",
+    "score": 2,
+    "justification": "Similar to UNO-T9 and UNO-T10, it tests non-critical functionality (User Guide availability), involves straightforward steps, lesser business impact, and minimal integration complexity."
+  },
+  {
+    "id": "153005244",
+    "key": "UNO-T203",
+    "name": "Verify if Ireland Is selected, PPS field to be displayed and NI field to be hidden",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2184"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Covers multiple integrated components (PPS and NI fields visibility), and verifies conditions based on user input."
+  },
+  {
+    "id": "153005245",
+    "key": "UNO-T204",
+    "name": "Verify if UK is selected, NI field is to remain to be filled out",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2184"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Covers multiple integrated components (NI field visibility), and tests different conditions based on user input."
+  },
+  {
+    "id": "153005246",
+    "key": "UNO-T205",
+    "name": "Verify if Both is selected, PPS and NI fields are to be displayed",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2184"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Covers multiple integrated components (PPS and NI fields visibility), and tests different conditions based on user input."
+  },
+  {
+    "id": "153005248",
+    "key": "UNO-T207",
+    "name": "Verify that when logged in as an Agency User PPS column is populated if the information was inputted when the worker was created",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2184"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Verifies user role-specific functionality and data persistence."
+  },
+  {
+    "id": "153005249",
+    "key": "UNO-T208",
+    "name": "Verify that when logged in as an Agency User NI column is populated if the information was inputted when the worker was created",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2184"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Verifies user role-specific functionality and data persistence."
+  },
+  {
+    "id": "153005250",
+    "key": "UNO-T209",
+    "name": "Verify that when logged in as an Agency User, the Worker likely to work in UK/Ireland question is to appear when editing/adding a worker",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2184"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Covers a critical user role-specific feature and data entry conditions."
+  },
+  {
+    "id": "153005252",
+    "key": "UNO-T211",
+    "name": "Verify if Ireland Is selected, PPS field to be displayed and NI field to be hidden",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2184"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Covers multiple integrated components (PPS and NI fields visibility), and verifies conditions based on user input."
+  },
+  {
+    "id": "153005253",
+    "key": "UNO-T212",
+    "name": "Verify if UK is selected, NI field is to remain to be filled out",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2184"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Covers multiple integrated components (NI field visibility), and tests different conditions based on user input."
+  },
+  {
+    "id": "153005254",
+    "key": "UNO-T213",
+    "name": "Verify if Both is selected, PPS and NI fields are to be displayed",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2184"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Covers multiple integrated components (PPS and NI fields visibility), and tests different conditions based on user input."
+  },
+  {
+    "id": "153011821",
+    "key": "UNO-T216",
+    "name": "Verify that the changes to column names on the Agency BAC export.",
+    "folder": "Multi Currency",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2188"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged on as a Neuven, &nbsp;with View invoices or Manage invoices permission.</li></ul>When:<ul><li>On the invoices , Agency BACS export page</li></ul>Then:<ul><li>The column name for Account Number has been changed to : Account Number/IBAN .</li><li>The column name for Sort Code has been changed to : Sort Code/BIC Code .</li></ul>",
+    "score": 2,
+    "justification": "Tests display and naming conventions in UI, involves multiple components."
+  },
+  {
+    "id": "153432706",
+    "key": "UNO-T219",
+    "name": "Verify if the Agency is outside of the UK Account number and sort code are not to be displayed",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2183"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Covers visibility conditions based on user input, involves financial data."
+  },
+  {
+    "id": "153432707",
+    "key": "UNO-T220",
+    "name": "Verify if the Agency is outside of the UK, IBAN field is to be displayed and BIC field to be displayed",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2183"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Covers visibility conditions based on user input, involves financial data."
+  },
+  {
+    "id": "153432708",
+    "key": "UNO-T221",
+    "name": "Verify if edit Is selected, on the additional details tab if the Agency is outside of the UK if the Agency is outside of the UK Account number and sort code are not to be displayed",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2183"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Covers visibility conditions based on user input, involves financial data."
+  },
+  {
+    "id": "153432709",
+    "key": "UNO-T222",
+    "name": "Verify if edit Is selected, on the additional details tab if the Agency is outside of the UK, IBAN field is to be displayed and BIC field to be displayed",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2183"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Covers visibility conditions based on user input, involves financial data."
+  },
+  {
+    "id": "153432711",
+    "key": "UNO-T224",
+    "name": "Verify GB code is to be based on the country that the Agency is set to",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2183"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Verifies condition based on user input and country selection."
+  },
+  {
+    "id": "153432714",
+    "key": "UNO-T227",
+    "name": "Verify if a new agency branch is created, on the additional details tab if the Agency is outside of the UK, IBAN field is to be displayed and BIC field to be displayed",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2183"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Covers visibility conditions based on user input, involves financial data."
+  },
+  {
+    "id": "153456672",
+    "key": "UNO-T230",
+    "name": "Verify that when logged in as an Agency User on the Rates Export Page the ERNI field has been renamed to ERNI/PRSI.",
+    "folder": "Multi Currency/Agency User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2227"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:</p><ul><li><p>Logged in as a Agency User.</p></li></ul><p>When:&nbsp;</p><ul><li><p>On the Rates Export Page.</p></li></ul><p>Then:</p><div><ul><li><p>The ERNI field has been renamed to ERNI/PRSI.</p></li></ul></div>",
+    "score": 2,
+    "justification": "Verifies a UI text change affecting business users but has less impact compared to other critical operations."
+  },
+  {
+    "id": "153456746",
+    "key": "UNO-T231",
+    "name": "Verify that when logged in as an Agency User on the Export Reports Page the ERNI field has been renamed to ERNI/PRSI.",
+    "folder": "Multi Currency/Agency User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2227"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:</p><ul><li><p>Logged in as an Agency User.&nbsp;</p></li></ul><p>When:&nbsp;</p><ul><li><p>On the Export Reports Page</p></li></ul><p>Then:</p><div><ul><li><p>The ERNI field has been renamed to ERNI/PRSI.</p></li></ul></div>",
+    "score": 2,
+    "justification": "Similar to UNO-T230, involves a text change in the UI for report pages."
+  },
+  {
+    "id": "153456965",
+    "key": "UNO-T232",
+    "name": "Verify that when logged in as a Client User on the Export Reports Page the ERNI field has been renamed to ERNI/PRSI.",
+    "folder": "Multi Currency/Client User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2227"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:</p><ul><li><p>Logged in as a Client User.</p></li></ul><p>When:&nbsp;</p><ul><li><p>On the Export Reports Page</p></li></ul><p>Then:</p><div><ul><li><p>The ERNI field has been renamed to ERNI/PRSI.</p></li></ul></div>",
+    "score": 2,
+    "justification": "Similar to UNO-T231, involves a text change relevant to client users."
+  },
+  {
+    "id": "153457082",
+    "key": "UNO-T233",
+    "name": "Verify that when logged in as a Client User on the Rates Export Page the ERNI field has been renamed to ERNI/PRSI.",
+    "folder": "Multi Currency/Client User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2227"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:</p><ul><li><p>Logged in as a Client User.</p></li></ul><p>When:&nbsp;</p><ul><li><p>On the Rates Export Page.</p></li></ul><p>Then:</p><div><ul><li><p>The ERNI field has been renamed to ERNI/PRSI.</p></li></ul></div>",
+    "score": 2,
+    "justification": "Similar to UNO-T232, but for the Rates Export Page."
+  },
+  {
+    "id": "153466956",
+    "key": "UNO-T234",
+    "name": "Verify that when logged in as a Neuven user on the User Rate Export Permission tick boxes the ERNI field has been renamed to ERNI/PRSI.",
+    "folder": "Multi Currency/Neuven User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2227"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:&nbsp;</p><ul><li><p>Logged on as a Neuven User.&nbsp;</p></li></ul><p>When:</p><ul><li><p>On the User Rate Export Permission tick boxes page.</p></li></ul><p>Then:</p><div><ul><li><p>The ERNI field has been renamed to ERNI/PRSI.</p></li></ul></div>",
+    "score": 2,
+    "justification": "Verifies a text change related to UI elements for Neuven users."
+  },
+  {
+    "id": "153467170",
+    "key": "UNO-T235",
+    "name": "Verify that when logged in as a Neuven user on the Rate Export the ERNI field has been renamed to ERNI/PRSI.",
+    "folder": "Multi Currency/Neuven User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2227"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:&nbsp;</p><ul><li><p>Logged on as a Neuven User.&nbsp;</p></li></ul><p>When:</p><ul><li><p>On the Rate Export page.</p></li></ul><p>Then:</p><div><ul><li><p>The ERNI field has been renamed to ERNI/PRSI.</p></li></ul></div>",
+    "score": 2,
+    "justification": "Text change verification for Neuven users on the Rate Export page."
+  },
+  {
+    "id": "153467352",
+    "key": "UNO-T236",
+    "name": "Verify that when logged in as a Neuven user on the Authorize Rate Adjustments the ERNI field has been renamed to ERNI/PRSI.",
+    "folder": "Multi Currency/Neuven User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2227"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:&nbsp;</p><ul><li><p>Logged on as a Neuven User.&nbsp;</p></li></ul><p>When:</p><ul><li><p>On the Authorize Rate Adjustments page.</p></li></ul><p>Then:</p><div><ul><li><p>The ERNI field has been renamed to ERNI/PRSI.</p></li></ul></div>",
+    "score": 2,
+    "justification": "Similar to previous cases, limited to text changes for Neuven users on a specific page."
+  },
+  {
+    "id": "153467454",
+    "key": "UNO-T237",
+    "name": "Verify that when logged in as a Neuven user on the Authorize New Rates the ERNI field has been renamed to ERNI/PRSI.",
+    "folder": "Multi Currency/Neuven User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2227"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:&nbsp;</p><ul><li><p>Logged on as a Neuven User.&nbsp;</p></li></ul><p>When:</p><ul><li><p>On the Authorize New Rates page.</p></li></ul><p>Then:</p><div><ul><li><p>The ERNI field has been renamed to ERNI/PRSI.</p></li></ul></div>",
+    "score": 2,
+    "justification": "Text change verification for Neuven users on the Authorize New Rates page."
+  },
+  {
+    "id": "153467635",
+    "key": "UNO-T238",
+    "name": "Verify that when logged in as a Neuven user on the Rate Adjustments the ERNI field has been renamed to ERNI/PRSI.",
+    "folder": "Multi Currency/Neuven User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2227"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:&nbsp;</p><ul><li><p>Logged on as a Neuven User.&nbsp;</p></li></ul><p>When:</p><ul><li><p>On the Rate Adjustments page.</p></li></ul><p>Then:</p><div><ul><li><p>The ERNI field has been renamed to ERNI/PRSI.</p></li></ul></div>",
+    "score": 2,
+    "justification": "Text change verification for Neuven users on the Rate Adjustments page."
+  },
+  {
+    "id": "153467766",
+    "key": "UNO-T239",
+    "name": "Verify that when logged in as a Neuven user on the Rate Management the ERNI field has been renamed to ERNI/PRSI.",
+    "folder": "Multi Currency/Neuven User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2227"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:&nbsp;</p><ul><li><p>Logged on as a Neuven User.&nbsp;</p></li></ul><p>When:</p><ul><li><p>On the Rate Management page.</p></li></ul><p>Then:</p><div><ul><li><p>The ERNI field has been renamed to ERNI/PRSI.</p></li></ul></div>",
+    "score": 2,
+    "justification": "Text change verification for Neuven users on the Rate Management page."
+  },
+  {
+    "id": "153467997",
+    "key": "UNO-T240",
+    "name": "Verify that when logged in as a Neuven user on the Rates Creation the ERNI field has been renamed to ERNI/PRSI.",
+    "folder": "Multi Currency/Neuven User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2227"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:&nbsp;</p><ul><li><p>Logged on as a Neuven User.&nbsp;</p></li></ul><p>When:</p><ul><li><p>On the rates Creation page.</p></li></ul><p>Then:</p><div><ul><li><p>The ERNI field has been renamed to ERNI/PRSI.</p></li></ul></div>",
+    "score": 2,
+    "justification": "Text change verification for Neuven users on the Rates Creation page."
+  },
+  {
+    "id": "153468266",
+    "key": "UNO-T241",
+    "name": "Verify that when logged in as a Neuven user on the Administration Page the ERNI field has been renamed to ERNI/PRSI.",
+    "folder": "Multi Currency/Neuven User",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2227"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:</p><ul><li><p>When logged on as a Neuven User.&nbsp;</p></li></ul><p>When:</p><ul><li><p>On the Administration Page. (WTR,ERNI, VAT, NMW, Neuven fee)</p></li></ul><p>Then:</p><div><ul><li><p>The ERNI field has been renamed to ERNI/PRSI.</p></li></ul></div>",
+    "score": 2,
+    "justification": "Text change verification for Neuven users on the Administration page."
+  },
+  {
+    "id": "154218168",
+    "key": "UNO-T253",
+    "name": "Verify Document Name field is a free type text box and all characters and numbers can be entered",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Tests basic input functionality and data manipulation but does not cover critical process, security aspects, or multiple components."
+  },
+  {
+    "id": "154218171",
+    "key": "UNO-T256",
+    "name": "Verify the wording in the pop-up is user friendly",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Tests user interface language which impacts user experience but not core functionality or business-critical processes."
+  },
+  {
+    "id": "154218172",
+    "key": "UNO-T257",
+    "name": "Verify the default tick box exists on the page and is usable",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Ensures basic UI functionality, doesn't involve critical processes or data manipulation, but ensures the correctness of UI components which is fundamental."
+  },
+  {
+    "id": "154218182",
+    "key": "UNO-T267",
+    "name": "Verify the search box above the document name table",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Tests a basic search functionality. Important for user experience, but not critical to core business processes."
+  },
+  {
+    "id": "154218186",
+    "key": "UNO-T271",
+    "name": "Verify the user friendliness of the document name maintenance page",
+    "folder": "UNO-2148 - Compliance document",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2148"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Tests user interface and experience which is important but not a core functionality."
+  },
+  {
+    "id": "154248170",
+    "key": "UNO-T273",
+    "name": "Verify there is an expiry date applicable tick box on the default tab of the Worker document maintenance page",
+    "folder": "UNO-2149 Compliance documents",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2149"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Ensures the presence of a specific UI component. Important but not critical."
+  },
+  {
+    "id": "154248171",
+    "key": "UNO-T274",
+    "name": "Verify expiry date applicable column is added to the table on the default tab worker document maintenance page",
+    "folder": "UNO-2149 Compliance documents",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2149"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Tests for UI consistency and data handling for expiry dates. Important for data integrity."
+  },
+  {
+    "id": "154423017",
+    "key": "UNO-T277",
+    "name": "Verify 'Click on more than one client to select multiple clients' message is displayed above the Select client dropdown",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2151"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Ensures the correctness of instructional messages. Important for usability but not critical for core functionality."
+  },
+  {
+    "id": "154423019",
+    "key": "UNO-T279",
+    "name": "Verify that ‘Click on more than one group to multi-select’ message is displayed above Select job type group dropdown",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2151"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Validates a critical business process (instructional message), but does not cover complex functionality or security aspects."
+  },
+  {
+    "id": "154423021",
+    "key": "UNO-T281",
+    "name": "Verify that Select document dropdown documents in the default list show regardless of any clients selected",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2151"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Tests core functionality, but lacks complexity and does not involve multiple integrated components."
+  },
+  {
+    "id": "154423027",
+    "key": "UNO-T287",
+    "name": "Verify that the allowed formats and size of documents are displayed",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2151"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Tests core functionality (document upload format), but lacks complexity and does not cover multi-component integrations."
+  },
+  {
+    "id": "154423037",
+    "key": "UNO-T297",
+    "name": "Verify that a column for File Name is included on the existing employee documents table",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2151"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Validates UI display (column presence), but lacks complexity and does not cover multiple integrations."
+  },
+  {
+    "id": "154423071",
+    "key": "UNO-T299",
+    "name": "Verify that a Mandatory Document column is to be added to the worker details page once the + has been selected for a worker",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2154"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Validates UI change (column addition), but does not involve complex functionality or multiple integrations."
+  },
+  {
+    "id": "154423074",
+    "key": "UNO-T302",
+    "name": "Verify that the Verified column is to be replaced by the Expiry Date Column",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2154"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Validates UI change (column replacement), and lacks complexity or coverage of multiple integrations."
+  },
+  {
+    "id": "23747974",
+    "key": "UNO-T32",
+    "name": "Verify filters in the Authorize Rate Adjustments page",
+    "folder": "UNO293 UNO1491, 1495,1492,1493,1494,1473 Advance filters",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-1491"
+    ],
+    "objective": "User should be able to filter the data on the Authorize rate adjustment page using advance filter options and the system should not throw an AJAX error while using the filters.",
+    "testScript": "{\"step\":[{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"Log in as neuven user in www.venneu-dev.com\",\"expectedResult\":\"Successful log in and User should see the Home page\",\"testData\":\"Adhi.bommanapally@neuven.co.uk<br>Welcome.1\"},{\"$\":{\"index\":\"1\"},\"customFields\":\"\",\"description\":\"From home page navigate to rates on the left panel and choose Authorise Rate adjustments from the drop down\",\"expectedResult\":\"User should be taken to Authorize rate adjustment page and also should be able to see the list of all the adjusted rates that are waiting to be authorised\"},{\"$\":{\"index\":\"2\"},\"customFields\":\"\",\"description\":\"Click on the search Icon on the right corner\",\"expectedResult\":\"User should be able to see the individual search boxes above each column\"},{\"$\":{\"index\":\"3\"},\"customFields\":\"\",\"description\":\"Filter data by entering values in the search boxes individually\",\"expectedResult\":\"Data shown should be filtered and shown to the user based on the key words in the search box\"},{\"$\":{\"index\":\"4\"},\"customFields\":\"\",\"description\":\"Verify by filtering data by entering values in multiple search boxes.\",\"expectedResult\":\"Data should be filtered according to multiple filters that are used\"},{\"$\":{\"index\":\"5\"},\"customFields\":\"\",\"description\":\"Verify by adding values to all the search boxes\",\"expectedResult\":\"Data should still correspond based on the data entered.\"},{\"$\":{\"index\":\"6\"},\"customFields\":\"\",\"description\":\"Export the filtered data by clicking on the export icon on the right corner\",\"expectedResult\":\"Data on the exported file should match and correspond to the data shown on the screen after filtering\"},{\"$\":{\"index\":\"7\"},\"customFields\":\"\",\"description\":\"Repeat Steps 1 to 7 in IE and firefox browser\",\"expectedResult\":\"All expected results should be achieved\"}]}",
+    "score": 2,
+    "justification": "This test verifies filters' functionality, which affects data display but does not have a critical business impact. It involves data manipulation and UI consistency, but less critical compared to core booking or rate export functionalities."
+  },
+  {
+    "id": "23748240",
+    "key": "UNO-T33",
+    "name": "Verify filters in the Authorize New Rate page",
+    "folder": "UNO293 UNO1491, 1495,1492,1493,1494,1473 Advance filters",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-1495"
+    ],
+    "objective": "User should be able to filter the data on the Authorize rate page using advance filter options and the system should not throw an AJAX error while using the filters.",
+    "testScript": "{\"step\":[{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"Log in as neuven user in www.venneu-dev.com\",\"expectedResult\":\"Successful log in and User should see the Home page\",\"testData\":\"Adhi.bommanapally@neuven.co.uk<br>Welcome.1\"},{\"$\":{\"index\":\"1\"},\"customFields\":\"\",\"description\":\"From home page navigate to rates on the left panel and choose Authorise New Rates from the drop down\",\"expectedResult\":\"User should be taken to Authorize New rate page and also should be able to see the list of all the new rates that are waiting to be authorised\"},{\"$\":{\"index\":\"2\"},\"customFields\":\"\",\"description\":\"Click on the search Icon on the right corner\",\"expectedResult\":\"User should be able to see the individual search boxes above each column\"},{\"$\":{\"index\":\"3\"},\"customFields\":\"\",\"description\":\"Filter data by entering values in the search boxes individually\",\"expectedResult\":\"Data shown should be filtered and shown to the user based on the key words in the search box\"},{\"$\":{\"index\":\"4\"},\"customFields\":\"\",\"description\":\"Verify by filtering data by entering values in multiple search boxes.\",\"expectedResult\":\"Data should be filtered according to multiple filters that are used\"},{\"$\":{\"index\":\"5\"},\"customFields\":\"\",\"description\":\"Verify by adding values to all the search boxes\",\"expectedResult\":\"Data should still correspond based on the data entered.\"},{\"$\":{\"index\":\"6\"},\"customFields\":\"\",\"description\":\"Export the filtered data by clicking on the export icon on the right corner\",\"expectedResult\":\"Data on the exported file should match and correspond to the data shown on the screen after filtering\"},{\"$\":{\"index\":\"7\"},\"customFields\":\"\",\"description\":\"Repeat Steps 1 to 7 in IE and firefox browser\",\"expectedResult\":\"All expected results should be achieved\"}]}",
+    "score": 2,
+    "justification": "Similar to UNO-T32, this test focuses on filtering data in the authorize new rate page, which involves data manipulation and UI consistency. However, it doesn't have a high business impact."
+  },
+  {
+    "id": "23748313",
+    "key": "UNO-T34",
+    "name": "Verify filters in the Rate Adjustment Page",
+    "folder": "UNO293 UNO1491, 1495,1492,1493,1494,1473 Advance filters",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-1492"
+    ],
+    "objective": "User should be able to filter the data on the Rate adjustment page using advance filter options and the system should not throw an AJAX error while using the filters.",
+    "testScript": "{\"step\":[{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"Log in as neuven user in www.venneu-dev.com\",\"expectedResult\":\"Successful log in and User should see the Home page\",\"testData\":\"Adhi.bommanapally@neuven.co.uk<br>Welcome.1\"},{\"$\":{\"index\":\"1\"},\"customFields\":\"\",\"description\":\"From home page navigate to rates on the left panel and choose Rate Adjustments from the drop down\",\"expectedResult\":\"User should be taken to Rate adjustment page and also should be able to see the list of rates that can be adjusted\"},{\"$\":{\"index\":\"2\"},\"customFields\":\"\",\"description\":\"Click on the search Icon on the right corner\",\"expectedResult\":\"User should be able to see the individual search boxes above each column\"},{\"$\":{\"index\":\"3\"},\"customFields\":\"\",\"description\":\"Filter data by entering values in the search boxes individually\",\"expectedResult\":\"Data shown should be filtered and shown to the user based on the key words in the search box\"},{\"$\":{\"index\":\"4\"},\"customFields\":\"\",\"description\":\"Verify by filtering data by entering values in multiple search boxes.\",\"expectedResult\":\"Data should be filtered according to multiple filters that are used\"},{\"$\":{\"index\":\"5\"},\"customFields\":\"\",\"description\":\"Verify by adding values to all the search boxes\",\"expectedResult\":\"Data should still correspond based on the data entered.\"},{\"$\":{\"index\":\"6\"},\"customFields\":\"\",\"description\":\"Export the filtered data by clicking on the export icon on the right corner\",\"expectedResult\":\"Data on the exported file should match and correspond to the data shown on the screen after filtering\"},{\"$\":{\"index\":\"7\"},\"customFields\":\"\",\"description\":\"Repeat Steps 1 to 7 in IE and firefox browser\",\"expectedResult\":\"All expected results should be achieved\"}]}",
+    "score": 2,
+    "justification": "This test verifies the functionality of filters in the rate adjustment page. It covers data manipulation but lacks high business impact and criticality compared to other functionalities like booking and rate export."
+  },
+  {
+    "id": "23748474",
+    "key": "UNO-T35",
+    "name": "Verify filters in the Rate Creation Page",
+    "folder": "UNO293 UNO1491, 1495,1492,1493,1494,1473 Advance filters",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-1493"
+    ],
+    "objective": "User should be able to filter the data on the Rate Creation page using advance filter options and the system should not throw an AJAX error while using the filters.",
+    "testScript": "{\"step\":[{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"Log in as neuven user in www.venneu-dev.com\",\"expectedResult\":\"Successful log in and User should see the Home page\",\"testData\":\"Adhi.bommanapally@neuven.co.uk<br>Welcome.1\"},{\"$\":{\"index\":\"1\"},\"customFields\":\"\",\"description\":\"From home page navigate to rates on the left panel and choose Rate Creation from the drop down\",\"expectedResult\":\"User should be taken to Rate Creation page and also should be able to see rate creation tab and &nbsp;list of rates at the bottom\"},{\"$\":{\"index\":\"2\"},\"customFields\":\"\",\"description\":\"Click on the search Icon on the right corner&nbsp;\",\"expectedResult\":\"User should be able to see the individual search boxes above each column\"},{\"$\":{\"index\":\"3\"},\"customFields\":\"\",\"description\":\"Filter data by entering values in the search boxes individually\",\"expectedResult\":\"Data shown should be filtered and shown to the user based on the key words in the search box\"},{\"$\":{\"index\":\"4\"},\"customFields\":\"\",\"description\":\"Verify by filtering data by entering values in multiple search boxes.\",\"expectedResult\":\"Data should be filtered according to multiple filters that are used\"},{\"$\":{\"index\":\"5\"},\"customFields\":\"\",\"description\":\"Verify by adding values to all the search boxes\",\"expectedResult\":\"Data should still correspond based on the data entered.\"},{\"$\":{\"index\":\"6\"},\"customFields\":\"\",\"description\":\"Export the filtered data by clicking on the export icon on the right corner\",\"expectedResult\":\"Data on the exported file should match and correspond to the data shown on the screen after filtering\"},{\"$\":{\"index\":\"7\"},\"customFields\":\"\",\"description\":\"Repeat Steps 1 to 7 in IE and firefox browser\",\"expectedResult\":\"All expected results should be achieved\"}]}",
+    "score": 2,
+    "justification": "This test focuses on filtering data during rate creation. It covers data manipulation but doesn't meet the critical business process criteria. It involves multiple steps but is less critical compared to rate validation or export functionalities."
+  },
+  {
+    "id": "23748502",
+    "key": "UNO-T36",
+    "name": "Verify filters in the Rate Management Page",
+    "folder": "UNO293 UNO1491, 1495,1492,1493,1494,1473 Advance filters",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-1494"
+    ],
+    "objective": "User should be able to filter the data on the RateManagement page using advance filter options and the system should not throw an AJAX error while using the filters.",
+    "testScript": "{\"step\":[{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"Log in as neuven user in www.venneu-dev.com\",\"expectedResult\":\"Successful log in and User should see the Home page\",\"testData\":\"Adhi.bommanapally@neuven.co.uk<br>Welcome.1\"},{\"$\":{\"index\":\"1\"},\"customFields\":\"\",\"description\":\"From home page navigate to rates on the left panel and choose Rate Management from the drop down\",\"expectedResult\":\"User should be taken to Rate Management page and should be able to see list of all rates\"},{\"$\":{\"index\":\"2\"},\"customFields\":\"\",\"description\":\"Click on the search Icon on the right corner&nbsp;\",\"expectedResult\":\"User should be able to see the individual search boxes above each column\"},{\"$\":{\"index\":\"3\"},\"customFields\":\"\",\"description\":\"Filter data by entering values in the search boxes individually\",\"expectedResult\":\"Data shown should be filtered and shown to the user based on the key words in the search box\"},{\"$\":{\"index\":\"4\"},\"customFields\":\"\",\"description\":\"Verify by filtering data by entering values in multiple search boxes.\",\"expectedResult\":\"Data should be filtered according to multiple filters that are used\"},{\"$\":{\"index\":\"5\"},\"customFields\":\"\",\"description\":\"Verify by adding values to all the search boxes\",\"expectedResult\":\"Data should still correspond based on the data entered.\"},{\"$\":{\"index\":\"6\"},\"customFields\":\"\",\"description\":\"Export the filtered data by clicking on the export icon on the right corner\",\"expectedResult\":\"Data on the exported file should match and correspond to the data shown on the screen after filtering\"},{\"$\":{\"index\":\"7\"},\"customFields\":\"\",\"description\":\"Repeat Steps 1 to 7 in IE and firefox browser\",\"expectedResult\":\"All expected results should be achieved\"}]}",
+    "score": 2,
+    "justification": "This test covers filtering data in the rate management page. It involves data manipulation and UI consistency but lacks high business impact compared to core functionalities like booking or rate validation."
+  },
+  {
+    "id": "23748521",
+    "key": "UNO-T37",
+    "name": "Verify filters in the Rate Export Page",
+    "folder": "UNO293 UNO1491, 1495,1492,1493,1494,1473 Advance filters",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-1473"
+    ],
+    "objective": "User should be able to filter the data on the Rate Export page using advance filter options and the system should not throw an AJAX error while using the filters.",
+    "testScript": "{\"step\":[{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"Log in as neuven user in www.venneu-dev.com\",\"expectedResult\":\"Successful log in and User should see the Home page\",\"testData\":\"Adhi.bommanapally@neuven.co.uk<br>Welcome.1\"},{\"$\":{\"index\":\"1\"},\"customFields\":\"\",\"description\":\"From home page navigate to rates on the left panel and choose Rate Export from the drop down\",\"expectedResult\":\"User should be taken to Rate Export page and should be able to see list of all rates\"},{\"$\":{\"index\":\"2\"},\"customFields\":\"\",\"description\":\"Click on the search Icon on the right corner&nbsp;\",\"expectedResult\":\"User should be able to see the individual search boxes above each column\"},{\"$\":{\"index\":\"3\"},\"customFields\":\"\",\"description\":\"Filter data by entering values in the search boxes individually\",\"expectedResult\":\"Data shown should be filtered and shown to the user based on the key words in the search box\"},{\"$\":{\"index\":\"4\"},\"customFields\":\"\",\"description\":\"Verify by filtering data by entering values in multiple search boxes.\",\"expectedResult\":\"Data should be filtered according to multiple filters that are used\"},{\"$\":{\"index\":\"5\"},\"customFields\":\"\",\"description\":\"Verify by adding values to all the search boxes\",\"expectedResult\":\"Data should still correspond based on the data entered.\"},{\"$\":{\"index\":\"6\"},\"customFields\":\"\",\"description\":\"Export the filtered data by clicking on the export icon on the right corner\",\"expectedResult\":\"Data on the exported file should match and correspond to the data shown on the screen after filtering\"},{\"$\":{\"index\":\"7\"},\"customFields\":\"\",\"description\":\"Login to Venneu-dev.com as a neuven user\",\"expectedResult\":\"Log in successful and user in homepage\"},{\"$\":{\"index\":\"8\"},\"customFields\":\"\",\"description\":\"Navigate to Rates and Rates export\",\"expectedResult\":\"User taken to rate export page\"},{\"$\":{\"index\":\"9\"},\"customFields\":\"\",\"description\":\"Choose client form the drop down or select all\",\"expectedResult\":\"User should be able to see list of different rates according to selection made\"},{\"$\":{\"index\":\"10\"},\"customFields\":\"\",\"description\":\"Click export icon in the right corner\",\"expectedResult\":\"Rates xlsx file should be downloaded\"},{\"$\":{\"index\":\"11\"},\"customFields\":\"\",\"description\":\"Filter data using the search icon on the screen\",\"expectedResult\":\"Data shown on the screen should be filtered down based on the key words used\"},{\"$\":{\"index\":\"12\"},\"customFields\":\"\",\"description\":\"Click export to excel after filtering data\",\"expectedResult\":\"Data on exported excel file should correspond and match with the data on the page\"},{\"$\":{\"index\":\"13\"},\"customFields\":\"\",\"description\":\"Repeat step 1 to 6 firefox browser\",\"expectedResult\":\"All expected results should match\"},{\"$\":{\"index\":\"14\"},\"customFields\":\"\",\"description\":\"Repeat step 1 to 6 edge browser\",\"expectedResult\":\"All expected results should match\"},{\"$\":{\"index\":\"15\"},\"customFields\":\"\",\"description\":\"Login to Venneu-dev.com as a Client User\",\"expectedResult\":\"Log in successful and user in homepage\"},{\"$\":{\"index\":\"16\"},\"customFields\":\"\",\"description\":\"Navigate to Rates export\",\"expectedResult\":\"User taken to rate export page and should be able to see list of all rates\"},{\"$\":{\"index\":\"17\"},\"customFields\":\"\",\"description\":\"Click export icon in the right corner\",\"expectedResult\":\"Rates xlsx file should be downloaded\"},{\"$\":{\"index\":\"18\"},\"customFields\":\"\",\"description\":\"Check the data on the xlsx file\",\"expectedResult\":\"Data should correspond and match with the data on the page\"},{\"$\":{\"index\":\"19\"},\"customFields\":\"\",\"description\":\"Filter data on the screen using the search icon\",\"expectedResult\":\"Data should be filtered according to the key words used\"},{\"$\":{\"index\":\"20\"},\"customFields\":\"\",\"description\":\"Click export to excel after filtering Data\",\"expectedResult\":\"Data on the exported excel file should match with the filtered data on the screen\"},{\"$\":{\"index\":\"21\"},\"customFields\":\"\",\"description\":\"Repeat step 1 to 6 firefox browser\",\"expectedResult\":\"All expected results should match\"},{\"$\":{\"index\":\"22\"},\"customFields\":\"\",\"description\":\"Repeat step 1 to 6 edge browser\",\"expectedResult\":\"All expected results should match\"},{\"$\":{\"index\":\"23\"},\"customFields\":\"\",\"description\":\"Repeat Steps 1 to 7 in IE and firefox browser\",\"expectedResult\":\"All expected results should be achieved\"}]}",
+    "score": 2,
+    "justification": "This test verifies the filter functionality on the rate export page for multiple user roles. It includes data manipulation and UI interactions but does not cover critical business processes or high-impact functionalities."
+  },
+  {
+    "id": "154423075",
+    "key": "UNO-T303",
+    "name": "Verify that the Expiry Date is taken from the Documents Maintenance Page and is displayed in the format DD/MM/YYYY",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2154"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This test case involves data display and formatting, which is important but does not involve multiple components, user roles, or complex processes. Therefore, it meets only the complexity and critical business process criteria."
+  },
+  {
+    "id": "154423076",
+    "key": "UNO-T304",
+    "name": "Verify that when View is clicked, the pop is to appear of the document",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2154"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This test case ensures the functionality of viewing documents, a basic feature with moderate impact but does not cover multiple components or complex processes. It meets the critical business process and integration points criteria."
+  },
+  {
+    "id": "154423078",
+    "key": "UNO-T306",
+    "name": "Verify that in the Action Column, where there is an upload for the document type, green tick = verified document",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2154"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This is relevant to document verification, which is a common task but not particularly complex or broad in coverage. It meets the critical process and basic integration criteria."
+  },
+  {
+    "id": "154423080",
+    "key": "UNO-T307",
+    "name": "Verify in the Action Column, when the green tick is clicked, the tick and ‘x’ will be replaced by the word ‘Verified’",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2154"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This test is more focused on the UI interaction and display updates which are important for user experience but not critical at a system level. It meets the UI validation and user interaction criteria."
+  },
+  {
+    "id": "154423083",
+    "key": "UNO-T310",
+    "name": "Verify that when the Rex ‘X’ is clicked, the tick and ‘x’ will be removed and replaced by the word ‘Rejected’",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2154"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This test is about UI interaction and display changes. It's important but not critical. It meets UI validation and user interaction criteria."
+  },
+  {
+    "id": "154809859",
+    "key": "UNO-T315",
+    "name": "Verify that the document type is a dropdown box.",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2150"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:&nbsp;</p><ul><li><p>Logged in as an Agency User&nbsp;</p></li></ul><p>When:&nbsp;</p><ul><li><p>On the worker&rsquo;s page&nbsp;</p></li></ul><p><span style=\"font-family: Calibri , sans-serif;\">Then: &nbsp;</span></p><ul><li><p><span style=\"font-family: Calibri , sans-serif;\">The document type is a drop-down list which I populated from the&nbsp;</span><span style=\"font-family: Calibri , sans-serif;\">Document Type Name Maintenance</span></p></li></ul>",
+    "score": 2,
+    "justification": "Ensuring the correct control type is important for UI consistency but less critical in terms of system functionality. It meets critical process and UI validation criteria."
+  },
+  {
+    "id": "155980145",
+    "key": "UNO-T320",
+    "name": "Verify that the table displays Document Type",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2152"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Verifying display features is important but has less business impact and complexity. It meets critical process and UI validation criteria."
+  },
+  {
+    "id": "155980146",
+    "key": "UNO-T321",
+    "name": "Verify that the table displays File Name",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2152"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Verifying display features is important but has less business impact and complexity. It meets critical process and UI validation criteria."
+  },
+  {
+    "id": "155980147",
+    "key": "UNO-T322",
+    "name": "Verify that the table displays View hyperlink",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2152"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Ensuring hyperlinks are displayed correctly affects navigation but is a basic functionality. It meets critical process and UI validation criteria."
+  },
+  {
+    "id": "155980148",
+    "key": "UNO-T323",
+    "name": "Verify that the Verified column is no longer appearing on the table",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2152"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This involves ensuring proper display of table columns, which is significant for UI but not deeply impacting the system. It meets critical process and UI validation criteria."
+  },
+  {
+    "id": "155980150",
+    "key": "UNO-T324",
+    "name": "Verify that the expiry date is displayed on the table",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2152"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Verification of data display (expiry date) is important but less complex. It meets critical process and data manipulation criteria."
+  },
+  {
+    "id": "155980151",
+    "key": "UNO-T325",
+    "name": "Verify that the expiry date displays the expiry date in red and if no expiry date was selected, N/A is displayed",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2152"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Additional formatting and data display checks improve user experience but are not critical. It meets critical process and data manipulation criteria."
+  },
+  {
+    "id": "155980152",
+    "key": "UNO-T326",
+    "name": "Verify that the Mandatory column is on the table",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2152"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Ensuring the presence of critical UI elements (mandatory column) for data verification. It meets critical process and UI validation criteria."
+  },
+  {
+    "id": "155980153",
+    "key": "UNO-T327",
+    "name": "Verify that if the document type was marked mandatory in the defaults documents page, yes is displayed",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2152"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Verification of mandatory field marking is important but has lower complexity and integration. It meets critical process and data manipulation criteria."
+  },
+  {
+    "id": "155980154",
+    "key": "UNO-T328",
+    "name": "Verify that if the document type was not marked mandatory in the defaults documents page, no is displayed or it is left empty",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2152"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This test checks for non-critical validation related to UI fields. It is important but does not involve core business processes, integrations, or security."
+  },
+  {
+    "id": "155980155",
+    "key": "UNO-T329",
+    "name": "Verify that date of upload is displayed on the table",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2152"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This test verifies a display element which is important for user interaction but not critical to core functionality, security, or calculations."
+  },
+  {
+    "id": "156701521",
+    "key": "UNO-T335",
+    "name": "Verify jobtype dropdown defaults to all jobtypes on initial load",
+    "folder": "Shifts functionality/Auto cascade functionality/UNO-2134",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2134"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This test addresses default settings which are important but not critical to core functionality or security."
+  },
+  {
+    "id": "156701525",
+    "key": "UNO-T339",
+    "name": "Verify tier 1 is defaulted to Immediate",
+    "folder": "Shifts functionality/Auto cascade functionality/UNO-2134",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2134"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Default settings check which is important but not critical. Verifies user expectation for default configurations."
+  },
+  {
+    "id": "156701530",
+    "key": "UNO-T344",
+    "name": "Verify the name of columns in Auto cascade table",
+    "folder": "Shifts functionality/Auto cascade functionality/UNO-2134",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2134"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Naming and labeling are important for clarity but do not affect core functionality or security."
+  },
+  {
+    "id": "157327352",
+    "key": "UNO-T353",
+    "name": "Verify there is an error message when no auto cascade details are filled",
+    "folder": "Shifts functionality/Auto cascade functionality/UNO-2113",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2113"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This test case ensures error handling but does not cover critical business processes or integrations."
+  },
+  {
+    "id": "158174219",
+    "key": "UNO-T378",
+    "name": "Verify as a NEUVEN user the input fields in the add direct worker -user details tab",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2306"
+    ],
+    "objective": null,
+    "testScript": "<p>Given:</p><ul><li><p><span style=\"font-family: Calibri , sans-serif;\">Logged in as a Neuven user with &lsquo;Manage Direct Bank Worker&rsquo; permission.</span></p></li></ul><p>When:&nbsp;</p><ul><li><p><span style=\"font-family: Calibri , sans-serif;\">On the direct bank workers page &gt; Click &lsquo;Add New Direct Bank Worker&rsquo; button</span></p></li></ul><p>Then:</p><ul><li><p>User is redirected to a page to crate a new direct bank worker.</p></li><li><p>One the page there is the following fields.&nbsp;</p><ul><li><p>A drop or click to upload a worker image.&nbsp;</p></li><li><p>An input filed for first name&nbsp;</p></li><li><p>An input field for last name&nbsp;</p></li><li><p>An input field for email&nbsp;</p></li><li><p>Address line one&nbsp;</p></li><li><p>Address line two&nbsp;</p></li><li><p>Town&nbsp;</p></li><li><p>Postcode</p></li><li><p>Country</p></li><li><p>Date of birth&nbsp;</p></li><li><p>Gender</p></li><li><p>Toggles for approved and locked out.&nbsp;</p></li></ul></li><li><p>The place holder on all the input field will indicate what is expected in each field. </p></li></ul>",
+    "score": 2,
+    "justification": "The test case ensures the UI elements are present and correctly labeled for critical user management functionality but does not verify data integrity or security aspects."
+  },
+  {
+    "id": "158174223",
+    "key": "UNO-T379",
+    "name": "Verify as a CLIENT user the input fields in the add direct worker -user details tab",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2306"
+    ],
+    "objective": null,
+    "testScript": "Given:<br><ul><li><p>Logged in as a Client user with &lsquo;Edit Direct Bank Worker&rsquo; permission.</p></li></ul>When:<br><ul><li>On the direct bank workers page &gt; Click &lsquo;Add New Direct Bank Worker&rsquo; button</li></ul>Then:<br><ul><li>User is redirected to a page to crate a new direct bank worker.</li><li>One the page there is the following fields.&nbsp;<ul><li>A drop or click to upload a worker image.&nbsp;</li><li>An input filed for first name&nbsp;</li><li>An input field for last name&nbsp;</li><li>An input field for email&nbsp;</li><li>Address line one&nbsp;</li><li>Address line two&nbsp;</li><li>Town&nbsp;</li><li>Postcode</li><li>Country</li><li>Date of birth&nbsp;</li><li>Gender</li><li>Toggles for approved and locked out.&nbsp;</li></ul></li><li>The place holder on all the input field will indicate what is expected in each field.</li></ul>",
+    "score": 2,
+    "justification": "Similar to UNO-T378, this checks for the presence and correctness of UI fields for a client user but doesn't delve into deeper functional or security checks."
+  },
+  {
+    "id": "158174884",
+    "key": "UNO-T384",
+    "name": "Verify that a NEUVEN can see the Locations tab when creating a new direct worker profile.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2307"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li><p>Logged in as a Neuven user with &lsquo;Manage Direct Bank Worker&rsquo; permission</p></li></ul>When :<ul><li>On the direct bank works page &gt; click add new bank worker &gt; On the client locations tab</li></ul>Then :<ul><li>Page will show a table for the list of client locations for the worker profile&nbsp;</li><li>The available columns will include:<ul><li>Client location&nbsp;</li><li>Address</li><li>Post code</li><li>Miles (distance between worker postcode and location postcode)</li><li>linked (tick box)</li><li>tier one 1 and tier 2</li></ul></li></ul><br>",
+    "score": 2,
+    "justification": "Checks visibility of the Locations tab, an important part of the UI but does not test deeper functional integrity or data interactions."
+  },
+  {
+    "id": "158174937",
+    "key": "UNO-T386",
+    "name": "Verify that a Client can see the Locations tab when creating a new direct worker profile.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2307"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li><p>Logged in as a Client user with &lsquo;Edit Direct Bank Worker&rsquo; Permission</p></li></ul>When :<ul><li>On the direct bank works page &gt; click add new bank worker &gt; On the client locations tab</li></ul>Then :<ul><li>Page will show a table for the list of client locations for the worker profile&nbsp;</li><li>The available columns will include:<ul><li>Client location&nbsp;</li><li>Address</li><li>Post code</li><li>Miles (distance between worker postcode and location postcode)</li><li>linked (tick box)</li><li>tier one 1 and tier 2</li></ul></li></ul>",
+    "score": 2,
+    "justification": "Ensures visibility of the Locations tab for client users, a key UI check but not substantial in data handling or security."
+  },
+  {
+    "id": "159306859",
+    "key": "UNO-T416",
+    "name": "Verify as a NEUVEN user when creating a new direct bank worker the default permission on the permissions tab for login via app or website.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2342"
+    ],
+    "objective": null,
+    "testScript": "Given:<br><ul><li>Logged in as a Neuven user (With Manage Direct Bank Workers Permission)</li></ul>When:<br><ul><li>Direct Bank Worker page</li></ul>Then:<br><ul><li><p>Permissions Tab</p><ul><li><p>There will be options for the following logins.&nbsp;</p><ul><li><p>Log in Via Venneu App (Default)</p></li><li><p>Log in Via Venneu Desktop Site<span><span><a href=\"https://neuven.atlassian.net/browse/UNO-2343\"></a></span></span><br></p></li></ul></li></ul></li><li><p>When setting up a Direct bank worker &lsquo;Log in Via Venneu App&rsquo; permission is ticked by default.&nbsp;</p></li><li><p>The &ldquo;Log in via Venneu Desktop Site&rdquo; is not ticked</p></li></ul><br>",
+    "score": 2,
+    "justification": "Covers permissions aspect, minor security and business process impact, not as critical or complex compared to other tests."
+  },
+  {
+    "id": "159306876",
+    "key": "UNO-T417",
+    "name": "Verify as a Client User when creating a new direct bank worker the default permission on the permissions tab for login via app or website.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2342"
+    ],
+    "objective": null,
+    "testScript": "Given:<br><ul><li><p>Logged in as a Client user with &lsquo;Edit Direct Bank Worker&rsquo; permission</p></li></ul>When:<br><ul><li>Direct Bank Worker page</li></ul>Then:<br><ul><li><p>Permissions Tab</p><ul><li><p>There will be options for the following logins.&nbsp;</p><ul><li><p>Log in Via Venneu App (Default)</p></li><li><p>Log in Via Venneu Desktop Site<span><span><a href=\"https://neuven.atlassian.net/browse/UNO-2343\"></a></span></span><br></p></li></ul></li></ul></li><li><p>When setting up a Direct bank worker &lsquo;Log in Via Venneu App&rsquo; permission is ticked by default.&nbsp;</p></li><li>The &ldquo;Log in via Venneu Desktop Site&rdquo; is not ticked</li></ul>",
+    "score": 2,
+    "justification": "Similar to Neuven user permissions test, low business impact and security relevance."
+  },
+  {
+    "id": "159410907",
+    "key": "UNO-T427",
+    "name": "Verify as a NEUVEN User that the DBS details on the Compliance tab appear below the RTW details.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2347"
+    ],
+    "objective": null,
+    "testScript": "<div><div><div><div><p>Given:&nbsp;</p><ul><li><p>Logged in as a Neuven user with &lsquo;Manage Direct Bank worker Permission'</p></li></ul>When :</div><ul><li><div>One direct Bank Workers Page</div></li><li><div>When adding a &nbsp;New Direct Bank worker</div></li></ul><div>Then:</div><ul><li><p>One the Compliance Tab</p><ul><li><p>DBS Details&nbsp;</p><ul><li><p>DBS Certificate Verified Toggle</p></li><li><p>DBS Certificate Verified By (Free Type Text field)</p></li><li><p>DBS Certificate Verified On (Helper text with Date format DD/MM/YYYY)</p><ul><li><p>Date picker</p></li></ul></li><li><p>DBS Certificate Number (Free Type Text field)</p></li><li><p>DBS Issue Date (Helper text with Date format DD/MM/YYYY)</p><ul><li><p>Date picker</p></li></ul></li></ul></li></ul></li></ul><ul><li><p>These fields are editable by users with above permission only</p></li></ul></div></div></div>",
+    "score": 2,
+    "justification": "Focuses on UI arrangement and field placements, less critical for business impact and security, lower priority compared to other tests."
+  },
+  {
+    "id": "159545299",
+    "key": "UNO-T437",
+    "name": "Verify as a NEUVEN user that there is a View Document Agreement History Button on the Direct Bank profile.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2352"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li><p>Logged in as a Neuven user with &lsquo;Manage Direct Bank worker Permission'</p></li></ul><p>When:</p><ul><li><p>Click Add New Direct Bank worker / edit a Direct Worker Profile</p></li></ul><p>Then:&nbsp;</p><ul><li><p>On the Compliance Tab</p></li><li><p>There is a &lsquo;View Document Agreement History&rsquo; Button</p></li><li><p>This Links to the T&amp;C agreed via the APP</p></li><li><p>when this is clicked a Pop up appears &nbsp;showing &nbsp;details of the document agreed</p></li><li><p>The heading on the pop up will display : &nbsp;- User Document Agreement History - &lsquo;'Worker Name&rsquo;'</p></li><li><p>On the Terms and Conditions popup the is a table at the bottom of the table that shows</p><ul><li><p>Version (Show Version Number)</p></li><li><p>Agreement Date (Show date and time of Agreement)</p></li></ul></li><li><p>Close Button </p></li></ul>",
+    "score": 2,
+    "justification": "Checks the visibility and functionality of a specific button. Important for UI validation but less critical compared to data manipulation or security tests."
+  },
+  {
+    "id": "159545438",
+    "key": "UNO-T438",
+    "name": "Verify as a CLIENT user that there is a View Document Agreement History Button on the Direct Bank profile.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2352"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li>Client user with ' Edit Direct Bank Worker Permission'</li></ul><p>When:</p><ul><li><p>Click Add New Direct Bank worker / edit a Direct Worker Profile</p></li></ul><p>Then:&nbsp;</p><ul><li><p>On the Compliance Tab</p></li><li><p>There is a &lsquo;View Document Agreement History&rsquo; Button</p></li><li><p>This Links to the T&amp;C agreed via the APP</p></li><li><p>when this is clicked a Pop up appears &nbsp;showing &nbsp;details of the document agreed</p></li><li><p>The heading on the pop up will display : &nbsp;- User Document Agreement History - &lsquo;'Worker Name&rsquo;'</p></li><li><p>On the Terms and Conditions popup the is a table at the bottom of the table that shows</p><ul><li><p>Version (Show Version Number)</p></li><li><p>Agreement Date (Show date and time of Agreement)</p></li></ul></li><li><p>Close Button</p></li></ul>",
+    "score": 2,
+    "justification": "Similar to UNO-T437, checks UI functionality for a specific button for client users, important but lower criticality."
+  },
+  {
+    "id": "159875184",
+    "key": "UNO-T444",
+    "name": "Verify adding Add Direct Bank worker Document tab to Worker Document Maintenance Page when logged in as a NEUVEN user.",
+    "folder": "Worker Document Maintenance Page",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2368"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li>Logged in as a Neuven user&nbsp;</li></ul>When:<ul><li><p>Administration</p></li><li><p>Worker Document Maintenance page</p></li></ul><p>Then:&nbsp;</p><ul><li><p>Verify that there is a new tab called : Direct Bank Worker Documents Types</p></li></ul>",
+    "score": 2,
+    "justification": "Checks the presence of a new tab, important for UI consistency but less complex compared to data logic or security tests."
+  },
+  {
+    "id": "159911094",
+    "key": "UNO-T446",
+    "name": "As a NEUVEN user the client drop down function works on the Direct Bank worker Document Tab - Table in the Worker Document Maintenance Page",
+    "folder": "Worker Document Maintenance Page",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2381"
+    ],
+    "objective": null,
+    "testScript": "Given:<br><ul><li><p>Logged in as a Neuven User</p></li></ul>When on the:&nbsp;<ul><li><p>Document Upload Maintenance Page</p></li><li><p>Direct Bank Worker Document Types Tab</p></li></ul>Then:<br><ul><li><p>The table displayed show the following columns&nbsp;</p></li><li><p>The Initial load of the page will show documents for all clients.</p></li><li><p>There will be a filter on the to select a specific client using a dropdown function.&nbsp;</p></li><li><p>When a specific client is selected only the information relevant to that client will show. </p></li></ul>",
+    "score": 2,
+    "justification": "Tests a specific dropdown functionality, important for UI interactions but less critical compared to data integrity or security-focused tests."
+  },
+  {
+    "id": "165561455",
+    "key": "UNO-T483",
+    "name": "Verify that the sleep-in shift can be created for the whole shift",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2278"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This test case checks the creation of a specific type of shift, involves business logic for shift management, and covers a moderately complex process."
+  },
+  {
+    "id": "165561456",
+    "key": "UNO-T484",
+    "name": "Verify that the sleep-in shift can be created for part of the shift",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2278"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This test case checks the partial creation of a specific type of shift, involves business logic for shift management, and covers a moderately complex process."
+  },
+  {
+    "id": "165561457",
+    "key": "UNO-T485",
+    "name": "Verify that the sleep-in shift displays (sleep in & times) for both Client & Agency",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2278"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This test case checks the display of shift information for different entities, involves user interface elements and business logic, and covers a moderately complex process."
+  },
+  {
+    "id": "165690051",
+    "key": "UNO-T487",
+    "name": "Verify that reason code is not filled out",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2276"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This test case checks a specific validation rule, involves business logic for reason codes, and has lower complexity and business impact."
+  },
+  {
+    "id": "165690055",
+    "key": "UNO-T491",
+    "name": "Verify that status of the booking will be Select workers",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2276"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This test case checks a specific status update in the booking process, involves business logic for status transitions, and has lower complexity and business impact."
+  },
+  {
+    "id": "166411746",
+    "key": "UNO-T498",
+    "name": "Create a Client User with Irish Phone Number as a NEUVEN user",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2447"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This test case checks the creation of a client user with specific data, involves user interface and validation, but has lower complexity and business impact."
+  },
+  {
+    "id": "166411773",
+    "key": "UNO-T499",
+    "name": "Edit a Client User with Irish Phone Number as a NEUVEN user",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2447"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This test case checks the editing of a client user with specific data, involves user interface and validation, but has lower complexity and business impact."
+  },
+  {
+    "id": "166412124",
+    "key": "UNO-T500",
+    "name": "Create an Agency User with Irish Phone Number as a NEUVEN user",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2447"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This test case checks the creation of an agency user with specific data, involves user interface and validation, but has lower complexity and business impact."
+  },
+  {
+    "id": "166412131",
+    "key": "UNO-T501",
+    "name": "Edit an Agency User with Irish Phone Number as a NEUVEN user",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2447"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This test case checks the editing of an agency user with specific data, involves user interface and validation, but has lower complexity and business impact."
+  },
+  {
+    "id": "166412168",
+    "key": "UNO-T502",
+    "name": "Create a Location with Irish Phone Number as a NEUVEN user",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2447"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This test case checks the creation of a location with specific data, involves user interface and validation, but has lower complexity and business impact."
+  },
+  {
+    "id": "166412185",
+    "key": "UNO-T503",
+    "name": "Edit a Location with Irish Phone Number as a NEUVEN user",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2447"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Tests a functionality related to user roles (Neuven user) and data manipulation (editing location info), but does not cover multiple components or security aspects."
+  },
+  {
+    "id": "166412320",
+    "key": "UNO-T505",
+    "name": "Edit a Worker with Irish Phone Number as a NEUVEN user",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2447"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Tests data manipulation and user roles, but lacks coverage of integration points and security-sensitive operations."
+  },
+  {
+    "id": "141234694",
+    "key": "UNO-T55",
+    "name": "Verify that the Neuven user can select and agency from the dropdown list on the Agency Workers Page.",
+    "folder": "UNO-2105",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2105"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged on as a Neuven User.</li></ul>When :<ul><li>On the agency workers page.</li></ul>Then :<ul><li>User can select any of the agencies from the drop down on the top of the page.</li><li>One the agency has been selected the table in the second part &nbsp;of the screen will populate.</li><li>Check that that list is only showing the works that are assigned to that agency.&nbsp;</li></ul>",
+    "score": 2,
+    "justification": "Primarily covers user interface and permissions, touching on business process. Less critical compared to others."
+  },
+  {
+    "id": "141235093",
+    "key": "UNO-T58",
+    "name": "Verify that a Neuven User can search the advanced generic search file for the DOB of a worker.",
+    "folder": "UNO-2105",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2105"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged on as a Neuven User.</li></ul>When :<ul><li>On the agency workers page.</li></ul>Then :<ul><li>Using the generic advanced search option, the table should filter for the users DOB .&nbsp;</li></ul>",
+    "score": 2,
+    "justification": "Covers data manipulation and an important process but less critical than previous searches."
+  },
+  {
+    "id": "141235164",
+    "key": "UNO-T59",
+    "name": "Verify that a Neuven User can search the advanced generic search file for the email address of a worker.",
+    "folder": "UNO-2105",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2105"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged on as a Neuven User.</li></ul>When :<ul><li>On the agency workers page.</li></ul>Then :<ul><li>Using the generic advanced search option, the table should filter for the users email address .&nbsp;</li></ul>",
+    "score": 2,
+    "justification": "Involves multiple components and data manipulation but less critical."
+  },
+  {
+    "id": "141238894",
+    "key": "UNO-T61",
+    "name": "Verify that the show 'X ' entries drop down on the page displays and filter correctly.",
+    "folder": "UNO-2105",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2105"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged in as a user with view agency works permission.</li></ul>When : <ul><li>Selecting a number from the selection of : '10' ,'25' ,'50','100'.</li></ul>Then :<ul><li>The page displays the correct number of rows in the table.</li></ul>",
+    "score": 2,
+    "justification": "Covers UI component functionality and data display but with a lesser impact."
+  },
+  {
+    "id": "141240200",
+    "key": "UNO-T64",
+    "name": "Verify that the 'Previous' and 'Next' navigation buttons work.",
+    "folder": "UNO-2105",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2105"
+    ],
+    "objective": null,
+    "testScript": "Given : <ul><li>Logged on as a user with view agency works permission.&nbsp;</li></ul>When :<ul><li>Selecting show 'XX' numbers of entries to be displayed in the table.&nbsp;</li></ul>Then :<ul><li>Using the 'previous ' and 'next' button work and navigate through the list on entries.&nbsp;</li></ul>",
+    "score": 2,
+    "justification": "Covers UI component functionality but the field's criticality is low."
+  },
+  {
+    "id": "141435903",
+    "key": "UNO-T72",
+    "name": "Verify that the legal information screen has the Company Status field when Editing an agency branch (cloned)",
+    "folder": "UNO-1872 Neuven User - Agency - Update Existing Agency Branch",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-1872"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged in as a Neuven user with agency permissions</li></ul>When :<ul><li>Go to agency &gt; agency set up.&nbsp;</li><li>Select an agency from the drop down</li><li>Click expand and then click edit.</li></ul>Then :<br><ul><li>The agency details display &nbsp;a tab called legal information.</li><li>In the legal information tab there is a field for Company Status.&nbsp;</li></ul>",
+    "score": 2,
+    "justification": "Duplicate field check, important but less impactful than original."
+  },
+  {
+    "id": "170259629",
+    "key": "UNO-T550",
+    "name": "Verify a NEUVEN USER can view the QR code Button on a direct workers profile.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2474"
+    ],
+    "objective": null,
+    "testScript": "Given&nbsp;<br><ul><li>Logged in as a Neuven user with &lsquo;Manage Direct Bank Worker&rsquo; permission</li></ul>When <br><ul><li>Direct Bank worker page</li><li>View a Direct Bank worker details</li><li>In the user details tab</li></ul>Then <br><ul><li>There is a &lsquo;View QR Code&rsquo; button on the top right of the screen&nbsp;</li><li>When clicked it displays a QR Code for that worker.&nbsp;</li></ul>",
+    "score": 2,
+    "justification": "Tests a UI element (QR code button), involves user permissions, but has lower business impact."
+  },
+  {
+    "id": "170259849",
+    "key": "UNO-T551",
+    "name": "Verify a CLIENT USER can view the QR code Button on a direct worker's profile.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2474"
+    ],
+    "objective": null,
+    "testScript": "Given&nbsp;<br><ul><li>Logged in as a Client user with &lsquo;'View Direct Bank Worker&rsquo;' or '&lsquo;Edit Direct Bank Worker&rsquo; permission</li></ul>When&nbsp;<br><ul><li>Direct Bank worker page</li><li>View a Direct Bank worker details</li><li>In the user details tab</li></ul><br>Then <br><ul><li>There is a &lsquo;View QR Code&rsquo; button on the top right of the screen&nbsp;</li><li>When clicked it displays a QR Code for that worker.&nbsp;</li></ul>&nbsp;<br>UNO-2473",
+    "score": 2,
+    "justification": "Tests a UI element (QR code button), involves user permissions, but has lower business impact."
+  },
+  {
+    "id": "170260272",
+    "key": "UNO-T552",
+    "name": "Verify that if the client location has ‘Direct Bank Workers Only’ or ‘Both’ toggle on the client setting, no change is made to the T&A board page",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2472"
+    ],
+    "objective": null,
+    "testScript": "Given<br><ul><li>Logged in as a Client User (With T&amp;A permission)</li><li>T&amp;A</li><li>T&amp;A Board</li><li>Select Client Location</li></ul>When&nbsp;<br><ul><li>Client location has &lsquo;'Direct Bank Workers Only&rsquo;' of &lsquo;'Both&rsquo;' Toggle on in client settings</li></ul>Then&nbsp;<br>Then below labels should be changed<br><ul><li>The &ldquo;Agency&rdquo; column header &ldquo;Worker Source&rdquo;</li><li>The text in the Search box &ldquo;Search Worker Source&rdquo;</li></ul>",
+    "score": 2,
+    "justification": "Tests configuration toggle, involves data manipulation, but has lower business impact."
+  },
+  {
+    "id": "170260366",
+    "key": "UNO-T554",
+    "name": "Verify that if the client location has ‘Agency Worker Only’ toggle on the client setting, no change is made to the T&A board page",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2472"
+    ],
+    "objective": null,
+    "testScript": "Given&nbsp;<br><ul><li>Logged in as a Client User (With T&amp;A permission)</li><li>T&amp;A</li><li>T&amp;A Board</li><li>Select Client Location</li></ul>When&nbsp;<br><ul><li>Client location has &lsquo;'Agency Worker Only&rsquo;' Toggle on in the client settings</li></ul>Then<br><ul><li>There will be no changes to the existing page</li></ul>",
+    "score": 2,
+    "justification": "Tests configuration toggle, involves data manipulation, but has lower business impact."
+  },
+  {
+    "id": "170260958",
+    "key": "UNO-T555",
+    "name": "Verify that as a Direct Bank Worker the same QR code is displayed in the app as on the website",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2473"
+    ],
+    "objective": null,
+    "testScript": "Given&nbsp;<br><ul><li>A Direct Bank Worker is set up in Venneu.com</li><li>There is a QR code for that Direct Bank Worker&nbsp;</li><li>The Direct Bank Worker has registered in Venneu APP</li></ul>When&nbsp;<br><ul><li>In the worker profile section</li><li>And the upcoming shift details section&nbsp;</li></ul>Then<br><ul><li>Show the same QR code of that worker&nbsp;</li></ul>",
+    "score": 2,
+    "justification": "Tests UI consistency, involves data display, but has lower business impact."
+  },
+  {
+    "id": "143871778",
+    "key": "UNO-T78",
+    "name": "Verify Digital Tachograph Card Number allows both letters and numbers",
+    "folder": "UNO 2011",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [],
+    "objective": null,
+    "testScript": "<ul><li>Verified that the field allows a combination of alphanumeric&nbsp;</li></ul>",
+    "score": 2,
+    "justification": "Tests a critical validation process, but does not cover integration points, security, or complex functionalities."
+  },
+  {
+    "id": "143871786",
+    "key": "UNO-T79",
+    "name": "Verify Digital Tachograph Card Number allows maximum 25 characters",
+    "folder": "UNO 2011",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [],
+    "objective": null,
+    "testScript": "<ul><li>Verified that the field does not allow you to enter more than 25 characters.</li></ul><br>",
+    "score": 2,
+    "justification": "Tests a critical validation process, but does not cover integration points, security, or complex functionalities."
+  }
+]

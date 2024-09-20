@@ -1,61 +1,69 @@
-import * as fs from 'fs';
-import * as path from 'path';
+import fs from 'fs/promises';
+import path from 'path';
 
 interface TestCase {
-    id: string;
-    key: string;
-    name: string;
-    folder: string;
-    priority: string;
-    status: string;
-    issues: string[];
-    objective: string | null;
-    testScript: string;
+  id: string;
+  key: string;
+  name: string;
+  folder: string;
+  priority: string;
+  status: string;
+  issues: string[];
+  objective: string | null;
+  testScript: string;
 }
 
-function splitJsonFile(inputFilePath: string): void {
-    // Check if the file exists
-    if (!fs.existsSync(inputFilePath)) {
-        console.error(`Error: File not found at ${inputFilePath}`);
-        process.exit(1);
-    }
-
-    // Read the input file
-    const jsonData: TestCase[] = JSON.parse(fs.readFileSync(inputFilePath, 'utf8'));
-
-    if (!Array.isArray(jsonData)) {
-        console.error('Error: Input JSON must be an array of objects');
-        process.exit(1);
-    }
+async function splitJsonFile(
+  inputFilePath: string,
+  chunksCount: number = 4
+): Promise<void> {
+  try {
+    const jsonData: TestCase[] = JSON.parse(
+      await fs.readFile(inputFilePath, 'utf-8')
+    );
 
     const totalItems = jsonData.length;
-    const chunksCount = 4;
+    if (totalItems === 0) {
+      console.error('Error: Input JSON file is empty.');
+      return;
+    }
+
     const itemsPerChunk = Math.ceil(totalItems / chunksCount);
 
     for (let i = 0; i < chunksCount; i++) {
-        const start = i * itemsPerChunk;
-        const end = Math.min((i + 1) * itemsPerChunk, totalItems);
-        const chunk = jsonData.slice(start, end);
+      const start = i * itemsPerChunk;
+      const end = Math.min((i + 1) * itemsPerChunk, totalItems);
+      const chunk = jsonData.slice(start, end);
 
-        const firstKey = chunk[0].key;
-        const lastKey = chunk[chunk.length - 1].key;
-        const outputFileName = `cases-${firstKey.split('-')[1]}-${lastKey.split('-')[1]}.json`;
-        const outputFilePath = path.join(path.dirname(inputFilePath), outputFileName);
+      if (chunk.length === 0) break;
 
-        fs.writeFileSync(outputFilePath, JSON.stringify(chunk, null, 2));
-        console.log(`Created file: ${outputFileName}`);
+      const firstKey = chunk[0].key;
+      const lastKey = chunk[chunk.length - 1].key;
+      const outputFileName = `cases-${firstKey.split('-')[1]}-${lastKey.split('-')[1]}.json`;
+      const outputFilePath = path.join(
+        path.dirname(inputFilePath),
+        outputFileName
+      );
+
+      await fs.writeFile(outputFilePath, JSON.stringify(chunk, null, 2));
+      console.log(`Created file: ${outputFileName}`);
     }
-    
-    console.log('JSON file has been split into four parts.');
+
+    console.log('JSON file has been split successfully.');
+  } catch (error) {
+    console.error('Error splitting JSON file:', error);
+  }
 }
 
-// Get the input file path from command-line arguments
+// Command-line execution
 const inputFilePath = process.argv[2];
+const chunksCount = parseInt(process.argv[3]) || 4;
 
 if (!inputFilePath) {
-    console.error('Please provide the input JSON file path as a command-line argument.');
-    console.error('Usage: node jsonSplitter.js <path_to_input_json>');
-    process.exit(1);
+  console.error(
+    'Usage: node jsonSplitter.js <path_to_input_json> [number_of_chunks]'
+  );
+  process.exit(1);
 }
 
-splitJsonFile(inputFilePath);
+splitJsonFile(inputFilePath, chunksCount);

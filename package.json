@@ -6,11 +6,12 @@
   "scripts": {
     "parsexml": "npx ts-node tools/processXml.ts",
     "splitjson": "npx ts-node tools/jsonSplitter.ts",
-    "analyse": "npx ts-node cli.ts \"Hello! You are an experienced test engineer and tech lead with full experience in software development. Please analyse the attached file as per the provided instructions. Thank you!\" ./instructions.md"
+    "analyse": "npx ts-node analyse.ts -m \"Hello! You are an experienced test engineer and tech lead with full experience in software development. Please analyse the attached file as per the provided instructions. Thank you!\" -i ./instructions.md -f ./data/testCases",
+    "groupby": "npx ts-node ./tools/groupTestByScore.ts"
   },
   "keywords": [
     "openai",
-    "gpt-4o",
+    "gpt-4",
     "cli"
   ],
   "author": "Your Name",
@@ -18,6 +19,7 @@
   "dependencies": {
     "@types/node": "^22.5.3",
     "axios": "^1.7.7",
+    "commander": "^12.1.0",
     "dotenv": "^16.4.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.4",

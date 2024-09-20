@@ -1,0 +1,366 @@
+[
+  {
+    "id": "143871778",
+    "key": "UNO-T78",
+    "name": "Verify Digital Tachograph Card Number allows both letters and numbers",
+    "folder": "UNO 2011",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [],
+    "objective": null,
+    "testScript": "<ul><li>Verified that the field allows a combination of alphanumeric&nbsp;</li></ul>",
+    "score": 2,
+    "justification": "Tests a critical validation process, but does not cover integration points, security, or complex functionalities."
+  },
+  {
+    "id": "143871786",
+    "key": "UNO-T79",
+    "name": "Verify Digital Tachograph Card Number allows maximum 25 characters",
+    "folder": "UNO 2011",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [],
+    "objective": null,
+    "testScript": "<ul><li>Verified that the field does not allow you to enter more than 25 characters.</li></ul><br>",
+    "score": 2,
+    "justification": "Tests a critical validation process, but does not cover integration points, security, or complex functionalities."
+  },
+  {
+    "id": "143872006",
+    "key": "UNO-T80",
+    "name": "Verify Tacograph number and expiry added to reports (listed in test case)",
+    "folder": "UNO 2011",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [],
+    "objective": null,
+    "testScript": "<img src=\"https://cloudfront.tm4j.smartbear.com/tenant/dbd5b1cf-0bec-34a2-a868-82c9a7af42de/project/10009/6ec072ab-7abe-4309-ad52-f5d0c5f26ecd-1710242504516-1710242504516.png\" style=\"width: 300.0px;\" class=\"fr-fic fr-fil fr-dib\"><img src=\"https://cloudfront.tm4j.smartbear.com/tenant/dbd5b1cf-0bec-34a2-a868-82c9a7af42de/project/10009/6ec072ab-7abe-4309-ad52-f5d0c5f26ecd-1710242516022-1710242516022.png\" style=\"width: 300.0px;\" class=\"fr-fic fr-fil fr-dib\">",
+    "score": 3,
+    "justification": "Covers data manipulation and integration with reporting, essential for business operations, but lacks security relevance."
+  },
+  {
+    "id": "144092533",
+    "key": "UNO-T81",
+    "name": "Verify that I can see rate when creating a booking",
+    "folder": "UNO-2166",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2072",
+      "UNO-2166"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged on as a client.</li></ul>When :<ul><li>On the bookings , manage booking page.</li></ul>Then:<ul><li>I can create a booking.</li><li>I can see rates and select an agency.</li></ul>",
+    "score": 4,
+    "justification": "Tests a critical business process (booking), involves multiple user actions, and covers essential functionality for the business."
+  },
+  {
+    "id": "144093830",
+    "key": "UNO-T82",
+    "name": "Verify that as a Neuven user on the user screen I can see the client name in the user column",
+    "folder": "UNO-2073",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2073"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged on as a Neuven User.</li></ul>When :<ul><li>On the User &gt; User List page.</li></ul>Then :<ul><li>Select ' CLIENT' user type from the drop down list.</li><li>Table displays all the client user in the system.</li><li>There is a column called 'Client' that displays the name of the client the user belongs to. </li></ul>",
+    "score": 3,
+    "justification": "Covers user role functionality and data visibility, which is important but lacks complexity and security relevance."
+  },
+  {
+    "id": "144093845",
+    "key": "UNO-T83",
+    "name": "Verify that as a Neuven user on the user screen I can see the Agency name in the user column",
+    "folder": "UNO-2073",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2073"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged on as a Neuven User.</li></ul>When :<ul><li>On the User &gt; User List page.</li></ul>Then :<ul><li>Select ' Agency' user type from the drop down list.</li><li>Table displays all the Agency users in the system.</li><li>There is a column called 'Agency' that displays the name of the Agency the user belongs to.</li></ul>",
+    "score": 3,
+    "justification": "Similar to UNO-T82, covers user role functionality and data visibility but lacks complexity and security relevance."
+  },
+  {
+    "id": "144094282",
+    "key": "UNO-T84",
+    "name": "Verify that as a Neuven when exporting the agency user lists the agency column is exported in the excel document.",
+    "folder": "UNO-2073",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2073"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged on as a Neuven User.</li></ul>When :<ul><li>On the User &gt; User List page.</li><li>Select ' Agency' user type from the drop down list.</li><li>Table displays all the Agency users in the system.</li><li>There is a column called 'Agency' that displays the name of the Agency the user belongs to.</li></ul>Then :<ul><li>Select the export icon.&nbsp;</li><li>A excel document is exported to the downloads folder.&nbsp;</li><li>Open the downloads folder.&nbsp;</li><li>Open the excel document and check that the column names match the table on the user lists page.&nbsp;</li></ul>",
+    "score": 4,
+    "justification": "Involves data export functionality, user role management, and data integrity, which are crucial for business operations."
+  },
+  {
+    "id": "144094931",
+    "key": "UNO-T85",
+    "name": "Verify that as a Neuven when exporting the Client user lists the Client column is exported in the excel document.",
+    "folder": "UNO-2073",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2073"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged on as a Neuven User.</li></ul>When :<ul><li>On the User &gt; User List page.</li><li>Select 'Client' user type from the drop down list.</li><li>Table displays all the Client users in the system.</li><li>There is a column called 'Client' that displays the name of the Client the user belongs to.</li></ul>Then :<ul><li>Select the export icon.&nbsp;</li><li>A excel document is exported to the downloads folder.&nbsp;</li><li>Open the downloads folder.&nbsp;</li><li>Open the excel document and check that the column names match the table on the user lists page.&nbsp;</li></ul>",
+    "score": 4,
+    "justification": "Mirrors the justification for UNO-T84 but focuses on client data, slightly varied but equally relevant for regression."
+  },
+  {
+    "id": "144101278",
+    "key": "UNO-T86",
+    "name": "Verify the search function on the agency name column.",
+    "folder": "UNO-2073",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2073"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li>Logged on as a Neuven User.</li></ul>When:<ul><li>On the user lists page.</li></ul>Then:<ul><li>Select Agency from the user type drop down.</li><li>List of agency users is displayed.</li><li>Search for a agency name in the search field above the agency column. </li><li>The table should filter to shown only data related to that relevant agency.</li></ul>",
+    "score": 3,
+    "justification": "Covers search functionality, which is critical but lacks integration complexity and security checks."
+  },
+  {
+    "id": "144101337",
+    "key": "UNO-T87",
+    "name": "Verify the search function on the Client name column.",
+    "folder": "UNO-2073",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2073"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li>Logged on as a Neuven User.</li></ul>When:<ul><li>On the user lists page.</li></ul>Then:<ul><li>Select Client &nbsp;from the user type drop down.</li><li>List of Client users is displayed.</li><li>Search for Client &nbsp;name in the search field above the Client &nbsp;column.</li><li>The table should filter to shown only data related to that relevant Client.</li></ul>",
+    "score": 3,
+    "justification": "Similar to UNO-T86, covers search functionality but lacks broader integration and security checks."
+  },
+  {
+    "id": "144190251",
+    "key": "UNO-T88",
+    "name": "Verify that when on the Agency user page as a Neuven user the Locked/unlocked drop down filters correctly. - LOCKED",
+    "folder": "UNO-2073",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2073",
+      "UNO-2170"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li>Logged on as a Neuven User.</li></ul>When:<ul><li>On the user lists page.</li></ul>Then:<ul><li>Select Agency from the user type drop down.</li><li>List of agency users is displayed.</li><li>Select the lock option from the dropdown function.</li><li>The page refreshes and only the the locked users are displayed.&nbsp;</li></ul>",
+    "score": 3,
+    "justification": "Tests user role permissions and data filtering, which is important for user management but lacks broader impact."
+  },
+  {
+    "id": "144190835",
+    "key": "UNO-T89",
+    "name": "Verify that when on the Agency user page as a Neuven user the Locked/unlocked drop down filters correctly. - UNLOCKED",
+    "folder": "UNO-2073",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2073",
+      "UNO-2170"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li>Logged on as a Neuven User.</li></ul>When:<ul><li>On the user lists page.</li></ul>Then:<ul><li>Select Agency from the user type drop down.</li><li>List of agency users is displayed.</li><li>Select the&nbsp; unlock option from the dropdown function.</li><li>The page refreshes and only the the unlocked users are displayed.&nbsp;</li></ul>",
+    "score": 3,
+    "justification": "Similar to UNO-T88, ensures user role permissions and data filtering, but lacks further integration and security aspects."
+  },
+  {
+    "id": "144190903",
+    "key": "UNO-T90",
+    "name": "Verify that when on the Client user page as a Neuven user the Locked/unlocked drop down filters correctly. - LOCKED",
+    "folder": "UNO-2073",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2073",
+      "UNO-2170"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li>Logged on as a Neuven User.</li></ul>When:<ul><li>On the user lists page.</li></ul>Then:<ul><li>Select Client from the user type drop down.</li><li>List of Client users is displayed.</li><li>Select the lock option from the dropdown function.</li><li>The page refreshes and only the the locked users are displayed.&nbsp;</li></ul>",
+    "score": 3,
+    "justification": "Mirrors the justification for UNO-T88 but focused on client data, ensuring user management but lacks further complexity."
+  },
+  {
+    "id": "144190904",
+    "key": "UNO-T91",
+    "name": "Verify that when on the Client user page as a Neuven user the Authorized/unauthorized drop down filters correctly. - UNAUTHORIZED",
+    "folder": "UNO-2073",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2073",
+      "UNO-2170"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li>Logged on as a Neuven User.</li></ul>When:<ul><li>On the user lists page.</li></ul>Then:<ul><li>Select Client from the user type drop down.</li><li>List of Client users is displayed.</li><li>Select the &nbsp;unauthorized &nbsp;option from the dropdown function.</li><li>The page refreshes and only the the &nbsp;unauthorized users are displayed.&nbsp;</li></ul>",
+    "score": 3,
+    "justification": "Ensures correct functioning of user authorization which is critical but absent further integration points and security relevance."
+  },
+  {
+    "id": "144190975",
+    "key": "UNO-T92",
+    "name": "Verify that when on the Agency user page as a Neuven user the authorized / unauthorized dropdown filters correctly. - UNAUTHORIZED.",
+    "folder": "UNO-2073",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2073",
+      "UNO-2170"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li>Logged on as a Neuven User.</li></ul>When:<ul><li>On the user lists page.</li></ul>Then:<ul><li>Select Agency from the user type drop down.</li><li>List of Agency users is displayed.</li><li>Select the&nbsp; unauthorized &nbsp;option from the dropdown function.</li><li>The page refreshes and only the the&nbsp; unauthorized users are displayed.&nbsp;</li></ul>",
+    "score": 3,
+    "justification": "Similar to UNO-T91 but focused on agency data, critical for user management but lacks broader complexity and impact."
+  },
+  {
+    "id": "144191026",
+    "key": "UNO-T93",
+    "name": "Verify that when on the Agency user page as a Neuven user the Authorized/unauthorized drop down filters correctly. -AUTHORIZED",
+    "folder": "UNO-2073",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2073",
+      "UNO-2170"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li>Logged on as a Neuven User.</li></ul>When:<ul><li>On the user lists page.</li></ul>Then:<ul><li>Select Agency from the user type drop down.</li><li>List of Agency users is displayed.</li><li>Select the &nbsp;authorized &nbsp;option from the dropdown function.</li><li>The page refreshes and only the the &nbsp;authorized users are displayed.&nbsp;</li></ul>",
+    "score": 3,
+    "justification": "Tests user authorization management, important for business operations but lacks more extensive integration and security checks."
+  },
+  {
+    "id": "144191394",
+    "key": "UNO-T94",
+    "name": "Verify that when on the CLIENT user page as a Neuven user the authorized/unauthorized dropdown filters correctly. - UNAUTHORIZED.",
+    "folder": "UNO-2073",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2073",
+      "UNO-2170"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li>Logged on as a Neuven User.</li></ul>When:<ul><li>On the user lists page.</li></ul>Then:<ul><li>Select Client from the user type drop down.</li><li>List of Client users is displayed.</li><li>Select the &nbsp;unauthorized &nbsp;option from the dropdown function.</li><li>The page refreshes and only the the &nbsp;unauthorized users are displayed.&nbsp;</li></ul>",
+    "score": 3,
+    "justification": "Similar to UNO-T91, covers user management authorization but absent broader complexity or high integration needs."
+  },
+  {
+    "id": "144191395",
+    "key": "UNO-T95",
+    "name": "Verify that when on the CLIENT user page as a Neuven user the Authorized/unauthorized drop down filters correctly. -AUTHORIZED",
+    "folder": "UNO-2073",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2073",
+      "UNO-2170"
+    ],
+    "objective": null,
+    "testScript": "Given:<ul><li>Logged on as a Neuven User.</li></ul>When:<ul><li>On the user lists page.</li></ul>Then:<ul><li>Select Client from the user type drop down.</li><li>List of Client users is displayed.</li><li>Select the &nbsp;authorized &nbsp;option from the dropdown function.</li><li>The page refreshes and only the the &nbsp;authorized users are displayed.&nbsp;</li></ul>",
+    "score": 3,
+    "justification": "Similar to UNO-T93, ensuring user authorization is correct but lacks additional integration and security checks."
+  },
+  {
+    "id": "144404541",
+    "key": "UNO-T96",
+    "name": "Add Employee Documents - Creating new worker",
+    "folder": "UNO-1983 - Worker Document Upload",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [],
+    "objective": null,
+    "testScript": "Click on Manage worker details<br>Add New worker<br> Click Create Worker and add documents or Save Worker and edit documents<br>Add Employee Documents",
+    "score": 4,
+    "justification": "Covers crucial functionality (employee management), involves data manipulation, and integrates multiple system components."
+  },
+  {
+    "id": "144404556",
+    "key": "UNO-T97",
+    "name": "Add Employee Documents - Editing worker",
+    "folder": "UNO-1983 - Worker Document Upload",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [],
+    "objective": null,
+    "testScript": "Click on Manage worker details<br>Edit Worker<br>Click Create Worker and add documents or Save Worker and edit documents<br>Add Employee Documents",
+    "score": 4,
+    "justification": "Similar to UNO-T96, essential for employee management, involves data manipulation, and has multiple system integrations."
+  },
+  {
+    "id": "144405315",
+    "key": "UNO-T98",
+    "name": "Add Employee Documents Page",
+    "folder": "UNO-1983 - Worker Document Upload",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [],
+    "objective": null,
+    "testScript": "Page to contain<ul><li>&nbsp; Please upload scanned copies of below documents:</li><li>Select document type dropdown<ul><li>Dropdown to load with all the default documents set in the documents administration page</li><li>Dropdown to also include client-specific documents set in the documents administration page - for the clients the agency is linked to.</li></ul></li><li>Expiry Date<ul><li>Date picker to choose a date</li><li>Not a mandatory field</li><li>Allow Null entries (Expiry date is irrelevant for some document types)</li></ul></li><li>&nbsp;Drop or click to upload documents here<ul><li>Dropbox for documents</li><li>Specify the allowed formats and size of the document at the bottom of the Dropbox as shown on the mockup</li><li>Allow drag and drop or click through to choose documents to upload</li></ul></li><li>Upload button<ul><li>Click</li><li>The document is uploaded and shown in the table below</li></ul></li></ul>",
+    "score": 4,
+    "justification": "Covers core document management functionality, includes data integrity checks, and is vital for system operations."
+  },
+  {
+    "id": "144405333",
+    "key": "UNO-T99",
+    "name": "Error Messages",
+    "folder": "UNO-1983 - Worker Document Upload",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [],
+    "objective": null,
+    "testScript": "<ul><li>Upload clicked without choosing document type &lsquo;please select document type&rsquo; displayed.</li><li>Upload clicked with a document that does not match with the specified formats &lsquo;document filetype not supported&rsquo; is displayed</li><li>Upload clicked with a document that exceeds the specified size &lsquo;File too large for upload&rsquo; displayed</li><li>Upload clicked without a document in the drop box &lsquo;Please choose a file to upload&rsquo; is displayed</li><li>Upload clicked with a document type that already exists on the table &lsquo;Document already exist &ndash; Do you want to replace the existing document&rsquo; displayed in a pop-up window<ul><li>Yes Button<ul><li>Clicked - Document replaced &ndash; window closed</li></ul></li><li>No Button<ul><li>Clicked &ndash; window closed</li></ul></li></ul></li></ul>",
+    "score": 4,
+    "justification": "Ensures robust input validation, essential for avoiding data corruption, and involves multiple types of user interactions."
+  },
+  {
+    "id": "144405663",
+    "key": "UNO-T100",
+    "name": "Existing Employee Documents table - Settings",
+    "folder": "UNO-1983 - Worker Document Upload",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [],
+    "objective": null,
+    "testScript": "<ul><li>Table to have a search box at the top</li><li>Table to have pagination at the bottom</li><li>Page numbers to be clickable, and arrows to move forward and backward by the user</li><li>Table to have select page size drop-down at the bottom with 10,20,50 and 100 options</li><li>When page size is selected table should show the appropriate number of rows based on the selection</li><li>The bottom of the table shows the total number of items on current pages vs the overall total number of items (EG Showing 10 of 100 entries), in the right corner</li></ul>",
+    "score": 4,
+    "justification": "Verifies table settings and data pagination, crucial for data management and usability in employee document management."
+  },
+  {
+    "id": "144405893",
+    "key": "UNO-T101",
+    "name": "Existing Employee Documents table",
+    "folder": "UNO-1983 - Worker Document Upload",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [],
+    "objective": null,
+    "testScript": "Table columns<ul><li>Document type<ul><li>Document type selected when uploading is displayed</li></ul></li><li>Document Name<ul><li>Document File Name is displayed</li></ul></li><li>Expiry Date<ul><li>Expiry date selected when uploading is displayed</li></ul></li><li>Uploaded On<ul><li>Display date document was uploaded</li></ul></li><li>Action<ul><li>Delete icon displayed<ul><li>Clicked &ndash; &lsquo;Are you sure you want to delete the document&rsquo; displayed in a pop-up window</li><li>Yes Button<ul><li>Clicked &ndash; Document Deleted&ndash; window closed</li></ul></li><li>No Button<ul><li>Clicked &ndash; window closed</li></ul></li></ul></li></ul></li></ul>",
+    "score": 4,
+    "justification": "Ensures visibility and correct data representation of existing documents, which is vital for employee document integrity."
+  },
+  {
+    "id": "144406189",
+    "key": "UNO-T102",
+    "name": "Logged in as a Client User",
+    "folder": "UNO-1983 - Worker Document Upload",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [],
+    "objective": null,
+    "testScript": "<ul><li>View Worker Documents</li><li>Select Agency</li><li>Documents &ndash; View</li><li>Window displaying List of default documents plus the client-specific documents with upload details displayed.</li><li>There are no changes to this window &ndash; except the list of documents shown will now change dynamically based on client viewing the documents - linked to client-specific documents defined in the documents maintenance page</li><li>Also add a new column Mandatory and show whether the document type was specified as mandatory in the documents maintenance page</li></ul><br>",
+    "score": 3,
+    "justification": "Ensures user management and document visibility based on roles, but lacks broader integration and complex functionalities."
+  }
+]

@@ -1,0 +1,377 @@
+[
+  {
+    "id": "162532414",
+    "key": "UNO-T478",
+    "name": "6. Verify that other client users in the different location without the ‘Edit Direct Bank worker’ permission don’t receive an email.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2355"
+    ],
+    "objective": null,
+    "testScript": "Given &ndash; <ul><li>The Check DBS Number API has run.&nbsp;</li></ul>When &ndash; <ul><li>It checked the DBS numbers.&nbsp;</li></ul>Then &ndash; <ul><li>If a client user does not have edit direct back works permission flagged in their profile and &nbsp; is in a different location and the direct bank worker. Then they will not receive data about the direct bank worker.&nbsp;</li></ul>",
+    "score": 4,
+    "justification": "This test case verifies core functionality (permissions), has security implications, tests a critical business process (email notifications), and covers multiple components (user roles, email functionality)."
+  },
+  {
+    "id": "162532425",
+    "key": "UNO-T479",
+    "name": "7. Verify that the email body contains the name of the client user who has the correct permissions.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2355"
+    ],
+    "objective": null,
+    "testScript": "<span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Given &ndash; </span><ul><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">The Check DBS Number API has run.&nbsp;</span></li></ul><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">When &ndash;&nbsp;</span><ul><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">It checked the DBS numbers.&nbsp;</span></li></ul><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Then &ndash;&nbsp;</span><ul><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">The body of the email will contain the following text:&nbsp;</span><ul><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Hello (Name of Client User)</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Attached is table of Bank workers whose DBS check has returned &ldquo;NEW_INFO&rdquo;.</span></li></ul></li></ul>",
+    "score": 3,
+    "justification": "This test case involves email content validation and user permissions, checks a business process (email handling), and involves multiple components (permissions, email system)."
+  },
+  {
+    "id": "162532441",
+    "key": "UNO-T480",
+    "name": "8. Verify that the email contains an email attachment with columns: first/last name, DBS number, and status.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2355"
+    ],
+    "objective": null,
+    "testScript": "<span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Given &ndash;&nbsp;</span><ul><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">The Check DBS Number API has run.&nbsp;</span></li></ul><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">When &ndash;&nbsp;</span><ul><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">It checked the DBS numbers.</span></li></ul><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Then - </span><ul><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">The email that has been sent to the client user with relevant permission can see and excel document with the following columns in it.&nbsp;</span><ul><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">First Name (Show First Name)</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Last Name (Show Last Name)</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">DBS Number (Show DBS Number)</span></li><li><span style=\"line-height: 107.0%;font-size: 15.0px;font-family: Calibri , sans-serif;font-family: Calibri , sans-serif;font-size: 11.0pt;\">Status ( &ldquo;NEW_INFO&rdquo;)</span></li></ul></li></ul>",
+    "score": 3,
+    "justification": "This test case checks for email attachments, covers data manipulation and presentation, and involves multiple components (email system, user data)."
+  },
+  {
+    "id": "162532468",
+    "key": "UNO-T481",
+    "name": "9. Verify that the data in the spreadsheet is attached if relevant and for the location or the person receiving it.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2355"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 3,
+    "justification": "This test case ensures data accuracy in email attachments, involves data manipulation and user-specific information, and covers integration points (email, user data)."
+  },
+  {
+    "id": "162532483",
+    "key": "UNO-T482",
+    "name": "10. Verify that the email contains an email attachment with columns: first/last name, DBS number, and status.",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2355"
+    ],
+    "objective": null,
+    "testScript": "Given &ndash; <ul><li>The Check DBS Number API has run.&nbsp;</li></ul>When &ndash; <ul><li>It checked the DBS numbers.&nbsp;</li></ul>Then - <ul><li>The email that has been sent to the client user with relevant permission can see and excel document with the following columns in it.&nbsp;<ul><li>First Name (Show First Name)</li><li>Last Name (Show Last Name)</li><li>DBS Number (Show DBS Number)</li><li>Status ( &ldquo;NEW_INFO&rdquo;)</li></ul></li><li>All of the above information relates to workers in the same location of the person receiving the email.</li></ul>",
+    "score": 3,
+    "justification": "This test case checks for correct data in email attachments, involves data manipulation and presentation, and covers multiple components (email, user data)."
+  },
+  {
+    "id": "165561455",
+    "key": "UNO-T483",
+    "name": "Verify that the sleep-in shift can be created for the whole shift",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2278"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This test case checks the creation of a specific type of shift, involves business logic for shift management, and covers a moderately complex process."
+  },
+  {
+    "id": "165561456",
+    "key": "UNO-T484",
+    "name": "Verify that the sleep-in shift can be created for part of the shift",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2278"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This test case checks the partial creation of a specific type of shift, involves business logic for shift management, and covers a moderately complex process."
+  },
+  {
+    "id": "165561457",
+    "key": "UNO-T485",
+    "name": "Verify that the sleep-in shift displays (sleep in & times) for both Client & Agency",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2278"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This test case checks the display of shift information for different entities, involves user interface elements and business logic, and covers a moderately complex process."
+  },
+  {
+    "id": "165690050",
+    "key": "UNO-T486",
+    "name": "Verify that bookings that are ‘Unfilled’ with the ‘Sent to Neuven’ status are picked up by Venneu",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2276"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 4,
+    "justification": "This test case checks the integration between booking systems, involves multiple components (bookings, status updates, integrations), and covers business-critical functionality."
+  },
+  {
+    "id": "165690051",
+    "key": "UNO-T487",
+    "name": "Verify that reason code is not filled out",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2276"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This test case checks a specific validation rule, involves business logic for reason codes, and has lower complexity and business impact."
+  },
+  {
+    "id": "165690052",
+    "key": "UNO-T488",
+    "name": "Verify that Shift Start time in Dayforce links to Start time in Venneu",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2276"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 4,
+    "justification": "This test case checks the synchronization of start times between two systems, involves integration points, and covers business-critical functionality for scheduling."
+  },
+  {
+    "id": "165690053",
+    "key": "UNO-T489",
+    "name": "Verify that Shift End time in Dayforce links to End time in Venneu",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2276"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 4,
+    "justification": "This test case checks the synchronization of end times between two systems, involves integration points, and covers business-critical functionality for scheduling."
+  },
+  {
+    "id": "165690054",
+    "key": "UNO-T490",
+    "name": "Verify that when the booking is created, status changes to pending in Venneu",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2276"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 4,
+    "justification": "This test case checks the status synchronization upon booking creation, involves integration points, and covers business-critical functionality for booking management."
+  },
+  {
+    "id": "165690055",
+    "key": "UNO-T491",
+    "name": "Verify that status of the booking will be Select workers",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2276"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This test case checks a specific status update in the booking process, involves business logic for status transitions, and has lower complexity and business impact."
+  },
+  {
+    "id": "166116735",
+    "key": "UNO-T492",
+    "name": "Verify as a NEUVEN user there are Radio buttons for worker type when ADDING a client",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2429"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged in as a Neuven User&nbsp;</li></ul>When :<ul><li>Adding a Client User&nbsp;</li></ul>Then :<ul><li>On the addition information tab</li><li>There should be three radio buttons called&nbsp;<ul><li>Agency workers only</li><li>Direct bank worker only&nbsp;</li><li>Both&nbsp;</li></ul></li><li>Verify that the selected option saves correctly to the client profile</li></ul>",
+    "score": 3,
+    "justification": "This test case checks user interface elements and functionality, involves role-specific options, and covers a moderately complex process of adding a client."
+  },
+  {
+    "id": "166117147",
+    "key": "UNO-T493",
+    "name": "Verify as a NEUVEN user there are Radio buttons for worker type when EDITING a client",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2429"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged in as a Neuven User&nbsp;</li></ul>When :<ul><li>Editing a Client User&nbsp;</li></ul>Then :<ul><li>On the addition information tab</li><li>There should be three radio buttons called&nbsp;<ul><li>Agency workers only</li><li>Direct bank worker only&nbsp;</li><li>Both&nbsp;</li></ul></li><li>Verify that the selected option saves correctly to the client profile</li></ul>",
+    "score": 3,
+    "justification": "This test case checks user interface elements and functionality, involves role-specific options, and covers a moderately complex process of editing a client."
+  },
+  {
+    "id": "166117691",
+    "key": "UNO-T494",
+    "name": "Verify as a NEUVEN user there are Radio buttons for worker type when ADDING a client location",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2429"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged in as a Neuven User&nbsp;</li></ul>When :<ul><li>Adding a Client Location</li></ul>Then :&nbsp;&nbsp;<ul><li>On the addition information tab</li><li>There should be three radio buttons called&nbsp;<ul><li>Agency workers only</li><li>Direct bank worker only&nbsp;</li><li>Both&nbsp;</li></ul></li><li>Verify that the selected option saves correctly to the client profile</li></ul>",
+    "score": 3,
+    "justification": "This test case checks user interface elements and functionality, involves role-specific options, and covers a moderately complex process of adding a client location."
+  },
+  {
+    "id": "166117716",
+    "key": "UNO-T495",
+    "name": "Verify as a NEUVEN user there are Radio buttons for worker type when EDITING a client location",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2429"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged in as a Neuven User&nbsp;</li></ul>When :<ul><li>Editing a Client Location</li></ul>Then : &nbsp;<ul><li>On the addition information tab</li><li>There should be three radio buttons called&nbsp;<ul><li>Agency workers only</li><li>Direct bank worker only&nbsp;</li><li>Both&nbsp;</li></ul></li><li>Verify that the selected option saves correctly to the client profile</li></ul>",
+    "score": 3,
+    "justification": "This test case checks user interface elements and functionality, involves role-specific options, and covers a moderately complex process of editing a client location."
+  },
+  {
+    "id": "166119541",
+    "key": "UNO-T496",
+    "name": "Verify as a NEUVEN user Worker type on child profile as copied by from the parent by default",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2429"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged in as a Neuven User&nbsp;</li></ul>When :<ul><li>Adding a Client Location OR and a Client</li></ul>Then :<ul><li>The worker type should be set as the parent as a default, but this is able to be saved / edited independent of the parent.&nbsp;</li></ul><br>",
+    "score": 3,
+    "justification": "This test case checks the inheritance of settings between parent and child profiles, involves user interface and business logic, and covers a moderately complex process."
+  },
+  {
+    "id": "166119729",
+    "key": "UNO-T497",
+    "name": "Verify that as a NEUVEN the worker type is a compulsory field",
+    "folder": "Direct Bank Worker",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2429"
+    ],
+    "objective": null,
+    "testScript": "Given :<ul><li>Logged in as a Neuven User&nbsp;</li></ul>When :<ul><li>Adding a Client Location OR and a Client</li></ul>Then :<ul><li>The profile can&rsquo;t be saved unless the worker type has been selected.&nbsp;</li></ul><br>This is copied if this is copied from the parent then this does need to be run as it doesn't make sense.&nbsp;",
+    "score": 3,
+    "justification": "This test case checks a validation rule, involves user interface and business logic, and covers a moderately complex process for ensuring required fields are filled."
+  },
+  {
+    "id": "166411746",
+    "key": "UNO-T498",
+    "name": "Create a Client User with Irish Phone Number as a NEUVEN user",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2447"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This test case checks the creation of a client user with specific data, involves user interface and validation, but has lower complexity and business impact."
+  },
+  {
+    "id": "166411773",
+    "key": "UNO-T499",
+    "name": "Edit a Client User with Irish Phone Number as a NEUVEN user",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2447"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This test case checks the editing of a client user with specific data, involves user interface and validation, but has lower complexity and business impact."
+  },
+  {
+    "id": "166412124",
+    "key": "UNO-T500",
+    "name": "Create an Agency User with Irish Phone Number as a NEUVEN user",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2447"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This test case checks the creation of an agency user with specific data, involves user interface and validation, but has lower complexity and business impact."
+  },
+  {
+    "id": "166412131",
+    "key": "UNO-T501",
+    "name": "Edit an Agency User with Irish Phone Number as a NEUVEN user",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2447"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This test case checks the editing of an agency user with specific data, involves user interface and validation, but has lower complexity and business impact."
+  },
+  {
+    "id": "166412168",
+    "key": "UNO-T502",
+    "name": "Create a Location with Irish Phone Number as a NEUVEN user",
+    "folder": null,
+    "priority": "Normal",
+    "status": "Approved",
+    "issues": [
+      "UNO-2447"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "This test case checks the creation of a location with specific data, involves user interface and validation, but has lower complexity and business impact."
+  }
+]

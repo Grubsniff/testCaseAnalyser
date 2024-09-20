@@ -1,0 +1,349 @@
+[
+  {
+    "id": "152511298",
+    "key": "UNO-T153",
+    "name": "Verify Currency Column is present on the Rate Adjustment page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2212"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Test case verifies the presence of the currency column, which is directly related to data manipulation/validation but doesn't involve multiple integrated components or security-related functions."
+  },
+  {
+    "id": "152511299",
+    "key": "UNO-T154",
+    "name": "Verify Currency Column is populated with the correct Currency on the Rate Adjustment Page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2212"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 3,
+    "justification": "This test verifies the correctness of data and involves data manipulation which is prone to errors. However, it doesn't cover multiple integrated components or have significant security implications."
+  },
+  {
+    "id": "152511300",
+    "key": "UNO-T155",
+    "name": "Verify that the correct currency icon is displayed on all relevant fields",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2212"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Validation of UI elements is critical but this case lacks depth in terms of integration complexity or security aspects."
+  },
+  {
+    "id": "152511301",
+    "key": "UNO-T156",
+    "name": "Verify Currency Column is present on the Authorise New Rates page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2212"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Similar to UNO-T153, it checks for the presence of the column but doesn't involve complex operations or multiple components."
+  },
+  {
+    "id": "152511302",
+    "key": "UNO-T157",
+    "name": "Verify Currency Column is populated with the correct Currency on the Authorise New Rates Page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2212"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 3,
+    "justification": "Verifies data correctness, which is important, but lacks broader integration testing or security implications."
+  },
+  {
+    "id": "152511303",
+    "key": "UNO-T158",
+    "name": "Verify that the correct currency icon is displayed on all relevant fields",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2212"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "UI validation test but without a broader scope involving integrations or complex operations."
+  },
+  {
+    "id": "152511304",
+    "key": "UNO-T159",
+    "name": "Verify that when the Authorise New Rates is exported, that the currency column is displayed and the correct currency icons are displayed",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2212"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 4,
+    "justification": "Involves data export, which is a critical business process and covers data manipulation and correctness across formats."
+  },
+  {
+    "id": "152511305",
+    "key": "UNO-T160",
+    "name": "Verify Currency Column is present on the Rate Export Page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2212"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Presence check, important but not complex or integrated."
+  },
+  {
+    "id": "152511306",
+    "key": "UNO-T161",
+    "name": "Verify Currency Column is populated with the correct Currency on the Rate Export Page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2212"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 3,
+    "justification": "Ensures data integrity in exports, important but does not involve complex integrations."
+  },
+  {
+    "id": "152511307",
+    "key": "UNO-T162",
+    "name": "Verify that the correct currency icon is displayed on all relevant fields",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2212"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "UI validation is important but lacks complexity and integration."
+  },
+  {
+    "id": "152511308",
+    "key": "UNO-T163",
+    "name": "Verify that when the Rate Exports is exported, that the currency column is displayed and the correct currency icons are displayed",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [
+      "UNO-2212"
+    ],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 4,
+    "justification": "Critical for ensuring that data exports correctly, covering multiple data formats which is a key functionality."
+  },
+  {
+    "id": "152513271",
+    "key": "UNO-T164",
+    "name": "Currency Column to be added to Client Invoices page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Presence check for UI, important for data validation but not complex or integrated."
+  },
+  {
+    "id": "152513272",
+    "key": "UNO-T165",
+    "name": "Verify that currency icons are displayed to reflect the currency for the client selected",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "UI validation that doesn’t involve multiple components or security aspects."
+  },
+  {
+    "id": "152513273",
+    "key": "UNO-T166",
+    "name": "Currency Column to be displayed when the table is exported",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 3,
+    "justification": "Checks data presence in different formats but lacks complexity and integration."
+  },
+  {
+    "id": "152513274",
+    "key": "UNO-T167",
+    "name": "Verify that currency icons are displayed to reflect the currency for the client selected when the report is viewed, exported, exported as CSV and Exported as PDF - Client Invoice",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 4,
+    "justification": "Involves multiple formats and ensures comprehensive data validation across exports, making it high impact."
+  },
+  {
+    "id": "152513275",
+    "key": "UNO-T168",
+    "name": "Currency Column to be added to Invoice Calculation Checks page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 3,
+    "justification": "Covers data processes and calculations, which are critical but lacks security and integration aspects."
+  },
+  {
+    "id": "152513276",
+    "key": "UNO-T169",
+    "name": "Verify that currency icons are displayed to reflect the currency for the client selected - Client Invoice",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "UI validation, critical but no complex operations or integrations."
+  },
+  {
+    "id": "152513277",
+    "key": "UNO-T170",
+    "name": "Currency Column to be displayed when the table is exported",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 3,
+    "justification": "Checks data presence in exports which is important but lacks broader coverage."
+  },
+  {
+    "id": "152513278",
+    "key": "UNO-T171",
+    "name": "Currency Column to be added to Agency Sales Order page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "Presence check, important for data validation but not complex."
+  },
+  {
+    "id": "152513279",
+    "key": "UNO-T172",
+    "name": "Verify that currency icons are displayed to reflect the currency for the client selected",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "UI validation, important but doesn’t cover integration or complex functionality."
+  },
+  {
+    "id": "152513280",
+    "key": "UNO-T173",
+    "name": "Currency Column to be displayed when the table is exported",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 3,
+    "justification": "Ensures data integrity in exports, important but lacks complex integrations."
+  },
+  {
+    "id": "152513281",
+    "key": "UNO-T174",
+    "name": "Verify that currency icons are displayed to reflect the currency for the client selected when the report is viewed, exported, exported as CSV and Exported as PDF - Agency Sales Order",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 4,
+    "justification": "Comprehensive data validation across multiple formats which makes it high impact."
+  },
+  {
+    "id": "152513283",
+    "key": "UNO-T175",
+    "name": "Currency Column to be added to Agency BACS Export page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 3,
+    "justification": "Critical for data integrity in financial exports but lacks broader integration aspects."
+  },
+  {
+    "id": "152513284",
+    "key": "UNO-T176",
+    "name": "Verify that currency icons are displayed to reflect the currency for the client selected",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 2,
+    "justification": "UI validation with limited scope in terms of integration and complexity."
+  },
+  {
+    "id": "152513285",
+    "key": "UNO-T177",
+    "name": "Currency Column to be added to Agency Early Settlement page",
+    "folder": "UNO-163, UNO-1179 Neuven User - Permissions - Manage Invoices and View invoices permissions needs verifyin",
+    "priority": "Normal",
+    "status": "Draft",
+    "issues": [],
+    "objective": null,
+    "testScript": "{\"step\":{\"$\":{\"index\":\"0\"},\"customFields\":\"\",\"description\":\"\",\"expectedResult\":\"\"}}",
+    "score": 3,
+    "justification": "Checks data presence, critical for financial operations but lacks complexity and integration aspects."
+  }
+]
